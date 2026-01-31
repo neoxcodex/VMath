@@ -1,0 +1,9 @@
+build/
+.cache/
+*.o
+*.out
+bin/
+ricer.sh
+runner.sh
+aux.codex
+

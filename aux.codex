@@ -1,0 +1,327 @@
+#include <iostream>
+#include <cmath>
+#include <cstdlib>
+#include <ctime>
+#include <iomanip>
+#include <chrono>
+#include <vector>
+#include <string>
+
+using namespace std;
+using namespace chrono;
+
+// Color codes for terminal
+#define RESET   "\033[0m"
+#define RED     "\033[31m"
+#define GREEN   "\033[32m"
+#define YELLOW  "\033[33m"
+#define CYAN    "\033[36m"
+#define BOLD    "\033[1m"
+
+class CalcBootcamp {
+private:
+    int correct = 0;
+    int total = 0;
+    double totalTime = 0.0;
+
+    bool isClose(double a, double b, double epsilon = 0.01) {
+        return abs(a - b) < epsilon;
+    }
+
+    void displayStats() {
+        cout << "\n" << BOLD << CYAN << "=== SESSION STATS ===" << RESET << "\n";
+        cout << "Correct: " << GREEN << correct << RESET << "/" << total << "\n";
+        if (total > 0) {
+            double accuracy = (100.0 * correct) / total;
+            cout << "Accuracy: " << (accuracy >= 90 ? GREEN : (accuracy >= 70 ? YELLOW : RED))
+                 << fixed << setprecision(1) << accuracy << "%" << RESET << "\n";
+            cout << "Avg Time: " << fixed << setprecision(2) << (totalTime / total) << "s per problem\n";
+        }
+        cout << CYAN << "=====================" << RESET << "\n\n";
+    }
+
+public:
+    // Module 1: Basic Arithmetic (supremely quick drills)
+    void arithmeticDrill(int numProblems = 20) {
+        cout << BOLD << "\n🔥 ARITHMETIC SPEEDRUN 🔥" << RESET << "\n";
+        cout << "Solve as fast as possible. Precision matters!\n\n";
+
+        for (int i = 0; i < numProblems; i++) {
+            int a = rand() % 200 - 100;  // -100 to 99
+            int b = rand() % 200 - 100;
+            int op = rand() % 4;
+
+            double answer;
+            string operation;
+
+            switch(op) {
+                case 0: // Addition
+                    operation = " + ";
+                    answer = a + b;
+                    break;
+                case 1: // Subtraction
+                    operation = " - ";
+                    answer = a - b;
+                    break;
+                case 2: // Multiplication
+                    operation = " × ";
+                    answer = a * b;
+                    break;
+                case 3: // Division (avoid divide by zero)
+                    if (b == 0) b = rand() % 20 + 1;
+                    operation = " ÷ ";
+                    answer = (double)a / b;
+                    break;
+            }
+
+            cout << YELLOW << "Q" << (i+1) << ": " << RESET << a << operation << b << " = ? ";
+
+            auto start = high_resolution_clock::now();
+            double userAns;
+            cin >> userAns;
+            auto end = high_resolution_clock::now();
+
+            double elapsed = duration<double>(end - start).count();
+            totalTime += elapsed;
+            total++;
+
+            if (isClose(userAns, answer, 0.01)) {
+                cout << GREEN << "✓ CORRECT" << RESET;
+                correct++;
+            } else {
+                cout << RED << "✗ WRONG" << RESET << " (Correct: " << fixed << setprecision(2) << answer << ")";
+            }
+            cout << " [" << fixed << setprecision(2) << elapsed << "s]\n";
+        }
+
+        displayStats();
+    }
+
+    // Module 2: Quadratic Equations
+    void quadraticDrill(int numProblems = 10) {
+        cout << BOLD << "\n📐 QUADRATIC ROOTS DRILL 📐" << RESET << "\n";
+        cout << "Solve ax² + bx + c = 0. Enter roots in ascending order.\n\n";
+
+        for (int i = 0; i < numProblems; i++) {
+            // Generate nice quadratics with integer roots
+            int root1 = rand() % 21 - 10;  // -10 to 10
+            int root2 = rand() % 21 - 10;
+
+            // x² - (r1+r2)x + r1*r2 = 0
+            int a = 1;
+            int b = -(root1 + root2);
+            int c = root1 * root2;
+
+            // Swap if needed to ensure root1 <= root2
+            if (root1 > root2) swap(root1, root2);
+
+            cout << YELLOW << "Q" << (i+1) << ": " << RESET;
+            cout << "x² ";
+            if (b >= 0) cout << "+ " << b << "x ";
+            else cout << "- " << abs(b) << "x ";
+            if (c >= 0) cout << "+ " << c;
+            else cout << "- " << abs(c);
+            cout << " = 0\n";
+
+            cout << "Root 1 (smaller): ";
+            auto start = high_resolution_clock::now();
+            double r1;
+            cin >> r1;
+            cout << "Root 2 (larger): ";
+            double r2;
+            cin >> r2;
+            auto end = high_resolution_clock::now();
+
+            double elapsed = duration<double>(end - start).count();
+            totalTime += elapsed;
+            total++;
+
+            if (isClose(r1, root1) && isClose(r2, root2)) {
+                cout << GREEN << "✓ PERFECT!" << RESET;
+                correct++;
+            } else {
+                cout << RED << "✗ WRONG" << RESET << " (Correct: " << root1 << ", " << root2 << ")";
+            }
+            cout << " [" << fixed << setprecision(2) << elapsed << "s]\n\n";
+        }
+
+        displayStats();
+    }
+
+    // Module 3: 2-Variable Linear Systems
+    void linearSystemDrill(int numProblems = 10) {
+        cout << BOLD << "\n⚡ LINEAR SYSTEMS DRILL ⚡" << RESET << "\n";
+        cout << "Solve the system. Enter x first, then y.\n\n";
+
+        for (int i = 0; i < numProblems; i++) {
+            // Generate system with integer solutions
+            int x_sol = rand() % 21 - 10;
+            int y_sol = rand() % 21 - 10;
+
+            int a1 = rand() % 10 + 1;
+            int b1 = rand() % 10 + 1;
+            int a2 = rand() % 10 + 1;
+            int b2 = rand() % 10 + 1;
+
+            int c1 = a1 * x_sol + b1 * y_sol;
+            int c2 = a2 * x_sol + b2 * y_sol;
+
+            cout << YELLOW << "Q" << (i+1) << ":" << RESET << "\n";
+            cout << a1 << "x ";
+            if (b1 >= 0) cout << "+ " << b1 << "y";
+            else cout << "- " << abs(b1) << "y";
+            cout << " = " << c1 << "\n";
+
+            cout << a2 << "x ";
+            if (b2 >= 0) cout << "+ " << b2 << "y";
+            else cout << "- " << abs(b2) << "y";
+            cout << " = " << c2 << "\n";
+
+            cout << "x = ? ";
+            auto start = high_resolution_clock::now();
+            double x_ans;
+            cin >> x_ans;
+            cout << "y = ? ";
+            double y_ans;
+            cin >> y_ans;
+            auto end = high_resolution_clock::now();
+
+            double elapsed = duration<double>(end - start).count();
+            totalTime += elapsed;
+            total++;
+
+            if (isClose(x_ans, x_sol) && isClose(y_ans, y_sol)) {
+                cout << GREEN << "✓ NAILED IT!" << RESET;
+                correct++;
+            } else {
+                cout << RED << "✗ WRONG" << RESET << " (Correct: x=" << x_sol << ", y=" << y_sol << ")";
+            }
+            cout << " [" << fixed << setprecision(2) << elapsed << "s]\n\n";
+        }
+
+        displayStats();
+    }
+
+    // Module 4: Fraction Operations
+    void fractionDrill(int numProblems = 15) {
+        cout << BOLD << "\n🎯 FRACTION WARFARE 🎯" << RESET << "\n";
+        cout << "Simplify and calculate. Enter as decimal.\n\n";
+
+        for (int i = 0; i < numProblems; i++) {
+            int num1 = rand() % 20 + 1;
+            int den1 = rand() % 20 + 1;
+            int num2 = rand() % 20 + 1;
+            int den2 = rand() % 20 + 1;
+            int op = rand() % 4;
+
+            double answer;
+            string operation;
+
+            switch(op) {
+                case 0: // Addition
+                    operation = " + ";
+                    answer = (double)num1/den1 + (double)num2/den2;
+                    break;
+                case 1: // Subtraction
+                    operation = " - ";
+                    answer = (double)num1/den1 - (double)num2/den2;
+                    break;
+                case 2: // Multiplication
+                    operation = " × ";
+                    answer = ((double)num1/den1) * ((double)num2/den2);
+                    break;
+                case 3: // Division
+                    operation = " ÷ ";
+                    answer = ((double)num1/den1) / ((double)num2/den2);
+                    break;
+            }
+
+            cout << YELLOW << "Q" << (i+1) << ": " << RESET;
+            cout << num1 << "/" << den1 << operation << num2 << "/" << den2 << " = ? ";
+
+            auto start = high_resolution_clock::now();
+            double userAns;
+            cin >> userAns;
+            auto end = high_resolution_clock::now();
+
+            double elapsed = duration<double>(end - start).count();
+            totalTime += elapsed;
+            total++;
+
+            if (isClose(userAns, answer, 0.02)) {
+                cout << GREEN << "✓ CLEAN!" << RESET;
+                correct++;
+            } else {
+                cout << RED << "✗ WRONG" << RESET << " (Correct: " << fixed << setprecision(3) << answer << ")";
+            }
+            cout << " [" << fixed << setprecision(2) << elapsed << "s]\n";
+        }
+
+        displayStats();
+    }
+
+    void resetStats() {
+        correct = 0;
+        total = 0;
+        totalTime = 0.0;
+    }
+};
+
+int main() {
+    srand(time(0));
+
+    CalcBootcamp bootcamp;
+
+    cout << BOLD << CYAN;
+    cout << "\n╔════════════════════════════════════╗\n";
+    cout << "║   CALCULATION BOOTCAMP v1.0       ║\n";
+    cout << "║   \"Precision Under Pressure\"      ║\n";
+    cout << "╚════════════════════════════════════╝\n" << RESET;
+
+    while (true) {
+        cout << "\n" << BOLD << "Choose Your Drill:" << RESET << "\n";
+        cout << "1. ⚡ Arithmetic Speedrun (20 problems)\n";
+        cout << "2. 📐 Quadratic Roots (10 problems)\n";
+        cout << "3. ⚡ Linear Systems (10 problems)\n";
+        cout << "4. 🎯 Fraction Warfare (15 problems)\n";
+        cout << "5. 🔥 FULL BOOTCAMP (All modules)\n";
+        cout << "6. Exit\n\n";
+        cout << "Choice: ";
+
+        int choice;
+        cin >> choice;
+
+        if (choice == 6) {
+            cout << BOLD << GREEN << "\n💪 STAY SHARP. STAY HUNGRY. 💪\n" << RESET;
+            break;
+        }
+
+        bootcamp.resetStats();
+
+        switch(choice) {
+            case 1:
+                bootcamp.arithmeticDrill();
+                break;
+            case 2:
+                bootcamp.quadraticDrill();
+                break;
+            case 3:
+                bootcamp.linearSystemDrill();
+                break;
+            case 4:
+                bootcamp.fractionDrill();
+                break;
+            case 5:
+                cout << BOLD << RED << "\n🔥🔥🔥 FULL BOOTCAMP MODE 🔥🔥🔥\n" << RESET;
+                bootcamp.arithmeticDrill();
+                bootcamp.quadraticDrill();
+                bootcamp.linearSystemDrill();
+                bootcamp.fractionDrill();
+                break;
+            default:
+                cout << RED << "Invalid choice!\n" << RESET;
+        }
+    }
+
+    return 0;
+}
