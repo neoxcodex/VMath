@@ -1,5 +1,5 @@
 ##VMath ROADMAP##
-
+I Know These Are LOFTY goals for one person...
 1. **Vec2: Basic Arithmetic** (Add, Sub, Mul, Div by scalar) D
 2. **Vec2: Dot Product** D
 3. **Vec2: Magnitude and Magnitude Squared** D
