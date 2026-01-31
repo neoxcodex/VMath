@@ -137,7 +137,7 @@ namespace dim3 {
     float distanceSquared(Vec3 a, Vec3 b){
         return magSquared(subtract(a,b));
     }
-    float angleRAD(Vec3 a, Vec3 b){
+    float angleRAD(Vec3 a, Vec3 b, bool returnCosValue = false){
         float magA = std::sqrt(magSquared(a));
         float magB = std::sqrt(magSquared(b));
         if (magA == 0 || magB ==0 ){return 0;}
@@ -146,10 +146,23 @@ namespace dim3 {
         if(cosTheta > 1.0){cosTheta = 1.0;}
         if(cosTheta < -1.0){cosTheta = -1.0;}
 
-        return std::acos(cosTheta);
+        if(!returnCosValue){return std::acos(cosTheta);}
+        else{return cosTheta;}
     }
     float angleDEG(Vec3 a, Vec3 b){
         return angleRAD(a,b) * constants::INV_PI_180;
+    }
+    float scalarProject(Vec3 vecToProj, Vec3 vecToProjAlong){
+        float magAlong = std::sqrt(magSquared(vecToProjAlong));
+        return (dotProduct(vecToProjAlong, vecToProj) / magAlong);
+
+    }
+    Vec3 vectorProject(Vec3 vecToProj, Vec3 vecToProjAlong){
+        // return scalarMult(normalize(vecToProjAlong),scalarProject(vecToProj, vecToProjAlong)); (This is BAD; Multiple function calls, temp objects.. slow)
+        //Fast Version
+        float dotProd = dotProduct(vecToProjAlong, vecToProj);
+        float magSq = magSquared(vecToProjAlong);
+        return scalarMult(vecToProjAlong, dotProd/magSq);
     }
 
 }
@@ -210,4 +223,14 @@ namespace dim2{
 
 
     /*TODO AGAIN*/
+}
+
+
+namespace dim4{
+    struct Vec4{
+        float x,y,z,w;
+    };
+
+
+
 }
