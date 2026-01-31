@@ -1,0 +1,104 @@
+##VMath ROADMAP##
+
+1. **Vec2: Basic Arithmetic** (Add, Sub, Mul, Div by scalar) D
+2. **Vec2: Dot Product** D
+3. **Vec2: Magnitude and Magnitude Squared** D
+4. **Vec2: Normalization** (Unit vectors) D
+5. **Vec2: Distance and Distance Squared** D
+6. **Vec3: Basic Arithmetic** D
+7. **Vec3: Dot Product** D
+8. **Vec3: Magnitude and Magnitude Squared** D
+9. **Vec3: Normalization** D
+10. **Vec3: Distance and Distance Squared** D
+11. **Vec3: Cross Product** (The perpendicular vector)
+12. **Vec4: Basic Arithmetic** (Crucial for Matrix-4 multiplication)
+13. **Vec4: Dot Product**
+14. **Vec4: Normalization**
+15. **VecN: Generalized Arithmetic** (Using loops/algorithms)
+16. **VecN: Generalized Dot Product**
+17. **Vector Projection** (Project A onto B)
+18. **Vector Rejection** (The component of A perpendicular to B)
+19. **Vector Reflection** (For mirrors/bouncing)
+20. **Vector Refraction** (Snell’s Law implementation)
+21. **Scalar Triple Product** ()
+22. **Vector Triple Product** ()
+23. **Linear Interpolation (Lerp)** for all vector types
+24. **Component-wise Multiplication** (Hadamard Product)
+25. **Angle Between Vectors** (Radians and Degrees)
+26. **Clamping Vector Components** (Min/Max bounds)
+27. **Perpendicular Vector Generation** (Finding any vector at 90°)
+28. **IsOrthogonal Test** (Check if dot product is ~0)
+29. **IsParallel Test** (Check if cross product is ~0)
+30. **Matrix 2x2: Storage** (Row-major vs Column-major)
+31. **Matrix 2x2: Multiplication** (Matrix * Matrix)
+32. **Matrix 2x2: Determinant**
+33. **Matrix 2x2: Inverse**
+34. **Matrix 2x2: Transpose**
+35. **Matrix 3x3: Storage**
+36. **Matrix 3x3: Multiplication**
+37. **Matrix 3x3: Determinant** (Rule of Sarrus)
+38. **Matrix 3x3: Inverse** (Adjugate method)
+39. **Matrix 3x3: Transpose**
+40. **Matrix 4x4: Storage** (The standard for 3D engines)
+41. **Matrix 4x4: Multiplication**
+42. **Matrix 4x4: Determinant**
+43. **Matrix 4x4: Inverse** (Gauss-Jordan elimination)
+44. **Matrix 4x4: Transpose**
+45. **Matrix-Vector Multiplication** (Transforming a point/dir)
+46. **Identity Matrix Generation** (For all sizes)
+47. **Translation Matrix** (Moving points in 3D)
+48. **Rotation Matrix (X-Axis)**
+49. **Rotation Matrix (Y-Axis)**
+50. **Rotation Matrix (Z-Axis)**
+51. **Scaling Matrix** (Uniform and Non-uniform)
+52. **Shear Matrix**
+53. **Orthographic Projection Matrix**
+54. **Perspective Projection Matrix** (The "Camera Lens" math)
+55. **LookAt Matrix** (Defining a camera by position, target, and up-vector)
+56. **Frustum Extraction** (Getting planes from a Projection Matrix)
+57. **Quaternion: Storage** (x, y, z, w)
+58. **Quaternion: Multiplication** (Hamilton Product)
+59. **Quaternion: Conjugate**
+60. **Quaternion: Inverse**
+61. **Quaternion: Normalization**
+62. **Quaternion: Dot Product**
+63. **Quaternion: Slerp** (Spherical Linear Interpolation)
+64. **Quaternion: To Rotation Matrix**
+65. **Rotation Matrix: To Quaternion**
+66. **Axis-Angle: To Quaternion**
+67. **Quaternion: To Axis-Angle**
+68. **Euler Angles: To Quaternion** (Pitch, Yaw, Roll)
+69. **Quaternion: To Euler Angles**
+70. **Plane: Equation Setup** ()
+71. **Plane: Normalize**
+72. **Point-to-Plane Distance**
+73. **Ray: Definition** (Origin + Direction)
+74. **Ray: Point at Time **
+75. **Ray-Sphere Intersection**
+76. **Ray-Plane Intersection**
+77. **Ray-AABB Intersection** (Bounding box)
+78. **AABB-AABB Collision Test**
+79. **Sphere-Sphere Collision Test**
+80. **Point-in-AABB Test**
+81. **Point-in-Sphere Test**
+82. **Barycentric Coordinates Calculation** (For triangles)
+83. **Ray-Triangle Intersection** (Möller–Trumbore algorithm)
+84. **Floating Point Comparison** (using Epsilon)
+85. **Degrees to Radians Conversion**
+86. **Radians to Degrees Conversion**
+87. **Smoothstep Interpolation**
+88. **Cubic Bezier Curve math**
+89. **Catmull-Rom Spline math**
+90. **Gram-Schmidt Orthonormalization** (Fixing skewed matrices)
+91. **Matrix Trace Calculation**
+92. **Minor and Cofactor Calculation** (For Matrices)
+93. **Power of Matrix**
+94. **Vector Rotation by Quaternion** (Direct application)
+95. **Local-to-World Space Transformation**
+96. **World-to-Local Space Transformation**
+97. **Normal Matrix Calculation** (Inverse-Transpose)
+98. **View-Projection Matrix Concatenation**
+99. **Screen-Space to World-Space Unprojection**
+100. **Bilinear/Trilinear Interpolation logic**
+
+
