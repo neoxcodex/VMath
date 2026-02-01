@@ -26,12 +26,9 @@ To balance generalization with performance, the library is split into three scop
 * `dim3`: Specialized and optimized for 3D graphics.
 * `dim2`: Specialized and optimized for 2D graphics and UI.
 
-### 3. Safety & Error Handling (Walled Garden)
-The library uses a **Compile-Time Signature System** to ensure data integrity without runtime overhead:
-* **Validation:** Vectors are checked and "signed" upon entry into the library ecosystem.
-* **Function Constraints:** Specific operations require vectors to possess associated compile-time certificates.
-* **Subset Inheritance:** Vectors signed for high-level operations are automatically cleared for subsidiary functions (subsets) within the same constraint group.
-
+### 3. Safety & Error Handling
+Sadly, there is none
+It is expected that the programmer handles these....
 ---
 
 ## 🏗 Planned Roadmap

@@ -1,5 +1,5 @@
-#ifndef dim2
-#define dim2
+#ifndef dim2_239785980
+#define dim2_239785980
 
 //GRAPHICS 2D
 #include<iostream>
@@ -54,7 +54,6 @@ namespace dim2{
     inline float angleDEG(const Vec2& a, const Vec2& b){
         return angleRAD(a,b) * constants::INV_PI_180;
     }
-
 
 
     /*TODO AGAIN*/

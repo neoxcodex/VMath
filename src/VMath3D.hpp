@@ -12,14 +12,14 @@ TODO:
 
 */
 
-#ifndef dim3
-#define dim3
+#ifndef dim3_872349208
+#define dim3_872349208
 #include<cmath>
 
 #include<iostream>
 
 #include"Constants.h"
-
+#include "NDSFunctions.hpp"
 
 //AI STUFF
 
@@ -38,11 +38,23 @@ namespace dim3 {
         Vec3 operator*(float scalar) const{
             return {x*scalar, y*scalar, z*scalar};
         }
+        bool operator==(const Vec3& other) const {
+            return
+            (
+                (x == other.x)
+                &&
+                (y == other.y)
+                &&
+                (z == other.z)
+            );
+            //STRICT
+        }
 
     };
     inline Vec3 operator*(float scalar, const Vec3& v) {
-        return v * scalar; // Reuse the member operator you already wrote!
+        return v * scalar;
     }
+
     inline float dotProduct(const Vec3& a, const Vec3& b){
         return (a.x*b.x) + (a.y*b.y) + (a.z*b.z);
     }
@@ -66,10 +78,7 @@ namespace dim3 {
         float magA = std::sqrt(magSquared(a));
         float magB = std::sqrt(magSquared(b));
         if (magA == 0 || magB ==0 ){return 0;}
-        float cosTheta = (dotProduct(a, b))/(magA*magB);
-
-        if(cosTheta > 1.0){cosTheta = 1.0;}
-        if(cosTheta < -1.0){cosTheta = -1.0;}
+        float cosTheta = NDSF::clamp(dotProduct(a, b)/(magA*magB), -1.0f, 1.0f);
 
         if(!returnCosValue){return std::acos(cosTheta);}
         else{return cosTheta;}
@@ -89,7 +98,27 @@ namespace dim3 {
         float magSq = magSquared(vecToProjAlong);
         return (vecToProjAlong*(dotProd/magSq));
     }
+    inline Vec3 crossProduct(const Vec3& a, const Vec3& b){
 
+        return Vec3{
+            (a.y*b.z - a.z*b.y),
+            (a.z*b.x - a.x*b.z),
+            (a.x*b.y - a.y*b.x)
+        };
+
+    }
+
+    inline bool epVectorEqual(const Vec3& a,  const Vec3& b) {
+        //FUZZY
+        return
+        (
+            (std::abs(a.x-b.x) <= (constants::EPSILON))
+            &&
+            (std::abs(a.y-b.y) <= (constants::EPSILON))
+            &&
+            (std::abs(a.z-b.z) <= (constants::EPSILON))
+        );
+    }
 }
 
 

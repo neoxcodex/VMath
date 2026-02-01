@@ -1,5 +1,5 @@
-#ifndef dimN
-#define dimN
+#ifndef dimN_30298409238
+#define dimN_30298409238
 #include<cmath>
 
 #include<iostream>

@@ -10,7 +10,7 @@ I Know These Are LOFTY goals for one person...
 8. **Vec3: Magnitude and Magnitude Squared** D
 9. **Vec3: Normalization** D
 10. **Vec3: Distance and Distance Squared** D
-11. **Vec3: Cross Product** (The perpendicular vector)
+11. **Vec3: Cross Product** (The perpendicular vector) D
 12. **Vec4: Basic Arithmetic** (Crucial for Matrix-4 multiplication)
 13. **Vec4: Dot Product**
 14. **Vec4: Normalization**
