@@ -1,14 +1,15 @@
-
+#ifndef dimN
+#define dimN
 #include<cmath>
 
 #include<iostream>
 
-
+#include"Constants.h"
 #include<iostream>
 #include<vector>
 
 namespace dimN {
-    #include"Constants.h"
+
     inline double magnitude(const std::vector<double>& v) {
         double returnmag{0};
         for (int i = 0; i < v.size(); i++) {
@@ -83,3 +84,4 @@ namespace dimN {
     }
     //Cross Product for N-dimensional vectors is a huge TODO
     }
+#endif
