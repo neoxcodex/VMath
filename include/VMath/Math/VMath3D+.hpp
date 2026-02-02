@@ -119,6 +119,30 @@ namespace dim4{
 
         return res;
     }
+    inline Vec4 lerp(const Vec4& v1, const Vec4& v2, float t){
+        float a = NDSF::clamp(t, 0.0f, 1.0f);
+        return
+        {
+
+            v1.x + a*(v2.x - v1.x),
+            v1.y + a*(v2.y - v1.y),
+            v1.z + a*(v2.z - v1.z),
+            v1.w + a*(v2.w - v1.w)
+        };
+    }
+    inline float angleRAD(const Vec4& v1, const Vec4& v2, const bool returnCosAngle = false){
+        float v1Mag = magnitude(v1);
+        float v2Mag = magnitude(v2);
+
+        float cosAngle = NDSF::clamp(dotProduct(v1, v2) / (v1Mag*v2Mag), -1.0f, 1.0f);
+
+        if (returnCosAngle){return cosAngle;}
+
+        return std::acos(cosAngle);
+    }
+    inline float angleDEG(const Vec4& v1, const Vec4& v2, const bool returnCosAngle = false){
+        return angleRAD(v1, v2, returnCosAngle) * constants::INV_PI_180;
+    }
 
 }
 

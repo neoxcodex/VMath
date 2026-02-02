@@ -5,7 +5,7 @@
 #include<iostream>
 #include"Constants.h"
 #include<cmath>
-
+#include"NDSFunctions.hpp"
 namespace dim2{
 
     struct Vec2{
@@ -54,7 +54,14 @@ namespace dim2{
     inline float angleDEG(const Vec2& a, const Vec2& b){
         return angleRAD(a,b) * constants::INV_PI_180;
     }
-
+    inline Vec2 lerp(const Vec2& v1, const Vec2& v2, float t){
+        float a = NDSF::clamp(t, 0.0f, 1.0f);
+        return
+        {
+            v1.x + a*(v2.x - v1.x),
+            v1.y + a*(v2.y - v1.y)
+        };
+    }
 
     /*TODO AGAIN*/
 }

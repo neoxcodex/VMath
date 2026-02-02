@@ -22,9 +22,9 @@ I Know These Are LOFTY goals for one person...
 20. **Vector Refraction** (Snell’s Law implementation)
 21. **Scalar Triple Product** ()
 22. **Vector Triple Product** ()
-23. **Linear Interpolation (Lerp)** for all vector types
+23. **Linear Interpolation (Lerp)** for all vector types <--- DO THIS D
 24. **Component-wise Multiplication** (Hadamard Product)
-25. **Angle Between Vectors** (Radians and Degrees)
+25. **Angle Between Vectors** (Radians and Degrees) <--- DO THIS D
 26. **Clamping Vector Components** (Min/Max bounds)
 27. **Perpendicular Vector Generation** (Finding any vector at 90°)
 28. **IsOrthogonal Test** (Check if dot product is ~0)
@@ -45,16 +45,16 @@ I Know These Are LOFTY goals for one person...
 43. **Matrix 4x4: Inverse** (Gauss-Jordan elimination)
 44. **Matrix 4x4: Transpose**
 45. **Matrix-Vector Multiplication** (Transforming a point/dir) D
-46. **Identity Matrix Generation** (For all sizes) D (dim4 only)
-47. **Translation Matrix** (Moving points in 3D)
-48. **Rotation Matrix (X-Axis)**
-49. **Rotation Matrix (Y-Axis)**
-50. **Rotation Matrix (Z-Axis)**
-51. **Scaling Matrix** (Uniform and Non-uniform)
+46. **Identity Matrix Generation** (For all sizes) D (dim4, dim3, dim2 only)
+47. **Translation Matrix** (Moving points in 3D) <--- DO THIS
+48. **Rotation Matrix (X-Axis)** <--- DO THIS
+49. **Rotation Matrix (Y-Axis)** <--- DO THIS
+50. **Rotation Matrix (Z-Axis)** <--- DO THIS
+51. **Scaling Matrix** (Uniform and Non-uniform) <--- DO THIS
 52. **Shear Matrix**
 53. **Orthographic Projection Matrix**
-54. **Perspective Projection Matrix** (The "Camera Lens" math)
-55. **LookAt Matrix** (Defining a camera by position, target, and up-vector)
+54. **Perspective Projection Matrix** (The "Camera Lens" math) <--- DO THIS
+55. **LookAt Matrix** (Defining a camera by position, target, and up-vector) <--- DO THIS
 56. **Frustum Extraction** (Getting planes from a Projection Matrix)
 57. **Quaternion: Storage** (x, y, z, w)
 58. **Quaternion: Multiplication** (Hamilton Product)
@@ -83,7 +83,7 @@ I Know These Are LOFTY goals for one person...
 81. **Point-in-Sphere Test**
 82. **Barycentric Coordinates Calculation** (For triangles)
 83. **Ray-Triangle Intersection** (Möller–Trumbore algorithm)
-84. **Floating Point Comparison** (using Epsilon)
+84. **Floating Point Comparison** (using Epsilon) <--- DO THIS
 85. **Degrees to Radians Conversion**
 86. **Radians to Degrees Conversion**
 87. **Smoothstep Interpolation**
