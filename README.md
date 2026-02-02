@@ -27,8 +27,9 @@ To balance generalization with performance, the library is split into three scop
 * `dim2`: Specialized and optimized for 2D graphics and UI.
 
 ### 3. Safety & Error Handling
-Sadly, there is none
-It is expected that the programmer handles these....
+    Sadly, there is none
+    It is expected that the programmer handles these....Performance is Key, this removes overhead
+    And currently I can't think of a better system... which does not add overhead
 ---
 
 ## 🏗 Planned Roadmap
