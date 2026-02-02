@@ -142,7 +142,7 @@ namespace dim3 {
                 (v.x)*(M[2][0]) + (v.y)*(M[2][1]) + (v.z)*(M[2][2])
             };
         }
-        static Mat3 genRotatorMatrix(const Vec3& axis_normalized, const float angleRAD){
+        static Mat3 genRotator(const Vec3& axis_normalized, const float angleRAD){
             Mat3 rotator;
             float cosA = std::cos(angleRAD);
             float sinA = std::sin(angleRAD);
@@ -168,7 +168,7 @@ namespace dim3 {
             return rotator;
 
         }
-        static Mat3 rotationX(float angleRAD){
+        static Mat3 genRotationX(float angleRAD){
             float s = std::sin(angleRAD);
             float c = std::cos(angleRAD);
             Mat3 res; // Starts as all zeros
@@ -183,7 +183,7 @@ namespace dim3 {
         }
         // Inside struct Mat3 in VMath3D.hpp
 
-        static Mat3 rotationY(float angleRAD) {
+        static Mat3 genRotationY(float angleRAD) {
             float s = std::sin(angleRAD);
             float c = std::cos(angleRAD);
             Mat3 res; // Assuming default constructor zeros the matrix
@@ -195,7 +195,7 @@ namespace dim3 {
             return res;
         }
 
-        static Mat3 rotationZ(float angleRAD) {
+        static Mat3 genRotationZ(float angleRAD) {
             float s = std::sin(angleRAD);
             float c = std::cos(angleRAD);
             Mat3 res;
@@ -206,6 +206,10 @@ namespace dim3 {
 
             return res;
         }
+        // static Mat3 genScalingCustomAxis(const Vec3& unitAxis, float scaleFactor){
+        //     Mat3 res;
+
+        // }
 
     };
     inline Mat3 matrixMultiply(const Mat3& M1, const Mat3& M2) {
@@ -285,6 +289,10 @@ namespace dim3 {
             v.z
         };
     }
+    //Uniform Scaling (Scaling a vector along all basis vectors equally)
+    //Non-Uniform Scaling (Scaling a vector along a specific basis vector or some other normalized vector)
+
+
 
 
 }

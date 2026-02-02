@@ -47,9 +47,9 @@ I Know These Are LOFTY goals for one person...
 45. **Matrix-Vector Multiplication** (Transforming a point/dir) D
 46. **Identity Matrix Generation** (For all sizes) D (dim4, dim3, dim2 only)
 47. **Translation Matrix** (Moving points in 3D) <--- DO THIS
-48. **Rotation Matrix (X-Axis)** <--- DO THIS
-49. **Rotation Matrix (Y-Axis)** <--- DO THIS
-50. **Rotation Matrix (Z-Axis)** <--- DO THIS
+48. **Rotation Matrix (X-Axis)** <--- DO THIS D
+49. **Rotation Matrix (Y-Axis)** <--- DO THIS D
+50. **Rotation Matrix (Z-Axis)** <--- DO THIS D
 51. **Scaling Matrix** (Uniform and Non-uniform) <--- DO THIS
 52. **Shear Matrix**
 53. **Orthographic Projection Matrix**
