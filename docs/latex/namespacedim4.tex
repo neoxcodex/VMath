@@ -1,0 +1,105 @@
+\doxysection{dim4 Namespace Reference}
+\hypertarget{namespacedim4}{}\label{namespacedim4}\index{dim4@{dim4}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \doxymbox{\hyperlink{structdim4_1_1Vec4}{Vec4}}
+\item 
+struct \doxymbox{\hyperlink{structdim4_1_1Mat4}{Mat4}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \doxymbox{\hyperlink{namespacedim4_a1fc4f16a9f4f445def76f012c9a5cf1c}{vector\+Cout}} (const \doxymbox{\hyperlink{structdim4_1_1Vec4}{Vec4}} v)
+\item 
+\doxymbox{\hyperlink{structdim4_1_1Vec4}{Vec4}} \doxymbox{\hyperlink{namespacedim4_aec7c589d565c47a9cf52d133bafe7ca7}{operator\texorpdfstring{$\ast$}{*}}} (float scalar, const \doxymbox{\hyperlink{structdim4_1_1Vec4}{Vec4}} v)
+\item 
+float \doxymbox{\hyperlink{namespacedim4_ad91806f78b76249b8734868b78a470ac}{dot\+Product}} (const \doxymbox{\hyperlink{structdim4_1_1Vec4}{Vec4}} v1, const \doxymbox{\hyperlink{structdim4_1_1Vec4}{Vec4}} v2)
+\item 
+float \doxymbox{\hyperlink{namespacedim4_afbd8d42ca13041e55a0af066a00bd142}{mag\+Squared}} (const \doxymbox{\hyperlink{structdim4_1_1Vec4}{Vec4}} v)
+\item 
+float \doxymbox{\hyperlink{namespacedim4_a754f8bd9423a05167ec493932ef7478f}{magnitude}} (const \doxymbox{\hyperlink{structdim4_1_1Vec4}{Vec4}} v)
+\item 
+bool \doxymbox{\hyperlink{namespacedim4_af35c14a8bac8fbf3c279fb8b7d247860}{ep\+Vector\+Equal}} (const \doxymbox{\hyperlink{structdim4_1_1Vec4}{Vec4}} v1, const \doxymbox{\hyperlink{structdim4_1_1Vec4}{Vec4}} v2, float epsilon=\doxymbox{\hyperlink{namespaceconstants_a7f3b4cf1f4ef2af969262048a358a313}{constants::\+\+EPSILON}})
+\item 
+\doxymbox{\hyperlink{structdim4_1_1Vec4}{Vec4}} \doxymbox{\hyperlink{namespacedim4_a2ea043232d03199f449813b8eb03ce7a}{normalize}} (const \doxymbox{\hyperlink{structdim4_1_1Vec4}{Vec4}} v)
+\item 
+\doxymbox{\hyperlink{structdim4_1_1Mat4}{Mat4}} \doxymbox{\hyperlink{namespacedim4_a050c2be340cba61c80628b22a0779622}{matrix\+Multiply}} (const \doxymbox{\hyperlink{structdim4_1_1Mat4}{Mat4}} \&M1, const \doxymbox{\hyperlink{structdim4_1_1Mat4}{Mat4}} \&M2)
+\item 
+\doxymbox{\hyperlink{structdim4_1_1Vec4}{Vec4}} \doxymbox{\hyperlink{namespacedim4_abd5984731c88731bbbd6406a4fa475ef}{lerp}} (const \doxymbox{\hyperlink{structdim4_1_1Vec4}{Vec4}} \&v1, const \doxymbox{\hyperlink{structdim4_1_1Vec4}{Vec4}} \&v2, float t)
+\item 
+float \doxymbox{\hyperlink{namespacedim4_a992c34664d852d9d0b1015207ff7cd83}{angle\+RAD}} (const \doxymbox{\hyperlink{structdim4_1_1Vec4}{Vec4}} \&v1, const \doxymbox{\hyperlink{structdim4_1_1Vec4}{Vec4}} \&v2, const bool return\+Cos\+Angle=false)
+\item 
+float \doxymbox{\hyperlink{namespacedim4_a02950f3da0e8dcc5cebb87f993d0cf68}{angle\+DEG}} (const \doxymbox{\hyperlink{structdim4_1_1Vec4}{Vec4}} \&v1, const \doxymbox{\hyperlink{structdim4_1_1Vec4}{Vec4}} \&v2, const bool return\+Cos\+Angle=false)
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{namespacedim4_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacedim4_a02950f3da0e8dcc5cebb87f993d0cf68}\index{dim4@{dim4}!angleDEG@{angleDEG}}
+\index{angleDEG@{angleDEG}!dim4@{dim4}}
+\doxysubsubsection{\texorpdfstring{angleDEG()}{angleDEG()}}
+{\footnotesize\ttfamily \label{namespacedim4_a02950f3da0e8dcc5cebb87f993d0cf68} 
+float dim4::\+angle\+DEG (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{structdim4_1_1Vec4}{Vec4}} \&}]{v1}{, }\item[{const \doxymbox{\hyperlink{structdim4_1_1Vec4}{Vec4}} \&}]{v2}{, }\item[{const bool}]{return\+Cos\+Angle}{ = {\ttfamily false}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{namespacedim4_a992c34664d852d9d0b1015207ff7cd83}\index{dim4@{dim4}!angleRAD@{angleRAD}}
+\index{angleRAD@{angleRAD}!dim4@{dim4}}
+\doxysubsubsection{\texorpdfstring{angleRAD()}{angleRAD()}}
+{\footnotesize\ttfamily \label{namespacedim4_a992c34664d852d9d0b1015207ff7cd83} 
+float dim4::\+angle\+RAD (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{structdim4_1_1Vec4}{Vec4}} \&}]{v1}{, }\item[{const \doxymbox{\hyperlink{structdim4_1_1Vec4}{Vec4}} \&}]{v2}{, }\item[{const bool}]{return\+Cos\+Angle}{ = {\ttfamily false}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{namespacedim4_ad91806f78b76249b8734868b78a470ac}\index{dim4@{dim4}!dotProduct@{dotProduct}}
+\index{dotProduct@{dotProduct}!dim4@{dim4}}
+\doxysubsubsection{\texorpdfstring{dotProduct()}{dotProduct()}}
+{\footnotesize\ttfamily \label{namespacedim4_ad91806f78b76249b8734868b78a470ac} 
+float dim4::\+dot\+Product (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{structdim4_1_1Vec4}{Vec4}}}]{v1}{, }\item[{const \doxymbox{\hyperlink{structdim4_1_1Vec4}{Vec4}}}]{v2}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{namespacedim4_af35c14a8bac8fbf3c279fb8b7d247860}\index{dim4@{dim4}!epVectorEqual@{epVectorEqual}}
+\index{epVectorEqual@{epVectorEqual}!dim4@{dim4}}
+\doxysubsubsection{\texorpdfstring{epVectorEqual()}{epVectorEqual()}}
+{\footnotesize\ttfamily \label{namespacedim4_af35c14a8bac8fbf3c279fb8b7d247860} 
+bool dim4::\+ep\+Vector\+Equal (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{structdim4_1_1Vec4}{Vec4}}}]{v1}{, }\item[{const \doxymbox{\hyperlink{structdim4_1_1Vec4}{Vec4}}}]{v2}{, }\item[{float}]{epsilon}{ = {\ttfamily \doxymbox{\hyperlink{namespaceconstants_a7f3b4cf1f4ef2af969262048a358a313}{constants::\+\+EPSILON}}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{namespacedim4_abd5984731c88731bbbd6406a4fa475ef}\index{dim4@{dim4}!lerp@{lerp}}
+\index{lerp@{lerp}!dim4@{dim4}}
+\doxysubsubsection{\texorpdfstring{lerp()}{lerp()}}
+{\footnotesize\ttfamily \label{namespacedim4_abd5984731c88731bbbd6406a4fa475ef} 
+\doxymbox{\hyperlink{structdim4_1_1Vec4}{Vec4}} dim4::\+lerp (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{structdim4_1_1Vec4}{Vec4}} \&}]{v1}{, }\item[{const \doxymbox{\hyperlink{structdim4_1_1Vec4}{Vec4}} \&}]{v2}{, }\item[{float}]{t}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{namespacedim4_a754f8bd9423a05167ec493932ef7478f}\index{dim4@{dim4}!magnitude@{magnitude}}
+\index{magnitude@{magnitude}!dim4@{dim4}}
+\doxysubsubsection{\texorpdfstring{magnitude()}{magnitude()}}
+{\footnotesize\ttfamily \label{namespacedim4_a754f8bd9423a05167ec493932ef7478f} 
+float dim4::\+magnitude (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{structdim4_1_1Vec4}{Vec4}}}]{v}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{namespacedim4_afbd8d42ca13041e55a0af066a00bd142}\index{dim4@{dim4}!magSquared@{magSquared}}
+\index{magSquared@{magSquared}!dim4@{dim4}}
+\doxysubsubsection{\texorpdfstring{magSquared()}{magSquared()}}
+{\footnotesize\ttfamily \label{namespacedim4_afbd8d42ca13041e55a0af066a00bd142} 
+float dim4::\+mag\+Squared (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{structdim4_1_1Vec4}{Vec4}}}]{v}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{namespacedim4_a050c2be340cba61c80628b22a0779622}\index{dim4@{dim4}!matrixMultiply@{matrixMultiply}}
+\index{matrixMultiply@{matrixMultiply}!dim4@{dim4}}
+\doxysubsubsection{\texorpdfstring{matrixMultiply()}{matrixMultiply()}}
+{\footnotesize\ttfamily \label{namespacedim4_a050c2be340cba61c80628b22a0779622} 
+\doxymbox{\hyperlink{structdim4_1_1Mat4}{Mat4}} dim4::\+matrix\+Multiply (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{structdim4_1_1Mat4}{Mat4}} \&}]{M1}{, }\item[{const \doxymbox{\hyperlink{structdim4_1_1Mat4}{Mat4}} \&}]{M2}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{namespacedim4_a2ea043232d03199f449813b8eb03ce7a}\index{dim4@{dim4}!normalize@{normalize}}
+\index{normalize@{normalize}!dim4@{dim4}}
+\doxysubsubsection{\texorpdfstring{normalize()}{normalize()}}
+{\footnotesize\ttfamily \label{namespacedim4_a2ea043232d03199f449813b8eb03ce7a} 
+\doxymbox{\hyperlink{structdim4_1_1Vec4}{Vec4}} dim4::\+normalize (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{structdim4_1_1Vec4}{Vec4}}}]{v}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{namespacedim4_aec7c589d565c47a9cf52d133bafe7ca7}\index{dim4@{dim4}!operator\texorpdfstring{$\ast$}{*}@{operator\texorpdfstring{$\ast$}{*}}}
+\index{operator\texorpdfstring{$\ast$}{*}@{operator\texorpdfstring{$\ast$}{*}}!dim4@{dim4}}
+\doxysubsubsection{\texorpdfstring{operator\texorpdfstring{$\ast$}{*}()}{operator*()}}
+{\footnotesize\ttfamily \label{namespacedim4_aec7c589d565c47a9cf52d133bafe7ca7} 
+\doxymbox{\hyperlink{structdim4_1_1Vec4}{Vec4}} dim4::\+operator\texorpdfstring{$\ast$}{*} (\begin{DoxyParamCaption}\item[{float}]{scalar}{, }\item[{const \doxymbox{\hyperlink{structdim4_1_1Vec4}{Vec4}}}]{v}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{namespacedim4_a1fc4f16a9f4f445def76f012c9a5cf1c}\index{dim4@{dim4}!vectorCout@{vectorCout}}
+\index{vectorCout@{vectorCout}!dim4@{dim4}}
+\doxysubsubsection{\texorpdfstring{vectorCout()}{vectorCout()}}
+{\footnotesize\ttfamily \label{namespacedim4_a1fc4f16a9f4f445def76f012c9a5cf1c} 
+void dim4::\+vector\+Cout (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{structdim4_1_1Vec4}{Vec4}}}]{v}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+

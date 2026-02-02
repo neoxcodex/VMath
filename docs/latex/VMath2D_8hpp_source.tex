@@ -1,0 +1,74 @@
+\doxysection{VMath2\+D.\+hpp}
+\hypertarget{VMath2D_8hpp_source}{}\label{VMath2D_8hpp_source}\index{include/VMath/Math/VMath2D.hpp@{include/VMath/Math/VMath2D.hpp}}
+\doxymbox{\hyperlink{VMath2D_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ dim2\_239785980}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ dim2\_239785980}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{comment}{//GRAPHICS\ 2D}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include<iostream>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include"{}\doxymbox{\hyperlink{Constants_8h}{Constants.h}}"{}}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include<cmath>}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include"{}\doxymbox{\hyperlink{NDSFunctions_8hpp}{NDSFunctions.hpp}}"{}}}
+\DoxyCodeLine{00009\ \textcolor{keyword}{namespace\ }\doxymbox{\hyperlink{namespacedim2}{dim2}}\{}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \ \ \ \ \textcolor{keyword}{struct\ }\doxymbox{\hyperlink{structdim2_1_1Vec2}{Vec2}}\{}
+\DoxyCodeLine{00012\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ \doxymbox{\hyperlink{structdim2_1_1Vec2_a341e7200ac35f219d4c20f3c2e49ac80}{x}},\doxymbox{\hyperlink{structdim2_1_1Vec2_a855a99ccc7041d3da8271f6d840cb077}{y}};}
+\DoxyCodeLine{00013\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{structdim2_1_1Vec2}{Vec2}}\ \doxymbox{\hyperlink{structdim2_1_1Vec2_a4ca20016c799896348a9c07413519b1a}{operator+}}(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{structdim2_1_1Vec2}{Vec2}}\&\ other)\textcolor{keyword}{\ const}\{}
+\DoxyCodeLine{00014\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \{\doxymbox{\hyperlink{structdim2_1_1Vec2_a341e7200ac35f219d4c20f3c2e49ac80}{x}}\ +\ other.\doxymbox{\hyperlink{structdim2_1_1Vec2_a341e7200ac35f219d4c20f3c2e49ac80}{x}},\ \doxymbox{\hyperlink{structdim2_1_1Vec2_a855a99ccc7041d3da8271f6d840cb077}{y}}\ +\ other.\doxymbox{\hyperlink{structdim2_1_1Vec2_a855a99ccc7041d3da8271f6d840cb077}{y}}\};}
+\DoxyCodeLine{00015\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00016\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{structdim2_1_1Vec2}{Vec2}}\ \doxymbox{\hyperlink{structdim2_1_1Vec2_a3dab73f141d3ff4e6a024f37cb00c08a}{operator-\/}}(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{structdim2_1_1Vec2}{Vec2}}\&\ other)\textcolor{keyword}{const\ }\{}
+\DoxyCodeLine{00017\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \{\doxymbox{\hyperlink{structdim2_1_1Vec2_a341e7200ac35f219d4c20f3c2e49ac80}{x}}\ -\/\ other.\doxymbox{\hyperlink{structdim2_1_1Vec2_a341e7200ac35f219d4c20f3c2e49ac80}{x}},\ \doxymbox{\hyperlink{structdim2_1_1Vec2_a855a99ccc7041d3da8271f6d840cb077}{y}}-\/other.\doxymbox{\hyperlink{structdim2_1_1Vec2_a855a99ccc7041d3da8271f6d840cb077}{y}}\};}
+\DoxyCodeLine{00018\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{structdim2_1_1Vec2}{Vec2}}\ \doxymbox{\hyperlink{structdim2_1_1Vec2_a87c2b05dc42711a6a838828695e0cc8a}{operator*}}(\textcolor{keywordtype}{float}\ scalar)\textcolor{keyword}{\ const}\{}
+\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \{\doxymbox{\hyperlink{structdim2_1_1Vec2_a341e7200ac35f219d4c20f3c2e49ac80}{x}}*scalar,\ \doxymbox{\hyperlink{structdim2_1_1Vec2_a855a99ccc7041d3da8271f6d840cb077}{y}}*scalar\};}
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00022\ \ \ \ \ \};}
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{float}\ \doxymbox{\hyperlink{namespacedim2_a85b5de05e8cb642f5acff8a95727582f}{dotProduct}}(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{structdim2_1_1Vec2}{Vec2}}\&\ a,\ \textcolor{keyword}{const}\ \doxymbox{\hyperlink{structdim2_1_1Vec2}{Vec2}}\&\ b)\{}
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ (a.\doxymbox{\hyperlink{structdim2_1_1Vec2_a341e7200ac35f219d4c20f3c2e49ac80}{x}}*b.\doxymbox{\hyperlink{structdim2_1_1Vec2_a341e7200ac35f219d4c20f3c2e49ac80}{x}})\ +\ (a.\doxymbox{\hyperlink{structdim2_1_1Vec2_a855a99ccc7041d3da8271f6d840cb077}{y}}*b.\doxymbox{\hyperlink{structdim2_1_1Vec2_a855a99ccc7041d3da8271f6d840cb077}{y}});}
+\DoxyCodeLine{00025\ \ \ \ \ \}}
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{float}\ \doxymbox{\hyperlink{namespacedim2_ad39893f205619ebfbe0a95189322dbc0}{magSquared}}(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{structdim2_1_1Vec2}{Vec2}}\&\ a)\{}
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \doxymbox{\hyperlink{namespacedim2_a85b5de05e8cb642f5acff8a95727582f}{dotProduct}}(a,a);}
+\DoxyCodeLine{00028\ \ \ \ \ \}}
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{namespacedim2_a88d8af2e57f644319da1faa90e4b976e}{vectorCout}}(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{structdim2_1_1Vec2}{Vec2}}\&\ a)\{}
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}2D\ Vector\ :\ ("{}}\ <<\ a.\doxymbox{\hyperlink{structdim2_1_1Vec2_a341e7200ac35f219d4c20f3c2e49ac80}{x}}\ <<\ \textcolor{stringliteral}{"{},\ "{}}\ <<\ a.\doxymbox{\hyperlink{structdim2_1_1Vec2_a855a99ccc7041d3da8271f6d840cb077}{y}}\ \ <<\textcolor{stringliteral}{"{})"{}}\ <<\ std::endl;}
+\DoxyCodeLine{00031\ \ \ \ \ \}}
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keyword}{inline}\ \doxymbox{\hyperlink{structdim2_1_1Vec2}{Vec2}}\ \doxymbox{\hyperlink{namespacedim2_a8f2687109594c4e5d801cd975ddeea88}{normalize}}(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{structdim2_1_1Vec2}{Vec2}}\&\ a)\{}
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ mag\ \ =\ std::sqrt(\doxymbox{\hyperlink{namespacedim2_ad39893f205619ebfbe0a95189322dbc0}{magSquared}}(a));}
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (mag\ ==\ 0)\{\ \textcolor{keywordflow}{return}\ \doxymbox{\hyperlink{structdim2_1_1Vec2}{Vec2}}\{0,0\};\}}
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ invMag\ =\ 1.0f/mag;}
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \doxymbox{\hyperlink{structdim2_1_1Vec2}{Vec2}}\{(a.\doxymbox{\hyperlink{structdim2_1_1Vec2_a341e7200ac35f219d4c20f3c2e49ac80}{x}})*invMag,\ (a.\doxymbox{\hyperlink{structdim2_1_1Vec2_a855a99ccc7041d3da8271f6d840cb077}{y}})*invMag\};}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00038\ \ \ \ \ \}}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{float}\ \doxymbox{\hyperlink{namespacedim2_a4bc5b4c6e8d6e5f735bac182ad811766}{distanceSquared}}(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{structdim2_1_1Vec2}{Vec2}}\&\ a,\ \textcolor{keyword}{const}\ \doxymbox{\hyperlink{structdim2_1_1Vec2}{Vec2}}\&\ b)\{}
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \doxymbox{\hyperlink{namespacedim2_ad39893f205619ebfbe0a95189322dbc0}{magSquared}}(a-\/b);}
+\DoxyCodeLine{00042\ \ \ \ \ \}}
+\DoxyCodeLine{00043\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{float}\ \doxymbox{\hyperlink{namespacedim2_a70614f75c4c0f8a3cb0e62e228ece469}{angleRAD}}(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{structdim2_1_1Vec2}{Vec2}}\&\ a,\ \textcolor{keyword}{const}\ \doxymbox{\hyperlink{structdim2_1_1Vec2}{Vec2}}\&\ b)\{}
+\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ magA\ =\ std::sqrt(\doxymbox{\hyperlink{namespacedim2_ad39893f205619ebfbe0a95189322dbc0}{magSquared}}(a));}
+\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ magB\ =\ std::sqrt(\doxymbox{\hyperlink{namespacedim2_ad39893f205619ebfbe0a95189322dbc0}{magSquared}}(b));}
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (magA\ ==\ 0\ ||\ magB\ ==0\ )\{\textcolor{keywordflow}{return}\ 0;\}}
+\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ cosTheta\ =\ (\doxymbox{\hyperlink{namespacedim2_a85b5de05e8cb642f5acff8a95727582f}{dotProduct}}(a,\ b))/(magA*magB);}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(cosTheta\ >\ 1.0)\{cosTheta\ =\ 1.0;\}}
+\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(cosTheta\ <\ -\/1.0)\{cosTheta\ =\ -\/1.0;\}}
+\DoxyCodeLine{00051\ }
+\DoxyCodeLine{00052\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ std::acos(cosTheta);}
+\DoxyCodeLine{00053\ \ \ \ \ \}}
+\DoxyCodeLine{00054\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{float}\ \doxymbox{\hyperlink{namespacedim2_a79b4834db90d32bb8ad51dcad632d14a}{angleDEG}}(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{structdim2_1_1Vec2}{Vec2}}\&\ a,\ \textcolor{keyword}{const}\ \doxymbox{\hyperlink{structdim2_1_1Vec2}{Vec2}}\&\ b)\{}
+\DoxyCodeLine{00055\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \doxymbox{\hyperlink{namespacedim2_a70614f75c4c0f8a3cb0e62e228ece469}{angleRAD}}(a,b)\ *\ \doxymbox{\hyperlink{namespaceconstants_ace815f2423ab7254ae405c3abab1b83c}{constants::INV\_PI\_180}};}
+\DoxyCodeLine{00056\ \ \ \ \ \}}
+\DoxyCodeLine{00057\ \ \ \ \ \textcolor{keyword}{inline}\ \doxymbox{\hyperlink{structdim2_1_1Vec2}{Vec2}}\ \doxymbox{\hyperlink{namespacedim2_acb492b99bd9c32440d20f220a6eeacce}{lerp}}(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{structdim2_1_1Vec2}{Vec2}}\&\ v1,\ \textcolor{keyword}{const}\ \doxymbox{\hyperlink{structdim2_1_1Vec2}{Vec2}}\&\ v2,\ \textcolor{keywordtype}{float}\ t)\{}
+\DoxyCodeLine{00058\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ a\ =\ \doxymbox{\hyperlink{namespaceNDSF_a4e3b42963ddafb487f9a1a4d081e647e}{NDSF::clamp}}(t,\ 0.0f,\ 1.0f);}
+\DoxyCodeLine{00059\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}}
+\DoxyCodeLine{00060\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00061\ \ \ \ \ \ \ \ \ \ \ \ \ v1.\doxymbox{\hyperlink{structdim2_1_1Vec2_a341e7200ac35f219d4c20f3c2e49ac80}{x}}\ +\ a*(v2.\doxymbox{\hyperlink{structdim2_1_1Vec2_a341e7200ac35f219d4c20f3c2e49ac80}{x}}\ -\/\ v1.\doxymbox{\hyperlink{structdim2_1_1Vec2_a341e7200ac35f219d4c20f3c2e49ac80}{x}}),}
+\DoxyCodeLine{00062\ \ \ \ \ \ \ \ \ \ \ \ \ v1.\doxymbox{\hyperlink{structdim2_1_1Vec2_a855a99ccc7041d3da8271f6d840cb077}{y}}\ +\ a*(v2.\doxymbox{\hyperlink{structdim2_1_1Vec2_a855a99ccc7041d3da8271f6d840cb077}{y}}\ -\/\ v1.\doxymbox{\hyperlink{structdim2_1_1Vec2_a855a99ccc7041d3da8271f6d840cb077}{y}})}
+\DoxyCodeLine{00063\ \ \ \ \ \ \ \ \ \};}
+\DoxyCodeLine{00064\ \ \ \ \ \}}
+\DoxyCodeLine{00065\ }
+\DoxyCodeLine{00066\ \ \ \ \ \textcolor{comment}{/*TODO\ AGAIN*/}}
+\DoxyCodeLine{00067\ \}}
+\DoxyCodeLine{00068\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

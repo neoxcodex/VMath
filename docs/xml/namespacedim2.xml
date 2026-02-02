@@ -1,0 +1,182 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="namespacedim2" kind="namespace" language="C++">
+    <compoundname>dim2</compoundname>
+    <innerclass refid="structdim2_1_1Vec2" prot="public">dim2::Vec2</innerclass>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="namespacedim2_1a85b5de05e8cb642f5acff8a95727582f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float dim2::dotProduct</definition>
+        <argsstring>(const Vec2 &amp;a, const Vec2 &amp;b)</argsstring>
+        <name>dotProduct</name>
+        <qualifiedname>dim2::dotProduct</qualifiedname>
+        <param>
+          <type>const <ref refid="structdim2_1_1Vec2" kindref="compound">Vec2</ref> &amp;</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structdim2_1_1Vec2" kindref="compound">Vec2</ref> &amp;</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/VMath/Math/VMath2D.hpp" line="23" column="18" bodyfile="include/VMath/Math/VMath2D.hpp" bodystart="23" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacedim2_1ad39893f205619ebfbe0a95189322dbc0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float dim2::magSquared</definition>
+        <argsstring>(const Vec2 &amp;a)</argsstring>
+        <name>magSquared</name>
+        <qualifiedname>dim2::magSquared</qualifiedname>
+        <param>
+          <type>const <ref refid="structdim2_1_1Vec2" kindref="compound">Vec2</ref> &amp;</type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/VMath/Math/VMath2D.hpp" line="26" column="18" bodyfile="include/VMath/Math/VMath2D.hpp" bodystart="26" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacedim2_1a88d8af2e57f644319da1faa90e4b976e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void dim2::vectorCout</definition>
+        <argsstring>(const Vec2 &amp;a)</argsstring>
+        <name>vectorCout</name>
+        <qualifiedname>dim2::vectorCout</qualifiedname>
+        <param>
+          <type>const <ref refid="structdim2_1_1Vec2" kindref="compound">Vec2</ref> &amp;</type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/VMath/Math/VMath2D.hpp" line="29" column="17" bodyfile="include/VMath/Math/VMath2D.hpp" bodystart="29" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacedim2_1a8f2687109594c4e5d801cd975ddeea88" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structdim2_1_1Vec2" kindref="compound">Vec2</ref></type>
+        <definition>Vec2 dim2::normalize</definition>
+        <argsstring>(const Vec2 &amp;a)</argsstring>
+        <name>normalize</name>
+        <qualifiedname>dim2::normalize</qualifiedname>
+        <param>
+          <type>const <ref refid="structdim2_1_1Vec2" kindref="compound">Vec2</ref> &amp;</type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/VMath/Math/VMath2D.hpp" line="32" column="17" bodyfile="include/VMath/Math/VMath2D.hpp" bodystart="32" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacedim2_1a4bc5b4c6e8d6e5f735bac182ad811766" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float dim2::distanceSquared</definition>
+        <argsstring>(const Vec2 &amp;a, const Vec2 &amp;b)</argsstring>
+        <name>distanceSquared</name>
+        <qualifiedname>dim2::distanceSquared</qualifiedname>
+        <param>
+          <type>const <ref refid="structdim2_1_1Vec2" kindref="compound">Vec2</ref> &amp;</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structdim2_1_1Vec2" kindref="compound">Vec2</ref> &amp;</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/VMath/Math/VMath2D.hpp" line="40" column="18" bodyfile="include/VMath/Math/VMath2D.hpp" bodystart="40" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacedim2_1a70614f75c4c0f8a3cb0e62e228ece469" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float dim2::angleRAD</definition>
+        <argsstring>(const Vec2 &amp;a, const Vec2 &amp;b)</argsstring>
+        <name>angleRAD</name>
+        <qualifiedname>dim2::angleRAD</qualifiedname>
+        <param>
+          <type>const <ref refid="structdim2_1_1Vec2" kindref="compound">Vec2</ref> &amp;</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structdim2_1_1Vec2" kindref="compound">Vec2</ref> &amp;</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/VMath/Math/VMath2D.hpp" line="43" column="18" bodyfile="include/VMath/Math/VMath2D.hpp" bodystart="43" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacedim2_1a79b4834db90d32bb8ad51dcad632d14a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float dim2::angleDEG</definition>
+        <argsstring>(const Vec2 &amp;a, const Vec2 &amp;b)</argsstring>
+        <name>angleDEG</name>
+        <qualifiedname>dim2::angleDEG</qualifiedname>
+        <param>
+          <type>const <ref refid="structdim2_1_1Vec2" kindref="compound">Vec2</ref> &amp;</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structdim2_1_1Vec2" kindref="compound">Vec2</ref> &amp;</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/VMath/Math/VMath2D.hpp" line="54" column="18" bodyfile="include/VMath/Math/VMath2D.hpp" bodystart="54" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacedim2_1acb492b99bd9c32440d20f220a6eeacce" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structdim2_1_1Vec2" kindref="compound">Vec2</ref></type>
+        <definition>Vec2 dim2::lerp</definition>
+        <argsstring>(const Vec2 &amp;v1, const Vec2 &amp;v2, float t)</argsstring>
+        <name>lerp</name>
+        <qualifiedname>dim2::lerp</qualifiedname>
+        <param>
+          <type>const <ref refid="structdim2_1_1Vec2" kindref="compound">Vec2</ref> &amp;</type>
+          <declname>v1</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structdim2_1_1Vec2" kindref="compound">Vec2</ref> &amp;</type>
+          <declname>v2</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/VMath/Math/VMath2D.hpp" line="57" column="17" bodyfile="include/VMath/Math/VMath2D.hpp" bodystart="57" bodyend="64"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/VMath/Math/VMath2D.hpp" line="9" column="1"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,161 @@
+\doxysection{dim3 Namespace Reference}
+\hypertarget{namespacedim3}{}\label{namespacedim3}\index{dim3@{dim3}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \doxymbox{\hyperlink{structdim3_1_1Vec3}{Vec3}}
+\item 
+struct \doxymbox{\hyperlink{structdim3_1_1Mat3}{Mat3}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{structdim3_1_1Vec3}{Vec3}} \doxymbox{\hyperlink{namespacedim3_a918c677a6bebfcdebb26ecce59e04d81}{operator\texorpdfstring{$\ast$}{*}}} (float scalar, const \doxymbox{\hyperlink{structdim3_1_1Vec3}{Vec3}} \&v)
+\item 
+float \doxymbox{\hyperlink{namespacedim3_a1b2d2378207f3ea275ca4d8e95759332}{dot\+Product}} (const \doxymbox{\hyperlink{structdim3_1_1Vec3}{Vec3}} \&a, const \doxymbox{\hyperlink{structdim3_1_1Vec3}{Vec3}} \&b)
+\item 
+float \doxymbox{\hyperlink{namespacedim3_a49981c23e4ba868ba815e4cc719e8524}{mag\+Squared}} (const \doxymbox{\hyperlink{structdim3_1_1Vec3}{Vec3}} \&a)
+\item 
+void \doxymbox{\hyperlink{namespacedim3_a3e4a820fd60a903063a0a7dae601f0c5}{vector\+Cout}} (const \doxymbox{\hyperlink{structdim3_1_1Vec3}{Vec3}} \&a)
+\item 
+\doxymbox{\hyperlink{structdim3_1_1Vec3}{Vec3}} \doxymbox{\hyperlink{namespacedim3_ae9aca9f91f3ee1c7c8e98d0aa81a3818}{normalize}} (const \doxymbox{\hyperlink{structdim3_1_1Vec3}{Vec3}} \&a)
+\item 
+float \doxymbox{\hyperlink{namespacedim3_ac6bceb18dedb200874a5b32d9ca03c4c}{distance\+Squared}} (const \doxymbox{\hyperlink{structdim3_1_1Vec3}{Vec3}} \&a, const \doxymbox{\hyperlink{structdim3_1_1Vec3}{Vec3}} \&b)
+\item 
+float \doxymbox{\hyperlink{namespacedim3_ace6a071c06128a8ef11bdb3b2c17c42e}{angle\+RAD}} (const \doxymbox{\hyperlink{structdim3_1_1Vec3}{Vec3}} \&a, const \doxymbox{\hyperlink{structdim3_1_1Vec3}{Vec3}} \&b, bool return\+Cos\+Value=false)
+\item 
+float \doxymbox{\hyperlink{namespacedim3_af455c33e16cbd27c3c891ed13639dce6}{angle\+DEG}} (const \doxymbox{\hyperlink{structdim3_1_1Vec3}{Vec3}} \&a, const \doxymbox{\hyperlink{structdim3_1_1Vec3}{Vec3}} \&b)
+\item 
+float \doxymbox{\hyperlink{namespacedim3_a72e7b9b5311815a0bb2f48afb2ce3bf5}{scalar\+Project}} (const \doxymbox{\hyperlink{structdim3_1_1Vec3}{Vec3}} \&vec\+To\+Proj, const \doxymbox{\hyperlink{structdim3_1_1Vec3}{Vec3}} \&vec\+To\+Proj\+Along)
+\item 
+\doxymbox{\hyperlink{structdim3_1_1Vec3}{Vec3}} \doxymbox{\hyperlink{namespacedim3_a723d933db69e4469759a13f6488b6319}{vector\+Project}} (const \doxymbox{\hyperlink{structdim3_1_1Vec3}{Vec3}} \&vec\+To\+Proj, const \doxymbox{\hyperlink{structdim3_1_1Vec3}{Vec3}} \&vec\+To\+Proj\+Along)
+\item 
+\doxymbox{\hyperlink{structdim3_1_1Vec3}{Vec3}} \doxymbox{\hyperlink{namespacedim3_a0a36f0b4027df5697bf8a9666656f4c4}{cross\+Product}} (const \doxymbox{\hyperlink{structdim3_1_1Vec3}{Vec3}} \&a, const \doxymbox{\hyperlink{structdim3_1_1Vec3}{Vec3}} \&b)
+\item 
+bool \doxymbox{\hyperlink{namespacedim3_abf0ed32e11f3fa172424ae5cee80fc1b}{ep\+Vector\+Equal}} (const \doxymbox{\hyperlink{structdim3_1_1Vec3}{Vec3}} \&a, const \doxymbox{\hyperlink{structdim3_1_1Vec3}{Vec3}} \&b)
+\item 
+\doxymbox{\hyperlink{structdim3_1_1Vec3}{Vec3}} \doxymbox{\hyperlink{namespacedim3_a83b1ed631a375b365ecfb2a1fba1c5c2}{lerp}} (const \doxymbox{\hyperlink{structdim3_1_1Vec3}{Vec3}} \&v1, const \doxymbox{\hyperlink{structdim3_1_1Vec3}{Vec3}} \&v2, float t)
+\item 
+\doxymbox{\hyperlink{structdim3_1_1Mat3}{Mat3}} \doxymbox{\hyperlink{namespacedim3_a9ac9d4b69ad2aad2c51d2d2365125309}{matrix\+Multiply}} (const \doxymbox{\hyperlink{structdim3_1_1Mat3}{Mat3}} \&M1, const \doxymbox{\hyperlink{structdim3_1_1Mat3}{Mat3}} \&M2)
+\item 
+\doxymbox{\hyperlink{structdim3_1_1Vec3}{Vec3}} \doxymbox{\hyperlink{namespacedim3_ae100dc04d852fa843dd75a7d64645dc8}{rotation\+Custom\+Axis}} (const \doxymbox{\hyperlink{structdim3_1_1Vec3}{Vec3}} \&v, const \doxymbox{\hyperlink{structdim3_1_1Vec3}{Vec3}} \&axis\+\_\+normalized, float \doxymbox{\hyperlink{namespacedim3_ace6a071c06128a8ef11bdb3b2c17c42e}{angle\+RAD}})
+\item 
+\doxymbox{\hyperlink{structdim3_1_1Vec3}{Vec3}} \doxymbox{\hyperlink{namespacedim3_a79335cfc751c2b59b582cd44a82114c8}{rotation\+XAxis}} (const \doxymbox{\hyperlink{structdim3_1_1Vec3}{Vec3}} \&v, float \doxymbox{\hyperlink{namespacedim3_ace6a071c06128a8ef11bdb3b2c17c42e}{angle\+RAD}})
+\item 
+\doxymbox{\hyperlink{structdim3_1_1Vec3}{Vec3}} \doxymbox{\hyperlink{namespacedim3_ac48403499c039924efc2df3d1dc52da2}{rotation\+YAxis}} (const \doxymbox{\hyperlink{structdim3_1_1Vec3}{Vec3}} \&v, float \doxymbox{\hyperlink{namespacedim3_ace6a071c06128a8ef11bdb3b2c17c42e}{angle\+RAD}})
+\item 
+\doxymbox{\hyperlink{structdim3_1_1Vec3}{Vec3}} \doxymbox{\hyperlink{namespacedim3_aee1d29193a890ecbbb688c93ab4ee34d}{rotation\+ZAxis}} (const \doxymbox{\hyperlink{structdim3_1_1Vec3}{Vec3}} \&v, float \doxymbox{\hyperlink{namespacedim3_ace6a071c06128a8ef11bdb3b2c17c42e}{angle\+RAD}})
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{namespacedim3_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacedim3_af455c33e16cbd27c3c891ed13639dce6}\index{dim3@{dim3}!angleDEG@{angleDEG}}
+\index{angleDEG@{angleDEG}!dim3@{dim3}}
+\doxysubsubsection{\texorpdfstring{angleDEG()}{angleDEG()}}
+{\footnotesize\ttfamily \label{namespacedim3_af455c33e16cbd27c3c891ed13639dce6} 
+float dim3::\+angle\+DEG (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{structdim3_1_1Vec3}{Vec3}} \&}]{a}{, }\item[{const \doxymbox{\hyperlink{structdim3_1_1Vec3}{Vec3}} \&}]{b}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{namespacedim3_ace6a071c06128a8ef11bdb3b2c17c42e}\index{dim3@{dim3}!angleRAD@{angleRAD}}
+\index{angleRAD@{angleRAD}!dim3@{dim3}}
+\doxysubsubsection{\texorpdfstring{angleRAD()}{angleRAD()}}
+{\footnotesize\ttfamily \label{namespacedim3_ace6a071c06128a8ef11bdb3b2c17c42e} 
+float dim3::\+angle\+RAD (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{structdim3_1_1Vec3}{Vec3}} \&}]{a}{, }\item[{const \doxymbox{\hyperlink{structdim3_1_1Vec3}{Vec3}} \&}]{b}{, }\item[{bool}]{return\+Cos\+Value}{ = {\ttfamily false}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{namespacedim3_a0a36f0b4027df5697bf8a9666656f4c4}\index{dim3@{dim3}!crossProduct@{crossProduct}}
+\index{crossProduct@{crossProduct}!dim3@{dim3}}
+\doxysubsubsection{\texorpdfstring{crossProduct()}{crossProduct()}}
+{\footnotesize\ttfamily \label{namespacedim3_a0a36f0b4027df5697bf8a9666656f4c4} 
+\doxymbox{\hyperlink{structdim3_1_1Vec3}{Vec3}} dim3::\+cross\+Product (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{structdim3_1_1Vec3}{Vec3}} \&}]{a}{, }\item[{const \doxymbox{\hyperlink{structdim3_1_1Vec3}{Vec3}} \&}]{b}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{namespacedim3_ac6bceb18dedb200874a5b32d9ca03c4c}\index{dim3@{dim3}!distanceSquared@{distanceSquared}}
+\index{distanceSquared@{distanceSquared}!dim3@{dim3}}
+\doxysubsubsection{\texorpdfstring{distanceSquared()}{distanceSquared()}}
+{\footnotesize\ttfamily \label{namespacedim3_ac6bceb18dedb200874a5b32d9ca03c4c} 
+float dim3::\+distance\+Squared (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{structdim3_1_1Vec3}{Vec3}} \&}]{a}{, }\item[{const \doxymbox{\hyperlink{structdim3_1_1Vec3}{Vec3}} \&}]{b}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{namespacedim3_a1b2d2378207f3ea275ca4d8e95759332}\index{dim3@{dim3}!dotProduct@{dotProduct}}
+\index{dotProduct@{dotProduct}!dim3@{dim3}}
+\doxysubsubsection{\texorpdfstring{dotProduct()}{dotProduct()}}
+{\footnotesize\ttfamily \label{namespacedim3_a1b2d2378207f3ea275ca4d8e95759332} 
+float dim3::\+dot\+Product (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{structdim3_1_1Vec3}{Vec3}} \&}]{a}{, }\item[{const \doxymbox{\hyperlink{structdim3_1_1Vec3}{Vec3}} \&}]{b}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{namespacedim3_abf0ed32e11f3fa172424ae5cee80fc1b}\index{dim3@{dim3}!epVectorEqual@{epVectorEqual}}
+\index{epVectorEqual@{epVectorEqual}!dim3@{dim3}}
+\doxysubsubsection{\texorpdfstring{epVectorEqual()}{epVectorEqual()}}
+{\footnotesize\ttfamily \label{namespacedim3_abf0ed32e11f3fa172424ae5cee80fc1b} 
+bool dim3::\+ep\+Vector\+Equal (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{structdim3_1_1Vec3}{Vec3}} \&}]{a}{, }\item[{const \doxymbox{\hyperlink{structdim3_1_1Vec3}{Vec3}} \&}]{b}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{namespacedim3_a83b1ed631a375b365ecfb2a1fba1c5c2}\index{dim3@{dim3}!lerp@{lerp}}
+\index{lerp@{lerp}!dim3@{dim3}}
+\doxysubsubsection{\texorpdfstring{lerp()}{lerp()}}
+{\footnotesize\ttfamily \label{namespacedim3_a83b1ed631a375b365ecfb2a1fba1c5c2} 
+\doxymbox{\hyperlink{structdim3_1_1Vec3}{Vec3}} dim3::\+lerp (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{structdim3_1_1Vec3}{Vec3}} \&}]{v1}{, }\item[{const \doxymbox{\hyperlink{structdim3_1_1Vec3}{Vec3}} \&}]{v2}{, }\item[{float}]{t}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{namespacedim3_a49981c23e4ba868ba815e4cc719e8524}\index{dim3@{dim3}!magSquared@{magSquared}}
+\index{magSquared@{magSquared}!dim3@{dim3}}
+\doxysubsubsection{\texorpdfstring{magSquared()}{magSquared()}}
+{\footnotesize\ttfamily \label{namespacedim3_a49981c23e4ba868ba815e4cc719e8524} 
+float dim3::\+mag\+Squared (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{structdim3_1_1Vec3}{Vec3}} \&}]{a}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{namespacedim3_a9ac9d4b69ad2aad2c51d2d2365125309}\index{dim3@{dim3}!matrixMultiply@{matrixMultiply}}
+\index{matrixMultiply@{matrixMultiply}!dim3@{dim3}}
+\doxysubsubsection{\texorpdfstring{matrixMultiply()}{matrixMultiply()}}
+{\footnotesize\ttfamily \label{namespacedim3_a9ac9d4b69ad2aad2c51d2d2365125309} 
+\doxymbox{\hyperlink{structdim3_1_1Mat3}{Mat3}} dim3::\+matrix\+Multiply (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{structdim3_1_1Mat3}{Mat3}} \&}]{M1}{, }\item[{const \doxymbox{\hyperlink{structdim3_1_1Mat3}{Mat3}} \&}]{M2}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{namespacedim3_ae9aca9f91f3ee1c7c8e98d0aa81a3818}\index{dim3@{dim3}!normalize@{normalize}}
+\index{normalize@{normalize}!dim3@{dim3}}
+\doxysubsubsection{\texorpdfstring{normalize()}{normalize()}}
+{\footnotesize\ttfamily \label{namespacedim3_ae9aca9f91f3ee1c7c8e98d0aa81a3818} 
+\doxymbox{\hyperlink{structdim3_1_1Vec3}{Vec3}} dim3::\+normalize (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{structdim3_1_1Vec3}{Vec3}} \&}]{a}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{namespacedim3_a918c677a6bebfcdebb26ecce59e04d81}\index{dim3@{dim3}!operator\texorpdfstring{$\ast$}{*}@{operator\texorpdfstring{$\ast$}{*}}}
+\index{operator\texorpdfstring{$\ast$}{*}@{operator\texorpdfstring{$\ast$}{*}}!dim3@{dim3}}
+\doxysubsubsection{\texorpdfstring{operator\texorpdfstring{$\ast$}{*}()}{operator*()}}
+{\footnotesize\ttfamily \label{namespacedim3_a918c677a6bebfcdebb26ecce59e04d81} 
+\doxymbox{\hyperlink{structdim3_1_1Vec3}{Vec3}} dim3::\+operator\texorpdfstring{$\ast$}{*} (\begin{DoxyParamCaption}\item[{float}]{scalar}{, }\item[{const \doxymbox{\hyperlink{structdim3_1_1Vec3}{Vec3}} \&}]{v}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{namespacedim3_ae100dc04d852fa843dd75a7d64645dc8}\index{dim3@{dim3}!rotationCustomAxis@{rotationCustomAxis}}
+\index{rotationCustomAxis@{rotationCustomAxis}!dim3@{dim3}}
+\doxysubsubsection{\texorpdfstring{rotationCustomAxis()}{rotationCustomAxis()}}
+{\footnotesize\ttfamily \label{namespacedim3_ae100dc04d852fa843dd75a7d64645dc8} 
+\doxymbox{\hyperlink{structdim3_1_1Vec3}{Vec3}} dim3::\+rotation\+Custom\+Axis (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{structdim3_1_1Vec3}{Vec3}} \&}]{v}{, }\item[{const \doxymbox{\hyperlink{structdim3_1_1Vec3}{Vec3}} \&}]{axis\+\_\+normalized}{, }\item[{float}]{angle\+RAD}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{namespacedim3_a79335cfc751c2b59b582cd44a82114c8}\index{dim3@{dim3}!rotationXAxis@{rotationXAxis}}
+\index{rotationXAxis@{rotationXAxis}!dim3@{dim3}}
+\doxysubsubsection{\texorpdfstring{rotationXAxis()}{rotationXAxis()}}
+{\footnotesize\ttfamily \label{namespacedim3_a79335cfc751c2b59b582cd44a82114c8} 
+\doxymbox{\hyperlink{structdim3_1_1Vec3}{Vec3}} dim3::\+rotation\+XAxis (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{structdim3_1_1Vec3}{Vec3}} \&}]{v}{, }\item[{float}]{angle\+RAD}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{namespacedim3_ac48403499c039924efc2df3d1dc52da2}\index{dim3@{dim3}!rotationYAxis@{rotationYAxis}}
+\index{rotationYAxis@{rotationYAxis}!dim3@{dim3}}
+\doxysubsubsection{\texorpdfstring{rotationYAxis()}{rotationYAxis()}}
+{\footnotesize\ttfamily \label{namespacedim3_ac48403499c039924efc2df3d1dc52da2} 
+\doxymbox{\hyperlink{structdim3_1_1Vec3}{Vec3}} dim3::\+rotation\+YAxis (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{structdim3_1_1Vec3}{Vec3}} \&}]{v}{, }\item[{float}]{angle\+RAD}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{namespacedim3_aee1d29193a890ecbbb688c93ab4ee34d}\index{dim3@{dim3}!rotationZAxis@{rotationZAxis}}
+\index{rotationZAxis@{rotationZAxis}!dim3@{dim3}}
+\doxysubsubsection{\texorpdfstring{rotationZAxis()}{rotationZAxis()}}
+{\footnotesize\ttfamily \label{namespacedim3_aee1d29193a890ecbbb688c93ab4ee34d} 
+\doxymbox{\hyperlink{structdim3_1_1Vec3}{Vec3}} dim3::\+rotation\+ZAxis (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{structdim3_1_1Vec3}{Vec3}} \&}]{v}{, }\item[{float}]{angle\+RAD}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{namespacedim3_a72e7b9b5311815a0bb2f48afb2ce3bf5}\index{dim3@{dim3}!scalarProject@{scalarProject}}
+\index{scalarProject@{scalarProject}!dim3@{dim3}}
+\doxysubsubsection{\texorpdfstring{scalarProject()}{scalarProject()}}
+{\footnotesize\ttfamily \label{namespacedim3_a72e7b9b5311815a0bb2f48afb2ce3bf5} 
+float dim3::\+scalar\+Project (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{structdim3_1_1Vec3}{Vec3}} \&}]{vec\+To\+Proj}{, }\item[{const \doxymbox{\hyperlink{structdim3_1_1Vec3}{Vec3}} \&}]{vec\+To\+Proj\+Along}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{namespacedim3_a3e4a820fd60a903063a0a7dae601f0c5}\index{dim3@{dim3}!vectorCout@{vectorCout}}
+\index{vectorCout@{vectorCout}!dim3@{dim3}}
+\doxysubsubsection{\texorpdfstring{vectorCout()}{vectorCout()}}
+{\footnotesize\ttfamily \label{namespacedim3_a3e4a820fd60a903063a0a7dae601f0c5} 
+void dim3::\+vector\+Cout (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{structdim3_1_1Vec3}{Vec3}} \&}]{a}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{namespacedim3_a723d933db69e4469759a13f6488b6319}\index{dim3@{dim3}!vectorProject@{vectorProject}}
+\index{vectorProject@{vectorProject}!dim3@{dim3}}
+\doxysubsubsection{\texorpdfstring{vectorProject()}{vectorProject()}}
+{\footnotesize\ttfamily \label{namespacedim3_a723d933db69e4469759a13f6488b6319} 
+\doxymbox{\hyperlink{structdim3_1_1Vec3}{Vec3}} dim3::\+vector\+Project (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{structdim3_1_1Vec3}{Vec3}} \&}]{vec\+To\+Proj}{, }\item[{const \doxymbox{\hyperlink{structdim3_1_1Vec3}{Vec3}} \&}]{vec\+To\+Proj\+Along}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+

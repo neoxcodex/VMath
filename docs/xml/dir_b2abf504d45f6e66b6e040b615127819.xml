@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="dir_b2abf504d45f6e66b6e040b615127819" kind="dir">
+    <compoundname>include/VMath/Math</compoundname>
+    <innerfile refid="Constants_8h">Constants.h</innerfile>
+    <innerfile refid="NDSFunctions_8hpp">NDSFunctions.hpp</innerfile>
+    <innerfile refid="VMath2D_8hpp">VMath2D.hpp</innerfile>
+    <innerfile refid="VMath3D_09_8hpp">VMath3D+.hpp</innerfile>
+    <innerfile refid="VMath3D_8hpp">VMath3D.hpp</innerfile>
+    <innerfile refid="VMathN_8hpp">VMathN.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/VMath/Math/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,139 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="structdim3_1_1Vec3" kind="struct" language="C++" prot="public">
+    <compoundname>dim3::Vec3</compoundname>
+    <includes refid="VMath3D_8hpp" local="no">VMath3D.hpp</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structdim3_1_1Vec3_1af6082affd4a98d0c40cd7d846366ccf1" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float dim3::Vec3::x</definition>
+        <argsstring></argsstring>
+        <name>x</name>
+        <qualifiedname>dim3::Vec3::x</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/VMath/Math/VMath3D.hpp" line="31" column="15" bodyfile="include/VMath/Math/VMath3D.hpp" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdim3_1_1Vec3_1a45944275a3f755f84dd36cd8c8b198a8" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float dim3::Vec3::y</definition>
+        <argsstring></argsstring>
+        <name>y</name>
+        <qualifiedname>dim3::Vec3::y</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/VMath/Math/VMath3D.hpp" line="31" column="16" bodyfile="include/VMath/Math/VMath3D.hpp" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdim3_1_1Vec3_1a862ed99367dbbe1fc55a5e6cdc7ae60e" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float dim3::Vec3::z</definition>
+        <argsstring></argsstring>
+        <name>z</name>
+        <qualifiedname>dim3::Vec3::z</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/VMath/Math/VMath3D.hpp" line="31" column="17" bodyfile="include/VMath/Math/VMath3D.hpp" bodystart="31" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="structdim3_1_1Vec3_1a5a5f42b629ac41709feb6ffd8d6fea4e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structdim3_1_1Vec3" kindref="compound">Vec3</ref></type>
+        <definition>Vec3 dim3::Vec3::operator+</definition>
+        <argsstring>(const Vec3 &amp;other) const</argsstring>
+        <name>operator+</name>
+        <qualifiedname>dim3::Vec3::operator+</qualifiedname>
+        <param>
+          <type>const <ref refid="structdim3_1_1Vec3" kindref="compound">Vec3</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/VMath/Math/VMath3D.hpp" line="32" column="14" bodyfile="include/VMath/Math/VMath3D.hpp" bodystart="32" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="structdim3_1_1Vec3_1aed9a60f69f0f784d47bec20446a5f37b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structdim3_1_1Vec3" kindref="compound">Vec3</ref></type>
+        <definition>Vec3 dim3::Vec3::operator-</definition>
+        <argsstring>(const Vec3 &amp;other) const</argsstring>
+        <name>operator-</name>
+        <qualifiedname>dim3::Vec3::operator-</qualifiedname>
+        <param>
+          <type>const <ref refid="structdim3_1_1Vec3" kindref="compound">Vec3</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/VMath/Math/VMath3D.hpp" line="35" column="14" bodyfile="include/VMath/Math/VMath3D.hpp" bodystart="35" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="function" id="structdim3_1_1Vec3_1a208bf3949912ef0915a104bb0fbc0c40" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structdim3_1_1Vec3" kindref="compound">Vec3</ref></type>
+        <definition>Vec3 dim3::Vec3::operator*</definition>
+        <argsstring>(float scalar) const</argsstring>
+        <name>operator*</name>
+        <qualifiedname>dim3::Vec3::operator*</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>scalar</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/VMath/Math/VMath3D.hpp" line="38" column="14" bodyfile="include/VMath/Math/VMath3D.hpp" bodystart="38" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="structdim3_1_1Vec3_1acd027ff49ea77ec1dbac091712259b0d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool dim3::Vec3::operator==</definition>
+        <argsstring>(const Vec3 &amp;other) const</argsstring>
+        <name>operator==</name>
+        <qualifiedname>dim3::Vec3::operator==</qualifiedname>
+        <param>
+          <type>const <ref refid="structdim3_1_1Vec3" kindref="compound">Vec3</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/VMath/Math/VMath3D.hpp" line="41" column="14" bodyfile="include/VMath/Math/VMath3D.hpp" bodystart="41" bodyend="51"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/VMath/Math/VMath3D.hpp" line="30" column="5" bodyfile="include/VMath/Math/VMath3D.hpp" bodystart="30" bodyend="53"/>
+    <listofallmembers>
+      <member refid="structdim3_1_1Vec3_1a208bf3949912ef0915a104bb0fbc0c40" prot="public" virt="non-virtual"><scope>dim3::Vec3</scope><name>operator*</name></member>
+      <member refid="structdim3_1_1Vec3_1a5a5f42b629ac41709feb6ffd8d6fea4e" prot="public" virt="non-virtual"><scope>dim3::Vec3</scope><name>operator+</name></member>
+      <member refid="structdim3_1_1Vec3_1aed9a60f69f0f784d47bec20446a5f37b" prot="public" virt="non-virtual"><scope>dim3::Vec3</scope><name>operator-</name></member>
+      <member refid="structdim3_1_1Vec3_1acd027ff49ea77ec1dbac091712259b0d" prot="public" virt="non-virtual"><scope>dim3::Vec3</scope><name>operator==</name></member>
+      <member refid="structdim3_1_1Vec3_1af6082affd4a98d0c40cd7d846366ccf1" prot="public" virt="non-virtual"><scope>dim3::Vec3</scope><name>x</name></member>
+      <member refid="structdim3_1_1Vec3_1a45944275a3f755f84dd36cd8c8b198a8" prot="public" virt="non-virtual"><scope>dim3::Vec3</scope><name>y</name></member>
+      <member refid="structdim3_1_1Vec3_1a862ed99367dbbe1fc55a5e6cdc7ae60e" prot="public" virt="non-virtual"><scope>dim3::Vec3</scope><name>z</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

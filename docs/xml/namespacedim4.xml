@@ -1,0 +1,260 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="namespacedim4" kind="namespace" language="C++">
+    <compoundname>dim4</compoundname>
+    <innerclass refid="structdim4_1_1Vec4" prot="public">dim4::Vec4</innerclass>
+    <innerclass refid="structdim4_1_1Mat4" prot="public">dim4::Mat4</innerclass>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="namespacedim4_1a1fc4f16a9f4f445def76f012c9a5cf1c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void dim4::vectorCout</definition>
+        <argsstring>(const Vec4 v)</argsstring>
+        <name>vectorCout</name>
+        <qualifiedname>dim4::vectorCout</qualifiedname>
+        <param>
+          <type>const <ref refid="structdim4_1_1Vec4" kindref="compound">Vec4</ref></type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/VMath/Math/VMath3D+.hpp" line="37" column="17" bodyfile="include/VMath/Math/VMath3D+.hpp" bodystart="37" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacedim4_1aec7c589d565c47a9cf52d133bafe7ca7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structdim4_1_1Vec4" kindref="compound">Vec4</ref></type>
+        <definition>Vec4 dim4::operator*</definition>
+        <argsstring>(float scalar, const Vec4 v)</argsstring>
+        <name>operator*</name>
+        <qualifiedname>dim4::operator*</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>scalar</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structdim4_1_1Vec4" kindref="compound">Vec4</ref></type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/VMath/Math/VMath3D+.hpp" line="40" column="17" bodyfile="include/VMath/Math/VMath3D+.hpp" bodystart="40" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacedim4_1ad91806f78b76249b8734868b78a470ac" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float dim4::dotProduct</definition>
+        <argsstring>(const Vec4 v1, const Vec4 v2)</argsstring>
+        <name>dotProduct</name>
+        <qualifiedname>dim4::dotProduct</qualifiedname>
+        <param>
+          <type>const <ref refid="structdim4_1_1Vec4" kindref="compound">Vec4</ref></type>
+          <declname>v1</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structdim4_1_1Vec4" kindref="compound">Vec4</ref></type>
+          <declname>v2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/VMath/Math/VMath3D+.hpp" line="43" column="18" bodyfile="include/VMath/Math/VMath3D+.hpp" bodystart="43" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacedim4_1afbd8d42ca13041e55a0af066a00bd142" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float dim4::magSquared</definition>
+        <argsstring>(const Vec4 v)</argsstring>
+        <name>magSquared</name>
+        <qualifiedname>dim4::magSquared</qualifiedname>
+        <param>
+          <type>const <ref refid="structdim4_1_1Vec4" kindref="compound">Vec4</ref></type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/VMath/Math/VMath3D+.hpp" line="49" column="18" bodyfile="include/VMath/Math/VMath3D+.hpp" bodystart="49" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacedim4_1a754f8bd9423a05167ec493932ef7478f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float dim4::magnitude</definition>
+        <argsstring>(const Vec4 v)</argsstring>
+        <name>magnitude</name>
+        <qualifiedname>dim4::magnitude</qualifiedname>
+        <param>
+          <type>const <ref refid="structdim4_1_1Vec4" kindref="compound">Vec4</ref></type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/VMath/Math/VMath3D+.hpp" line="58" column="18" bodyfile="include/VMath/Math/VMath3D+.hpp" bodystart="58" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacedim4_1af35c14a8bac8fbf3c279fb8b7d247860" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool dim4::epVectorEqual</definition>
+        <argsstring>(const Vec4 v1, const Vec4 v2, float epsilon=constants::EPSILON)</argsstring>
+        <name>epVectorEqual</name>
+        <qualifiedname>dim4::epVectorEqual</qualifiedname>
+        <param>
+          <type>const <ref refid="structdim4_1_1Vec4" kindref="compound">Vec4</ref></type>
+          <declname>v1</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structdim4_1_1Vec4" kindref="compound">Vec4</ref></type>
+          <declname>v2</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>epsilon</declname>
+          <defval><ref refid="namespaceconstants_1a7f3b4cf1f4ef2af969262048a358a313" kindref="member">constants::EPSILON</ref></defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/VMath/Math/VMath3D+.hpp" line="61" column="17" bodyfile="include/VMath/Math/VMath3D+.hpp" bodystart="61" bodyend="71"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacedim4_1a2ea043232d03199f449813b8eb03ce7a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structdim4_1_1Vec4" kindref="compound">Vec4</ref></type>
+        <definition>Vec4 dim4::normalize</definition>
+        <argsstring>(const Vec4 v)</argsstring>
+        <name>normalize</name>
+        <qualifiedname>dim4::normalize</qualifiedname>
+        <param>
+          <type>const <ref refid="structdim4_1_1Vec4" kindref="compound">Vec4</ref></type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/VMath/Math/VMath3D+.hpp" line="72" column="17" bodyfile="include/VMath/Math/VMath3D+.hpp" bodystart="72" bodyend="75"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacedim4_1a050c2be340cba61c80628b22a0779622" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structdim4_1_1Mat4" kindref="compound">Mat4</ref></type>
+        <definition>Mat4 dim4::matrixMultiply</definition>
+        <argsstring>(const Mat4 &amp;M1, const Mat4 &amp;M2)</argsstring>
+        <name>matrixMultiply</name>
+        <qualifiedname>dim4::matrixMultiply</qualifiedname>
+        <param>
+          <type>const <ref refid="structdim4_1_1Mat4" kindref="compound">Mat4</ref> &amp;</type>
+          <declname>M1</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structdim4_1_1Mat4" kindref="compound">Mat4</ref> &amp;</type>
+          <declname>M2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/VMath/Math/VMath3D+.hpp" line="93" column="17" bodyfile="include/VMath/Math/VMath3D+.hpp" bodystart="93" bodyend="121"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacedim4_1abd5984731c88731bbbd6406a4fa475ef" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structdim4_1_1Vec4" kindref="compound">Vec4</ref></type>
+        <definition>Vec4 dim4::lerp</definition>
+        <argsstring>(const Vec4 &amp;v1, const Vec4 &amp;v2, float t)</argsstring>
+        <name>lerp</name>
+        <qualifiedname>dim4::lerp</qualifiedname>
+        <param>
+          <type>const <ref refid="structdim4_1_1Vec4" kindref="compound">Vec4</ref> &amp;</type>
+          <declname>v1</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structdim4_1_1Vec4" kindref="compound">Vec4</ref> &amp;</type>
+          <declname>v2</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/VMath/Math/VMath3D+.hpp" line="122" column="17" bodyfile="include/VMath/Math/VMath3D+.hpp" bodystart="122" bodyend="132"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacedim4_1a992c34664d852d9d0b1015207ff7cd83" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float dim4::angleRAD</definition>
+        <argsstring>(const Vec4 &amp;v1, const Vec4 &amp;v2, const bool returnCosAngle=false)</argsstring>
+        <name>angleRAD</name>
+        <qualifiedname>dim4::angleRAD</qualifiedname>
+        <param>
+          <type>const <ref refid="structdim4_1_1Vec4" kindref="compound">Vec4</ref> &amp;</type>
+          <declname>v1</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structdim4_1_1Vec4" kindref="compound">Vec4</ref> &amp;</type>
+          <declname>v2</declname>
+        </param>
+        <param>
+          <type>const bool</type>
+          <declname>returnCosAngle</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/VMath/Math/VMath3D+.hpp" line="133" column="18" bodyfile="include/VMath/Math/VMath3D+.hpp" bodystart="133" bodyend="142"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacedim4_1a02950f3da0e8dcc5cebb87f993d0cf68" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float dim4::angleDEG</definition>
+        <argsstring>(const Vec4 &amp;v1, const Vec4 &amp;v2, const bool returnCosAngle=false)</argsstring>
+        <name>angleDEG</name>
+        <qualifiedname>dim4::angleDEG</qualifiedname>
+        <param>
+          <type>const <ref refid="structdim4_1_1Vec4" kindref="compound">Vec4</ref> &amp;</type>
+          <declname>v1</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structdim4_1_1Vec4" kindref="compound">Vec4</ref> &amp;</type>
+          <declname>v2</declname>
+        </param>
+        <param>
+          <type>const bool</type>
+          <declname>returnCosAngle</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/VMath/Math/VMath3D+.hpp" line="143" column="18" bodyfile="include/VMath/Math/VMath3D+.hpp" bodystart="143" bodyend="145"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/VMath/Math/VMath3D+.hpp" line="8" column="1"/>
+  </compounddef>
+</doxygen>

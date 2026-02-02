@@ -1,0 +1,73 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="namespaceconstants" kind="namespace" language="C++">
+    <compoundname>constants</compoundname>
+    <sectiondef kind="var">
+      <memberdef kind="variable" id="namespaceconstants_1a88940de785093705ac1092bb71ac4d2a" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>double</type>
+        <definition>double constants::ACCU_PI</definition>
+        <argsstring></argsstring>
+        <name>ACCU_PI</name>
+        <qualifiedname>constants::ACCU_PI</qualifiedname>
+        <initializer>= 3.14159265358979323846</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/VMath/Math/Constants.h" line="5" column="22" bodyfile="include/VMath/Math/Constants.h" bodystart="5" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceconstants_1ae0bf237f1e254bc82b601f3ecad3796d" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>float</type>
+        <definition>float constants::PI</definition>
+        <argsstring></argsstring>
+        <name>PI</name>
+        <qualifiedname>constants::PI</qualifiedname>
+        <initializer>= 3.14159265f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/VMath/Math/Constants.h" line="6" column="21" bodyfile="include/VMath/Math/Constants.h" bodystart="6" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceconstants_1ace815f2423ab7254ae405c3abab1b83c" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>float</type>
+        <definition>float constants::INV_PI_180</definition>
+        <argsstring></argsstring>
+        <name>INV_PI_180</name>
+        <qualifiedname>constants::INV_PI_180</qualifiedname>
+        <initializer>= 57.2957795f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/VMath/Math/Constants.h" line="7" column="21" bodyfile="include/VMath/Math/Constants.h" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceconstants_1a7f3b4cf1f4ef2af969262048a358a313" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>float</type>
+        <definition>float constants::EPSILON</definition>
+        <argsstring></argsstring>
+        <name>EPSILON</name>
+        <qualifiedname>constants::EPSILON</qualifiedname>
+        <initializer>= 1e-6f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/VMath/Math/Constants.h" line="8" column="21" bodyfile="include/VMath/Math/Constants.h" bodystart="8" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/VMath/Math/Constants.h" line="4" column="1"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,221 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="namespacedimN" kind="namespace" language="C++">
+    <compoundname>dimN</compoundname>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="namespacedimN_1abbd29d1c4930da02382af428bda8fcaf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double dimN::magnitude</definition>
+        <argsstring>(const std::vector&lt; double &gt; &amp;v)</argsstring>
+        <name>magnitude</name>
+        <qualifiedname>dimN::magnitude</qualifiedname>
+        <param>
+          <type>const std::vector&lt; double &gt; &amp;</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/VMath/Math/VMathN.hpp" line="13" column="19" bodyfile="include/VMath/Math/VMathN.hpp" bodystart="13" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacedimN_1a6527b3cd04fc5f5fb7d9e2909187de43" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; double &gt;</type>
+        <definition>std::vector&lt; double &gt; dimN::normalize</definition>
+        <argsstring>(const std::vector&lt; double &gt; &amp;v)</argsstring>
+        <name>normalize</name>
+        <qualifiedname>dimN::normalize</qualifiedname>
+        <param>
+          <type>const std::vector&lt; double &gt; &amp;</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/VMath/Math/VMathN.hpp" line="21" column="24" bodyfile="include/VMath/Math/VMathN.hpp" bodystart="21" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacedimN_1a37b54cf08a72b9a48d6adffd8d948d6e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void dimN::vecout</definition>
+        <argsstring>(const std::vector&lt; double &gt; &amp;a)</argsstring>
+        <name>vecout</name>
+        <qualifiedname>dimN::vecout</qualifiedname>
+        <param>
+          <type>const std::vector&lt; double &gt; &amp;</type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/VMath/Math/VMathN.hpp" line="32" column="17" bodyfile="include/VMath/Math/VMathN.hpp" bodystart="32" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacedimN_1a50898203cf7a2067bb202487e162b9c1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; double &gt;</type>
+        <definition>std::vector&lt; double &gt; dimN::scalarMult</definition>
+        <argsstring>(const std::vector&lt; double &gt; &amp;vector_, double multiplier)</argsstring>
+        <name>scalarMult</name>
+        <qualifiedname>dimN::scalarMult</qualifiedname>
+        <param>
+          <type>const std::vector&lt; double &gt; &amp;</type>
+          <declname>vector_</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>multiplier</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/VMath/Math/VMathN.hpp" line="41" column="24" bodyfile="include/VMath/Math/VMathN.hpp" bodystart="41" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacedimN_1ae2be63fa0e57213a137e59fce393d593" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; double &gt;</type>
+        <definition>std::vector&lt; double &gt; dimN::addVectors</definition>
+        <argsstring>(const std::vector&lt; double &gt; &amp;vec1, const std::vector&lt; double &gt; &amp;vec2)</argsstring>
+        <name>addVectors</name>
+        <qualifiedname>dimN::addVectors</qualifiedname>
+        <param>
+          <type>const std::vector&lt; double &gt; &amp;</type>
+          <declname>vec1</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; double &gt; &amp;</type>
+          <declname>vec2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/VMath/Math/VMathN.hpp" line="49" column="24" bodyfile="include/VMath/Math/VMathN.hpp" bodystart="49" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacedimN_1afec9f533d7d10550fab5fa5eb357d4d1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; double &gt;</type>
+        <definition>std::vector&lt; double &gt; dimN::subtractVectors</definition>
+        <argsstring>(const std::vector&lt; double &gt; &amp;vec1, const std::vector&lt; double &gt; &amp;vec2)</argsstring>
+        <name>subtractVectors</name>
+        <qualifiedname>dimN::subtractVectors</qualifiedname>
+        <param>
+          <type>const std::vector&lt; double &gt; &amp;</type>
+          <declname>vec1</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; double &gt; &amp;</type>
+          <declname>vec2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/VMath/Math/VMathN.hpp" line="57" column="24" bodyfile="include/VMath/Math/VMathN.hpp" bodystart="57" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacedimN_1af877e93856df502baf3d973d9ccd772b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double dimN::distance</definition>
+        <argsstring>(const std::vector&lt; double &gt; &amp;vec1, const std::vector&lt; double &gt; &amp;vec2)</argsstring>
+        <name>distance</name>
+        <qualifiedname>dimN::distance</qualifiedname>
+        <param>
+          <type>const std::vector&lt; double &gt; &amp;</type>
+          <declname>vec1</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; double &gt; &amp;</type>
+          <declname>vec2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/VMath/Math/VMathN.hpp" line="62" column="19" bodyfile="include/VMath/Math/VMathN.hpp" bodystart="62" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacedimN_1a5fbec898454bd5797ba513a158041e80" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double dimN::dotProduct</definition>
+        <argsstring>(const std::vector&lt; double &gt; &amp;vec1, const std::vector&lt; double &gt; &amp;vec2)</argsstring>
+        <name>dotProduct</name>
+        <qualifiedname>dimN::dotProduct</qualifiedname>
+        <param>
+          <type>const std::vector&lt; double &gt; &amp;</type>
+          <declname>vec1</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; double &gt; &amp;</type>
+          <declname>vec2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/VMath/Math/VMathN.hpp" line="66" column="19" bodyfile="include/VMath/Math/VMathN.hpp" bodystart="66" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacedimN_1aa01e8003329491d7c5130d9e5097587b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double dimN::angleRAD</definition>
+        <argsstring>(const std::vector&lt; double &gt; &amp;vec1, const std::vector&lt; double &gt; &amp;vec2)</argsstring>
+        <name>angleRAD</name>
+        <qualifiedname>dimN::angleRAD</qualifiedname>
+        <param>
+          <type>const std::vector&lt; double &gt; &amp;</type>
+          <declname>vec1</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; double &gt; &amp;</type>
+          <declname>vec2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/VMath/Math/VMathN.hpp" line="74" column="19" bodyfile="include/VMath/Math/VMathN.hpp" bodystart="74" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacedimN_1af4775fc92c00975078f8d09a809cc38d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double dimN::angleDEG</definition>
+        <argsstring>(const std::vector&lt; double &gt; &amp;vec1, const std::vector&lt; double &gt; &amp;vec2)</argsstring>
+        <name>angleDEG</name>
+        <qualifiedname>dimN::angleDEG</qualifiedname>
+        <param>
+          <type>const std::vector&lt; double &gt; &amp;</type>
+          <declname>vec1</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; double &gt; &amp;</type>
+          <declname>vec2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/VMath/Math/VMathN.hpp" line="80" column="19" bodyfile="include/VMath/Math/VMathN.hpp" bodystart="80" bodyend="84"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/VMath/Math/VMathN.hpp" line="11" column="1"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,46 @@
+\doxysection{visualizer.\+hpp}
+\hypertarget{visualizer_8hpp_source}{}\label{visualizer_8hpp_source}\index{include/VMath/Vis/visualizer.hpp@{include/VMath/Vis/visualizer.hpp}}
+\doxymbox{\hyperlink{visualizer_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ visualizer\_2890938098035}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ visualizer\_2890938098035}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00005\ \textcolor{comment}{}}
+\DoxyCodeLine{00006\ \textcolor{comment}{TODO:}}
+\DoxyCodeLine{00007\ \textcolor{comment}{Visualizer}}
+\DoxyCodeLine{00008\ \textcolor{comment}{Registry\ System}}
+\DoxyCodeLine{00009\ \textcolor{comment}{visualizer::pushVecVisual(dim3::Vec3\ Vector)}}
+\DoxyCodeLine{00010\ \textcolor{comment}{visualizer::pullVecVisual(VectorID)\ (in\ registry)}}
+\DoxyCodeLine{00011\ \textcolor{comment}{x-\/y-\/z\ Axes}}
+\DoxyCodeLine{00012\ \textcolor{comment}{The\ Visualizer\ Checks\ the\ values\ of\ the\ vectors\ in\ the\ reigstry\ and\ updates\ them\ according\ to\ main.cpp}}
+\DoxyCodeLine{00013\ \textcolor{comment}{Real\ Time}}
+\DoxyCodeLine{00014\ \textcolor{comment}{Multi-\/Threading\ Preferred}}
+\DoxyCodeLine{00015\ \textcolor{comment}{*/}}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{VMath3D_09_8hpp}{VMath/Math/VMath3D+.hpp}}"{}}}
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{VMath3D_8hpp}{VMath/Math/VMath3D.hpp}}"{}}}
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\#include<unordered\_map>}}
+\DoxyCodeLine{00019\ \textcolor{preprocessor}{\#include<string>}}
+\DoxyCodeLine{00020\ \textcolor{preprocessor}{\#include<iostream>}}
+\DoxyCodeLine{00021\ \textcolor{keyword}{namespace\ }\doxymbox{\hyperlink{namespacevisualizer}{visualizer}}\{}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keyword}{inline}\ std::unordered\_map<int,\ dim4::Vec4>\ \doxymbox{\hyperlink{namespacevisualizer_a8b64650868da7c22cb91cd5c0a574be7}{registry}};}
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{namespacevisualizer_ac2281468b98cc7510c123b3a3579326b}{nextID}}\ =\ 0;}
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{namespacevisualizer_aafbca0c04d4dff4ada51bfb0521ded2d}{pushVecVisual}}(\doxymbox{\hyperlink{structdim4_1_1Vec4}{dim4::Vec4}}\ vector)\{}
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \textcolor{comment}{//Takes\ Vec3\ as\ Input\ Provides\ Vec3\ ID\ as\ Output}}
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id}\ =\ \doxymbox{\hyperlink{namespacevisualizer_ac2281468b98cc7510c123b3a3579326b}{nextID}}++;}
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{namespacevisualizer_a8b64650868da7c22cb91cd5c0a574be7}{registry}}[id]\ =\ vector;}
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ id;}
+\DoxyCodeLine{00029\ \ \ \ \ \}}
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{namespacevisualizer_a61891121f174de6f75fc4097b55453ec}{pullVecVisual}}(\textcolor{keywordtype}{int}\ vectorID)\{}
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ \textcolor{comment}{//0\ for\ success\ \&\ 1\ for\ failure}}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\doxymbox{\hyperlink{namespacevisualizer_a8b64650868da7c22cb91cd5c0a574be7}{registry}}.find(vectorID)\ !=\ \doxymbox{\hyperlink{namespacevisualizer_a8b64650868da7c22cb91cd5c0a574be7}{registry}}.end())\{}
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{namespacevisualizer_a8b64650868da7c22cb91cd5c0a574be7}{registry}}.erase(vectorID);}
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00037\ \ \ \ \ \}}
+\DoxyCodeLine{00038\ \}}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00040\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

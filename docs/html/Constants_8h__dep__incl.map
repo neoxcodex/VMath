@@ -1,0 +1,20 @@
+<map id="include/VMath/Math/Constants.h" name="include/VMath/Math/Constants.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="144,5,296,45"/>
+<area shape="rect" id="Node000002" href="$NDSFunctions_8hpp.html" title=" " alt="" coords="144,93,296,133"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="222,59,222,93,217,93,217,59"/>
+<area shape="rect" id="Node000003" href="$VMath2D_8hpp.html" title=" " alt="" coords="30,181,182,221"/>
+<area shape="poly" id="edge8_Node000001_Node000003" title=" " alt="" coords="175,55,152,73,134,95,123,116,116,140,110,182,104,181,111,138,118,114,129,92,149,69,171,51"/>
+<area shape="rect" id="Node000004" href="$VMath3D_09_8hpp.html" title=" " alt="" coords="144,269,296,309"/>
+<area shape="poly" id="edge9_Node000001_Node000004" title=" " alt="" coords="161,53,100,84,70,104,43,125,23,147,11,171,9,195,21,220,45,245,76,262,110,274,144,281,143,286,108,279,74,267,42,249,16,223,4,196,6,169,19,144,40,121,67,99,97,80,159,48"/>
+<area shape="rect" id="Node000006" href="$VMath3D_8hpp.html" title=" " alt="" coords="257,181,409,221"/>
+<area shape="poly" id="edge10_Node000001_Node000006" title=" " alt="" coords="268,51,291,69,310,92,321,114,329,138,335,181,330,182,323,140,316,116,305,95,287,73,265,55"/>
+<area shape="rect" id="Node000007" href="$VMathN_8hpp.html" title=" " alt="" coords="370,93,522,133"/>
+<area shape="poly" id="edge11_Node000001_Node000007" title=" " alt="" coords="283,48,398,91,396,96,281,53"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="185,144,133,183,130,179,182,140"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="222,147,222,269,217,269,217,147"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="257,140,310,179,306,183,254,144"/>
+<area shape="rect" id="Node000005" href="$visualizer_8hpp.html" title=" " alt="" coords="159,357,392,383"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="243,319,269,355,265,359,239,322"/>
+<area shape="poly" id="edge6_Node000006_Node000004" title=" " alt="" coords="299,232,246,271,243,267,296,228"/>
+<area shape="poly" id="edge7_Node000006_Node000005" title=" " alt="" coords="330,236,310,310,285,358,281,356,305,308,325,235"/>
+</map>

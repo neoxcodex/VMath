@@ -1,0 +1,154 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="structdim4_1_1Vec4" kind="struct" language="C++" prot="public">
+    <compoundname>dim4::Vec4</compoundname>
+    <includes refid="VMath3D_09_8hpp" local="no">VMath3D+.hpp</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structdim4_1_1Vec4_1af52297f714fcbc6df18709d269213037" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float dim4::Vec4::x</definition>
+        <argsstring></argsstring>
+        <name>x</name>
+        <qualifiedname>dim4::Vec4::x</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/VMath/Math/VMath3D+.hpp" line="10" column="15" bodyfile="include/VMath/Math/VMath3D+.hpp" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdim4_1_1Vec4_1ae8b199a6bc231d048f493edceb317d9b" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float dim4::Vec4::y</definition>
+        <argsstring></argsstring>
+        <name>y</name>
+        <qualifiedname>dim4::Vec4::y</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/VMath/Math/VMath3D+.hpp" line="10" column="16" bodyfile="include/VMath/Math/VMath3D+.hpp" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdim4_1_1Vec4_1adeac33b9bb5635fadd74642f085d94fa" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float dim4::Vec4::z</definition>
+        <argsstring></argsstring>
+        <name>z</name>
+        <qualifiedname>dim4::Vec4::z</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/VMath/Math/VMath3D+.hpp" line="10" column="17" bodyfile="include/VMath/Math/VMath3D+.hpp" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdim4_1_1Vec4_1a6f43a778391bbff07ef349cc21363022" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float dim4::Vec4::w</definition>
+        <argsstring></argsstring>
+        <name>w</name>
+        <qualifiedname>dim4::Vec4::w</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/VMath/Math/VMath3D+.hpp" line="10" column="18" bodyfile="include/VMath/Math/VMath3D+.hpp" bodystart="10" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="structdim4_1_1Vec4_1ada5f15001c75746a21f8d91154febfd9" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool dim4::Vec4::operator==</definition>
+        <argsstring>(const Vec4 other) const</argsstring>
+        <name>operator==</name>
+        <qualifiedname>dim4::Vec4::operator==</qualifiedname>
+        <param>
+          <type>const <ref refid="structdim4_1_1Vec4" kindref="compound">Vec4</ref></type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/VMath/Math/VMath3D+.hpp" line="12" column="14" bodyfile="include/VMath/Math/VMath3D+.hpp" bodystart="12" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="function" id="structdim4_1_1Vec4_1a97336d187a77c2918a8da7abee8b8213" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structdim4_1_1Vec4" kindref="compound">Vec4</ref></type>
+        <definition>Vec4 dim4::Vec4::operator+</definition>
+        <argsstring>(const Vec4 other) const</argsstring>
+        <name>operator+</name>
+        <qualifiedname>dim4::Vec4::operator+</qualifiedname>
+        <param>
+          <type>const <ref refid="structdim4_1_1Vec4" kindref="compound">Vec4</ref></type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/VMath/Math/VMath3D+.hpp" line="24" column="14" bodyfile="include/VMath/Math/VMath3D+.hpp" bodystart="24" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="structdim4_1_1Vec4_1aee76b33eb44b01b78a95cb514e630b2a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structdim4_1_1Vec4" kindref="compound">Vec4</ref></type>
+        <definition>Vec4 dim4::Vec4::operator-</definition>
+        <argsstring>(const Vec4 other) const</argsstring>
+        <name>operator-</name>
+        <qualifiedname>dim4::Vec4::operator-</qualifiedname>
+        <param>
+          <type>const <ref refid="structdim4_1_1Vec4" kindref="compound">Vec4</ref></type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/VMath/Math/VMath3D+.hpp" line="27" column="14" bodyfile="include/VMath/Math/VMath3D+.hpp" bodystart="27" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="structdim4_1_1Vec4_1aa1ccee6bc155fab58557c0d218c51aa5" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structdim4_1_1Vec4" kindref="compound">Vec4</ref></type>
+        <definition>Vec4 dim4::Vec4::operator*</definition>
+        <argsstring>(const float n) const</argsstring>
+        <name>operator*</name>
+        <qualifiedname>dim4::Vec4::operator*</qualifiedname>
+        <param>
+          <type>const float</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/VMath/Math/VMath3D+.hpp" line="31" column="14" bodyfile="include/VMath/Math/VMath3D+.hpp" bodystart="31" bodyend="33"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/VMath/Math/VMath3D+.hpp" line="9" column="5" bodyfile="include/VMath/Math/VMath3D+.hpp" bodystart="9" bodyend="36"/>
+    <listofallmembers>
+      <member refid="structdim4_1_1Vec4_1aa1ccee6bc155fab58557c0d218c51aa5" prot="public" virt="non-virtual"><scope>dim4::Vec4</scope><name>operator*</name></member>
+      <member refid="structdim4_1_1Vec4_1a97336d187a77c2918a8da7abee8b8213" prot="public" virt="non-virtual"><scope>dim4::Vec4</scope><name>operator+</name></member>
+      <member refid="structdim4_1_1Vec4_1aee76b33eb44b01b78a95cb514e630b2a" prot="public" virt="non-virtual"><scope>dim4::Vec4</scope><name>operator-</name></member>
+      <member refid="structdim4_1_1Vec4_1ada5f15001c75746a21f8d91154febfd9" prot="public" virt="non-virtual"><scope>dim4::Vec4</scope><name>operator==</name></member>
+      <member refid="structdim4_1_1Vec4_1a6f43a778391bbff07ef349cc21363022" prot="public" virt="non-virtual"><scope>dim4::Vec4</scope><name>w</name></member>
+      <member refid="structdim4_1_1Vec4_1af52297f714fcbc6df18709d269213037" prot="public" virt="non-virtual"><scope>dim4::Vec4</scope><name>x</name></member>
+      <member refid="structdim4_1_1Vec4_1ae8b199a6bc231d048f493edceb317d9b" prot="public" virt="non-virtual"><scope>dim4::Vec4</scope><name>y</name></member>
+      <member refid="structdim4_1_1Vec4_1adeac33b9bb5635fadd74642f085d94fa" prot="public" virt="non-virtual"><scope>dim4::Vec4</scope><name>z</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

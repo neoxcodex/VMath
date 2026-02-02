@@ -1,0 +1,119 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="VMath2D_8hpp" kind="file" language="C++">
+    <compoundname>VMath2D.hpp</compoundname>
+    <includes local="no">iostream</includes>
+    <includes refid="Constants_8h" local="yes">Constants.h</includes>
+    <includes local="no">cmath</includes>
+    <includes refid="NDSFunctions_8hpp" local="yes">NDSFunctions.hpp</includes>
+    <incdepgraph>
+      <node id="3">
+        <label>Constants.h</label>
+        <link refid="Constants_8h"/>
+      </node>
+      <node id="5">
+        <label>NDSFunctions.hpp</label>
+        <link refid="NDSFunctions_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>include/VMath/Math/VMath2D.hpp</label>
+        <link refid="VMath2D_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>cmath</label>
+      </node>
+      <node id="2">
+        <label>iostream</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="structdim2_1_1Vec2" prot="public">dim2::Vec2</innerclass>
+    <innernamespace refid="namespacedim2">dim2</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>dim2_239785980</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>dim2_239785980</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//GRAPHICS<sp/>2D</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include&quot;<ref refid="Constants_8h" kindref="compound">Constants.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include&lt;cmath&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include&quot;<ref refid="NDSFunctions_8hpp" kindref="compound">NDSFunctions.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9" refid="namespacedim2" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacedim2" kindref="compound">dim2</ref>{</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11" refid="structdim2_1_1Vec2" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structdim2_1_1Vec2" kindref="compound">Vec2</ref>{</highlight></codeline>
+<codeline lineno="12" refid="structdim2_1_1Vec2_1a341e7200ac35f219d4c20f3c2e49ac80" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="structdim2_1_1Vec2_1a341e7200ac35f219d4c20f3c2e49ac80" kindref="member">x</ref>,<ref refid="structdim2_1_1Vec2_1a855a99ccc7041d3da8271f6d840cb077" kindref="member">y</ref>;</highlight></codeline>
+<codeline lineno="13" refid="structdim2_1_1Vec2_1a4ca20016c799896348a9c07413519b1a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structdim2_1_1Vec2" kindref="compound">Vec2</ref><sp/><ref refid="structdim2_1_1Vec2_1a4ca20016c799896348a9c07413519b1a" kindref="member">operator+</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structdim2_1_1Vec2" kindref="compound">Vec2</ref>&amp;<sp/>other)</highlight><highlight class="keyword"><sp/>const</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>{<ref refid="structdim2_1_1Vec2_1a341e7200ac35f219d4c20f3c2e49ac80" kindref="member">x</ref><sp/>+<sp/>other.<ref refid="structdim2_1_1Vec2_1a341e7200ac35f219d4c20f3c2e49ac80" kindref="member">x</ref>,<sp/><ref refid="structdim2_1_1Vec2_1a855a99ccc7041d3da8271f6d840cb077" kindref="member">y</ref><sp/>+<sp/>other.<ref refid="structdim2_1_1Vec2_1a855a99ccc7041d3da8271f6d840cb077" kindref="member">y</ref>};</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="16" refid="structdim2_1_1Vec2_1a3dab73f141d3ff4e6a024f37cb00c08a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structdim2_1_1Vec2" kindref="compound">Vec2</ref><sp/><ref refid="structdim2_1_1Vec2_1a3dab73f141d3ff4e6a024f37cb00c08a" kindref="member">operator-</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structdim2_1_1Vec2" kindref="compound">Vec2</ref>&amp;<sp/>other)</highlight><highlight class="keyword">const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>{<ref refid="structdim2_1_1Vec2_1a341e7200ac35f219d4c20f3c2e49ac80" kindref="member">x</ref><sp/>-<sp/>other.<ref refid="structdim2_1_1Vec2_1a341e7200ac35f219d4c20f3c2e49ac80" kindref="member">x</ref>,<sp/><ref refid="structdim2_1_1Vec2_1a855a99ccc7041d3da8271f6d840cb077" kindref="member">y</ref>-other.<ref refid="structdim2_1_1Vec2_1a855a99ccc7041d3da8271f6d840cb077" kindref="member">y</ref>};</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="19" refid="structdim2_1_1Vec2_1a87c2b05dc42711a6a838828695e0cc8a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structdim2_1_1Vec2" kindref="compound">Vec2</ref><sp/><ref refid="structdim2_1_1Vec2_1a87c2b05dc42711a6a838828695e0cc8a" kindref="member">operator*</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>scalar)</highlight><highlight class="keyword"><sp/>const</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>{<ref refid="structdim2_1_1Vec2_1a341e7200ac35f219d4c20f3c2e49ac80" kindref="member">x</ref>*scalar,<sp/><ref refid="structdim2_1_1Vec2_1a855a99ccc7041d3da8271f6d840cb077" kindref="member">y</ref>*scalar};</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="23" refid="namespacedim2_1a85b5de05e8cb642f5acff8a95727582f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="namespacedim2_1a85b5de05e8cb642f5acff8a95727582f" kindref="member">dotProduct</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structdim2_1_1Vec2" kindref="compound">Vec2</ref>&amp;<sp/>a,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structdim2_1_1Vec2" kindref="compound">Vec2</ref>&amp;<sp/>b){</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(a.<ref refid="structdim2_1_1Vec2_1a341e7200ac35f219d4c20f3c2e49ac80" kindref="member">x</ref>*b.<ref refid="structdim2_1_1Vec2_1a341e7200ac35f219d4c20f3c2e49ac80" kindref="member">x</ref>)<sp/>+<sp/>(a.<ref refid="structdim2_1_1Vec2_1a855a99ccc7041d3da8271f6d840cb077" kindref="member">y</ref>*b.<ref refid="structdim2_1_1Vec2_1a855a99ccc7041d3da8271f6d840cb077" kindref="member">y</ref>);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="26" refid="namespacedim2_1ad39893f205619ebfbe0a95189322dbc0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="namespacedim2_1ad39893f205619ebfbe0a95189322dbc0" kindref="member">magSquared</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structdim2_1_1Vec2" kindref="compound">Vec2</ref>&amp;<sp/>a){</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="namespacedim2_1a85b5de05e8cb642f5acff8a95727582f" kindref="member">dotProduct</ref>(a,a);</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="29" refid="namespacedim2_1a88d8af2e57f644319da1faa90e4b976e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespacedim2_1a88d8af2e57f644319da1faa90e4b976e" kindref="member">vectorCout</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structdim2_1_1Vec2" kindref="compound">Vec2</ref>&amp;<sp/>a){</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;2D<sp/>Vector<sp/>:<sp/>(&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>a.<ref refid="structdim2_1_1Vec2_1a341e7200ac35f219d4c20f3c2e49ac80" kindref="member">x</ref><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;,<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>a.<ref refid="structdim2_1_1Vec2_1a855a99ccc7041d3da8271f6d840cb077" kindref="member">y</ref><sp/><sp/>&lt;&lt;</highlight><highlight class="stringliteral">&quot;)&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="32" refid="namespacedim2_1a8f2687109594c4e5d801cd975ddeea88" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="structdim2_1_1Vec2" kindref="compound">Vec2</ref><sp/><ref refid="namespacedim2_1a8f2687109594c4e5d801cd975ddeea88" kindref="member">normalize</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structdim2_1_1Vec2" kindref="compound">Vec2</ref>&amp;<sp/>a){</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>mag<sp/><sp/>=<sp/>std::sqrt(<ref refid="namespacedim2_1ad39893f205619ebfbe0a95189322dbc0" kindref="member">magSquared</ref>(a));</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(mag<sp/>==<sp/>0){<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="structdim2_1_1Vec2" kindref="compound">Vec2</ref>{0,0};}</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>invMag<sp/>=<sp/>1.0f/mag;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="structdim2_1_1Vec2" kindref="compound">Vec2</ref>{(a.<ref refid="structdim2_1_1Vec2_1a341e7200ac35f219d4c20f3c2e49ac80" kindref="member">x</ref>)*invMag,<sp/>(a.<ref refid="structdim2_1_1Vec2_1a855a99ccc7041d3da8271f6d840cb077" kindref="member">y</ref>)*invMag};</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40" refid="namespacedim2_1a4bc5b4c6e8d6e5f735bac182ad811766" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="namespacedim2_1a4bc5b4c6e8d6e5f735bac182ad811766" kindref="member">distanceSquared</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structdim2_1_1Vec2" kindref="compound">Vec2</ref>&amp;<sp/>a,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structdim2_1_1Vec2" kindref="compound">Vec2</ref>&amp;<sp/>b){</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="namespacedim2_1ad39893f205619ebfbe0a95189322dbc0" kindref="member">magSquared</ref>(a-b);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="43" refid="namespacedim2_1a70614f75c4c0f8a3cb0e62e228ece469" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="namespacedim2_1a70614f75c4c0f8a3cb0e62e228ece469" kindref="member">angleRAD</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structdim2_1_1Vec2" kindref="compound">Vec2</ref>&amp;<sp/>a,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structdim2_1_1Vec2" kindref="compound">Vec2</ref>&amp;<sp/>b){</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>magA<sp/>=<sp/>std::sqrt(<ref refid="namespacedim2_1ad39893f205619ebfbe0a95189322dbc0" kindref="member">magSquared</ref>(a));</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>magB<sp/>=<sp/>std::sqrt(<ref refid="namespacedim2_1ad39893f205619ebfbe0a95189322dbc0" kindref="member">magSquared</ref>(b));</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(magA<sp/>==<sp/>0<sp/>||<sp/>magB<sp/>==0<sp/>){</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;}</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>cosTheta<sp/>=<sp/>(<ref refid="namespacedim2_1a85b5de05e8cb642f5acff8a95727582f" kindref="member">dotProduct</ref>(a,<sp/>b))/(magA*magB);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(cosTheta<sp/>&gt;<sp/>1.0){cosTheta<sp/>=<sp/>1.0;}</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(cosTheta<sp/>&lt;<sp/>-1.0){cosTheta<sp/>=<sp/>-1.0;}</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>std::acos(cosTheta);</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="54" refid="namespacedim2_1a79b4834db90d32bb8ad51dcad632d14a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="namespacedim2_1a79b4834db90d32bb8ad51dcad632d14a" kindref="member">angleDEG</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structdim2_1_1Vec2" kindref="compound">Vec2</ref>&amp;<sp/>a,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structdim2_1_1Vec2" kindref="compound">Vec2</ref>&amp;<sp/>b){</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="namespacedim2_1a70614f75c4c0f8a3cb0e62e228ece469" kindref="member">angleRAD</ref>(a,b)<sp/>*<sp/><ref refid="namespaceconstants_1ace815f2423ab7254ae405c3abab1b83c" kindref="member">constants::INV_PI_180</ref>;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="57" refid="namespacedim2_1acb492b99bd9c32440d20f220a6eeacce" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="structdim2_1_1Vec2" kindref="compound">Vec2</ref><sp/><ref refid="namespacedim2_1acb492b99bd9c32440d20f220a6eeacce" kindref="member">lerp</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structdim2_1_1Vec2" kindref="compound">Vec2</ref>&amp;<sp/>v1,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structdim2_1_1Vec2" kindref="compound">Vec2</ref>&amp;<sp/>v2,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>t){</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>a<sp/>=<sp/><ref refid="namespaceNDSF_1a4e3b42963ddafb487f9a1a4d081e647e" kindref="member">NDSF::clamp</ref>(t,<sp/>0.0f,<sp/>1.0f);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>v1.<ref refid="structdim2_1_1Vec2_1a341e7200ac35f219d4c20f3c2e49ac80" kindref="member">x</ref><sp/>+<sp/>a*(v2.<ref refid="structdim2_1_1Vec2_1a341e7200ac35f219d4c20f3c2e49ac80" kindref="member">x</ref><sp/>-<sp/>v1.<ref refid="structdim2_1_1Vec2_1a341e7200ac35f219d4c20f3c2e49ac80" kindref="member">x</ref>),</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>v1.<ref refid="structdim2_1_1Vec2_1a855a99ccc7041d3da8271f6d840cb077" kindref="member">y</ref><sp/>+<sp/>a*(v2.<ref refid="structdim2_1_1Vec2_1a855a99ccc7041d3da8271f6d840cb077" kindref="member">y</ref><sp/>-<sp/>v1.<ref refid="structdim2_1_1Vec2_1a855a99ccc7041d3da8271f6d840cb077" kindref="member">y</ref>)</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*TODO<sp/>AGAIN*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="include/VMath/Math/VMath2D.hpp"/>
+  </compounddef>
+</doxygen>

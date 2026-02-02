@@ -1,0 +1,80 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="namespacevisualizer" kind="namespace" language="C++">
+    <compoundname>visualizer</compoundname>
+    <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacevisualizer_1a8b64650868da7c22cb91cd5c0a574be7" prot="public" static="no" mutable="no">
+        <type>std::unordered_map&lt; int, <ref refid="structdim4_1_1Vec4" kindref="compound">dim4::Vec4</ref> &gt;</type>
+        <definition>std::unordered_map&lt;int, dim4::Vec4&gt; visualizer::registry</definition>
+        <argsstring></argsstring>
+        <name>registry</name>
+        <qualifiedname>visualizer::registry</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/VMath/Vis/visualizer.hpp" line="22" column="31" bodyfile="include/VMath/Vis/visualizer.hpp" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacevisualizer_1ac2281468b98cc7510c123b3a3579326b" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int visualizer::nextID</definition>
+        <argsstring></argsstring>
+        <name>nextID</name>
+        <qualifiedname>visualizer::nextID</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/VMath/Vis/visualizer.hpp" line="23" column="16" bodyfile="include/VMath/Vis/visualizer.hpp" bodystart="23" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="namespacevisualizer_1aafbca0c04d4dff4ada51bfb0521ded2d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int visualizer::pushVecVisual</definition>
+        <argsstring>(dim4::Vec4 vector)</argsstring>
+        <name>pushVecVisual</name>
+        <qualifiedname>visualizer::pushVecVisual</qualifiedname>
+        <param>
+          <type><ref refid="structdim4_1_1Vec4" kindref="compound">dim4::Vec4</ref></type>
+          <declname>vector</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/VMath/Vis/visualizer.hpp" line="24" column="16" bodyfile="include/VMath/Vis/visualizer.hpp" bodystart="24" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacevisualizer_1a61891121f174de6f75fc4097b55453ec" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool visualizer::pullVecVisual</definition>
+        <argsstring>(int vectorID)</argsstring>
+        <name>pullVecVisual</name>
+        <qualifiedname>visualizer::pullVecVisual</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>vectorID</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/VMath/Vis/visualizer.hpp" line="30" column="17" bodyfile="include/VMath/Vis/visualizer.hpp" bodystart="30" bodyend="37"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/VMath/Vis/visualizer.hpp" line="21" column="1"/>
+  </compounddef>
+</doxygen>

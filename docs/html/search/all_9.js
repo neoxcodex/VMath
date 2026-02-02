@@ -1,0 +1,7 @@
+var searchData=
+[
+  ['operator_2a_0',['operator*',['../structdim2_1_1Vec2.html#a87c2b05dc42711a6a838828695e0cc8a',1,'dim2::Vec2::operator*()'],['../structdim4_1_1Vec4.html#aa1ccee6bc155fab58557c0d218c51aa5',1,'dim4::Vec4::operator*()'],['../structdim4_1_1Mat4.html#a4cae5021f858ed635bc262d4c548cb54',1,'dim4::Mat4::operator*()'],['../structdim3_1_1Vec3.html#a208bf3949912ef0915a104bb0fbc0c40',1,'dim3::Vec3::operator*()'],['../structdim3_1_1Mat3.html#aec7a0f60b80829f3098b4981110aebc0',1,'dim3::Mat3::operator*()'],['../namespacedim4.html#aec7c589d565c47a9cf52d133bafe7ca7',1,'dim4::operator*()'],['../namespacedim3.html#a918c677a6bebfcdebb26ecce59e04d81',1,'dim3::operator*()']]],
+  ['operator_2b_1',['operator+',['../structdim2_1_1Vec2.html#a4ca20016c799896348a9c07413519b1a',1,'dim2::Vec2::operator+()'],['../structdim4_1_1Vec4.html#a97336d187a77c2918a8da7abee8b8213',1,'dim4::Vec4::operator+()'],['../structdim3_1_1Vec3.html#a5a5f42b629ac41709feb6ffd8d6fea4e',1,'dim3::Vec3::operator+()']]],
+  ['operator_2d_2',['operator-',['../structdim2_1_1Vec2.html#a3dab73f141d3ff4e6a024f37cb00c08a',1,'dim2::Vec2::operator-()'],['../structdim4_1_1Vec4.html#aee76b33eb44b01b78a95cb514e630b2a',1,'dim4::Vec4::operator-()'],['../structdim3_1_1Vec3.html#aed9a60f69f0f784d47bec20446a5f37b',1,'dim3::Vec3::operator-()']]],
+  ['operator_3d_3d_3',['operator==',['../structdim4_1_1Vec4.html#ada5f15001c75746a21f8d91154febfd9',1,'dim4::Vec4::operator==()'],['../structdim3_1_1Vec3.html#acd027ff49ea77ec1dbac091712259b0d',1,'dim3::Vec3::operator==()']]]
+];

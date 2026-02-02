@@ -1,0 +1,92 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="namespaceNDSF" kind="namespace" language="C++">
+    <compoundname>NDSF</compoundname>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="namespaceNDSF_1a4e3b42963ddafb487f9a1a4d081e647e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float NDSF::clamp</definition>
+        <argsstring>(float a, float lowerL, float upperL)</argsstring>
+        <name>clamp</name>
+        <qualifiedname>NDSF::clamp</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>lowerL</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>upperL</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/VMath/Math/NDSFunctions.hpp" line="9" column="18" bodyfile="include/VMath/Math/NDSFunctions.hpp" bodystart="9" bodyend="11"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceNDSF_1aac6fcf67ef9ccf35deacef1056ae2001" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool NDSF::epEqual</definition>
+        <argsstring>(float a, float b, float epsilon=constants::EPSILON)</argsstring>
+        <name>epEqual</name>
+        <qualifiedname>NDSF::epEqual</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>epsilon</declname>
+          <defval><ref refid="namespaceconstants_1a7f3b4cf1f4ef2af969262048a358a313" kindref="member">constants::EPSILON</ref></defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/VMath/Math/NDSFunctions.hpp" line="12" column="17" bodyfile="include/VMath/Math/NDSFunctions.hpp" bodystart="12" bodyend="15"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceNDSF_1a24179bd1dea5ae01825a496cdfbba1ff" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float NDSF::lerp</definition>
+        <argsstring>(float a, float b, float t)</argsstring>
+        <name>lerp</name>
+        <qualifiedname>NDSF::lerp</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/VMath/Math/NDSFunctions.hpp" line="16" column="18" bodyfile="include/VMath/Math/NDSFunctions.hpp" bodystart="16" bodyend="20"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/VMath/Math/NDSFunctions.hpp" line="8" column="1"/>
+  </compounddef>
+</doxygen>

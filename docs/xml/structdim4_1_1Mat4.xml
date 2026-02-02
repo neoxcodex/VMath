@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="structdim4_1_1Mat4" kind="struct" language="C++" prot="public">
+    <compoundname>dim4::Mat4</compoundname>
+    <includes refid="VMath3D_09_8hpp" local="no">VMath3D+.hpp</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structdim4_1_1Mat4_1a5852c804c202aca3f6628bfacf472af3" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float dim4::Mat4::M[4][4]</definition>
+        <argsstring>[4][4]</argsstring>
+        <name>M</name>
+        <qualifiedname>dim4::Mat4::M</qualifiedname>
+        <initializer>= {{0}}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/VMath/Math/VMath3D+.hpp" line="78" column="15" bodyfile="include/VMath/Math/VMath3D+.hpp" bodystart="78" bodyend="78"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="structdim4_1_1Mat4_1ae615ba2f1c7065005bfdaaa9031a63f2" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structdim4_1_1Mat4" kindref="compound">Mat4</ref></type>
+        <definition>static Mat4 dim4::Mat4::identity</definition>
+        <argsstring>()</argsstring>
+        <name>identity</name>
+        <qualifiedname>dim4::Mat4::identity</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/VMath/Math/VMath3D+.hpp" line="79" column="21" bodyfile="include/VMath/Math/VMath3D+.hpp" bodystart="79" bodyend="83"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="structdim4_1_1Mat4_1a4cae5021f858ed635bc262d4c548cb54" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structdim4_1_1Vec4" kindref="compound">Vec4</ref></type>
+        <definition>Vec4 dim4::Mat4::operator*</definition>
+        <argsstring>(const Vec4 &amp;v) const</argsstring>
+        <name>operator*</name>
+        <qualifiedname>dim4::Mat4::operator*</qualifiedname>
+        <param>
+          <type>const <ref refid="structdim4_1_1Vec4" kindref="compound">Vec4</ref> &amp;</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/VMath/Math/VMath3D+.hpp" line="84" column="14" bodyfile="include/VMath/Math/VMath3D+.hpp" bodystart="84" bodyend="91"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/VMath/Math/VMath3D+.hpp" line="77" column="5" bodyfile="include/VMath/Math/VMath3D+.hpp" bodystart="77" bodyend="92"/>
+    <listofallmembers>
+      <member refid="structdim4_1_1Mat4_1ae615ba2f1c7065005bfdaaa9031a63f2" prot="public" virt="non-virtual"><scope>dim4::Mat4</scope><name>identity</name></member>
+      <member refid="structdim4_1_1Mat4_1a5852c804c202aca3f6628bfacf472af3" prot="public" virt="non-virtual"><scope>dim4::Mat4</scope><name>M</name></member>
+      <member refid="structdim4_1_1Mat4_1a4cae5021f858ed635bc262d4c548cb54" prot="public" virt="non-virtual"><scope>dim4::Mat4</scope><name>operator*</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

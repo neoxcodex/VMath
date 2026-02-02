@@ -1,0 +1,137 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.16.1" xml:lang="en-US">
+  <compound refid="structdim3_1_1Mat3" kind="struct"><name>dim3::Mat3</name>
+    <member refid="structdim3_1_1Mat3_1a8b1307846a6c462565cc8f7fa2e7d898" kind="variable"><name>M</name></member>
+    <member refid="structdim3_1_1Mat3_1a8f2d08e1b0e276c064f49fd8da3e772e" kind="function"><name>identity</name></member>
+    <member refid="structdim3_1_1Mat3_1a66f646a494d3e901f18b5c2b979ade09" kind="function"><name>genRotatorMatrix</name></member>
+    <member refid="structdim3_1_1Mat3_1af6214d702618a1e149444b1db12bd489" kind="function"><name>rotationX</name></member>
+    <member refid="structdim3_1_1Mat3_1aa5a4c41031cde03e68f453b7871f8420" kind="function"><name>rotationY</name></member>
+    <member refid="structdim3_1_1Mat3_1abf8b4b352215cc2144144ba16c35e74f" kind="function"><name>rotationZ</name></member>
+    <member refid="structdim3_1_1Mat3_1aec7a0f60b80829f3098b4981110aebc0" kind="function"><name>operator*</name></member>
+  </compound>
+  <compound refid="structdim4_1_1Mat4" kind="struct"><name>dim4::Mat4</name>
+    <member refid="structdim4_1_1Mat4_1a5852c804c202aca3f6628bfacf472af3" kind="variable"><name>M</name></member>
+    <member refid="structdim4_1_1Mat4_1ae615ba2f1c7065005bfdaaa9031a63f2" kind="function"><name>identity</name></member>
+    <member refid="structdim4_1_1Mat4_1a4cae5021f858ed635bc262d4c548cb54" kind="function"><name>operator*</name></member>
+  </compound>
+  <compound refid="structdim2_1_1Vec2" kind="struct"><name>dim2::Vec2</name>
+    <member refid="structdim2_1_1Vec2_1a341e7200ac35f219d4c20f3c2e49ac80" kind="variable"><name>x</name></member>
+    <member refid="structdim2_1_1Vec2_1a855a99ccc7041d3da8271f6d840cb077" kind="variable"><name>y</name></member>
+    <member refid="structdim2_1_1Vec2_1a4ca20016c799896348a9c07413519b1a" kind="function"><name>operator+</name></member>
+    <member refid="structdim2_1_1Vec2_1a3dab73f141d3ff4e6a024f37cb00c08a" kind="function"><name>operator-</name></member>
+    <member refid="structdim2_1_1Vec2_1a87c2b05dc42711a6a838828695e0cc8a" kind="function"><name>operator*</name></member>
+  </compound>
+  <compound refid="structdim3_1_1Vec3" kind="struct"><name>dim3::Vec3</name>
+    <member refid="structdim3_1_1Vec3_1af6082affd4a98d0c40cd7d846366ccf1" kind="variable"><name>x</name></member>
+    <member refid="structdim3_1_1Vec3_1a45944275a3f755f84dd36cd8c8b198a8" kind="variable"><name>y</name></member>
+    <member refid="structdim3_1_1Vec3_1a862ed99367dbbe1fc55a5e6cdc7ae60e" kind="variable"><name>z</name></member>
+    <member refid="structdim3_1_1Vec3_1a5a5f42b629ac41709feb6ffd8d6fea4e" kind="function"><name>operator+</name></member>
+    <member refid="structdim3_1_1Vec3_1aed9a60f69f0f784d47bec20446a5f37b" kind="function"><name>operator-</name></member>
+    <member refid="structdim3_1_1Vec3_1a208bf3949912ef0915a104bb0fbc0c40" kind="function"><name>operator*</name></member>
+    <member refid="structdim3_1_1Vec3_1acd027ff49ea77ec1dbac091712259b0d" kind="function"><name>operator==</name></member>
+  </compound>
+  <compound refid="structdim4_1_1Vec4" kind="struct"><name>dim4::Vec4</name>
+    <member refid="structdim4_1_1Vec4_1af52297f714fcbc6df18709d269213037" kind="variable"><name>x</name></member>
+    <member refid="structdim4_1_1Vec4_1ae8b199a6bc231d048f493edceb317d9b" kind="variable"><name>y</name></member>
+    <member refid="structdim4_1_1Vec4_1adeac33b9bb5635fadd74642f085d94fa" kind="variable"><name>z</name></member>
+    <member refid="structdim4_1_1Vec4_1a6f43a778391bbff07ef349cc21363022" kind="variable"><name>w</name></member>
+    <member refid="structdim4_1_1Vec4_1ada5f15001c75746a21f8d91154febfd9" kind="function"><name>operator==</name></member>
+    <member refid="structdim4_1_1Vec4_1a97336d187a77c2918a8da7abee8b8213" kind="function"><name>operator+</name></member>
+    <member refid="structdim4_1_1Vec4_1aee76b33eb44b01b78a95cb514e630b2a" kind="function"><name>operator-</name></member>
+    <member refid="structdim4_1_1Vec4_1aa1ccee6bc155fab58557c0d218c51aa5" kind="function"><name>operator*</name></member>
+  </compound>
+  <compound refid="namespaceconstants" kind="namespace"><name>constants</name>
+    <member refid="namespaceconstants_1a88940de785093705ac1092bb71ac4d2a" kind="variable"><name>ACCU_PI</name></member>
+    <member refid="namespaceconstants_1ae0bf237f1e254bc82b601f3ecad3796d" kind="variable"><name>PI</name></member>
+    <member refid="namespaceconstants_1ace815f2423ab7254ae405c3abab1b83c" kind="variable"><name>INV_PI_180</name></member>
+    <member refid="namespaceconstants_1a7f3b4cf1f4ef2af969262048a358a313" kind="variable"><name>EPSILON</name></member>
+  </compound>
+  <compound refid="namespacedim2" kind="namespace"><name>dim2</name>
+    <member refid="namespacedim2_1a85b5de05e8cb642f5acff8a95727582f" kind="function"><name>dotProduct</name></member>
+    <member refid="namespacedim2_1ad39893f205619ebfbe0a95189322dbc0" kind="function"><name>magSquared</name></member>
+    <member refid="namespacedim2_1a88d8af2e57f644319da1faa90e4b976e" kind="function"><name>vectorCout</name></member>
+    <member refid="namespacedim2_1a8f2687109594c4e5d801cd975ddeea88" kind="function"><name>normalize</name></member>
+    <member refid="namespacedim2_1a4bc5b4c6e8d6e5f735bac182ad811766" kind="function"><name>distanceSquared</name></member>
+    <member refid="namespacedim2_1a70614f75c4c0f8a3cb0e62e228ece469" kind="function"><name>angleRAD</name></member>
+    <member refid="namespacedim2_1a79b4834db90d32bb8ad51dcad632d14a" kind="function"><name>angleDEG</name></member>
+    <member refid="namespacedim2_1acb492b99bd9c32440d20f220a6eeacce" kind="function"><name>lerp</name></member>
+  </compound>
+  <compound refid="namespacedim3" kind="namespace"><name>dim3</name>
+    <member refid="namespacedim3_1a918c677a6bebfcdebb26ecce59e04d81" kind="function"><name>operator*</name></member>
+    <member refid="namespacedim3_1a1b2d2378207f3ea275ca4d8e95759332" kind="function"><name>dotProduct</name></member>
+    <member refid="namespacedim3_1a49981c23e4ba868ba815e4cc719e8524" kind="function"><name>magSquared</name></member>
+    <member refid="namespacedim3_1a3e4a820fd60a903063a0a7dae601f0c5" kind="function"><name>vectorCout</name></member>
+    <member refid="namespacedim3_1ae9aca9f91f3ee1c7c8e98d0aa81a3818" kind="function"><name>normalize</name></member>
+    <member refid="namespacedim3_1ac6bceb18dedb200874a5b32d9ca03c4c" kind="function"><name>distanceSquared</name></member>
+    <member refid="namespacedim3_1ace6a071c06128a8ef11bdb3b2c17c42e" kind="function"><name>angleRAD</name></member>
+    <member refid="namespacedim3_1af455c33e16cbd27c3c891ed13639dce6" kind="function"><name>angleDEG</name></member>
+    <member refid="namespacedim3_1a72e7b9b5311815a0bb2f48afb2ce3bf5" kind="function"><name>scalarProject</name></member>
+    <member refid="namespacedim3_1a723d933db69e4469759a13f6488b6319" kind="function"><name>vectorProject</name></member>
+    <member refid="namespacedim3_1a0a36f0b4027df5697bf8a9666656f4c4" kind="function"><name>crossProduct</name></member>
+    <member refid="namespacedim3_1abf0ed32e11f3fa172424ae5cee80fc1b" kind="function"><name>epVectorEqual</name></member>
+    <member refid="namespacedim3_1a83b1ed631a375b365ecfb2a1fba1c5c2" kind="function"><name>lerp</name></member>
+    <member refid="namespacedim3_1a9ac9d4b69ad2aad2c51d2d2365125309" kind="function"><name>matrixMultiply</name></member>
+    <member refid="namespacedim3_1ae100dc04d852fa843dd75a7d64645dc8" kind="function"><name>rotationCustomAxis</name></member>
+    <member refid="namespacedim3_1a79335cfc751c2b59b582cd44a82114c8" kind="function"><name>rotationXAxis</name></member>
+    <member refid="namespacedim3_1ac48403499c039924efc2df3d1dc52da2" kind="function"><name>rotationYAxis</name></member>
+    <member refid="namespacedim3_1aee1d29193a890ecbbb688c93ab4ee34d" kind="function"><name>rotationZAxis</name></member>
+  </compound>
+  <compound refid="namespacedim4" kind="namespace"><name>dim4</name>
+    <member refid="namespacedim4_1a1fc4f16a9f4f445def76f012c9a5cf1c" kind="function"><name>vectorCout</name></member>
+    <member refid="namespacedim4_1aec7c589d565c47a9cf52d133bafe7ca7" kind="function"><name>operator*</name></member>
+    <member refid="namespacedim4_1ad91806f78b76249b8734868b78a470ac" kind="function"><name>dotProduct</name></member>
+    <member refid="namespacedim4_1afbd8d42ca13041e55a0af066a00bd142" kind="function"><name>magSquared</name></member>
+    <member refid="namespacedim4_1a754f8bd9423a05167ec493932ef7478f" kind="function"><name>magnitude</name></member>
+    <member refid="namespacedim4_1af35c14a8bac8fbf3c279fb8b7d247860" kind="function"><name>epVectorEqual</name></member>
+    <member refid="namespacedim4_1a2ea043232d03199f449813b8eb03ce7a" kind="function"><name>normalize</name></member>
+    <member refid="namespacedim4_1a050c2be340cba61c80628b22a0779622" kind="function"><name>matrixMultiply</name></member>
+    <member refid="namespacedim4_1abd5984731c88731bbbd6406a4fa475ef" kind="function"><name>lerp</name></member>
+    <member refid="namespacedim4_1a992c34664d852d9d0b1015207ff7cd83" kind="function"><name>angleRAD</name></member>
+    <member refid="namespacedim4_1a02950f3da0e8dcc5cebb87f993d0cf68" kind="function"><name>angleDEG</name></member>
+  </compound>
+  <compound refid="namespacedimN" kind="namespace"><name>dimN</name>
+    <member refid="namespacedimN_1abbd29d1c4930da02382af428bda8fcaf" kind="function"><name>magnitude</name></member>
+    <member refid="namespacedimN_1a6527b3cd04fc5f5fb7d9e2909187de43" kind="function"><name>normalize</name></member>
+    <member refid="namespacedimN_1a37b54cf08a72b9a48d6adffd8d948d6e" kind="function"><name>vecout</name></member>
+    <member refid="namespacedimN_1a50898203cf7a2067bb202487e162b9c1" kind="function"><name>scalarMult</name></member>
+    <member refid="namespacedimN_1ae2be63fa0e57213a137e59fce393d593" kind="function"><name>addVectors</name></member>
+    <member refid="namespacedimN_1afec9f533d7d10550fab5fa5eb357d4d1" kind="function"><name>subtractVectors</name></member>
+    <member refid="namespacedimN_1af877e93856df502baf3d973d9ccd772b" kind="function"><name>distance</name></member>
+    <member refid="namespacedimN_1a5fbec898454bd5797ba513a158041e80" kind="function"><name>dotProduct</name></member>
+    <member refid="namespacedimN_1aa01e8003329491d7c5130d9e5097587b" kind="function"><name>angleRAD</name></member>
+    <member refid="namespacedimN_1af4775fc92c00975078f8d09a809cc38d" kind="function"><name>angleDEG</name></member>
+  </compound>
+  <compound refid="namespaceNDSF" kind="namespace"><name>NDSF</name>
+    <member refid="namespaceNDSF_1a4e3b42963ddafb487f9a1a4d081e647e" kind="function"><name>clamp</name></member>
+    <member refid="namespaceNDSF_1aac6fcf67ef9ccf35deacef1056ae2001" kind="function"><name>epEqual</name></member>
+    <member refid="namespaceNDSF_1a24179bd1dea5ae01825a496cdfbba1ff" kind="function"><name>lerp</name></member>
+  </compound>
+  <compound refid="namespacevisualizer" kind="namespace"><name>visualizer</name>
+    <member refid="namespacevisualizer_1a8b64650868da7c22cb91cd5c0a574be7" kind="variable"><name>registry</name></member>
+    <member refid="namespacevisualizer_1ac2281468b98cc7510c123b3a3579326b" kind="variable"><name>nextID</name></member>
+    <member refid="namespacevisualizer_1aafbca0c04d4dff4ada51bfb0521ded2d" kind="function"><name>pushVecVisual</name></member>
+    <member refid="namespacevisualizer_1a61891121f174de6f75fc4097b55453ec" kind="function"><name>pullVecVisual</name></member>
+  </compound>
+  <compound refid="Constants_8h" kind="file"><name>Constants.h</name>
+  </compound>
+  <compound refid="NDSFunctions_8hpp" kind="file"><name>NDSFunctions.hpp</name>
+  </compound>
+  <compound refid="VMath2D_8hpp" kind="file"><name>VMath2D.hpp</name>
+  </compound>
+  <compound refid="VMath3D_09_8hpp" kind="file"><name>VMath3D+.hpp</name>
+  </compound>
+  <compound refid="VMath3D_8hpp" kind="file"><name>VMath3D.hpp</name>
+  </compound>
+  <compound refid="VMathN_8hpp" kind="file"><name>VMathN.hpp</name>
+  </compound>
+  <compound refid="visualizer_8hpp" kind="file"><name>visualizer.hpp</name>
+  </compound>
+  <compound refid="dir_d44c64559bbebec7f509842c48db8b23" kind="dir"><name>include</name>
+  </compound>
+  <compound refid="dir_b2abf504d45f6e66b6e040b615127819" kind="dir"><name>include/VMath/Math</name>
+  </compound>
+  <compound refid="dir_3277549bdbcf9923d5afdeba530147a7" kind="dir"><name>include/VMath/Vis</name>
+  </compound>
+  <compound refid="dir_b4e98ea9ada4e66ab1abd81e069e1722" kind="dir"><name>include/VMath</name>
+  </compound>
+</doxygenindex>

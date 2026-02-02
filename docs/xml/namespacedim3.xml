@@ -1,0 +1,412 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="namespacedim3" kind="namespace" language="C++">
+    <compoundname>dim3</compoundname>
+    <innerclass refid="structdim3_1_1Vec3" prot="public">dim3::Vec3</innerclass>
+    <innerclass refid="structdim3_1_1Mat3" prot="public">dim3::Mat3</innerclass>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="namespacedim3_1a918c677a6bebfcdebb26ecce59e04d81" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structdim3_1_1Vec3" kindref="compound">Vec3</ref></type>
+        <definition>Vec3 dim3::operator*</definition>
+        <argsstring>(float scalar, const Vec3 &amp;v)</argsstring>
+        <name>operator*</name>
+        <qualifiedname>dim3::operator*</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>scalar</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structdim3_1_1Vec3" kindref="compound">Vec3</ref> &amp;</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/VMath/Math/VMath3D.hpp" line="54" column="17" bodyfile="include/VMath/Math/VMath3D.hpp" bodystart="54" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacedim3_1a1b2d2378207f3ea275ca4d8e95759332" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float dim3::dotProduct</definition>
+        <argsstring>(const Vec3 &amp;a, const Vec3 &amp;b)</argsstring>
+        <name>dotProduct</name>
+        <qualifiedname>dim3::dotProduct</qualifiedname>
+        <param>
+          <type>const <ref refid="structdim3_1_1Vec3" kindref="compound">Vec3</ref> &amp;</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structdim3_1_1Vec3" kindref="compound">Vec3</ref> &amp;</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/VMath/Math/VMath3D.hpp" line="58" column="18" bodyfile="include/VMath/Math/VMath3D.hpp" bodystart="58" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacedim3_1a49981c23e4ba868ba815e4cc719e8524" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float dim3::magSquared</definition>
+        <argsstring>(const Vec3 &amp;a)</argsstring>
+        <name>magSquared</name>
+        <qualifiedname>dim3::magSquared</qualifiedname>
+        <param>
+          <type>const <ref refid="structdim3_1_1Vec3" kindref="compound">Vec3</ref> &amp;</type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/VMath/Math/VMath3D.hpp" line="61" column="18" bodyfile="include/VMath/Math/VMath3D.hpp" bodystart="61" bodyend="63"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacedim3_1a3e4a820fd60a903063a0a7dae601f0c5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void dim3::vectorCout</definition>
+        <argsstring>(const Vec3 &amp;a)</argsstring>
+        <name>vectorCout</name>
+        <qualifiedname>dim3::vectorCout</qualifiedname>
+        <param>
+          <type>const <ref refid="structdim3_1_1Vec3" kindref="compound">Vec3</ref> &amp;</type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/VMath/Math/VMath3D.hpp" line="64" column="17" bodyfile="include/VMath/Math/VMath3D.hpp" bodystart="64" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacedim3_1ae9aca9f91f3ee1c7c8e98d0aa81a3818" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structdim3_1_1Vec3" kindref="compound">Vec3</ref></type>
+        <definition>Vec3 dim3::normalize</definition>
+        <argsstring>(const Vec3 &amp;a)</argsstring>
+        <name>normalize</name>
+        <qualifiedname>dim3::normalize</qualifiedname>
+        <param>
+          <type>const <ref refid="structdim3_1_1Vec3" kindref="compound">Vec3</ref> &amp;</type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/VMath/Math/VMath3D.hpp" line="67" column="17" bodyfile="include/VMath/Math/VMath3D.hpp" bodystart="67" bodyend="73"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacedim3_1ac6bceb18dedb200874a5b32d9ca03c4c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float dim3::distanceSquared</definition>
+        <argsstring>(const Vec3 &amp;a, const Vec3 &amp;b)</argsstring>
+        <name>distanceSquared</name>
+        <qualifiedname>dim3::distanceSquared</qualifiedname>
+        <param>
+          <type>const <ref refid="structdim3_1_1Vec3" kindref="compound">Vec3</ref> &amp;</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structdim3_1_1Vec3" kindref="compound">Vec3</ref> &amp;</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/VMath/Math/VMath3D.hpp" line="74" column="18" bodyfile="include/VMath/Math/VMath3D.hpp" bodystart="74" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacedim3_1ace6a071c06128a8ef11bdb3b2c17c42e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float dim3::angleRAD</definition>
+        <argsstring>(const Vec3 &amp;a, const Vec3 &amp;b, bool returnCosValue=false)</argsstring>
+        <name>angleRAD</name>
+        <qualifiedname>dim3::angleRAD</qualifiedname>
+        <param>
+          <type>const <ref refid="structdim3_1_1Vec3" kindref="compound">Vec3</ref> &amp;</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structdim3_1_1Vec3" kindref="compound">Vec3</ref> &amp;</type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>returnCosValue</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/VMath/Math/VMath3D.hpp" line="77" column="18" bodyfile="include/VMath/Math/VMath3D.hpp" bodystart="77" bodyend="85"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacedim3_1af455c33e16cbd27c3c891ed13639dce6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float dim3::angleDEG</definition>
+        <argsstring>(const Vec3 &amp;a, const Vec3 &amp;b)</argsstring>
+        <name>angleDEG</name>
+        <qualifiedname>dim3::angleDEG</qualifiedname>
+        <param>
+          <type>const <ref refid="structdim3_1_1Vec3" kindref="compound">Vec3</ref> &amp;</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structdim3_1_1Vec3" kindref="compound">Vec3</ref> &amp;</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/VMath/Math/VMath3D.hpp" line="86" column="18" bodyfile="include/VMath/Math/VMath3D.hpp" bodystart="86" bodyend="88"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacedim3_1a72e7b9b5311815a0bb2f48afb2ce3bf5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float dim3::scalarProject</definition>
+        <argsstring>(const Vec3 &amp;vecToProj, const Vec3 &amp;vecToProjAlong)</argsstring>
+        <name>scalarProject</name>
+        <qualifiedname>dim3::scalarProject</qualifiedname>
+        <param>
+          <type>const <ref refid="structdim3_1_1Vec3" kindref="compound">Vec3</ref> &amp;</type>
+          <declname>vecToProj</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structdim3_1_1Vec3" kindref="compound">Vec3</ref> &amp;</type>
+          <declname>vecToProjAlong</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/VMath/Math/VMath3D.hpp" line="89" column="18" bodyfile="include/VMath/Math/VMath3D.hpp" bodystart="89" bodyend="93"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacedim3_1a723d933db69e4469759a13f6488b6319" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structdim3_1_1Vec3" kindref="compound">Vec3</ref></type>
+        <definition>Vec3 dim3::vectorProject</definition>
+        <argsstring>(const Vec3 &amp;vecToProj, const Vec3 &amp;vecToProjAlong)</argsstring>
+        <name>vectorProject</name>
+        <qualifiedname>dim3::vectorProject</qualifiedname>
+        <param>
+          <type>const <ref refid="structdim3_1_1Vec3" kindref="compound">Vec3</ref> &amp;</type>
+          <declname>vecToProj</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structdim3_1_1Vec3" kindref="compound">Vec3</ref> &amp;</type>
+          <declname>vecToProjAlong</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/VMath/Math/VMath3D.hpp" line="94" column="17" bodyfile="include/VMath/Math/VMath3D.hpp" bodystart="94" bodyend="100"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacedim3_1a0a36f0b4027df5697bf8a9666656f4c4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structdim3_1_1Vec3" kindref="compound">Vec3</ref></type>
+        <definition>Vec3 dim3::crossProduct</definition>
+        <argsstring>(const Vec3 &amp;a, const Vec3 &amp;b)</argsstring>
+        <name>crossProduct</name>
+        <qualifiedname>dim3::crossProduct</qualifiedname>
+        <param>
+          <type>const <ref refid="structdim3_1_1Vec3" kindref="compound">Vec3</ref> &amp;</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structdim3_1_1Vec3" kindref="compound">Vec3</ref> &amp;</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/VMath/Math/VMath3D.hpp" line="101" column="17" bodyfile="include/VMath/Math/VMath3D.hpp" bodystart="101" bodyend="109"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacedim3_1abf0ed32e11f3fa172424ae5cee80fc1b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool dim3::epVectorEqual</definition>
+        <argsstring>(const Vec3 &amp;a, const Vec3 &amp;b)</argsstring>
+        <name>epVectorEqual</name>
+        <qualifiedname>dim3::epVectorEqual</qualifiedname>
+        <param>
+          <type>const <ref refid="structdim3_1_1Vec3" kindref="compound">Vec3</ref> &amp;</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structdim3_1_1Vec3" kindref="compound">Vec3</ref> &amp;</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/VMath/Math/VMath3D.hpp" line="111" column="17" bodyfile="include/VMath/Math/VMath3D.hpp" bodystart="111" bodyend="121"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacedim3_1a83b1ed631a375b365ecfb2a1fba1c5c2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structdim3_1_1Vec3" kindref="compound">Vec3</ref></type>
+        <definition>Vec3 dim3::lerp</definition>
+        <argsstring>(const Vec3 &amp;v1, const Vec3 &amp;v2, float t)</argsstring>
+        <name>lerp</name>
+        <qualifiedname>dim3::lerp</qualifiedname>
+        <param>
+          <type>const <ref refid="structdim3_1_1Vec3" kindref="compound">Vec3</ref> &amp;</type>
+          <declname>v1</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structdim3_1_1Vec3" kindref="compound">Vec3</ref> &amp;</type>
+          <declname>v2</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/VMath/Math/VMath3D.hpp" line="122" column="17" bodyfile="include/VMath/Math/VMath3D.hpp" bodystart="122" bodyend="130"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacedim3_1a9ac9d4b69ad2aad2c51d2d2365125309" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structdim3_1_1Mat3" kindref="compound">Mat3</ref></type>
+        <definition>Mat3 dim3::matrixMultiply</definition>
+        <argsstring>(const Mat3 &amp;M1, const Mat3 &amp;M2)</argsstring>
+        <name>matrixMultiply</name>
+        <qualifiedname>dim3::matrixMultiply</qualifiedname>
+        <param>
+          <type>const <ref refid="structdim3_1_1Mat3" kindref="compound">Mat3</ref> &amp;</type>
+          <declname>M1</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structdim3_1_1Mat3" kindref="compound">Mat3</ref> &amp;</type>
+          <declname>M2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/VMath/Math/VMath3D.hpp" line="211" column="17" bodyfile="include/VMath/Math/VMath3D.hpp" bodystart="211" bodyend="229"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacedim3_1ae100dc04d852fa843dd75a7d64645dc8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structdim3_1_1Vec3" kindref="compound">Vec3</ref></type>
+        <definition>Vec3 dim3::rotationCustomAxis</definition>
+        <argsstring>(const Vec3 &amp;v, const Vec3 &amp;axis_normalized, float angleRAD)</argsstring>
+        <name>rotationCustomAxis</name>
+        <qualifiedname>dim3::rotationCustomAxis</qualifiedname>
+        <param>
+          <type>const <ref refid="structdim3_1_1Vec3" kindref="compound">Vec3</ref> &amp;</type>
+          <declname>v</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structdim3_1_1Vec3" kindref="compound">Vec3</ref> &amp;</type>
+          <declname>axis_normalized</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>angleRAD</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/VMath/Math/VMath3D.hpp" line="230" column="17" bodyfile="include/VMath/Math/VMath3D.hpp" bodystart="230" bodyend="255"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacedim3_1a79335cfc751c2b59b582cd44a82114c8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structdim3_1_1Vec3" kindref="compound">Vec3</ref></type>
+        <definition>Vec3 dim3::rotationXAxis</definition>
+        <argsstring>(const Vec3 &amp;v, float angleRAD)</argsstring>
+        <name>rotationXAxis</name>
+        <qualifiedname>dim3::rotationXAxis</qualifiedname>
+        <param>
+          <type>const <ref refid="structdim3_1_1Vec3" kindref="compound">Vec3</ref> &amp;</type>
+          <declname>v</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>angleRAD</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/VMath/Math/VMath3D.hpp" line="257" column="17" bodyfile="include/VMath/Math/VMath3D.hpp" bodystart="257" bodyend="267"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacedim3_1ac48403499c039924efc2df3d1dc52da2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structdim3_1_1Vec3" kindref="compound">Vec3</ref></type>
+        <definition>Vec3 dim3::rotationYAxis</definition>
+        <argsstring>(const Vec3 &amp;v, float angleRAD)</argsstring>
+        <name>rotationYAxis</name>
+        <qualifiedname>dim3::rotationYAxis</qualifiedname>
+        <param>
+          <type>const <ref refid="structdim3_1_1Vec3" kindref="compound">Vec3</ref> &amp;</type>
+          <declname>v</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>angleRAD</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/VMath/Math/VMath3D.hpp" line="268" column="17" bodyfile="include/VMath/Math/VMath3D.hpp" bodystart="268" bodyend="276"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacedim3_1aee1d29193a890ecbbb688c93ab4ee34d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structdim3_1_1Vec3" kindref="compound">Vec3</ref></type>
+        <definition>Vec3 dim3::rotationZAxis</definition>
+        <argsstring>(const Vec3 &amp;v, float angleRAD)</argsstring>
+        <name>rotationZAxis</name>
+        <qualifiedname>dim3::rotationZAxis</qualifiedname>
+        <param>
+          <type>const <ref refid="structdim3_1_1Vec3" kindref="compound">Vec3</ref> &amp;</type>
+          <declname>v</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>angleRAD</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/VMath/Math/VMath3D.hpp" line="279" column="17" bodyfile="include/VMath/Math/VMath3D.hpp" bodystart="279" bodyend="287"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/VMath/Math/VMath3D.hpp" line="28" column="1"/>
+  </compounddef>
+</doxygen>

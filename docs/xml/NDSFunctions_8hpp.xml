@@ -1,0 +1,95 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="NDSFunctions_8hpp" kind="file" language="C++">
+    <compoundname>NDSFunctions.hpp</compoundname>
+    <includes local="no">iostream</includes>
+    <includes refid="Constants_8h" local="yes">Constants.h</includes>
+    <includedby refid="VMath2D_8hpp" local="yes">include/VMath/Math/VMath2D.hpp</includedby>
+    <includedby refid="VMath3D_09_8hpp" local="yes">include/VMath/Math/VMath3D+.hpp</includedby>
+    <includedby refid="VMath3D_8hpp" local="yes">include/VMath/Math/VMath3D.hpp</includedby>
+    <incdepgraph>
+      <node id="3">
+        <label>Constants.h</label>
+        <link refid="Constants_8h"/>
+      </node>
+      <node id="1">
+        <label>include/VMath/Math/NDSFunctions.hpp</label>
+        <link refid="NDSFunctions_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>iostream</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>include/VMath/Math/NDSFunctions.hpp</label>
+        <link refid="NDSFunctions_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>include/VMath/Math/VMath2D.hpp</label>
+        <link refid="VMath2D_8hpp"/>
+      </node>
+      <node id="3">
+        <label>include/VMath/Math/VMath3D+.hpp</label>
+        <link refid="VMath3D_09_8hpp"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>include/VMath/Math/VMath3D.hpp</label>
+        <link refid="VMath3D_8hpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>include/VMath/Vis/visualizer.hpp</label>
+        <link refid="visualizer_8hpp"/>
+      </node>
+    </invincdepgraph>
+    <innernamespace refid="namespaceNDSF">NDSF</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>NDSFunction_30980238</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>NDSFunction_30980238</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">Non-Dimension<sp/>Specific<sp/>Functions<sp/>(NDSF)</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include&quot;<ref refid="Constants_8h" kindref="compound">Constants.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8" refid="namespaceNDSF" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceNDSF" kindref="compound">NDSF</ref>{</highlight></codeline>
+<codeline lineno="9" refid="namespaceNDSF_1a4e3b42963ddafb487f9a1a4d081e647e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="namespaceNDSF_1a4e3b42963ddafb487f9a1a4d081e647e" kindref="member">clamp</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>a,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>lowerL,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>upperL){</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>std::max(lowerL,<sp/>std::min(a,<sp/>upperL));</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="12" refid="namespaceNDSF_1aac6fcf67ef9ccf35deacef1056ae2001" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="namespaceNDSF_1aac6fcf67ef9ccf35deacef1056ae2001" kindref="member">epEqual</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>a,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>b,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>epsilon<sp/>=<sp/><ref refid="namespaceconstants_1a7f3b4cf1f4ef2af969262048a358a313" kindref="member">constants::EPSILON</ref>){</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//FUZZY</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">(std::abs(a-b)<sp/>&lt;=<sp/>epsilon);</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="16" refid="namespaceNDSF_1a24179bd1dea5ae01825a496cdfbba1ff" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="namespaceNDSF_1a24179bd1dea5ae01825a496cdfbba1ff" kindref="member">lerp</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>a,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>b,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>t){</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Jus<sp/>Point<sp/>Slope<sp/>With<sp/>::<sp/>y0<sp/>=<sp/>initial,<sp/>y1<sp/>=<sp/>end,<sp/>x0<sp/>=<sp/>0,<sp/>x1<sp/>=<sp/>1,<sp/>x<sp/>=<sp/>t<sp/>and<sp/>m<sp/>=<sp/>(v2-v1)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>clT<sp/>=<sp/><ref refid="namespaceNDSF_1a4e3b42963ddafb487f9a1a4d081e647e" kindref="member">clamp</ref>(t,<sp/>0.0f,<sp/>1.0f);</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>a<sp/>+<sp/>(b-a)*clT;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="21"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="include/VMath/Math/NDSFunctions.hpp"/>
+  </compounddef>
+</doxygen>
