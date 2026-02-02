@@ -39,13 +39,13 @@ I Know These Are LOFTY goals for one person...
 37. **Matrix 3x3: Determinant** (Rule of Sarrus)
 38. **Matrix 3x3: Inverse** (Adjugate method)
 39. **Matrix 3x3: Transpose**
-40. **Matrix 4x4: Storage** (The standard for 3D engines)
-41. **Matrix 4x4: Multiplication**
+40. **Matrix 4x4: Storage** (The standard for 3D engines) D
+41. **Matrix 4x4: Multiplication** D
 42. **Matrix 4x4: Determinant**
 43. **Matrix 4x4: Inverse** (Gauss-Jordan elimination)
 44. **Matrix 4x4: Transpose**
-45. **Matrix-Vector Multiplication** (Transforming a point/dir)
-46. **Identity Matrix Generation** (For all sizes)
+45. **Matrix-Vector Multiplication** (Transforming a point/dir) D
+46. **Identity Matrix Generation** (For all sizes) D (dim4 only)
 47. **Translation Matrix** (Moving points in 3D)
 48. **Rotation Matrix (X-Axis)**
 49. **Rotation Matrix (Y-Axis)**
