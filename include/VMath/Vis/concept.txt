@@ -1,0 +1,9 @@
+This is *supposed* to be a visual debugger
+
+
+So for any vector being used in the main program you can push it to a central registry (push the pointer of that vector to the registry)
+This registry and rendering of a coord. axis using OpenGL will be rendered on a separate thread
+The Math module functions will be run on a separate thread to ensure that math isn't slowed down by the visualizer
+
+
+The Debugger will hence show registered vectors whose pointers are pushed into the registry, and the visualizer checks per frame for changes in value of the memory address of that pointer given to it during the registration of that vector, the unregister function is built into the destructor of a vector so that when the vector is destroyed, the registry deletes the vector ID and pointer entry
