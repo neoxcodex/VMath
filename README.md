@@ -56,5 +56,5 @@ One of the unique features of this project is the **VDebugger** (as outlined in 
 
 ### 📝 Note
 I am a 14-year-old student and a beginner in engine architecture. I am building this project to understand how 3D software works under the hood.
-
+Some of this README is written by AI since I didn't know the exact technical terms, though I assure you the codebase is 100% not AI
 **If you find "dogwater" code or logic errors in the implementation, please raise an issue! I am eager to learn from experienced engineers.**
