@@ -3,15 +3,23 @@
   <compound refid="structdim3_1_1Mat3" kind="struct"><name>dim3::Mat3</name>
     <member refid="structdim3_1_1Mat3_1a8b1307846a6c462565cc8f7fa2e7d898" kind="variable"><name>M</name></member>
     <member refid="structdim3_1_1Mat3_1a8f2d08e1b0e276c064f49fd8da3e772e" kind="function"><name>identity</name></member>
-    <member refid="structdim3_1_1Mat3_1a66f646a494d3e901f18b5c2b979ade09" kind="function"><name>genRotatorMatrix</name></member>
-    <member refid="structdim3_1_1Mat3_1af6214d702618a1e149444b1db12bd489" kind="function"><name>rotationX</name></member>
-    <member refid="structdim3_1_1Mat3_1aa5a4c41031cde03e68f453b7871f8420" kind="function"><name>rotationY</name></member>
-    <member refid="structdim3_1_1Mat3_1abf8b4b352215cc2144144ba16c35e74f" kind="function"><name>rotationZ</name></member>
+    <member refid="structdim3_1_1Mat3_1a855107948f4538e717f9d11f424d3418" kind="function"><name>genRotator</name></member>
+    <member refid="structdim3_1_1Mat3_1a2cbe2ceb8116e69c8b1f3532cb64fdfc" kind="function"><name>genRotationX</name></member>
+    <member refid="structdim3_1_1Mat3_1a0fe5235a4b973b8389c6aeaf2d6aab39" kind="function"><name>genRotationY</name></member>
+    <member refid="structdim3_1_1Mat3_1a579c164662abf4301b0eed8a028a7149" kind="function"><name>genRotationZ</name></member>
     <member refid="structdim3_1_1Mat3_1aec7a0f60b80829f3098b4981110aebc0" kind="function"><name>operator*</name></member>
   </compound>
   <compound refid="structdim4_1_1Mat4" kind="struct"><name>dim4::Mat4</name>
     <member refid="structdim4_1_1Mat4_1a5852c804c202aca3f6628bfacf472af3" kind="variable"><name>M</name></member>
     <member refid="structdim4_1_1Mat4_1ae615ba2f1c7065005bfdaaa9031a63f2" kind="function"><name>identity</name></member>
+    <member refid="structdim4_1_1Mat4_1ad217b84ca1a86d810bd553f854edf1bb" kind="function"><name>genRotator</name></member>
+    <member refid="structdim4_1_1Mat4_1aec6999a57f049a41a80c139eb9a828fe" kind="function"><name>genRotationX</name></member>
+    <member refid="structdim4_1_1Mat4_1aae04b93147454616f9028f9f7fef436c" kind="function"><name>genRotationY</name></member>
+    <member refid="structdim4_1_1Mat4_1afc03a37aa56ef003bc580e86eeb239f7" kind="function"><name>genRotationZ</name></member>
+    <member refid="structdim4_1_1Mat4_1ae70740ae4e5827d7315f02c4c9aaa1da" kind="function"><name>genTranslation</name></member>
+    <member refid="structdim4_1_1Mat4_1aed691d14fc6090785ef2d5dbdd89e417" kind="function"><name>genScaling</name></member>
+    <member refid="structdim4_1_1Mat4_1ad5acd71a8dc964dda5d977c2a00bd2d6" kind="function"><name>genView</name></member>
+    <member refid="structdim4_1_1Mat4_1afd5107eaa33ae5f054f78192d4af5b89" kind="function"><name>genPerspective</name></member>
     <member refid="structdim4_1_1Mat4_1a4cae5021f858ed635bc262d4c548cb54" kind="function"><name>operator*</name></member>
   </compound>
   <compound refid="structdim2_1_1Vec2" kind="struct"><name>dim2::Vec2</name>
@@ -84,10 +92,11 @@
     <member refid="namespacedim4_1a754f8bd9423a05167ec493932ef7478f" kind="function"><name>magnitude</name></member>
     <member refid="namespacedim4_1af35c14a8bac8fbf3c279fb8b7d247860" kind="function"><name>epVectorEqual</name></member>
     <member refid="namespacedim4_1a2ea043232d03199f449813b8eb03ce7a" kind="function"><name>normalize</name></member>
-    <member refid="namespacedim4_1a050c2be340cba61c80628b22a0779622" kind="function"><name>matrixMultiply</name></member>
     <member refid="namespacedim4_1abd5984731c88731bbbd6406a4fa475ef" kind="function"><name>lerp</name></member>
     <member refid="namespacedim4_1a992c34664d852d9d0b1015207ff7cd83" kind="function"><name>angleRAD</name></member>
     <member refid="namespacedim4_1a02950f3da0e8dcc5cebb87f993d0cf68" kind="function"><name>angleDEG</name></member>
+    <member refid="namespacedim4_1aeec750beffc8803e704c3ea7ee348271" kind="function"><name>toVec4</name></member>
+    <member refid="namespacedim4_1a050c2be340cba61c80628b22a0779622" kind="function"><name>matrixMultiply</name></member>
   </compound>
   <compound refid="namespacedimN" kind="namespace"><name>dimN</name>
     <member refid="namespacedimN_1abbd29d1c4930da02382af428bda8fcaf" kind="function"><name>magnitude</name></member>
@@ -106,12 +115,6 @@
     <member refid="namespaceNDSF_1aac6fcf67ef9ccf35deacef1056ae2001" kind="function"><name>epEqual</name></member>
     <member refid="namespaceNDSF_1a24179bd1dea5ae01825a496cdfbba1ff" kind="function"><name>lerp</name></member>
   </compound>
-  <compound refid="namespacevisualizer" kind="namespace"><name>visualizer</name>
-    <member refid="namespacevisualizer_1a8b64650868da7c22cb91cd5c0a574be7" kind="variable"><name>registry</name></member>
-    <member refid="namespacevisualizer_1ac2281468b98cc7510c123b3a3579326b" kind="variable"><name>nextID</name></member>
-    <member refid="namespacevisualizer_1aafbca0c04d4dff4ada51bfb0521ded2d" kind="function"><name>pushVecVisual</name></member>
-    <member refid="namespacevisualizer_1a61891121f174de6f75fc4097b55453ec" kind="function"><name>pullVecVisual</name></member>
-  </compound>
   <compound refid="Constants_8h" kind="file"><name>Constants.h</name>
   </compound>
   <compound refid="NDSFunctions_8hpp" kind="file"><name>NDSFunctions.hpp</name>
@@ -124,7 +127,11 @@
   </compound>
   <compound refid="VMathN_8hpp" kind="file"><name>VMathN.hpp</name>
   </compound>
-  <compound refid="visualizer_8hpp" kind="file"><name>visualizer.hpp</name>
+  <compound refid="io__manager_8hpp" kind="file"><name>io_manager.hpp</name>
+  </compound>
+  <compound refid="renderer_8hpp" kind="file"><name>renderer.hpp</name>
+  </compound>
+  <compound refid="threading__manager_8hpp" kind="file"><name>threading_manager.hpp</name>
   </compound>
   <compound refid="dir_d44c64559bbebec7f509842c48db8b23" kind="dir"><name>include</name>
   </compound>

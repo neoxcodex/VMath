@@ -13,6 +13,22 @@
 \begin{DoxyCompactItemize}
 \item 
 static \doxymbox{\hyperlink{structdim4_1_1Mat4}{Mat4}} \doxymbox{\hyperlink{structdim4_1_1Mat4_ae615ba2f1c7065005bfdaaa9031a63f2}{identity}} ()
+\item 
+static \doxymbox{\hyperlink{structdim4_1_1Mat4}{Mat4}} \doxymbox{\hyperlink{structdim4_1_1Mat4_ad217b84ca1a86d810bd553f854edf1bb}{gen\+Rotator}} (const \doxymbox{\hyperlink{structdim3_1_1Vec3}{dim3::\+\+Vec3}} \&axis\+\_\+normalized, const float \doxymbox{\hyperlink{namespacedim4_a992c34664d852d9d0b1015207ff7cd83}{angle\+RAD}})
+\item 
+static \doxymbox{\hyperlink{structdim4_1_1Mat4}{Mat4}} \doxymbox{\hyperlink{structdim4_1_1Mat4_aec6999a57f049a41a80c139eb9a828fe}{gen\+RotationX}} (float \doxymbox{\hyperlink{namespacedim4_a992c34664d852d9d0b1015207ff7cd83}{angle\+RAD}})
+\item 
+static \doxymbox{\hyperlink{structdim4_1_1Mat4}{Mat4}} \doxymbox{\hyperlink{structdim4_1_1Mat4_aae04b93147454616f9028f9f7fef436c}{gen\+RotationY}} (float \doxymbox{\hyperlink{namespacedim4_a992c34664d852d9d0b1015207ff7cd83}{angle\+RAD}})
+\item 
+static \doxymbox{\hyperlink{structdim4_1_1Mat4}{Mat4}} \doxymbox{\hyperlink{structdim4_1_1Mat4_afc03a37aa56ef003bc580e86eeb239f7}{gen\+RotationZ}} (float \doxymbox{\hyperlink{namespacedim4_a992c34664d852d9d0b1015207ff7cd83}{angle\+RAD}})
+\item 
+static \doxymbox{\hyperlink{structdim4_1_1Mat4}{Mat4}} \doxymbox{\hyperlink{structdim4_1_1Mat4_ae70740ae4e5827d7315f02c4c9aaa1da}{gen\+Translation}} (float Tx, float Ty, float Tz)
+\item 
+static \doxymbox{\hyperlink{structdim4_1_1Mat4}{Mat4}} \doxymbox{\hyperlink{structdim4_1_1Mat4_aed691d14fc6090785ef2d5dbdd89e417}{gen\+Scaling}} (float Sx, float Sy, float Sz)
+\item 
+static \doxymbox{\hyperlink{structdim4_1_1Mat4}{Mat4}} \doxymbox{\hyperlink{structdim4_1_1Mat4_ad5acd71a8dc964dda5d977c2a00bd2d6}{gen\+View}} (const \doxymbox{\hyperlink{structdim3_1_1Vec3}{dim3::\+\+Vec3}} \&R, const \doxymbox{\hyperlink{structdim3_1_1Vec3}{dim3::\+\+Vec3}} \&U, const \doxymbox{\hyperlink{structdim3_1_1Vec3}{dim3::\+\+Vec3}} \&F, const \doxymbox{\hyperlink{structdim3_1_1Vec3}{dim3::\+\+Vec3}} \&P)
+\item 
+static \doxymbox{\hyperlink{structdim4_1_1Mat4}{Mat4}} \doxymbox{\hyperlink{structdim4_1_1Mat4_afd5107eaa33ae5f054f78192d4af5b89}{gen\+Perspective}} (float FOVRad, float aspect\+Ratio, float nearP, float farP)
 \end{DoxyCompactItemize}
 \doxysubsubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
@@ -24,6 +40,54 @@ float \doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}
 \label{doc-func-members}
 \Hypertarget{structdim4_1_1Mat4_doc-func-members}
 \doxysubsection{Member Function Documentation}
+\Hypertarget{structdim4_1_1Mat4_afd5107eaa33ae5f054f78192d4af5b89}\index{dim4::Mat4@{dim4::Mat4}!genPerspective@{genPerspective}}
+\index{genPerspective@{genPerspective}!dim4::Mat4@{dim4::Mat4}}
+\doxysubsubsection{\texorpdfstring{genPerspective()}{genPerspective()}}
+{\footnotesize\ttfamily \label{structdim4_1_1Mat4_afd5107eaa33ae5f054f78192d4af5b89} 
+\doxymbox{\hyperlink{structdim4_1_1Mat4}{Mat4}} dim4::\+\+Mat4::\+gen\+Perspective (\begin{DoxyParamCaption}\item[{float}]{FOVRad}{, }\item[{float}]{aspect\+Ratio}{, }\item[{float}]{nearP}{, }\item[{float}]{farP}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\Hypertarget{structdim4_1_1Mat4_aec6999a57f049a41a80c139eb9a828fe}\index{dim4::Mat4@{dim4::Mat4}!genRotationX@{genRotationX}}
+\index{genRotationX@{genRotationX}!dim4::Mat4@{dim4::Mat4}}
+\doxysubsubsection{\texorpdfstring{genRotationX()}{genRotationX()}}
+{\footnotesize\ttfamily \label{structdim4_1_1Mat4_aec6999a57f049a41a80c139eb9a828fe} 
+\doxymbox{\hyperlink{structdim4_1_1Mat4}{Mat4}} dim4::\+\+Mat4::\+gen\+RotationX (\begin{DoxyParamCaption}\item[{float}]{angle\+RAD}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\Hypertarget{structdim4_1_1Mat4_aae04b93147454616f9028f9f7fef436c}\index{dim4::Mat4@{dim4::Mat4}!genRotationY@{genRotationY}}
+\index{genRotationY@{genRotationY}!dim4::Mat4@{dim4::Mat4}}
+\doxysubsubsection{\texorpdfstring{genRotationY()}{genRotationY()}}
+{\footnotesize\ttfamily \label{structdim4_1_1Mat4_aae04b93147454616f9028f9f7fef436c} 
+\doxymbox{\hyperlink{structdim4_1_1Mat4}{Mat4}} dim4::\+\+Mat4::\+gen\+RotationY (\begin{DoxyParamCaption}\item[{float}]{angle\+RAD}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\Hypertarget{structdim4_1_1Mat4_afc03a37aa56ef003bc580e86eeb239f7}\index{dim4::Mat4@{dim4::Mat4}!genRotationZ@{genRotationZ}}
+\index{genRotationZ@{genRotationZ}!dim4::Mat4@{dim4::Mat4}}
+\doxysubsubsection{\texorpdfstring{genRotationZ()}{genRotationZ()}}
+{\footnotesize\ttfamily \label{structdim4_1_1Mat4_afc03a37aa56ef003bc580e86eeb239f7} 
+\doxymbox{\hyperlink{structdim4_1_1Mat4}{Mat4}} dim4::\+\+Mat4::\+gen\+RotationZ (\begin{DoxyParamCaption}\item[{float}]{angle\+RAD}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\Hypertarget{structdim4_1_1Mat4_ad217b84ca1a86d810bd553f854edf1bb}\index{dim4::Mat4@{dim4::Mat4}!genRotator@{genRotator}}
+\index{genRotator@{genRotator}!dim4::Mat4@{dim4::Mat4}}
+\doxysubsubsection{\texorpdfstring{genRotator()}{genRotator()}}
+{\footnotesize\ttfamily \label{structdim4_1_1Mat4_ad217b84ca1a86d810bd553f854edf1bb} 
+\doxymbox{\hyperlink{structdim4_1_1Mat4}{Mat4}} dim4::\+\+Mat4::\+gen\+Rotator (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{structdim3_1_1Vec3}{dim3::\+\+Vec3}} \&}]{axis\+\_\+normalized}{, }\item[{const float}]{angle\+RAD}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\Hypertarget{structdim4_1_1Mat4_aed691d14fc6090785ef2d5dbdd89e417}\index{dim4::Mat4@{dim4::Mat4}!genScaling@{genScaling}}
+\index{genScaling@{genScaling}!dim4::Mat4@{dim4::Mat4}}
+\doxysubsubsection{\texorpdfstring{genScaling()}{genScaling()}}
+{\footnotesize\ttfamily \label{structdim4_1_1Mat4_aed691d14fc6090785ef2d5dbdd89e417} 
+\doxymbox{\hyperlink{structdim4_1_1Mat4}{Mat4}} dim4::\+\+Mat4::\+gen\+Scaling (\begin{DoxyParamCaption}\item[{float}]{Sx}{, }\item[{float}]{Sy}{, }\item[{float}]{Sz}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\Hypertarget{structdim4_1_1Mat4_ae70740ae4e5827d7315f02c4c9aaa1da}\index{dim4::Mat4@{dim4::Mat4}!genTranslation@{genTranslation}}
+\index{genTranslation@{genTranslation}!dim4::Mat4@{dim4::Mat4}}
+\doxysubsubsection{\texorpdfstring{genTranslation()}{genTranslation()}}
+{\footnotesize\ttfamily \label{structdim4_1_1Mat4_ae70740ae4e5827d7315f02c4c9aaa1da} 
+\doxymbox{\hyperlink{structdim4_1_1Mat4}{Mat4}} dim4::\+\+Mat4::\+gen\+Translation (\begin{DoxyParamCaption}\item[{float}]{Tx}{, }\item[{float}]{Ty}{, }\item[{float}]{Tz}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\Hypertarget{structdim4_1_1Mat4_ad5acd71a8dc964dda5d977c2a00bd2d6}\index{dim4::Mat4@{dim4::Mat4}!genView@{genView}}
+\index{genView@{genView}!dim4::Mat4@{dim4::Mat4}}
+\doxysubsubsection{\texorpdfstring{genView()}{genView()}}
+{\footnotesize\ttfamily \label{structdim4_1_1Mat4_ad5acd71a8dc964dda5d977c2a00bd2d6} 
+\doxymbox{\hyperlink{structdim4_1_1Mat4}{Mat4}} dim4::\+\+Mat4::\+gen\+View (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{structdim3_1_1Vec3}{dim3::\+\+Vec3}} \&}]{R}{, }\item[{const \doxymbox{\hyperlink{structdim3_1_1Vec3}{dim3::\+\+Vec3}} \&}]{U}{, }\item[{const \doxymbox{\hyperlink{structdim3_1_1Vec3}{dim3::\+\+Vec3}} \&}]{F}{, }\item[{const \doxymbox{\hyperlink{structdim3_1_1Vec3}{dim3::\+\+Vec3}} \&}]{P}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
 \Hypertarget{structdim4_1_1Mat4_ae615ba2f1c7065005bfdaaa9031a63f2}\index{dim4::Mat4@{dim4::Mat4}!identity@{identity}}
 \index{identity@{identity}!dim4::Mat4@{dim4::Mat4}}
 \doxysubsubsection{\texorpdfstring{identity()}{identity()}}

@@ -308,7 +308,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/VMath/Math/VMath3D.hpp" line="211" column="17" bodyfile="include/VMath/Math/VMath3D.hpp" bodystart="211" bodyend="229"/>
+        <location file="include/VMath/Math/VMath3D.hpp" line="215" column="17" bodyfile="include/VMath/Math/VMath3D.hpp" bodystart="215" bodyend="233"/>
       </memberdef>
       <memberdef kind="function" id="namespacedim3_1ae100dc04d852fa843dd75a7d64645dc8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="structdim3_1_1Vec3" kindref="compound">Vec3</ref></type>
@@ -334,7 +334,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/VMath/Math/VMath3D.hpp" line="230" column="17" bodyfile="include/VMath/Math/VMath3D.hpp" bodystart="230" bodyend="255"/>
+        <location file="include/VMath/Math/VMath3D.hpp" line="234" column="17" bodyfile="include/VMath/Math/VMath3D.hpp" bodystart="234" bodyend="259"/>
       </memberdef>
       <memberdef kind="function" id="namespacedim3_1a79335cfc751c2b59b582cd44a82114c8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="structdim3_1_1Vec3" kindref="compound">Vec3</ref></type>
@@ -356,7 +356,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/VMath/Math/VMath3D.hpp" line="257" column="17" bodyfile="include/VMath/Math/VMath3D.hpp" bodystart="257" bodyend="267"/>
+        <location file="include/VMath/Math/VMath3D.hpp" line="261" column="17" bodyfile="include/VMath/Math/VMath3D.hpp" bodystart="261" bodyend="271"/>
       </memberdef>
       <memberdef kind="function" id="namespacedim3_1ac48403499c039924efc2df3d1dc52da2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="structdim3_1_1Vec3" kindref="compound">Vec3</ref></type>
@@ -378,7 +378,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/VMath/Math/VMath3D.hpp" line="268" column="17" bodyfile="include/VMath/Math/VMath3D.hpp" bodystart="268" bodyend="276"/>
+        <location file="include/VMath/Math/VMath3D.hpp" line="272" column="17" bodyfile="include/VMath/Math/VMath3D.hpp" bodystart="272" bodyend="280"/>
       </memberdef>
       <memberdef kind="function" id="namespacedim3_1aee1d29193a890ecbbb688c93ab4ee34d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="structdim3_1_1Vec3" kindref="compound">Vec3</ref></type>
@@ -400,7 +400,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/VMath/Math/VMath3D.hpp" line="279" column="17" bodyfile="include/VMath/Math/VMath3D.hpp" bodystart="279" bodyend="287"/>
+        <location file="include/VMath/Math/VMath3D.hpp" line="283" column="17" bodyfile="include/VMath/Math/VMath3D.hpp" bodystart="283" bodyend="291"/>
       </memberdef>
     </sectiondef>
     <briefdescription>

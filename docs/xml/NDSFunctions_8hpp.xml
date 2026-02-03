@@ -32,7 +32,7 @@
         </childnode>
         <childnode refid="3" relation="include">
         </childnode>
-        <childnode refid="5" relation="include">
+        <childnode refid="4" relation="include">
         </childnode>
       </node>
       <node id="2">
@@ -42,20 +42,12 @@
       <node id="3">
         <label>include/VMath/Math/VMath3D+.hpp</label>
         <link refid="VMath3D_09_8hpp"/>
-        <childnode refid="4" relation="include">
-        </childnode>
       </node>
-      <node id="5">
+      <node id="4">
         <label>include/VMath/Math/VMath3D.hpp</label>
         <link refid="VMath3D_8hpp"/>
         <childnode refid="3" relation="include">
         </childnode>
-        <childnode refid="4" relation="include">
-        </childnode>
-      </node>
-      <node id="4">
-        <label>include/VMath/Vis/visualizer.hpp</label>
-        <link refid="visualizer_8hpp"/>
       </node>
     </invincdepgraph>
     <innernamespace refid="namespaceNDSF">NDSF</innernamespace>

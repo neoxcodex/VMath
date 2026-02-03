@@ -101,12 +101,270 @@ Public Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 id="header-pub-static-methods" class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:ae615ba2f1c7065005bfdaaa9031a63f2" id="r_ae615ba2f1c7065005bfdaaa9031a63f2"><td class="memItemLeft">static <a class="el" href="structdim4_1_1Mat4.html">Mat4</a>&#160;</td><td class="memItemRight"><a class="el" href="#ae615ba2f1c7065005bfdaaa9031a63f2">identity</a> ()</td></tr>
+<tr class="memitem:ad217b84ca1a86d810bd553f854edf1bb" id="r_ad217b84ca1a86d810bd553f854edf1bb"><td class="memItemLeft">static <a class="el" href="structdim4_1_1Mat4.html">Mat4</a>&#160;</td><td class="memItemRight"><a class="el" href="#ad217b84ca1a86d810bd553f854edf1bb">genRotator</a> (const <a class="el" href="structdim3_1_1Vec3.html">dim3::Vec3</a> &amp;axis_normalized, const float <a class="el" href="namespacedim4.html#a992c34664d852d9d0b1015207ff7cd83">angleRAD</a>)</td></tr>
+<tr class="memitem:aec6999a57f049a41a80c139eb9a828fe" id="r_aec6999a57f049a41a80c139eb9a828fe"><td class="memItemLeft">static <a class="el" href="structdim4_1_1Mat4.html">Mat4</a>&#160;</td><td class="memItemRight"><a class="el" href="#aec6999a57f049a41a80c139eb9a828fe">genRotationX</a> (float <a class="el" href="namespacedim4.html#a992c34664d852d9d0b1015207ff7cd83">angleRAD</a>)</td></tr>
+<tr class="memitem:aae04b93147454616f9028f9f7fef436c" id="r_aae04b93147454616f9028f9f7fef436c"><td class="memItemLeft">static <a class="el" href="structdim4_1_1Mat4.html">Mat4</a>&#160;</td><td class="memItemRight"><a class="el" href="#aae04b93147454616f9028f9f7fef436c">genRotationY</a> (float <a class="el" href="namespacedim4.html#a992c34664d852d9d0b1015207ff7cd83">angleRAD</a>)</td></tr>
+<tr class="memitem:afc03a37aa56ef003bc580e86eeb239f7" id="r_afc03a37aa56ef003bc580e86eeb239f7"><td class="memItemLeft">static <a class="el" href="structdim4_1_1Mat4.html">Mat4</a>&#160;</td><td class="memItemRight"><a class="el" href="#afc03a37aa56ef003bc580e86eeb239f7">genRotationZ</a> (float <a class="el" href="namespacedim4.html#a992c34664d852d9d0b1015207ff7cd83">angleRAD</a>)</td></tr>
+<tr class="memitem:ae70740ae4e5827d7315f02c4c9aaa1da" id="r_ae70740ae4e5827d7315f02c4c9aaa1da"><td class="memItemLeft">static <a class="el" href="structdim4_1_1Mat4.html">Mat4</a>&#160;</td><td class="memItemRight"><a class="el" href="#ae70740ae4e5827d7315f02c4c9aaa1da">genTranslation</a> (float Tx, float Ty, float Tz)</td></tr>
+<tr class="memitem:aed691d14fc6090785ef2d5dbdd89e417" id="r_aed691d14fc6090785ef2d5dbdd89e417"><td class="memItemLeft">static <a class="el" href="structdim4_1_1Mat4.html">Mat4</a>&#160;</td><td class="memItemRight"><a class="el" href="#aed691d14fc6090785ef2d5dbdd89e417">genScaling</a> (float Sx, float Sy, float Sz)</td></tr>
+<tr class="memitem:ad5acd71a8dc964dda5d977c2a00bd2d6" id="r_ad5acd71a8dc964dda5d977c2a00bd2d6"><td class="memItemLeft">static <a class="el" href="structdim4_1_1Mat4.html">Mat4</a>&#160;</td><td class="memItemRight"><a class="el" href="#ad5acd71a8dc964dda5d977c2a00bd2d6">genView</a> (const <a class="el" href="structdim3_1_1Vec3.html">dim3::Vec3</a> &amp;R, const <a class="el" href="structdim3_1_1Vec3.html">dim3::Vec3</a> &amp;U, const <a class="el" href="structdim3_1_1Vec3.html">dim3::Vec3</a> &amp;F, const <a class="el" href="structdim3_1_1Vec3.html">dim3::Vec3</a> &amp;P)</td></tr>
+<tr class="memitem:afd5107eaa33ae5f054f78192d4af5b89" id="r_afd5107eaa33ae5f054f78192d4af5b89"><td class="memItemLeft">static <a class="el" href="structdim4_1_1Mat4.html">Mat4</a>&#160;</td><td class="memItemRight"><a class="el" href="#afd5107eaa33ae5f054f78192d4af5b89">genPerspective</a> (float FOVRad, float aspectRatio, float nearP, float farP)</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-attribs" class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a5852c804c202aca3f6628bfacf472af3" id="r_a5852c804c202aca3f6628bfacf472af3"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#a5852c804c202aca3f6628bfacf472af3">M</a> [4][4] = {{0}}</td></tr>
 </table>
 <a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
+<a id="afd5107eaa33ae5f054f78192d4af5b89" name="afd5107eaa33ae5f054f78192d4af5b89"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd5107eaa33ae5f054f78192d4af5b89">&#9670;&#160;</a></span>genPerspective()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structdim4_1_1Mat4.html">Mat4</a> dim4::Mat4::genPerspective </td>
+          <td>(</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>FOVRad</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>aspectRatio</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>nearP</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>farP</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aec6999a57f049a41a80c139eb9a828fe" name="aec6999a57f049a41a80c139eb9a828fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec6999a57f049a41a80c139eb9a828fe">&#9670;&#160;</a></span>genRotationX()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structdim4_1_1Mat4.html">Mat4</a> dim4::Mat4::genRotationX </td>
+          <td>(</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>angleRAD</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aae04b93147454616f9028f9f7fef436c" name="aae04b93147454616f9028f9f7fef436c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aae04b93147454616f9028f9f7fef436c">&#9670;&#160;</a></span>genRotationY()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structdim4_1_1Mat4.html">Mat4</a> dim4::Mat4::genRotationY </td>
+          <td>(</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>angleRAD</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afc03a37aa56ef003bc580e86eeb239f7" name="afc03a37aa56ef003bc580e86eeb239f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc03a37aa56ef003bc580e86eeb239f7">&#9670;&#160;</a></span>genRotationZ()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structdim4_1_1Mat4.html">Mat4</a> dim4::Mat4::genRotationZ </td>
+          <td>(</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>angleRAD</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad217b84ca1a86d810bd553f854edf1bb" name="ad217b84ca1a86d810bd553f854edf1bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad217b84ca1a86d810bd553f854edf1bb">&#9670;&#160;</a></span>genRotator()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structdim4_1_1Mat4.html">Mat4</a> dim4::Mat4::genRotator </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structdim3_1_1Vec3.html">dim3::Vec3</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>axis_normalized</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const float</td>          <td class="paramname"><span class="paramname"><em>angleRAD</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aed691d14fc6090785ef2d5dbdd89e417" name="aed691d14fc6090785ef2d5dbdd89e417"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed691d14fc6090785ef2d5dbdd89e417">&#9670;&#160;</a></span>genScaling()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structdim4_1_1Mat4.html">Mat4</a> dim4::Mat4::genScaling </td>
+          <td>(</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>Sx</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>Sy</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>Sz</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae70740ae4e5827d7315f02c4c9aaa1da" name="ae70740ae4e5827d7315f02c4c9aaa1da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae70740ae4e5827d7315f02c4c9aaa1da">&#9670;&#160;</a></span>genTranslation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structdim4_1_1Mat4.html">Mat4</a> dim4::Mat4::genTranslation </td>
+          <td>(</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>Tx</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>Ty</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>Tz</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad5acd71a8dc964dda5d977c2a00bd2d6" name="ad5acd71a8dc964dda5d977c2a00bd2d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad5acd71a8dc964dda5d977c2a00bd2d6">&#9670;&#160;</a></span>genView()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structdim4_1_1Mat4.html">Mat4</a> dim4::Mat4::genView </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structdim3_1_1Vec3.html">dim3::Vec3</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>R</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structdim3_1_1Vec3.html">dim3::Vec3</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>U</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structdim3_1_1Vec3.html">dim3::Vec3</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>F</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structdim3_1_1Vec3.html">dim3::Vec3</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>P</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ae615ba2f1c7065005bfdaaa9031a63f2" name="ae615ba2f1c7065005bfdaaa9031a63f2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae615ba2f1c7065005bfdaaa9031a63f2">&#9670;&#160;</a></span>identity()</h2>
 

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['pi_0',['PI',['../namespaceconstants.html#ae0bf237f1e254bc82b601f3ecad3796d',1,'constants']]]
+  ['w_0',['w',['../structdim4_1_1Vec4.html#a6f43a778391bbff07ef349cc21363022',1,'dim4::Vec4']]]
 ];

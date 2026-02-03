@@ -2,7 +2,9 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
   <compounddef id="dir_3277549bdbcf9923d5afdeba530147a7" kind="dir">
     <compoundname>include/VMath/Vis</compoundname>
-    <innerfile refid="visualizer_8hpp">visualizer.hpp</innerfile>
+    <innerfile refid="io__manager_8hpp">io_manager.hpp</innerfile>
+    <innerfile refid="renderer_8hpp">renderer.hpp</innerfile>
+    <innerfile refid="threading__manager_8hpp">threading_manager.hpp</innerfile>
     <briefdescription>
     </briefdescription>
     <detaileddescription>

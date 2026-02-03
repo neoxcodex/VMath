@@ -106,10 +106,11 @@ Functions</h2></td></tr>
 <tr class="memitem:a754f8bd9423a05167ec493932ef7478f" id="r_a754f8bd9423a05167ec493932ef7478f"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#a754f8bd9423a05167ec493932ef7478f">magnitude</a> (const <a class="el" href="structdim4_1_1Vec4.html">Vec4</a> v)</td></tr>
 <tr class="memitem:af35c14a8bac8fbf3c279fb8b7d247860" id="r_af35c14a8bac8fbf3c279fb8b7d247860"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#af35c14a8bac8fbf3c279fb8b7d247860">epVectorEqual</a> (const <a class="el" href="structdim4_1_1Vec4.html">Vec4</a> v1, const <a class="el" href="structdim4_1_1Vec4.html">Vec4</a> v2, float epsilon=<a class="el" href="namespaceconstants.html#a7f3b4cf1f4ef2af969262048a358a313">constants::EPSILON</a>)</td></tr>
 <tr class="memitem:a2ea043232d03199f449813b8eb03ce7a" id="r_a2ea043232d03199f449813b8eb03ce7a"><td class="memItemLeft"><a class="el" href="structdim4_1_1Vec4.html">Vec4</a>&#160;</td><td class="memItemRight"><a class="el" href="#a2ea043232d03199f449813b8eb03ce7a">normalize</a> (const <a class="el" href="structdim4_1_1Vec4.html">Vec4</a> v)</td></tr>
-<tr class="memitem:a050c2be340cba61c80628b22a0779622" id="r_a050c2be340cba61c80628b22a0779622"><td class="memItemLeft"><a class="el" href="structdim4_1_1Mat4.html">Mat4</a>&#160;</td><td class="memItemRight"><a class="el" href="#a050c2be340cba61c80628b22a0779622">matrixMultiply</a> (const <a class="el" href="structdim4_1_1Mat4.html">Mat4</a> &amp;M1, const <a class="el" href="structdim4_1_1Mat4.html">Mat4</a> &amp;M2)</td></tr>
 <tr class="memitem:abd5984731c88731bbbd6406a4fa475ef" id="r_abd5984731c88731bbbd6406a4fa475ef"><td class="memItemLeft"><a class="el" href="structdim4_1_1Vec4.html">Vec4</a>&#160;</td><td class="memItemRight"><a class="el" href="#abd5984731c88731bbbd6406a4fa475ef">lerp</a> (const <a class="el" href="structdim4_1_1Vec4.html">Vec4</a> &amp;v1, const <a class="el" href="structdim4_1_1Vec4.html">Vec4</a> &amp;v2, float t)</td></tr>
 <tr class="memitem:a992c34664d852d9d0b1015207ff7cd83" id="r_a992c34664d852d9d0b1015207ff7cd83"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#a992c34664d852d9d0b1015207ff7cd83">angleRAD</a> (const <a class="el" href="structdim4_1_1Vec4.html">Vec4</a> &amp;v1, const <a class="el" href="structdim4_1_1Vec4.html">Vec4</a> &amp;v2, const bool returnCosAngle=false)</td></tr>
 <tr class="memitem:a02950f3da0e8dcc5cebb87f993d0cf68" id="r_a02950f3da0e8dcc5cebb87f993d0cf68"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#a02950f3da0e8dcc5cebb87f993d0cf68">angleDEG</a> (const <a class="el" href="structdim4_1_1Vec4.html">Vec4</a> &amp;v1, const <a class="el" href="structdim4_1_1Vec4.html">Vec4</a> &amp;v2, const bool returnCosAngle=false)</td></tr>
+<tr class="memitem:aeec750beffc8803e704c3ea7ee348271" id="r_aeec750beffc8803e704c3ea7ee348271"><td class="memItemLeft"><a class="el" href="structdim4_1_1Vec4.html">Vec4</a>&#160;</td><td class="memItemRight"><a class="el" href="#aeec750beffc8803e704c3ea7ee348271">toVec4</a> (<a class="el" href="structdim3_1_1Vec3.html">dim3::Vec3</a> &amp;v, bool isPoint=true)</td></tr>
+<tr class="memitem:a050c2be340cba61c80628b22a0779622" id="r_a050c2be340cba61c80628b22a0779622"><td class="memItemLeft"><a class="el" href="structdim4_1_1Mat4.html">Mat4</a>&#160;</td><td class="memItemRight"><a class="el" href="#a050c2be340cba61c80628b22a0779622">matrixMultiply</a> (const <a class="el" href="structdim4_1_1Mat4.html">Mat4</a> &amp;M1, const <a class="el" href="structdim4_1_1Mat4.html">Mat4</a> &amp;M2)</td></tr>
 </table>
 <a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Function Documentation</h2>
 <a id="a02950f3da0e8dcc5cebb87f993d0cf68" name="a02950f3da0e8dcc5cebb87f993d0cf68"></a>
@@ -399,6 +400,35 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const <a class="el" href="structdim4_1_1Vec4.html">Vec4</a></td>          <td class="paramname"><span class="paramname"><em>v</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aeec750beffc8803e704c3ea7ee348271" name="aeec750beffc8803e704c3ea7ee348271"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeec750beffc8803e704c3ea7ee348271">&#9670;&#160;</a></span>toVec4()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structdim4_1_1Vec4.html">Vec4</a> dim4::toVec4 </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structdim3_1_1Vec3.html">dim3::Vec3</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>v</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>isPoint</em></span><span class="paramdefsep"> = </span><span class="paramdefval">true</span>&#160;)</td>
         </tr>
       </table>
   </td>

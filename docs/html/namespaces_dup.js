@@ -25,11 +25,5 @@ var namespaces_dup =
       [ "clamp", "namespaceNDSF.html#a4e3b42963ddafb487f9a1a4d081e647e", null ],
       [ "epEqual", "namespaceNDSF.html#aac6fcf67ef9ccf35deacef1056ae2001", null ],
       [ "lerp", "namespaceNDSF.html#a24179bd1dea5ae01825a496cdfbba1ff", null ]
-    ] ],
-    [ "visualizer", "namespacevisualizer.html", [
-      [ "pullVecVisual", "namespacevisualizer.html#a61891121f174de6f75fc4097b55453ec", null ],
-      [ "pushVecVisual", "namespacevisualizer.html#aafbca0c04d4dff4ada51bfb0521ded2d", null ],
-      [ "nextID", "namespacevisualizer.html#ac2281468b98cc7510c123b3a3579326b", null ],
-      [ "registry", "namespacevisualizer.html#a8b64650868da7c22cb91cd5c0a574be7", null ]
     ] ]
 ];

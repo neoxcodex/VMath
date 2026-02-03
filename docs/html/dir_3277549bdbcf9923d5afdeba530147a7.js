@@ -1,4 +1,6 @@
 var dir_3277549bdbcf9923d5afdeba530147a7 =
 [
-    [ "visualizer.hpp", "visualizer_8hpp.html", "visualizer_8hpp" ]
+    [ "io_manager.hpp", "io__manager_8hpp.html", null ],
+    [ "renderer.hpp", "renderer_8hpp.html", null ],
+    [ "threading_manager.hpp", "threading__manager_8hpp.html", null ]
 ];

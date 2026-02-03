@@ -12,5 +12,6 @@ var namespacedim4 =
     [ "matrixMultiply", "namespacedim4.html#a050c2be340cba61c80628b22a0779622", null ],
     [ "normalize", "namespacedim4.html#a2ea043232d03199f449813b8eb03ce7a", null ],
     [ "operator*", "namespacedim4.html#aec7c589d565c47a9cf52d133bafe7ca7", null ],
+    [ "toVec4", "namespacedim4.html#aeec750beffc8803e704c3ea7ee348271", null ],
     [ "vectorCout", "namespacedim4.html#a1fc4f16a9f4f445def76f012c9a5cf1c", null ]
 ];
