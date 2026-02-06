@@ -13,3 +13,6 @@ aux.codex
 commit.sh
 .vscode/
 
+.gitignore
+.clang-format
+compile_commands.json
