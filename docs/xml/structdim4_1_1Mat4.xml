@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
   <compounddef id="structdim4_1_1Mat4" kind="struct" language="C++" prot="public">
     <compoundname>dim4::Mat4</compoundname>
     <includes refid="VMath3D_09_8hpp" local="no">VMath3D+.hpp</includes>
@@ -17,7 +17,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/VMath/Math/VMath3D+.hpp" line="106" column="15" bodyfile="include/VMath/Math/VMath3D+.hpp" bodystart="106" bodyend="106"/>
+        <location file="include/VMath/Math/VMath3D+.hpp" line="109" column="15" bodyfile="include/VMath/Math/VMath3D+.hpp" bodystart="109" bodyend="109"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-static-func">
@@ -33,7 +33,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/VMath/Math/VMath3D+.hpp" line="107" column="21" bodyfile="include/VMath/Math/VMath3D+.hpp" bodystart="107" bodyend="111"/>
+        <location file="include/VMath/Math/VMath3D+.hpp" line="111" column="21" bodyfile="include/VMath/Math/VMath3D+.hpp" bodystart="111" bodyend="115"/>
       </memberdef>
       <memberdef kind="function" id="structdim4_1_1Mat4_1ad217b84ca1a86d810bd553f854edf1bb" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="structdim4_1_1Mat4" kindref="compound">Mat4</ref></type>
@@ -55,7 +55,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/VMath/Math/VMath3D+.hpp" line="120" column="21" bodyfile="include/VMath/Math/VMath3D+.hpp" bodystart="120" bodyend="145"/>
+        <location file="include/VMath/Math/VMath3D+.hpp" line="124" column="21" bodyfile="include/VMath/Math/VMath3D+.hpp" bodystart="124" bodyend="149"/>
       </memberdef>
       <memberdef kind="function" id="structdim4_1_1Mat4_1aec6999a57f049a41a80c139eb9a828fe" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="structdim4_1_1Mat4" kindref="compound">Mat4</ref></type>
@@ -73,7 +73,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/VMath/Math/VMath3D+.hpp" line="146" column="21" bodyfile="include/VMath/Math/VMath3D+.hpp" bodystart="146" bodyend="155"/>
+        <location file="include/VMath/Math/VMath3D+.hpp" line="150" column="21" bodyfile="include/VMath/Math/VMath3D+.hpp" bodystart="150" bodyend="159"/>
       </memberdef>
       <memberdef kind="function" id="structdim4_1_1Mat4_1aae04b93147454616f9028f9f7fef436c" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="structdim4_1_1Mat4" kindref="compound">Mat4</ref></type>
@@ -91,7 +91,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/VMath/Math/VMath3D+.hpp" line="156" column="21" bodyfile="include/VMath/Math/VMath3D+.hpp" bodystart="156" bodyend="165"/>
+        <location file="include/VMath/Math/VMath3D+.hpp" line="160" column="21" bodyfile="include/VMath/Math/VMath3D+.hpp" bodystart="160" bodyend="169"/>
       </memberdef>
       <memberdef kind="function" id="structdim4_1_1Mat4_1afc03a37aa56ef003bc580e86eeb239f7" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="structdim4_1_1Mat4" kindref="compound">Mat4</ref></type>
@@ -109,7 +109,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/VMath/Math/VMath3D+.hpp" line="166" column="21" bodyfile="include/VMath/Math/VMath3D+.hpp" bodystart="166" bodyend="175"/>
+        <location file="include/VMath/Math/VMath3D+.hpp" line="170" column="21" bodyfile="include/VMath/Math/VMath3D+.hpp" bodystart="170" bodyend="179"/>
       </memberdef>
       <memberdef kind="function" id="structdim4_1_1Mat4_1ae70740ae4e5827d7315f02c4c9aaa1da" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="structdim4_1_1Mat4" kindref="compound">Mat4</ref></type>
@@ -135,7 +135,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/VMath/Math/VMath3D+.hpp" line="195" column="21" bodyfile="include/VMath/Math/VMath3D+.hpp" bodystart="195" bodyend="201"/>
+        <location file="include/VMath/Math/VMath3D+.hpp" line="181" column="21" bodyfile="include/VMath/Math/VMath3D+.hpp" bodystart="181" bodyend="187"/>
       </memberdef>
       <memberdef kind="function" id="structdim4_1_1Mat4_1aed691d14fc6090785ef2d5dbdd89e417" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="structdim4_1_1Mat4" kindref="compound">Mat4</ref></type>
@@ -161,29 +161,17 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/VMath/Math/VMath3D+.hpp" line="204" column="21" bodyfile="include/VMath/Math/VMath3D+.hpp" bodystart="204" bodyend="210"/>
+        <location file="include/VMath/Math/VMath3D+.hpp" line="190" column="21" bodyfile="include/VMath/Math/VMath3D+.hpp" bodystart="190" bodyend="196"/>
       </memberdef>
-      <memberdef kind="function" id="structdim4_1_1Mat4_1ad5acd71a8dc964dda5d977c2a00bd2d6" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type><ref refid="structdim4_1_1Mat4" kindref="compound">Mat4</ref></type>
-        <definition>static Mat4 dim4::Mat4::genView</definition>
-        <argsstring>(const dim3::Vec3 &amp;R, const dim3::Vec3 &amp;U, const dim3::Vec3 &amp;F, const dim3::Vec3 &amp;P)</argsstring>
-        <name>genView</name>
-        <qualifiedname>dim4::Mat4::genView</qualifiedname>
+      <memberdef kind="function" id="structdim4_1_1Mat4_1a5484dfd2ecf84dafc2b27f7b23c6d534" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structdim3_1_1Vec3" kindref="compound">dim3::Vec3</ref></type>
+        <definition>static dim3::Vec3 dim4::Mat4::homoToVec3</definition>
+        <argsstring>(Vec4 v)</argsstring>
+        <name>homoToVec3</name>
+        <qualifiedname>dim4::Mat4::homoToVec3</qualifiedname>
         <param>
-          <type>const <ref refid="structdim3_1_1Vec3" kindref="compound">dim3::Vec3</ref> &amp;</type>
-          <declname>R</declname>
-        </param>
-        <param>
-          <type>const <ref refid="structdim3_1_1Vec3" kindref="compound">dim3::Vec3</ref> &amp;</type>
-          <declname>U</declname>
-        </param>
-        <param>
-          <type>const <ref refid="structdim3_1_1Vec3" kindref="compound">dim3::Vec3</ref> &amp;</type>
-          <declname>F</declname>
-        </param>
-        <param>
-          <type>const <ref refid="structdim3_1_1Vec3" kindref="compound">dim3::Vec3</ref> &amp;</type>
-          <declname>P</declname>
+          <type><ref refid="structdim4_1_1Vec4" kindref="compound">Vec4</ref></type>
+          <declname>v</declname>
         </param>
         <briefdescription>
         </briefdescription>
@@ -191,29 +179,17 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/VMath/Math/VMath3D+.hpp" line="242" column="21" bodyfile="include/VMath/Math/VMath3D+.hpp" bodystart="242" bodyend="255"/>
+        <location file="include/VMath/Math/VMath3D+.hpp" line="197" column="27" bodyfile="include/VMath/Math/VMath3D+.hpp" bodystart="197" bodyend="203"/>
       </memberdef>
-      <memberdef kind="function" id="structdim4_1_1Mat4_1afd5107eaa33ae5f054f78192d4af5b89" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type><ref refid="structdim4_1_1Mat4" kindref="compound">Mat4</ref></type>
-        <definition>static Mat4 dim4::Mat4::genPerspective</definition>
-        <argsstring>(float FOVRad, float aspectRatio, float nearP, float farP)</argsstring>
-        <name>genPerspective</name>
-        <qualifiedname>dim4::Mat4::genPerspective</qualifiedname>
+      <memberdef kind="function" id="structdim4_1_1Mat4_1a30c16ae46be93f28cbc11e200aa10ca7" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structdim4_1_1Vec4" kindref="compound">Vec4</ref></type>
+        <definition>static Vec4 dim4::Mat4::Vec3toHomo</definition>
+        <argsstring>(dim3::Vec3 v)</argsstring>
+        <name>Vec3toHomo</name>
+        <qualifiedname>dim4::Mat4::Vec3toHomo</qualifiedname>
         <param>
-          <type>float</type>
-          <declname>FOVRad</declname>
-        </param>
-        <param>
-          <type>float</type>
-          <declname>aspectRatio</declname>
-        </param>
-        <param>
-          <type>float</type>
-          <declname>nearP</declname>
-        </param>
-        <param>
-          <type>float</type>
-          <declname>farP</declname>
+          <type><ref refid="structdim3_1_1Vec3" kindref="compound">dim3::Vec3</ref></type>
+          <declname>v</declname>
         </param>
         <briefdescription>
         </briefdescription>
@@ -221,7 +197,55 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/VMath/Math/VMath3D+.hpp" line="259" column="21" bodyfile="include/VMath/Math/VMath3D+.hpp" bodystart="259" bodyend="280"/>
+        <location file="include/VMath/Math/VMath3D+.hpp" line="204" column="21" bodyfile="include/VMath/Math/VMath3D+.hpp" bodystart="204" bodyend="208"/>
+      </memberdef>
+      <memberdef kind="function" id="structdim4_1_1Mat4_1aec9467066d8252c3e4ba0f77bc52ea89" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structdim4_1_1Mat4" kindref="compound">Mat4</ref></type>
+        <definition>static Mat4 dim4::Mat4::genIntrinsic</definition>
+        <argsstring>(dim2::Vec2 focalLength, float imgPlaneXoffset, float imgPlaneYoffset)</argsstring>
+        <name>genIntrinsic</name>
+        <qualifiedname>dim4::Mat4::genIntrinsic</qualifiedname>
+        <param>
+          <type><ref refid="structdim2_1_1Vec2" kindref="compound">dim2::Vec2</ref></type>
+          <declname>focalLength</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>imgPlaneXoffset</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>imgPlaneYoffset</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/VMath/Math/VMath3D+.hpp" line="210" column="21" bodyfile="include/VMath/Math/VMath3D+.hpp" bodystart="210" bodyend="225"/>
+      </memberdef>
+      <memberdef kind="function" id="structdim4_1_1Mat4_1a6f47b7e1b9ec25b8d4576a578dc28958" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structdim4_1_1Mat4" kindref="compound">Mat4</ref></type>
+        <definition>static Mat4 dim4::Mat4::genExtrinsic</definition>
+        <argsstring>(dim3::Vec3 cameraPos, dim3::Vec3 targetPos)</argsstring>
+        <name>genExtrinsic</name>
+        <qualifiedname>dim4::Mat4::genExtrinsic</qualifiedname>
+        <param>
+          <type><ref refid="structdim3_1_1Vec3" kindref="compound">dim3::Vec3</ref></type>
+          <declname>cameraPos</declname>
+        </param>
+        <param>
+          <type><ref refid="structdim3_1_1Vec3" kindref="compound">dim3::Vec3</ref></type>
+          <declname>targetPos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/VMath/Math/VMath3D+.hpp" line="228" column="21" bodyfile="include/VMath/Math/VMath3D+.hpp" bodystart="228" bodyend="250"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-func">
@@ -241,26 +265,28 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/VMath/Math/VMath3D+.hpp" line="112" column="14" bodyfile="include/VMath/Math/VMath3D+.hpp" bodystart="112" bodyend="119"/>
+        <location file="include/VMath/Math/VMath3D+.hpp" line="116" column="14" bodyfile="include/VMath/Math/VMath3D+.hpp" bodystart="116" bodyend="123"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="include/VMath/Math/VMath3D+.hpp" line="105" column="5" bodyfile="include/VMath/Math/VMath3D+.hpp" bodystart="105" bodyend="284"/>
+    <location file="include/VMath/Math/VMath3D+.hpp" line="108" column="5" bodyfile="include/VMath/Math/VMath3D+.hpp" bodystart="108" bodyend="253"/>
     <listofallmembers>
-      <member refid="structdim4_1_1Mat4_1afd5107eaa33ae5f054f78192d4af5b89" prot="public" virt="non-virtual"><scope>dim4::Mat4</scope><name>genPerspective</name></member>
+      <member refid="structdim4_1_1Mat4_1a6f47b7e1b9ec25b8d4576a578dc28958" prot="public" virt="non-virtual"><scope>dim4::Mat4</scope><name>genExtrinsic</name></member>
+      <member refid="structdim4_1_1Mat4_1aec9467066d8252c3e4ba0f77bc52ea89" prot="public" virt="non-virtual"><scope>dim4::Mat4</scope><name>genIntrinsic</name></member>
       <member refid="structdim4_1_1Mat4_1aec6999a57f049a41a80c139eb9a828fe" prot="public" virt="non-virtual"><scope>dim4::Mat4</scope><name>genRotationX</name></member>
       <member refid="structdim4_1_1Mat4_1aae04b93147454616f9028f9f7fef436c" prot="public" virt="non-virtual"><scope>dim4::Mat4</scope><name>genRotationY</name></member>
       <member refid="structdim4_1_1Mat4_1afc03a37aa56ef003bc580e86eeb239f7" prot="public" virt="non-virtual"><scope>dim4::Mat4</scope><name>genRotationZ</name></member>
       <member refid="structdim4_1_1Mat4_1ad217b84ca1a86d810bd553f854edf1bb" prot="public" virt="non-virtual"><scope>dim4::Mat4</scope><name>genRotator</name></member>
       <member refid="structdim4_1_1Mat4_1aed691d14fc6090785ef2d5dbdd89e417" prot="public" virt="non-virtual"><scope>dim4::Mat4</scope><name>genScaling</name></member>
       <member refid="structdim4_1_1Mat4_1ae70740ae4e5827d7315f02c4c9aaa1da" prot="public" virt="non-virtual"><scope>dim4::Mat4</scope><name>genTranslation</name></member>
-      <member refid="structdim4_1_1Mat4_1ad5acd71a8dc964dda5d977c2a00bd2d6" prot="public" virt="non-virtual"><scope>dim4::Mat4</scope><name>genView</name></member>
+      <member refid="structdim4_1_1Mat4_1a5484dfd2ecf84dafc2b27f7b23c6d534" prot="public" virt="non-virtual"><scope>dim4::Mat4</scope><name>homoToVec3</name></member>
       <member refid="structdim4_1_1Mat4_1ae615ba2f1c7065005bfdaaa9031a63f2" prot="public" virt="non-virtual"><scope>dim4::Mat4</scope><name>identity</name></member>
       <member refid="structdim4_1_1Mat4_1a5852c804c202aca3f6628bfacf472af3" prot="public" virt="non-virtual"><scope>dim4::Mat4</scope><name>M</name></member>
       <member refid="structdim4_1_1Mat4_1a4cae5021f858ed635bc262d4c548cb54" prot="public" virt="non-virtual"><scope>dim4::Mat4</scope><name>operator*</name></member>
+      <member refid="structdim4_1_1Mat4_1a30c16ae46be93f28cbc11e200aa10ca7" prot="public" virt="non-virtual"><scope>dim4::Mat4</scope><name>Vec3toHomo</name></member>
     </listofallmembers>
   </compounddef>
 </doxygen>

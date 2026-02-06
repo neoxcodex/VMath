@@ -3,8 +3,11 @@
 #include "Constants.h"
 #include "NDSFunctions.hpp"
 #include "VMath3D.hpp"
+#include"VMath2D.hpp"
 #include<iostream>
 #include<cmath>
+#include <xmmintrin.h>
+
 namespace dim4{
     struct Vec4{
         float x,y,z,w;
@@ -104,6 +107,7 @@ namespace dim4{
     //MATRICES
     struct Mat4{
         float M[4][4] = {{0}};
+    
         static Mat4 identity(){
             Mat4 res;
             res.M[0][0] = 1; res.M[1][1] = 1; res.M[2][2] = 1; res.M[3][3] = 1;
@@ -173,25 +177,7 @@ namespace dim4{
             res.M[1][1] = c;
             return res;
         }
-        /*
-        THEORY:
-        A Homogenous Coordinate System is Needed:
-        Why : A 3x3 Matrix (Mat3) can only warp, shear, rotator the basis vectors of a vector in 3D space, it cannot physically move the vector from the origin
-        Thus it can't perform translation
-        The BIG Idea:
-        Using an Affine Transformation:
-        (1) Do a Linear Transformation (as we did with Mat3 and Vec3)
-        (2) Translate the Vector
-        //So for a matrix which has to do both we need a Mat4 Matrix
-        R00 R01 R02 Tx
-        R10 R11 R12 Ty
-        R20 R21 R22 Tz
-         0   0   0   1
-        The T bucket is for translating vectors
-        R(ij) submatrix is for Mat3 level operations
-        (0,0,0,1) is something related to perspective which I do not understand rt now
-        */
-        //To Move ONLY
+     
         static Mat4 genTranslation(float Tx, float Ty, float Tz){
             Mat4 res = Mat4::identity();
             res.M[0][3] = Tx;
@@ -208,80 +194,110 @@ namespace dim4{
             res.M[2][2] = Sz;
             return res;
         }
+        static dim3::Vec3 homoToVec3(Vec4 v){
+            float factor = 1/(v.w);
+            return {
+                v.x*factor, v.y*factor, v.z*factor
+            };
 
-        //FIXME
-        //CAMERA MATRIX UTILS
+        }
+        static Vec4 Vec3toHomo(dim3::Vec3 v){
+            return{
+                v.x, v.y, v.z, 1
+            };
+        }
+        //CAMERA-MATRIX UTILS (Math IO in Homogenous Coords ONLY)
+        static Mat4 genIntrinsic(dim2::Vec2 focalLength, float imgPlaneXoffset, float imgPlaneYoffset){
+            Mat4 res = Mat4::identity();
+            //Homogenous Space && Coords
+            //<x,y,z> => <xS, yS, zS, S> (for any arbitraty S)
+            //So all homogenous coords are NOT unique
+            //<3,2,1> = <6,4,2> = <9,6,3> (Homogenous Coords in 2D space)
+            //Homogenous coords back to 3D Cartesian Coords : (1/w)*homoVector
+            //As S tends to 0, the dist bw point and origin tends to infinity
+            res.M[0][0] = focalLength.x;
+            res.M[0][2] = imgPlaneXoffset;
+            res.M[1][2] = imgPlaneYoffset;
+            res.M[1][1] = focalLength.y;
+            res.M[2][2] = 1;
+            res.M[3][3] =1;
+            return res;
+        }//Camera sys (3D homo)--> ImgCoordSys (2D uv homo)
+        
+        //World Coord Sys (3D homo) ---> CameraCoordSYs (3D homo)
+        static Mat4 genExtrinsic(dim3::Vec3 cameraPos, dim3::Vec3 targetPos){
+            dim3::Vec3 forward = dim3::normalize(targetPos - cameraPos);
+            
+            dim3::Vec3 right = dim3::normalize(dim3::crossProduct({0.0f, 1.0f, 0.0f}, forward));
+            dim3::Vec3 up = dim3::crossProduct(forward, right);
+            Mat4 res = Mat4::identity();
 
-        //CHANGE OF BASIS (VIEW MATRIX)
+            res.M[0][0] = right.x;
+            res.M[0][1] = right.y;
+            res.M[0][2] = right.z;
+            res.M[1][0] = up.x;
+            res.M[1][1] = up.y;
+            res.M[1][2] = up.z;
 
-        /*
-        THEORY:
-        CAMERA is Supposed to be STUCK to the origin <0,0,0>
-        We then apply transformations and shit to the world and NOT the camera
+            res.M[2][0] = forward.x;
+            res.M[2][1] = forward.y;
+            res.M[2][2] = forward.z;
 
-
-        "So my idea of what the view matrix does is that it takes the camera vector (yes this is a Vec3 3D world space vector, this vector is normal to the lens of the camera) but then we can just use our normal rotator, function to move this vector right?"
-
-        THIS IS WRONG!
-
-
-        "THE CAMERA STAYS AT <0,0,0>"
-        //SO THE WORLD IS MOVED TO PROVIDE AN ILLUSION THAT THE CAMERA IS MOVING
-
-        So we have: View Matrices
-        Basic Direction Sense for the Camera :: (Right, Up, Forward) Basis Vectors
-        Let Camera Position is P
-        Basis Vectors for the Camera Space are Written in World Space Coordinate System, hence the Rx, Ry, Rz components
-        //This Matrix Essentially Takes The World and Moves it According to the Camera
-        View Matrix ::
-        Rx Ry Rz    -RdotP
-        Ux Uy Uz    -UdotP
-        Fx Fy Fz    -FdotP
-        0  0  0        1
-        */
-        // static Mat4 genView(const dim3::Vec3& R, const dim3::Vec3& U, const dim3::Vec3& F, const dim3::Vec3& P){
-        //     Mat4 res = Mat4::identity();
-        //     res.M[0][0] = R.x; res.M[0][1] = R.y; res.M[0][2] = R.z;
-        //     res.M[1][0] = U.x; res.M[1][1] = U.y; res.M[1][2] = U.z;
-        //     res.M[2][0] = F.x; res.M[2][1] = F.y; res.M[2][2] = F.z;
-
-        //     //Translator
-
-        //     res.M[0][3] = -dim3::dotProduct(R, P);
-        //     res.M[1][3] = -dim3::dotProduct(U, P);
-        //     res.M[2][3] = -dim3::dotProduct(F, P);
-
-        //     return res;
-        // }
-
-        // //Prespective Matrix :: Morphs 3D into 2D space
-
-        // static Mat4 genPerspective(float FOVRad, float aspectRatio, float nearP, float farP){
-        //     Mat4 res;
-
-        //     float f = 1.0f / std::tan(FOVRad / 2.0f);
-
-        //     res.M[0][0] = f/aspectRatio;
-
-        //     res.M[1][1] = f;
-
-        //     res.M[2][2] = (farP + nearP) / (nearP - farP);
-
-        //     res.M[2][3] = (2.0f * farP * nearP) / (nearP - farP);
-
-        //     res.M[3][2] = -1.0f;
-
-        //     res.M[3][3] = 0.0f;
-
-        //     return res;
-
-        //     //NDC OUT
-        //     //Far Plane +1.0f, and Near Plane -1.0f
-        // }
-
-
-
+            res.M[0][3] = -(dim3::dotProduct(right, cameraPos));
+            res.M[1][3] = -(dim3::dotProduct(up, cameraPos));
+            res.M[2][3] = -(dim3::dotProduct(forward, cameraPos));
+            return res;
+        } 
+        //Camera Matrix (Convention for this API)
+        // 
     };
+    inline dim2::Vec2 calcFocalLength(dim2::Vec2 FOVRadxy, int Wpx, int Hpx){
+        dim2::Vec2 focalVector;
+        focalVector.x = Wpx/(2*std::tan(FOVRadxy.x/2));
+        focalVector.y = Hpx/(2*std::tan(FOVRadxy.y/2));
+        return focalVector;
+    }
+    inline dim2::Vec2 calcOffsets(float Wpx, float Hpx){
+        dim2::Vec2 offsetVector;
+        offsetVector.x = Wpx/2.0f;
+        offsetVector.y = Hpx/2.0f;
+        return offsetVector;
+    }
+    // inline dim2::Vec2 calcOffsets
+    inline dim3::Vec3 cameraSpaceVecToImgSpace(Vec4 cameraSVector, dim2::Vec2 fVector, float imgPlaneXoffset=0.0f, float imgPlaneYoffset=0.0f){
+        Mat4 matrix = Mat4::genIntrinsic(fVector, imgPlaneXoffset, imgPlaneYoffset);
+        Vec4 intermediaryVector = matrix*cameraSVector;
+        dim3::Vec3 homoImgSpaceVector = {intermediaryVector.x / intermediaryVector.z, intermediaryVector.y / intermediaryVector.z, 1}; 
+        return homoImgSpaceVector;
+    }
+    inline Vec4 worldSpaceToCameraSpace(dim3::Vec3 worldPos, dim3::Vec3 cameraPos, dim3::Vec3 targetPos) {
+
+        Mat4 viewMatrix = Mat4::genExtrinsic(cameraPos, targetPos);
+
+        Vec4 worldHomo = Mat4::Vec3toHomo(worldPos);
+        return viewMatrix * worldHomo;
+    }
+
+    inline void matrixCout(const Mat4& matrix){
+        std::cout << "Formatting : M <i,j>" << std::endl;
+        for(int i =0; i <=3; i++){
+            for(int j = 0; j <= 3; j++){
+                std::cout <<"<" << i << ", " << j << "> : " << matrix.M[i][j] << "  ";
+            }
+            std::cout << "\n";
+        }
+        std::cout << std::endl;
+    }
+    inline dim2::Vec2 worldToScreen(dim3::Vec3 worldPos, dim3::Vec3 cameraPos, dim3::Vec3 targetPos, dim2::Vec2 focalLength, float ox = 0.0f, float oy = 0.0f) {
+        // 1. World Space -> Camera Space
+        Vec4 cameraSpacePos = worldSpaceToCameraSpace(worldPos, cameraPos, targetPos);
+
+        // 2. Camera Space -> Image Space (Projection)
+        dim3::Vec3 projected = cameraSpaceVecToImgSpace(cameraSpacePos, focalLength, ox, oy);
+
+        // 3. Return as 2D coordinates (u, v)
+        return { projected.x, projected.y };
+    }
     inline Mat4 matrixMultiply(const Mat4& M1, const Mat4& M2) {
     Mat4 res;
 
@@ -311,6 +327,9 @@ namespace dim4{
 
         return res;
     }
+
+
+
 
 }
 

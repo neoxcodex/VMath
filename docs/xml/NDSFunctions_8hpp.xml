@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
   <compounddef id="NDSFunctions_8hpp" kind="file" language="C++">
     <compoundname>NDSFunctions.hpp</compoundname>
     <includes local="no">iostream</includes>
@@ -38,6 +38,8 @@
       <node id="2">
         <label>include/VMath/Math/VMath2D.hpp</label>
         <link refid="VMath2D_8hpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
       </node>
       <node id="3">
         <label>include/VMath/Math/VMath3D+.hpp</label>

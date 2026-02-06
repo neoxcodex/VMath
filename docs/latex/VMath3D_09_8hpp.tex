@@ -1,53 +1,62 @@
-\doxysection{include/\+\+VMath/\+\+Math/\+\+VMath3\+D+.hpp File Reference}
+\doxysection{include/\+VMath/\+Math/\+VMath3\+D+.hpp File Reference}
 \hypertarget{VMath3D_09_8hpp}{}\label{VMath3D_09_8hpp}\index{include/VMath/Math/VMath3D+.hpp@{include/VMath/Math/VMath3D+.hpp}}
-{\ttfamily \+\#include "{}Constants.\+h"{}}\newline
-{\ttfamily \+\#include "{}NDSFunctions.\+hpp"{}}\newline
-{\ttfamily \+\#include "{}VMath3\+D.\+hpp"{}}\newline
-{\ttfamily \+\#include $<$iostream$>$}\newline
-{\ttfamily \+\#include $<$cmath$>$}\newline
-Include dependency graph for VMath3\+D+.hpp:\+\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{VMath3D_09_8hpp__incl}
-\end{center}
-\end{figure}
+{\ttfamily \#include "{}Constants.\+h"{}}\newline
+{\ttfamily \#include "{}NDSFunctions.\+hpp"{}}\newline
+{\ttfamily \#include "{}VMath3\+D.\+hpp"{}}\newline
+{\ttfamily \#include "{}VMath2\+D.\+hpp"{}}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$cmath$>$}\newline
+{\ttfamily \#include $<$xmmintrin.\+h$>$}\newline
+Include dependency graph for VMath3\+D+.hpp\+:
+% FIG 0
 \doxysubsubsection*{Classes}
 \begin{DoxyCompactItemize}
 \item 
-struct \doxymbox{\hyperlink{structdim4_1_1Vec4}{dim4::\+\+Vec4}}
+struct \mbox{\hyperlink{structdim4_1_1Vec4}{dim4\+::\+Vec4}}
 \item 
-struct \doxymbox{\hyperlink{structdim4_1_1Mat4}{dim4::\+\+Mat4}}
+struct \mbox{\hyperlink{structdim4_1_1Mat4}{dim4\+::\+Mat4}}
 \end{DoxyCompactItemize}
 \doxysubsubsection*{Namespaces}
 \begin{DoxyCompactItemize}
 \item 
-namespace \doxymbox{\hyperlink{namespacedim4}{dim4}}
+namespace \mbox{\hyperlink{namespacedim4}{dim4}}
 \end{DoxyCompactItemize}
 \doxysubsubsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-void \doxymbox{\hyperlink{namespacedim4_a1fc4f16a9f4f445def76f012c9a5cf1c}{dim4::\+vector\+Cout}} (const \doxymbox{\hyperlink{structdim4_1_1Vec4}{Vec4}} v)
+void \mbox{\hyperlink{namespacedim4_a1fc4f16a9f4f445def76f012c9a5cf1c}{dim4\+::vector\+Cout}} (const \mbox{\hyperlink{structdim4_1_1Vec4}{Vec4}} v)
 \item 
-\doxymbox{\hyperlink{structdim4_1_1Vec4}{Vec4}} \doxymbox{\hyperlink{namespacedim4_aec7c589d565c47a9cf52d133bafe7ca7}{dim4::\+operator\texorpdfstring{$\ast$}{*}}} (float scalar, const \doxymbox{\hyperlink{structdim4_1_1Vec4}{Vec4}} v)
+\mbox{\hyperlink{structdim4_1_1Vec4}{Vec4}} \mbox{\hyperlink{namespacedim4_aec7c589d565c47a9cf52d133bafe7ca7}{dim4\+::operator\texorpdfstring{$\ast$}{*}}} (float scalar, const \mbox{\hyperlink{structdim4_1_1Vec4}{Vec4}} v)
 \item 
-float \doxymbox{\hyperlink{namespacedim4_ad91806f78b76249b8734868b78a470ac}{dim4::\+dot\+Product}} (const \doxymbox{\hyperlink{structdim4_1_1Vec4}{Vec4}} v1, const \doxymbox{\hyperlink{structdim4_1_1Vec4}{Vec4}} v2)
+float \mbox{\hyperlink{namespacedim4_ad91806f78b76249b8734868b78a470ac}{dim4\+::dot\+Product}} (const \mbox{\hyperlink{structdim4_1_1Vec4}{Vec4}} v1, const \mbox{\hyperlink{structdim4_1_1Vec4}{Vec4}} v2)
 \item 
-float \doxymbox{\hyperlink{namespacedim4_afbd8d42ca13041e55a0af066a00bd142}{dim4::\+mag\+Squared}} (const \doxymbox{\hyperlink{structdim4_1_1Vec4}{Vec4}} v)
+float \mbox{\hyperlink{namespacedim4_afbd8d42ca13041e55a0af066a00bd142}{dim4\+::mag\+Squared}} (const \mbox{\hyperlink{structdim4_1_1Vec4}{Vec4}} v)
 \item 
-float \doxymbox{\hyperlink{namespacedim4_a754f8bd9423a05167ec493932ef7478f}{dim4::\+magnitude}} (const \doxymbox{\hyperlink{structdim4_1_1Vec4}{Vec4}} v)
+float \mbox{\hyperlink{namespacedim4_a754f8bd9423a05167ec493932ef7478f}{dim4\+::magnitude}} (const \mbox{\hyperlink{structdim4_1_1Vec4}{Vec4}} v)
 \item 
-bool \doxymbox{\hyperlink{namespacedim4_af35c14a8bac8fbf3c279fb8b7d247860}{dim4::\+ep\+Vector\+Equal}} (const \doxymbox{\hyperlink{structdim4_1_1Vec4}{Vec4}} v1, const \doxymbox{\hyperlink{structdim4_1_1Vec4}{Vec4}} v2, float epsilon=\doxymbox{\hyperlink{namespaceconstants_a7f3b4cf1f4ef2af969262048a358a313}{constants::\+\+EPSILON}})
+bool \mbox{\hyperlink{namespacedim4_af35c14a8bac8fbf3c279fb8b7d247860}{dim4\+::ep\+Vector\+Equal}} (const \mbox{\hyperlink{structdim4_1_1Vec4}{Vec4}} v1, const \mbox{\hyperlink{structdim4_1_1Vec4}{Vec4}} v2, float epsilon=\mbox{\hyperlink{namespaceconstants_a7f3b4cf1f4ef2af969262048a358a313}{constants\+::\+EPSILON}})
 \item 
-\doxymbox{\hyperlink{structdim4_1_1Vec4}{Vec4}} \doxymbox{\hyperlink{namespacedim4_a2ea043232d03199f449813b8eb03ce7a}{dim4::\+normalize}} (const \doxymbox{\hyperlink{structdim4_1_1Vec4}{Vec4}} v)
+\mbox{\hyperlink{structdim4_1_1Vec4}{Vec4}} \mbox{\hyperlink{namespacedim4_a2ea043232d03199f449813b8eb03ce7a}{dim4\+::normalize}} (const \mbox{\hyperlink{structdim4_1_1Vec4}{Vec4}} v)
 \item 
-\doxymbox{\hyperlink{structdim4_1_1Vec4}{Vec4}} \doxymbox{\hyperlink{namespacedim4_abd5984731c88731bbbd6406a4fa475ef}{dim4::\+lerp}} (const \doxymbox{\hyperlink{structdim4_1_1Vec4}{Vec4}} \&v1, const \doxymbox{\hyperlink{structdim4_1_1Vec4}{Vec4}} \&v2, float t)
+\mbox{\hyperlink{structdim4_1_1Vec4}{Vec4}} \mbox{\hyperlink{namespacedim4_abd5984731c88731bbbd6406a4fa475ef}{dim4\+::lerp}} (const \mbox{\hyperlink{structdim4_1_1Vec4}{Vec4}} \&v1, const \mbox{\hyperlink{structdim4_1_1Vec4}{Vec4}} \&v2, float t)
 \item 
-float \doxymbox{\hyperlink{namespacedim4_a992c34664d852d9d0b1015207ff7cd83}{dim4::\+angle\+RAD}} (const \doxymbox{\hyperlink{structdim4_1_1Vec4}{Vec4}} \&v1, const \doxymbox{\hyperlink{structdim4_1_1Vec4}{Vec4}} \&v2, const bool return\+Cos\+Angle=false)
+float \mbox{\hyperlink{namespacedim4_a992c34664d852d9d0b1015207ff7cd83}{dim4\+::angle\+RAD}} (const \mbox{\hyperlink{structdim4_1_1Vec4}{Vec4}} \&v1, const \mbox{\hyperlink{structdim4_1_1Vec4}{Vec4}} \&v2, const bool return\+Cos\+Angle=false)
 \item 
-float \doxymbox{\hyperlink{namespacedim4_a02950f3da0e8dcc5cebb87f993d0cf68}{dim4::\+angle\+DEG}} (const \doxymbox{\hyperlink{structdim4_1_1Vec4}{Vec4}} \&v1, const \doxymbox{\hyperlink{structdim4_1_1Vec4}{Vec4}} \&v2, const bool return\+Cos\+Angle=false)
+float \mbox{\hyperlink{namespacedim4_a02950f3da0e8dcc5cebb87f993d0cf68}{dim4\+::angle\+DEG}} (const \mbox{\hyperlink{structdim4_1_1Vec4}{Vec4}} \&v1, const \mbox{\hyperlink{structdim4_1_1Vec4}{Vec4}} \&v2, const bool return\+Cos\+Angle=false)
 \item 
-\doxymbox{\hyperlink{structdim4_1_1Vec4}{Vec4}} \doxymbox{\hyperlink{namespacedim4_aeec750beffc8803e704c3ea7ee348271}{dim4::\+to\+Vec4}} (\doxymbox{\hyperlink{structdim3_1_1Vec3}{dim3::\+\+Vec3}} \&v, bool is\+Point=true)
+\mbox{\hyperlink{structdim4_1_1Vec4}{Vec4}} \mbox{\hyperlink{namespacedim4_aeec750beffc8803e704c3ea7ee348271}{dim4\+::to\+Vec4}} (\mbox{\hyperlink{structdim3_1_1Vec3}{dim3\+::\+Vec3}} \&v, bool is\+Point=true)
 \item 
-\doxymbox{\hyperlink{structdim4_1_1Mat4}{Mat4}} \doxymbox{\hyperlink{namespacedim4_a050c2be340cba61c80628b22a0779622}{dim4::\+matrix\+Multiply}} (const \doxymbox{\hyperlink{structdim4_1_1Mat4}{Mat4}} \&M1, const \doxymbox{\hyperlink{structdim4_1_1Mat4}{Mat4}} \&M2)
+\mbox{\hyperlink{structdim2_1_1Vec2}{dim2\+::\+Vec2}} \mbox{\hyperlink{namespacedim4_a7ff72d838b7fd3427ec7564401ef6b57}{dim4\+::calc\+Focal\+Length}} (\mbox{\hyperlink{structdim2_1_1Vec2}{dim2\+::\+Vec2}} FOVRadxy, int Wpx, int Hpx)
+\item 
+\mbox{\hyperlink{structdim2_1_1Vec2}{dim2\+::\+Vec2}} \mbox{\hyperlink{namespacedim4_ab4269a56176aa8c896b1ba9ae3440152}{dim4\+::calc\+Offsets}} (float Wpx, float Hpx)
+\item 
+\mbox{\hyperlink{structdim3_1_1Vec3}{dim3\+::\+Vec3}} \mbox{\hyperlink{namespacedim4_a5d1454f639bb21e6e6a981e2219efbf7}{dim4\+::camera\+Space\+Vec\+To\+Img\+Space}} (\mbox{\hyperlink{structdim4_1_1Vec4}{Vec4}} camera\+SVector, \mbox{\hyperlink{structdim2_1_1Vec2}{dim2\+::\+Vec2}} f\+Vector, float img\+Plane\+Xoffset=0.\+0f, float img\+Plane\+Yoffset=0.\+0f)
+\item 
+\mbox{\hyperlink{structdim4_1_1Vec4}{Vec4}} \mbox{\hyperlink{namespacedim4_acb45c93262c9cef124cb5b5399ceeec8}{dim4\+::world\+Space\+To\+Camera\+Space}} (\mbox{\hyperlink{structdim3_1_1Vec3}{dim3\+::\+Vec3}} world\+Pos, \mbox{\hyperlink{structdim3_1_1Vec3}{dim3\+::\+Vec3}} camera\+Pos, \mbox{\hyperlink{structdim3_1_1Vec3}{dim3\+::\+Vec3}} target\+Pos)
+\item 
+void \mbox{\hyperlink{namespacedim4_affb1c034697854a2cfa2c0ddcc458948}{dim4\+::matrix\+Cout}} (const \mbox{\hyperlink{structdim4_1_1Mat4}{Mat4}} \&matrix)
+\item 
+\mbox{\hyperlink{structdim2_1_1Vec2}{dim2\+::\+Vec2}} \mbox{\hyperlink{namespacedim4_a481685e1efe4a035f4c38e34b5d820b7}{dim4\+::world\+To\+Screen}} (\mbox{\hyperlink{structdim3_1_1Vec3}{dim3\+::\+Vec3}} world\+Pos, \mbox{\hyperlink{structdim3_1_1Vec3}{dim3\+::\+Vec3}} camera\+Pos, \mbox{\hyperlink{structdim3_1_1Vec3}{dim3\+::\+Vec3}} target\+Pos, \mbox{\hyperlink{structdim2_1_1Vec2}{dim2\+::\+Vec2}} focal\+Length, float ox=0.\+0f, float oy=0.\+0f)
+\item 
+\mbox{\hyperlink{structdim4_1_1Mat4}{Mat4}} \mbox{\hyperlink{namespacedim4_a050c2be340cba61c80628b22a0779622}{dim4\+::matrix\+Multiply}} (const \mbox{\hyperlink{structdim4_1_1Mat4}{Mat4}} \&M1, const \mbox{\hyperlink{structdim4_1_1Mat4}{Mat4}} \&M2)
 \end{DoxyCompactItemize}

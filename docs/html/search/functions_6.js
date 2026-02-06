@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['lerp_0',['lerp',['../namespaceNDSF.html#a24179bd1dea5ae01825a496cdfbba1ff',1,'NDSF::lerp()'],['../namespacedim2.html#acb492b99bd9c32440d20f220a6eeacce',1,'dim2::lerp()'],['../namespacedim4.html#abd5984731c88731bbbd6406a4fa475ef',1,'dim4::lerp()'],['../namespacedim3.html#a83b1ed631a375b365ecfb2a1fba1c5c2',1,'dim3::lerp()']]]
+  ['identity_0',['identity',['../structdim4_1_1Mat4.html#ae615ba2f1c7065005bfdaaa9031a63f2',1,'dim4::Mat4::identity()'],['../structdim3_1_1Mat3.html#a8f2d08e1b0e276c064f49fd8da3e772e',1,'dim3::Mat3::identity()']]]
 ];

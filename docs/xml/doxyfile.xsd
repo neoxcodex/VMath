@@ -115,8 +115,6 @@
       <xsd:enumeration value="GENERATE_TESTLIST"/>
       <xsd:enumeration value="GENERATE_BUGLIST"/>
       <xsd:enumeration value="GENERATE_DEPRECATEDLIST"/>
-      <xsd:enumeration value="GENERATE_REQUIREMENTS"/>
-      <xsd:enumeration value="REQ_TRACEABILITY_INFO"/>
       <xsd:enumeration value="ENABLED_SECTIONS"/>
       <xsd:enumeration value="MAX_INITIALIZER_LINES"/>
       <xsd:enumeration value="SHOW_USED_FILES"/>

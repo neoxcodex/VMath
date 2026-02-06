@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
   <compounddef id="structdim4_1_1Vec4" kind="struct" language="C++" prot="public">
     <compoundname>dim4::Vec4</compoundname>
     <includes refid="VMath3D_09_8hpp" local="no">VMath3D+.hpp</includes>
@@ -16,7 +16,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/VMath/Math/VMath3D+.hpp" line="10" column="15" bodyfile="include/VMath/Math/VMath3D+.hpp" bodystart="10" bodyend="-1"/>
+        <location file="include/VMath/Math/VMath3D+.hpp" line="13" column="15" bodyfile="include/VMath/Math/VMath3D+.hpp" bodystart="13" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structdim4_1_1Vec4_1ae8b199a6bc231d048f493edceb317d9b" prot="public" static="no" mutable="no">
         <type>float</type>
@@ -30,7 +30,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/VMath/Math/VMath3D+.hpp" line="10" column="16" bodyfile="include/VMath/Math/VMath3D+.hpp" bodystart="10" bodyend="-1"/>
+        <location file="include/VMath/Math/VMath3D+.hpp" line="13" column="16" bodyfile="include/VMath/Math/VMath3D+.hpp" bodystart="13" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structdim4_1_1Vec4_1adeac33b9bb5635fadd74642f085d94fa" prot="public" static="no" mutable="no">
         <type>float</type>
@@ -44,7 +44,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/VMath/Math/VMath3D+.hpp" line="10" column="17" bodyfile="include/VMath/Math/VMath3D+.hpp" bodystart="10" bodyend="-1"/>
+        <location file="include/VMath/Math/VMath3D+.hpp" line="13" column="17" bodyfile="include/VMath/Math/VMath3D+.hpp" bodystart="13" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structdim4_1_1Vec4_1a6f43a778391bbff07ef349cc21363022" prot="public" static="no" mutable="no">
         <type>float</type>
@@ -58,7 +58,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/VMath/Math/VMath3D+.hpp" line="10" column="18" bodyfile="include/VMath/Math/VMath3D+.hpp" bodystart="10" bodyend="-1"/>
+        <location file="include/VMath/Math/VMath3D+.hpp" line="13" column="18" bodyfile="include/VMath/Math/VMath3D+.hpp" bodystart="13" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-func">
@@ -78,7 +78,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/VMath/Math/VMath3D+.hpp" line="12" column="14" bodyfile="include/VMath/Math/VMath3D+.hpp" bodystart="12" bodyend="23"/>
+        <location file="include/VMath/Math/VMath3D+.hpp" line="15" column="14" bodyfile="include/VMath/Math/VMath3D+.hpp" bodystart="15" bodyend="26"/>
       </memberdef>
       <memberdef kind="function" id="structdim4_1_1Vec4_1a97336d187a77c2918a8da7abee8b8213" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="structdim4_1_1Vec4" kindref="compound">Vec4</ref></type>
@@ -96,7 +96,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/VMath/Math/VMath3D+.hpp" line="24" column="14" bodyfile="include/VMath/Math/VMath3D+.hpp" bodystart="24" bodyend="26"/>
+        <location file="include/VMath/Math/VMath3D+.hpp" line="27" column="14" bodyfile="include/VMath/Math/VMath3D+.hpp" bodystart="27" bodyend="29"/>
       </memberdef>
       <memberdef kind="function" id="structdim4_1_1Vec4_1aee76b33eb44b01b78a95cb514e630b2a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="structdim4_1_1Vec4" kindref="compound">Vec4</ref></type>
@@ -114,7 +114,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/VMath/Math/VMath3D+.hpp" line="27" column="14" bodyfile="include/VMath/Math/VMath3D+.hpp" bodystart="27" bodyend="30"/>
+        <location file="include/VMath/Math/VMath3D+.hpp" line="30" column="14" bodyfile="include/VMath/Math/VMath3D+.hpp" bodystart="30" bodyend="33"/>
       </memberdef>
       <memberdef kind="function" id="structdim4_1_1Vec4_1aa1ccee6bc155fab58557c0d218c51aa5" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="structdim4_1_1Vec4" kindref="compound">Vec4</ref></type>
@@ -132,14 +132,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/VMath/Math/VMath3D+.hpp" line="31" column="14" bodyfile="include/VMath/Math/VMath3D+.hpp" bodystart="31" bodyend="33"/>
+        <location file="include/VMath/Math/VMath3D+.hpp" line="34" column="14" bodyfile="include/VMath/Math/VMath3D+.hpp" bodystart="34" bodyend="36"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="include/VMath/Math/VMath3D+.hpp" line="9" column="5" bodyfile="include/VMath/Math/VMath3D+.hpp" bodystart="9" bodyend="36"/>
+    <location file="include/VMath/Math/VMath3D+.hpp" line="12" column="5" bodyfile="include/VMath/Math/VMath3D+.hpp" bodystart="12" bodyend="39"/>
     <listofallmembers>
       <member refid="structdim4_1_1Vec4_1aa1ccee6bc155fab58557c0d218c51aa5" prot="public" virt="non-virtual"><scope>dim4::Vec4</scope><name>operator*</name></member>
       <member refid="structdim4_1_1Vec4_1a97336d187a77c2918a8da7abee8b8213" prot="public" virt="non-virtual"><scope>dim4::Vec4</scope><name>operator+</name></member>

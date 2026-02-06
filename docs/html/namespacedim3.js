@@ -10,6 +10,7 @@ var namespacedim3 =
     [ "epVectorEqual", "namespacedim3.html#abf0ed32e11f3fa172424ae5cee80fc1b", null ],
     [ "lerp", "namespacedim3.html#a83b1ed631a375b365ecfb2a1fba1c5c2", null ],
     [ "magSquared", "namespacedim3.html#a49981c23e4ba868ba815e4cc719e8524", null ],
+    [ "matrixCout", "namespacedim3.html#a596f1678e0188854f2a3cda18c8b30b4", null ],
     [ "matrixMultiply", "namespacedim3.html#a9ac9d4b69ad2aad2c51d2d2365125309", null ],
     [ "normalize", "namespacedim3.html#ae9aca9f91f3ee1c7c8e98d0aa81a3818", null ],
     [ "operator*", "namespacedim3.html#a918c677a6bebfcdebb26ecce59e04d81", null ],

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['visualizer_0',['visualizer',['../namespacevisualizer.html',1,'']]]
+  ['profiler_0',['profiler',['../namespaceprofiler.html',1,'']]]
 ];

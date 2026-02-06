@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
   <compounddef id="namespacedim4" kind="namespace" language="C++">
     <compoundname>dim4</compoundname>
     <innerclass refid="structdim4_1_1Vec4" prot="public">dim4::Vec4</innerclass>
@@ -21,7 +21,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/VMath/Math/VMath3D+.hpp" line="37" column="17" bodyfile="include/VMath/Math/VMath3D+.hpp" bodystart="37" bodyend="39"/>
+        <location file="include/VMath/Math/VMath3D+.hpp" line="40" column="17" bodyfile="include/VMath/Math/VMath3D+.hpp" bodystart="40" bodyend="42"/>
       </memberdef>
       <memberdef kind="function" id="namespacedim4_1aec7c589d565c47a9cf52d133bafe7ca7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="structdim4_1_1Vec4" kindref="compound">Vec4</ref></type>
@@ -43,7 +43,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/VMath/Math/VMath3D+.hpp" line="40" column="17" bodyfile="include/VMath/Math/VMath3D+.hpp" bodystart="40" bodyend="42"/>
+        <location file="include/VMath/Math/VMath3D+.hpp" line="43" column="17" bodyfile="include/VMath/Math/VMath3D+.hpp" bodystart="43" bodyend="45"/>
       </memberdef>
       <memberdef kind="function" id="namespacedim4_1ad91806f78b76249b8734868b78a470ac" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>float</type>
@@ -65,7 +65,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/VMath/Math/VMath3D+.hpp" line="43" column="18" bodyfile="include/VMath/Math/VMath3D+.hpp" bodystart="43" bodyend="48"/>
+        <location file="include/VMath/Math/VMath3D+.hpp" line="46" column="18" bodyfile="include/VMath/Math/VMath3D+.hpp" bodystart="46" bodyend="51"/>
       </memberdef>
       <memberdef kind="function" id="namespacedim4_1afbd8d42ca13041e55a0af066a00bd142" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>float</type>
@@ -83,7 +83,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/VMath/Math/VMath3D+.hpp" line="49" column="18" bodyfile="include/VMath/Math/VMath3D+.hpp" bodystart="49" bodyend="57"/>
+        <location file="include/VMath/Math/VMath3D+.hpp" line="52" column="18" bodyfile="include/VMath/Math/VMath3D+.hpp" bodystart="52" bodyend="60"/>
       </memberdef>
       <memberdef kind="function" id="namespacedim4_1a754f8bd9423a05167ec493932ef7478f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>float</type>
@@ -101,7 +101,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/VMath/Math/VMath3D+.hpp" line="58" column="18" bodyfile="include/VMath/Math/VMath3D+.hpp" bodystart="58" bodyend="60"/>
+        <location file="include/VMath/Math/VMath3D+.hpp" line="61" column="18" bodyfile="include/VMath/Math/VMath3D+.hpp" bodystart="61" bodyend="63"/>
       </memberdef>
       <memberdef kind="function" id="namespacedim4_1af35c14a8bac8fbf3c279fb8b7d247860" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
@@ -128,7 +128,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/VMath/Math/VMath3D+.hpp" line="61" column="17" bodyfile="include/VMath/Math/VMath3D+.hpp" bodystart="61" bodyend="71"/>
+        <location file="include/VMath/Math/VMath3D+.hpp" line="64" column="17" bodyfile="include/VMath/Math/VMath3D+.hpp" bodystart="64" bodyend="74"/>
       </memberdef>
       <memberdef kind="function" id="namespacedim4_1a2ea043232d03199f449813b8eb03ce7a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="structdim4_1_1Vec4" kindref="compound">Vec4</ref></type>
@@ -146,7 +146,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/VMath/Math/VMath3D+.hpp" line="72" column="17" bodyfile="include/VMath/Math/VMath3D+.hpp" bodystart="72" bodyend="75"/>
+        <location file="include/VMath/Math/VMath3D+.hpp" line="75" column="17" bodyfile="include/VMath/Math/VMath3D+.hpp" bodystart="75" bodyend="78"/>
       </memberdef>
       <memberdef kind="function" id="namespacedim4_1abd5984731c88731bbbd6406a4fa475ef" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="structdim4_1_1Vec4" kindref="compound">Vec4</ref></type>
@@ -172,7 +172,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/VMath/Math/VMath3D+.hpp" line="76" column="17" bodyfile="include/VMath/Math/VMath3D+.hpp" bodystart="76" bodyend="86"/>
+        <location file="include/VMath/Math/VMath3D+.hpp" line="79" column="17" bodyfile="include/VMath/Math/VMath3D+.hpp" bodystart="79" bodyend="89"/>
       </memberdef>
       <memberdef kind="function" id="namespacedim4_1a992c34664d852d9d0b1015207ff7cd83" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>float</type>
@@ -199,7 +199,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/VMath/Math/VMath3D+.hpp" line="87" column="18" bodyfile="include/VMath/Math/VMath3D+.hpp" bodystart="87" bodyend="96"/>
+        <location file="include/VMath/Math/VMath3D+.hpp" line="90" column="18" bodyfile="include/VMath/Math/VMath3D+.hpp" bodystart="90" bodyend="99"/>
       </memberdef>
       <memberdef kind="function" id="namespacedim4_1a02950f3da0e8dcc5cebb87f993d0cf68" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>float</type>
@@ -226,7 +226,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/VMath/Math/VMath3D+.hpp" line="97" column="18" bodyfile="include/VMath/Math/VMath3D+.hpp" bodystart="97" bodyend="99"/>
+        <location file="include/VMath/Math/VMath3D+.hpp" line="100" column="18" bodyfile="include/VMath/Math/VMath3D+.hpp" bodystart="100" bodyend="102"/>
       </memberdef>
       <memberdef kind="function" id="namespacedim4_1aeec750beffc8803e704c3ea7ee348271" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="structdim4_1_1Vec4" kindref="compound">Vec4</ref></type>
@@ -249,7 +249,171 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/VMath/Math/VMath3D+.hpp" line="100" column="17" bodyfile="include/VMath/Math/VMath3D+.hpp" bodystart="100" bodyend="102"/>
+        <location file="include/VMath/Math/VMath3D+.hpp" line="103" column="17" bodyfile="include/VMath/Math/VMath3D+.hpp" bodystart="103" bodyend="105"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacedim4_1a7ff72d838b7fd3427ec7564401ef6b57" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structdim2_1_1Vec2" kindref="compound">dim2::Vec2</ref></type>
+        <definition>dim2::Vec2 dim4::calcFocalLength</definition>
+        <argsstring>(dim2::Vec2 FOVRadxy, int Wpx, int Hpx)</argsstring>
+        <name>calcFocalLength</name>
+        <qualifiedname>dim4::calcFocalLength</qualifiedname>
+        <param>
+          <type><ref refid="structdim2_1_1Vec2" kindref="compound">dim2::Vec2</ref></type>
+          <declname>FOVRadxy</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>Wpx</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>Hpx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/VMath/Math/VMath3D+.hpp" line="254" column="23" bodyfile="include/VMath/Math/VMath3D+.hpp" bodystart="254" bodyend="259"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacedim4_1ab4269a56176aa8c896b1ba9ae3440152" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structdim2_1_1Vec2" kindref="compound">dim2::Vec2</ref></type>
+        <definition>dim2::Vec2 dim4::calcOffsets</definition>
+        <argsstring>(float Wpx, float Hpx)</argsstring>
+        <name>calcOffsets</name>
+        <qualifiedname>dim4::calcOffsets</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>Wpx</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>Hpx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/VMath/Math/VMath3D+.hpp" line="260" column="23" bodyfile="include/VMath/Math/VMath3D+.hpp" bodystart="260" bodyend="265"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacedim4_1a5d1454f639bb21e6e6a981e2219efbf7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structdim3_1_1Vec3" kindref="compound">dim3::Vec3</ref></type>
+        <definition>dim3::Vec3 dim4::cameraSpaceVecToImgSpace</definition>
+        <argsstring>(Vec4 cameraSVector, dim2::Vec2 fVector, float imgPlaneXoffset=0.0f, float imgPlaneYoffset=0.0f)</argsstring>
+        <name>cameraSpaceVecToImgSpace</name>
+        <qualifiedname>dim4::cameraSpaceVecToImgSpace</qualifiedname>
+        <param>
+          <type><ref refid="structdim4_1_1Vec4" kindref="compound">Vec4</ref></type>
+          <declname>cameraSVector</declname>
+        </param>
+        <param>
+          <type><ref refid="structdim2_1_1Vec2" kindref="compound">dim2::Vec2</ref></type>
+          <declname>fVector</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>imgPlaneXoffset</declname>
+          <defval>0.0f</defval>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>imgPlaneYoffset</declname>
+          <defval>0.0f</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/VMath/Math/VMath3D+.hpp" line="267" column="23" bodyfile="include/VMath/Math/VMath3D+.hpp" bodystart="267" bodyend="272"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacedim4_1acb45c93262c9cef124cb5b5399ceeec8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structdim4_1_1Vec4" kindref="compound">Vec4</ref></type>
+        <definition>Vec4 dim4::worldSpaceToCameraSpace</definition>
+        <argsstring>(dim3::Vec3 worldPos, dim3::Vec3 cameraPos, dim3::Vec3 targetPos)</argsstring>
+        <name>worldSpaceToCameraSpace</name>
+        <qualifiedname>dim4::worldSpaceToCameraSpace</qualifiedname>
+        <param>
+          <type><ref refid="structdim3_1_1Vec3" kindref="compound">dim3::Vec3</ref></type>
+          <declname>worldPos</declname>
+        </param>
+        <param>
+          <type><ref refid="structdim3_1_1Vec3" kindref="compound">dim3::Vec3</ref></type>
+          <declname>cameraPos</declname>
+        </param>
+        <param>
+          <type><ref refid="structdim3_1_1Vec3" kindref="compound">dim3::Vec3</ref></type>
+          <declname>targetPos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/VMath/Math/VMath3D+.hpp" line="273" column="17" bodyfile="include/VMath/Math/VMath3D+.hpp" bodystart="273" bodyend="279"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacedim4_1affb1c034697854a2cfa2c0ddcc458948" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void dim4::matrixCout</definition>
+        <argsstring>(const Mat4 &amp;matrix)</argsstring>
+        <name>matrixCout</name>
+        <qualifiedname>dim4::matrixCout</qualifiedname>
+        <param>
+          <type>const <ref refid="structdim4_1_1Mat4" kindref="compound">Mat4</ref> &amp;</type>
+          <declname>matrix</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/VMath/Math/VMath3D+.hpp" line="281" column="17" bodyfile="include/VMath/Math/VMath3D+.hpp" bodystart="281" bodyend="290"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacedim4_1a481685e1efe4a035f4c38e34b5d820b7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structdim2_1_1Vec2" kindref="compound">dim2::Vec2</ref></type>
+        <definition>dim2::Vec2 dim4::worldToScreen</definition>
+        <argsstring>(dim3::Vec3 worldPos, dim3::Vec3 cameraPos, dim3::Vec3 targetPos, dim2::Vec2 focalLength, float ox=0.0f, float oy=0.0f)</argsstring>
+        <name>worldToScreen</name>
+        <qualifiedname>dim4::worldToScreen</qualifiedname>
+        <param>
+          <type><ref refid="structdim3_1_1Vec3" kindref="compound">dim3::Vec3</ref></type>
+          <declname>worldPos</declname>
+        </param>
+        <param>
+          <type><ref refid="structdim3_1_1Vec3" kindref="compound">dim3::Vec3</ref></type>
+          <declname>cameraPos</declname>
+        </param>
+        <param>
+          <type><ref refid="structdim3_1_1Vec3" kindref="compound">dim3::Vec3</ref></type>
+          <declname>targetPos</declname>
+        </param>
+        <param>
+          <type><ref refid="structdim2_1_1Vec2" kindref="compound">dim2::Vec2</ref></type>
+          <declname>focalLength</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>ox</declname>
+          <defval>0.0f</defval>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>oy</declname>
+          <defval>0.0f</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/VMath/Math/VMath3D+.hpp" line="291" column="23" bodyfile="include/VMath/Math/VMath3D+.hpp" bodystart="291" bodyend="300"/>
       </memberdef>
       <memberdef kind="function" id="namespacedim4_1a050c2be340cba61c80628b22a0779622" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="structdim4_1_1Mat4" kindref="compound">Mat4</ref></type>
@@ -271,13 +435,13 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/VMath/Math/VMath3D+.hpp" line="285" column="17" bodyfile="include/VMath/Math/VMath3D+.hpp" bodystart="285" bodyend="313"/>
+        <location file="include/VMath/Math/VMath3D+.hpp" line="301" column="17" bodyfile="include/VMath/Math/VMath3D+.hpp" bodystart="301" bodyend="329"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="include/VMath/Math/VMath3D+.hpp" line="8" column="1"/>
+    <location file="include/VMath/Math/VMath3D+.hpp" line="11" column="1"/>
   </compounddef>
 </doxygen>

@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
   <compounddef id="structdim3_1_1Mat3" kind="struct" language="C++" prot="public">
     <compoundname>dim3::Mat3</compoundname>
     <includes refid="VMath3D_8hpp" local="no">VMath3D.hpp</includes>
@@ -136,7 +136,7 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="include/VMath/Math/VMath3D.hpp" line="131" column="5" bodyfile="include/VMath/Math/VMath3D.hpp" bodystart="131" bodyend="214"/>
+    <location file="include/VMath/Math/VMath3D.hpp" line="131" column="5" bodyfile="include/VMath/Math/VMath3D.hpp" bodystart="131" bodyend="215"/>
     <listofallmembers>
       <member refid="structdim3_1_1Mat3_1a2cbe2ceb8116e69c8b1f3532cb64fdfc" prot="public" virt="non-virtual"><scope>dim3::Mat3</scope><name>genRotationX</name></member>
       <member refid="structdim3_1_1Mat3_1a0fe5235a4b973b8389c6aeaf2d6aab39" prot="public" virt="non-virtual"><scope>dim3::Mat3</scope><name>genRotationY</name></member>

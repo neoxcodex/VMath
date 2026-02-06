@@ -211,7 +211,18 @@ namespace dim3 {
 
         // }
 
+
     };
+    inline void matrixCout(const Mat3& matrix){
+        std::cout << "Formatting : M <i,j>" << std::endl;
+        for(int i =0; i <=2; i++){
+            for(int j = 0; j <= 2; j++){
+                std::cout <<"<" << i << ", " << j << "> : " << matrix.M[i][j] << "  ";
+            }
+            std::cout << "\n";
+        }
+        std::cout << std::endl;
+    }
     inline Mat3 matrixMultiply(const Mat3& M1, const Mat3& M2) {
         Mat3 res;
         // ROW 0

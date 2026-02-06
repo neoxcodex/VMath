@@ -1,6 +1,7 @@
 
 #ifndef constant_89798729187
 #define constant_89798729187
+
 namespace constants{
     constexpr double ACCU_PI = 3.14159265358979323846;
     constexpr float PI = 3.14159265f;

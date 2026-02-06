@@ -1,6 +1,6 @@
 \doxysection{NDSFunctions.\+hpp}
 \hypertarget{NDSFunctions_8hpp_source}{}\label{NDSFunctions_8hpp_source}\index{include/VMath/Math/NDSFunctions.hpp@{include/VMath/Math/NDSFunctions.hpp}}
-\doxymbox{\hyperlink{NDSFunctions_8hpp}{Go to the documentation of this file.}}
+\mbox{\hyperlink{NDSFunctions_8hpp}{Go to the documentation of this file.}}
 \begin{DoxyCode}{0}
 \DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ NDSFunction\_30980238}}
 \DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ NDSFunction\_30980238}}
@@ -8,18 +8,18 @@
 \DoxyCodeLine{00004\ \textcolor{comment}{Non-\/Dimension\ Specific\ Functions\ (NDSF)}}
 \DoxyCodeLine{00005\ \textcolor{comment}{*/}}
 \DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include<iostream>}}
-\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include"{}\doxymbox{\hyperlink{Constants_8h}{Constants.h}}"{}}}
-\DoxyCodeLine{00008\ \textcolor{keyword}{namespace\ }\doxymbox{\hyperlink{namespaceNDSF}{NDSF}}\{}
-\DoxyCodeLine{00009\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{float}\ \doxymbox{\hyperlink{namespaceNDSF_a4e3b42963ddafb487f9a1a4d081e647e}{clamp}}(\textcolor{keywordtype}{float}\ a,\ \textcolor{keywordtype}{float}\ lowerL,\ \textcolor{keywordtype}{float}\ upperL)\{}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include"{}\mbox{\hyperlink{Constants_8h}{Constants.h}}"{}}}
+\DoxyCodeLine{00008\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespaceNDSF}{NDSF}}\{}
+\DoxyCodeLine{00009\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{namespaceNDSF_a4e3b42963ddafb487f9a1a4d081e647e}{clamp}}(\textcolor{keywordtype}{float}\ a,\ \textcolor{keywordtype}{float}\ lowerL,\ \textcolor{keywordtype}{float}\ upperL)\{}
 \DoxyCodeLine{00010\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ std::max(lowerL,\ std::min(a,\ upperL));}
 \DoxyCodeLine{00011\ \ \ \ \ \}}
-\DoxyCodeLine{00012\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{namespaceNDSF_aac6fcf67ef9ccf35deacef1056ae2001}{epEqual}}(\textcolor{keywordtype}{float}\ a,\ \textcolor{keywordtype}{float}\ b,\ \textcolor{keywordtype}{float}\ epsilon\ =\ \doxymbox{\hyperlink{namespaceconstants_a7f3b4cf1f4ef2af969262048a358a313}{constants::EPSILON}})\{}
+\DoxyCodeLine{00012\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{namespaceNDSF_aac6fcf67ef9ccf35deacef1056ae2001}{epEqual}}(\textcolor{keywordtype}{float}\ a,\ \textcolor{keywordtype}{float}\ b,\ \textcolor{keywordtype}{float}\ epsilon\ =\ \mbox{\hyperlink{namespaceconstants_a7f3b4cf1f4ef2af969262048a358a313}{constants::EPSILON}})\{}
 \DoxyCodeLine{00013\ \ \ \ \ \ \ \ \ \textcolor{comment}{//FUZZY}}
 \DoxyCodeLine{00014\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}(std::abs(a-\/b)\ <=\ epsilon);}
 \DoxyCodeLine{00015\ \ \ \ \ \}}
-\DoxyCodeLine{00016\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{float}\ \doxymbox{\hyperlink{namespaceNDSF_a24179bd1dea5ae01825a496cdfbba1ff}{lerp}}(\textcolor{keywordtype}{float}\ a,\ \textcolor{keywordtype}{float}\ b,\ \textcolor{keywordtype}{float}\ t)\{}
+\DoxyCodeLine{00016\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{namespaceNDSF_a24179bd1dea5ae01825a496cdfbba1ff}{lerp}}(\textcolor{keywordtype}{float}\ a,\ \textcolor{keywordtype}{float}\ b,\ \textcolor{keywordtype}{float}\ t)\{}
 \DoxyCodeLine{00017\ \ \ \ \ \ \ \ \ \textcolor{comment}{//Jus\ Point\ Slope\ With\ ::\ y0\ =\ initial,\ y1\ =\ end,\ x0\ =\ 0,\ x1\ =\ 1,\ x\ =\ t\ and\ m\ =\ (v2-\/v1)}}
-\DoxyCodeLine{00018\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ clT\ =\ \doxymbox{\hyperlink{namespaceNDSF_a4e3b42963ddafb487f9a1a4d081e647e}{clamp}}(t,\ 0.0f,\ 1.0f);}
+\DoxyCodeLine{00018\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ clT\ =\ \mbox{\hyperlink{namespaceNDSF_a4e3b42963ddafb487f9a1a4d081e647e}{clamp}}(t,\ 0.0f,\ 1.0f);}
 \DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ a\ +\ (b-\/a)*clT;}
 \DoxyCodeLine{00020\ \ \ \ \ \}}
 \DoxyCodeLine{00021\ \}}

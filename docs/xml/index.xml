@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.16.1" xml:lang="en-US">
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.15.0" xml:lang="en-US">
   <compound refid="structdim3_1_1Mat3" kind="struct"><name>dim3::Mat3</name>
     <member refid="structdim3_1_1Mat3_1a8b1307846a6c462565cc8f7fa2e7d898" kind="variable"><name>M</name></member>
     <member refid="structdim3_1_1Mat3_1a8f2d08e1b0e276c064f49fd8da3e772e" kind="function"><name>identity</name></member>
@@ -18,8 +18,10 @@
     <member refid="structdim4_1_1Mat4_1afc03a37aa56ef003bc580e86eeb239f7" kind="function"><name>genRotationZ</name></member>
     <member refid="structdim4_1_1Mat4_1ae70740ae4e5827d7315f02c4c9aaa1da" kind="function"><name>genTranslation</name></member>
     <member refid="structdim4_1_1Mat4_1aed691d14fc6090785ef2d5dbdd89e417" kind="function"><name>genScaling</name></member>
-    <member refid="structdim4_1_1Mat4_1ad5acd71a8dc964dda5d977c2a00bd2d6" kind="function"><name>genView</name></member>
-    <member refid="structdim4_1_1Mat4_1afd5107eaa33ae5f054f78192d4af5b89" kind="function"><name>genPerspective</name></member>
+    <member refid="structdim4_1_1Mat4_1a5484dfd2ecf84dafc2b27f7b23c6d534" kind="function"><name>homoToVec3</name></member>
+    <member refid="structdim4_1_1Mat4_1a30c16ae46be93f28cbc11e200aa10ca7" kind="function"><name>Vec3toHomo</name></member>
+    <member refid="structdim4_1_1Mat4_1aec9467066d8252c3e4ba0f77bc52ea89" kind="function"><name>genIntrinsic</name></member>
+    <member refid="structdim4_1_1Mat4_1a6f47b7e1b9ec25b8d4576a578dc28958" kind="function"><name>genExtrinsic</name></member>
     <member refid="structdim4_1_1Mat4_1a4cae5021f858ed635bc262d4c548cb54" kind="function"><name>operator*</name></member>
   </compound>
   <compound refid="structdim2_1_1Vec2" kind="struct"><name>dim2::Vec2</name>
@@ -78,6 +80,7 @@
     <member refid="namespacedim3_1a0a36f0b4027df5697bf8a9666656f4c4" kind="function"><name>crossProduct</name></member>
     <member refid="namespacedim3_1abf0ed32e11f3fa172424ae5cee80fc1b" kind="function"><name>epVectorEqual</name></member>
     <member refid="namespacedim3_1a83b1ed631a375b365ecfb2a1fba1c5c2" kind="function"><name>lerp</name></member>
+    <member refid="namespacedim3_1a596f1678e0188854f2a3cda18c8b30b4" kind="function"><name>matrixCout</name></member>
     <member refid="namespacedim3_1a9ac9d4b69ad2aad2c51d2d2365125309" kind="function"><name>matrixMultiply</name></member>
     <member refid="namespacedim3_1ae100dc04d852fa843dd75a7d64645dc8" kind="function"><name>rotationCustomAxis</name></member>
     <member refid="namespacedim3_1a79335cfc751c2b59b582cd44a82114c8" kind="function"><name>rotationXAxis</name></member>
@@ -96,6 +99,12 @@
     <member refid="namespacedim4_1a992c34664d852d9d0b1015207ff7cd83" kind="function"><name>angleRAD</name></member>
     <member refid="namespacedim4_1a02950f3da0e8dcc5cebb87f993d0cf68" kind="function"><name>angleDEG</name></member>
     <member refid="namespacedim4_1aeec750beffc8803e704c3ea7ee348271" kind="function"><name>toVec4</name></member>
+    <member refid="namespacedim4_1a7ff72d838b7fd3427ec7564401ef6b57" kind="function"><name>calcFocalLength</name></member>
+    <member refid="namespacedim4_1ab4269a56176aa8c896b1ba9ae3440152" kind="function"><name>calcOffsets</name></member>
+    <member refid="namespacedim4_1a5d1454f639bb21e6e6a981e2219efbf7" kind="function"><name>cameraSpaceVecToImgSpace</name></member>
+    <member refid="namespacedim4_1acb45c93262c9cef124cb5b5399ceeec8" kind="function"><name>worldSpaceToCameraSpace</name></member>
+    <member refid="namespacedim4_1affb1c034697854a2cfa2c0ddcc458948" kind="function"><name>matrixCout</name></member>
+    <member refid="namespacedim4_1a481685e1efe4a035f4c38e34b5d820b7" kind="function"><name>worldToScreen</name></member>
     <member refid="namespacedim4_1a050c2be340cba61c80628b22a0779622" kind="function"><name>matrixMultiply</name></member>
   </compound>
   <compound refid="namespacedimN" kind="namespace"><name>dimN</name>
@@ -115,6 +124,9 @@
     <member refid="namespaceNDSF_1aac6fcf67ef9ccf35deacef1056ae2001" kind="function"><name>epEqual</name></member>
     <member refid="namespaceNDSF_1a24179bd1dea5ae01825a496cdfbba1ff" kind="function"><name>lerp</name></member>
   </compound>
+  <compound refid="namespaceprofiler" kind="namespace"><name>profiler</name>
+    <member refid="namespaceprofiler_1aa49beac373249dd75f7a66ac319bf4ce" kind="function"><name>profileFunction</name></member>
+  </compound>
   <compound refid="Constants_8h" kind="file"><name>Constants.h</name>
   </compound>
   <compound refid="NDSFunctions_8hpp" kind="file"><name>NDSFunctions.hpp</name>
@@ -127,6 +139,8 @@
   </compound>
   <compound refid="VMathN_8hpp" kind="file"><name>VMathN.hpp</name>
   </compound>
+  <compound refid="profiler_8hpp" kind="file"><name>profiler.hpp</name>
+  </compound>
   <compound refid="io__manager_8hpp" kind="file"><name>io_manager.hpp</name>
   </compound>
   <compound refid="renderer_8hpp" kind="file"><name>renderer.hpp</name>
@@ -136,6 +150,8 @@
   <compound refid="dir_d44c64559bbebec7f509842c48db8b23" kind="dir"><name>include</name>
   </compound>
   <compound refid="dir_b2abf504d45f6e66b6e040b615127819" kind="dir"><name>include/VMath/Math</name>
+  </compound>
+  <compound refid="dir_ab139745362c0983d2f92b59d5a06574" kind="dir"><name>include/VMath/Profiler</name>
   </compound>
   <compound refid="dir_3277549bdbcf9923d5afdeba530147a7" kind="dir"><name>include/VMath/Vis</name>
   </compound>

@@ -1,11 +1,12 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
   <compounddef id="VMath2D_8hpp" kind="file" language="C++">
     <compoundname>VMath2D.hpp</compoundname>
     <includes local="no">iostream</includes>
     <includes refid="Constants_8h" local="yes">Constants.h</includes>
     <includes local="no">cmath</includes>
     <includes refid="NDSFunctions_8hpp" local="yes">NDSFunctions.hpp</includes>
+    <includedby refid="VMath3D_09_8hpp" local="yes">include/VMath/Math/VMath3D+.hpp</includedby>
     <incdepgraph>
       <node id="3">
         <label>Constants.h</label>
@@ -38,6 +39,18 @@
         <label>iostream</label>
       </node>
     </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>include/VMath/Math/VMath2D.hpp</label>
+        <link refid="VMath2D_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>include/VMath/Math/VMath3D+.hpp</label>
+        <link refid="VMath3D_09_8hpp"/>
+      </node>
+    </invincdepgraph>
     <innerclass refid="structdim2_1_1Vec2" prot="public">dim2::Vec2</innerclass>
     <innernamespace refid="namespacedim2">dim2</innernamespace>
     <briefdescription>

@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="dir_ab139745362c0983d2f92b59d5a06574" kind="dir">
+    <compoundname>include/VMath/Profiler</compoundname>
+    <innerfile refid="profiler_8hpp">profiler.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/VMath/Profiler/"/>
+  </compounddef>
+</doxygen>

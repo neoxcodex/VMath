@@ -25,5 +25,8 @@ var namespaces_dup =
       [ "clamp", "namespaceNDSF.html#a4e3b42963ddafb487f9a1a4d081e647e", null ],
       [ "epEqual", "namespaceNDSF.html#aac6fcf67ef9ccf35deacef1056ae2001", null ],
       [ "lerp", "namespaceNDSF.html#a24179bd1dea5ae01825a496cdfbba1ff", null ]
+    ] ],
+    [ "profiler", "namespaceprofiler.html", [
+      [ "profileFunction", "namespaceprofiler.html#aa49beac373249dd75f7a66ac319bf4ce", null ]
     ] ]
 ];

@@ -1,6 +1,6 @@
 \doxysection{VMath\+N.\+hpp}
 \hypertarget{VMathN_8hpp_source}{}\label{VMathN_8hpp_source}\index{include/VMath/Math/VMathN.hpp@{include/VMath/Math/VMathN.hpp}}
-\doxymbox{\hyperlink{VMathN_8hpp}{Go to the documentation of this file.}}
+\mbox{\hyperlink{VMathN_8hpp}{Go to the documentation of this file.}}
 \begin{DoxyCode}{0}
 \DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ dimN\_30298409238}}
 \DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ dimN\_30298409238}}
@@ -8,13 +8,13 @@
 \DoxyCodeLine{00004\ }
 \DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include<iostream>}}
 \DoxyCodeLine{00006\ }
-\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include"{}\doxymbox{\hyperlink{Constants_8h}{Constants.h}}"{}}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include"{}\mbox{\hyperlink{Constants_8h}{Constants.h}}"{}}}
 \DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include<iostream>}}
 \DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include<vector>}}
 \DoxyCodeLine{00010\ }
-\DoxyCodeLine{00011\ \textcolor{keyword}{namespace\ }\doxymbox{\hyperlink{namespacedimN}{dimN}}\ \{}
+\DoxyCodeLine{00011\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespacedimN}{dimN}}\ \{}
 \DoxyCodeLine{00012\ }
-\DoxyCodeLine{00013\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{double}\ \doxymbox{\hyperlink{namespacedimN_abbd29d1c4930da02382af428bda8fcaf}{magnitude}}(\textcolor{keyword}{const}\ std::vector<double>\&\ v)\ \{}
+\DoxyCodeLine{00013\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{namespacedimN_abbd29d1c4930da02382af428bda8fcaf}{magnitude}}(\textcolor{keyword}{const}\ std::vector<double>\&\ v)\ \{}
 \DoxyCodeLine{00014\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ returnmag\{0\};}
 \DoxyCodeLine{00015\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ i\ =\ 0;\ i\ <\ v.size();\ i++)\ \{}
 \DoxyCodeLine{00016\ \ \ \ \ \ \ \ \ \ \ \ \ returnmag\ +=\ (v[i])\ *\ (v[i]);}
@@ -22,9 +22,9 @@
 \DoxyCodeLine{00018\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ std::sqrt(returnmag);}
 \DoxyCodeLine{00019\ \ \ \ \ \}}
 \DoxyCodeLine{00020\ }
-\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keyword}{inline}\ std::vector<double>\ \doxymbox{\hyperlink{namespacedimN_a6527b3cd04fc5f5fb7d9e2909187de43}{normalize}}(\textcolor{keyword}{const}\ std::vector<double>\&\ v)\ \{}
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keyword}{inline}\ std::vector<double>\ \mbox{\hyperlink{namespacedimN_a6527b3cd04fc5f5fb7d9e2909187de43}{normalize}}(\textcolor{keyword}{const}\ std::vector<double>\&\ v)\ \{}
 \DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ std::vector<double>\ returnvec;}
-\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ vecmag\ =\ \doxymbox{\hyperlink{namespacedimN_abbd29d1c4930da02382af428bda8fcaf}{magnitude}}(v);}
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ vecmag\ =\ \mbox{\hyperlink{namespacedimN_abbd29d1c4930da02382af428bda8fcaf}{magnitude}}(v);}
 \DoxyCodeLine{00024\ }
 \DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ i\ =\ 0;\ i\ <\ v.size();\ i++)\ \{}
 \DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ normval\ =\ v[i]\ /\ vecmag;}
@@ -33,7 +33,7 @@
 \DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ returnvec;}
 \DoxyCodeLine{00030\ \ \ \ \ \}}
 \DoxyCodeLine{00031\ }
-\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{namespacedimN_a37b54cf08a72b9a48d6adffd8d948d6e}{vecout}}(\textcolor{keyword}{const}\ std::vector<double>\&\ a)\ \{}
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{namespacedimN_a37b54cf08a72b9a48d6adffd8d948d6e}{vecout}}(\textcolor{keyword}{const}\ std::vector<double>\&\ a)\ \{}
 \DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ std::cout\ <<\ std::endl\ <<\ \textcolor{stringliteral}{"{}Vector\ "{}}\ <<\ a.size()\ <<\ \textcolor{stringliteral}{"{}D"{}}\ <<\ std::endl\ <<\ \textcolor{stringliteral}{"{}(\ "{}};}
 \DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ i\ =\ 0;\ i\ <\ a.size();\ i++)\ \{}
 \DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (i\ ==\ (a.size()-\/1)\ )\ \{\ std::cout\ <<\ a[i];\ \}}
@@ -42,7 +42,7 @@
 \DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}\ )"{}}\ <<\ std::endl;}
 \DoxyCodeLine{00039\ \ \ \ \ \}}
 \DoxyCodeLine{00040\ }
-\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keyword}{inline}\ std::vector<double>\ \doxymbox{\hyperlink{namespacedimN_a50898203cf7a2067bb202487e162b9c1}{scalarMult}}(\textcolor{keyword}{const}\ std::vector<double>\&\ vector\_,\ \textcolor{keywordtype}{double}\ multiplier)\ \{}
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keyword}{inline}\ std::vector<double>\ \mbox{\hyperlink{namespacedimN_a50898203cf7a2067bb202487e162b9c1}{scalarMult}}(\textcolor{keyword}{const}\ std::vector<double>\&\ vector\_,\ \textcolor{keywordtype}{double}\ multiplier)\ \{}
 \DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ std::vector<double>\ returnVec;}
 \DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ i\ =\ 0;\ i\ <\ vector\_.size();\ i++)\ \{}
 \DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ \ \ \ \ returnVec.push\_back(multiplier\ *\ vector\_[i]);}
@@ -50,7 +50,7 @@
 \DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ returnVec;}
 \DoxyCodeLine{00047\ \ \ \ \ \}}
 \DoxyCodeLine{00048\ }
-\DoxyCodeLine{00049\ \ \ \ \ \textcolor{keyword}{inline}\ std::vector<double>\ \doxymbox{\hyperlink{namespacedimN_ae2be63fa0e57213a137e59fce393d593}{addVectors}}(\textcolor{keyword}{const}\ std::vector<double>\&\ vec1,\ \textcolor{keyword}{const}\ std::vector<double>\&\ vec2)\ \{}
+\DoxyCodeLine{00049\ \ \ \ \ \textcolor{keyword}{inline}\ std::vector<double>\ \mbox{\hyperlink{namespacedimN_ae2be63fa0e57213a137e59fce393d593}{addVectors}}(\textcolor{keyword}{const}\ std::vector<double>\&\ vec1,\ \textcolor{keyword}{const}\ std::vector<double>\&\ vec2)\ \{}
 \DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ std::vector<double>\ returnVec;}
 \DoxyCodeLine{00051\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ i\ =\ 0;\ i\ <\ vec1.size();\ i++)\ \{}
 \DoxyCodeLine{00052\ \ \ \ \ \ \ \ \ \ \ \ \ returnVec.push\_back(vec1[i]\ +\ vec2[i]);}
@@ -58,16 +58,16 @@
 \DoxyCodeLine{00054\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ returnVec;}
 \DoxyCodeLine{00055\ \ \ \ \ \}}
 \DoxyCodeLine{00056\ }
-\DoxyCodeLine{00057\ \ \ \ \ \textcolor{keyword}{inline}\ std::vector<double>\ \doxymbox{\hyperlink{namespacedimN_afec9f533d7d10550fab5fa5eb357d4d1}{subtractVectors}}(\textcolor{keyword}{const}\ std::vector<double>\&\ vec1,\ \textcolor{keyword}{const}\ std::vector<double>\&\ vec2)\ \{}
+\DoxyCodeLine{00057\ \ \ \ \ \textcolor{keyword}{inline}\ std::vector<double>\ \mbox{\hyperlink{namespacedimN_afec9f533d7d10550fab5fa5eb357d4d1}{subtractVectors}}(\textcolor{keyword}{const}\ std::vector<double>\&\ vec1,\ \textcolor{keyword}{const}\ std::vector<double>\&\ vec2)\ \{}
 \DoxyCodeLine{00058\ }
-\DoxyCodeLine{00059\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \doxymbox{\hyperlink{namespacedimN_ae2be63fa0e57213a137e59fce393d593}{addVectors}}(vec1,\ \doxymbox{\hyperlink{namespacedimN_a50898203cf7a2067bb202487e162b9c1}{scalarMult}}(vec2,\ -\/1));}
+\DoxyCodeLine{00059\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{namespacedimN_ae2be63fa0e57213a137e59fce393d593}{addVectors}}(vec1,\ \mbox{\hyperlink{namespacedimN_a50898203cf7a2067bb202487e162b9c1}{scalarMult}}(vec2,\ -\/1));}
 \DoxyCodeLine{00060\ \ \ \ \ \}}
 \DoxyCodeLine{00061\ }
-\DoxyCodeLine{00062\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{double}\ \doxymbox{\hyperlink{namespacedimN_af877e93856df502baf3d973d9ccd772b}{distance}}(\textcolor{keyword}{const}\ std::vector<double>\&\ vec1,\ \textcolor{keyword}{const}\ std::vector<double>\&\ vec2)\ \{}
-\DoxyCodeLine{00063\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \doxymbox{\hyperlink{namespacedimN_abbd29d1c4930da02382af428bda8fcaf}{magnitude}}((\doxymbox{\hyperlink{namespacedimN_afec9f533d7d10550fab5fa5eb357d4d1}{subtractVectors}}(vec1,\ vec2)));}
+\DoxyCodeLine{00062\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{namespacedimN_af877e93856df502baf3d973d9ccd772b}{distance}}(\textcolor{keyword}{const}\ std::vector<double>\&\ vec1,\ \textcolor{keyword}{const}\ std::vector<double>\&\ vec2)\ \{}
+\DoxyCodeLine{00063\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{namespacedimN_abbd29d1c4930da02382af428bda8fcaf}{magnitude}}((\mbox{\hyperlink{namespacedimN_afec9f533d7d10550fab5fa5eb357d4d1}{subtractVectors}}(vec1,\ vec2)));}
 \DoxyCodeLine{00064\ \ \ \ \ \}}
 \DoxyCodeLine{00065\ }
-\DoxyCodeLine{00066\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{double}\ \doxymbox{\hyperlink{namespacedimN_a5fbec898454bd5797ba513a158041e80}{dotProduct}}(\textcolor{keyword}{const}\ std::vector<double>\&\ vec1,\ \textcolor{keyword}{const}\ std::vector<double>\&\ vec2)\ \{}
+\DoxyCodeLine{00066\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{namespacedimN_a5fbec898454bd5797ba513a158041e80}{dotProduct}}(\textcolor{keyword}{const}\ std::vector<double>\&\ vec1,\ \textcolor{keyword}{const}\ std::vector<double>\&\ vec2)\ \{}
 \DoxyCodeLine{00067\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ returnval\{0\};}
 \DoxyCodeLine{00068\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ i\ =\ 0;\ i\ <\ vec1.size();\ i++)\ \{}
 \DoxyCodeLine{00069\ \ \ \ \ \ \ \ \ \ \ \ \ returnval\ +=\ (vec1[i]\ *\ vec2[i]);}
@@ -75,16 +75,16 @@
 \DoxyCodeLine{00071\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ returnval;}
 \DoxyCodeLine{00072\ \ \ \ \ \}}
 \DoxyCodeLine{00073\ }
-\DoxyCodeLine{00074\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{double}\ \doxymbox{\hyperlink{namespacedimN_aa01e8003329491d7c5130d9e5097587b}{angleRAD}}(\textcolor{keyword}{const}\ std::vector<double>\&\ vec1,\ \textcolor{keyword}{const}\ std::vector<double>\&\ vec2)\ \{}
+\DoxyCodeLine{00074\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{namespacedimN_aa01e8003329491d7c5130d9e5097587b}{angleRAD}}(\textcolor{keyword}{const}\ std::vector<double>\&\ vec1,\ \textcolor{keyword}{const}\ std::vector<double>\&\ vec2)\ \{}
 \DoxyCodeLine{00075\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ angle\{0\};}
-\DoxyCodeLine{00076\ \ \ \ \ \ \ \ \ angle\ =\ (\doxymbox{\hyperlink{namespacedimN_a5fbec898454bd5797ba513a158041e80}{dotProduct}}(vec1,\ vec2))\ /\ (\doxymbox{\hyperlink{namespacedimN_abbd29d1c4930da02382af428bda8fcaf}{magnitude}}(vec1)\ *\ \doxymbox{\hyperlink{namespacedimN_abbd29d1c4930da02382af428bda8fcaf}{magnitude}}(vec2));}
+\DoxyCodeLine{00076\ \ \ \ \ \ \ \ \ angle\ =\ (\mbox{\hyperlink{namespacedimN_a5fbec898454bd5797ba513a158041e80}{dotProduct}}(vec1,\ vec2))\ /\ (\mbox{\hyperlink{namespacedimN_abbd29d1c4930da02382af428bda8fcaf}{magnitude}}(vec1)\ *\ \mbox{\hyperlink{namespacedimN_abbd29d1c4930da02382af428bda8fcaf}{magnitude}}(vec2));}
 \DoxyCodeLine{00077\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ acos(angle);}
 \DoxyCodeLine{00078\ \ \ \ \ \}}
 \DoxyCodeLine{00079\ }
-\DoxyCodeLine{00080\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{double}\ \doxymbox{\hyperlink{namespacedimN_af4775fc92c00975078f8d09a809cc38d}{angleDEG}}(\textcolor{keyword}{const}\ std::vector<double>\&\ vec1,\ \textcolor{keyword}{const}\ std::vector<double>\&\ vec2)\ \{}
+\DoxyCodeLine{00080\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{namespacedimN_af4775fc92c00975078f8d09a809cc38d}{angleDEG}}(\textcolor{keyword}{const}\ std::vector<double>\&\ vec1,\ \textcolor{keyword}{const}\ std::vector<double>\&\ vec2)\ \{}
 \DoxyCodeLine{00081\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ angle\{0\};}
-\DoxyCodeLine{00082\ \ \ \ \ \ \ \ \ angle\ =\ \doxymbox{\hyperlink{namespacedimN_aa01e8003329491d7c5130d9e5097587b}{angleRAD}}(vec1,\ vec2);}
-\DoxyCodeLine{00083\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ (angle\ *\ (180\ /\ \doxymbox{\hyperlink{namespaceconstants_ae0bf237f1e254bc82b601f3ecad3796d}{constants::PI}}));}
+\DoxyCodeLine{00082\ \ \ \ \ \ \ \ \ angle\ =\ \mbox{\hyperlink{namespacedimN_aa01e8003329491d7c5130d9e5097587b}{angleRAD}}(vec1,\ vec2);}
+\DoxyCodeLine{00083\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ (angle\ *\ (180\ /\ \mbox{\hyperlink{namespaceconstants_ae0bf237f1e254bc82b601f3ecad3796d}{constants::PI}}));}
 \DoxyCodeLine{00084\ \ \ \ \ \}}
 \DoxyCodeLine{00085\ \ \ \ \ \textcolor{comment}{//Cross\ Product\ for\ N-\/dimensional\ vectors\ is\ a\ huge\ TODO}}
 \DoxyCodeLine{00086\ \ \ \ \ \}}

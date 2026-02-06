@@ -1,18 +1,17 @@
-\doxysection{include/\+\+VMath/\+\+Math/\+\+VMath3D.hpp File Reference}
+\doxysection{include/\+VMath/\+Math/\+VMath3D.hpp File Reference}
 \hypertarget{VMath3D_8hpp}{}\label{VMath3D_8hpp}\index{include/VMath/Math/VMath3D.hpp@{include/VMath/Math/VMath3D.hpp}}
-{\ttfamily \+\#include $<$cmath$>$}\newline
-{\ttfamily \+\#include $<$iostream$>$}\newline
-{\ttfamily \+\#include "{}Constants.\+h"{}}\newline
-{\ttfamily \+\#include "{}NDSFunctions.\+hpp"{}}\newline
-Include dependency graph for VMath3\+D.\+hpp:\+\nopagebreak
+{\ttfamily \#include $<$cmath$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include "{}Constants.\+h"{}}\newline
+{\ttfamily \#include "{}NDSFunctions.\+hpp"{}}\newline
+Include dependency graph for VMath3\+D.\+hpp\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=335pt]{VMath3D_8hpp__incl}
 \end{center}
 \end{figure}
-This graph shows which files directly or indirectly include this file:\+
-\nopagebreak
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -22,51 +21,53 @@ This graph shows which files directly or indirectly include this file:\+
 \doxysubsubsection*{Classes}
 \begin{DoxyCompactItemize}
 \item 
-struct \doxymbox{\hyperlink{structdim3_1_1Vec3}{dim3::\+\+Vec3}}
+struct \mbox{\hyperlink{structdim3_1_1Vec3}{dim3\+::\+Vec3}}
 \item 
-struct \doxymbox{\hyperlink{structdim3_1_1Mat3}{dim3::\+\+Mat3}}
+struct \mbox{\hyperlink{structdim3_1_1Mat3}{dim3\+::\+Mat3}}
 \end{DoxyCompactItemize}
 \doxysubsubsection*{Namespaces}
 \begin{DoxyCompactItemize}
 \item 
-namespace \doxymbox{\hyperlink{namespacedim3}{dim3}}
+namespace \mbox{\hyperlink{namespacedim3}{dim3}}
 \end{DoxyCompactItemize}
 \doxysubsubsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-\doxymbox{\hyperlink{structdim3_1_1Vec3}{Vec3}} \doxymbox{\hyperlink{namespacedim3_a918c677a6bebfcdebb26ecce59e04d81}{dim3::\+operator\texorpdfstring{$\ast$}{*}}} (float scalar, const \doxymbox{\hyperlink{structdim3_1_1Vec3}{Vec3}} \&v)
+\mbox{\hyperlink{structdim3_1_1Vec3}{Vec3}} \mbox{\hyperlink{namespacedim3_a918c677a6bebfcdebb26ecce59e04d81}{dim3\+::operator\texorpdfstring{$\ast$}{*}}} (float scalar, const \mbox{\hyperlink{structdim3_1_1Vec3}{Vec3}} \&v)
 \item 
-float \doxymbox{\hyperlink{namespacedim3_a1b2d2378207f3ea275ca4d8e95759332}{dim3::\+dot\+Product}} (const \doxymbox{\hyperlink{structdim3_1_1Vec3}{Vec3}} \&a, const \doxymbox{\hyperlink{structdim3_1_1Vec3}{Vec3}} \&b)
+float \mbox{\hyperlink{namespacedim3_a1b2d2378207f3ea275ca4d8e95759332}{dim3\+::dot\+Product}} (const \mbox{\hyperlink{structdim3_1_1Vec3}{Vec3}} \&a, const \mbox{\hyperlink{structdim3_1_1Vec3}{Vec3}} \&b)
 \item 
-float \doxymbox{\hyperlink{namespacedim3_a49981c23e4ba868ba815e4cc719e8524}{dim3::\+mag\+Squared}} (const \doxymbox{\hyperlink{structdim3_1_1Vec3}{Vec3}} \&a)
+float \mbox{\hyperlink{namespacedim3_a49981c23e4ba868ba815e4cc719e8524}{dim3\+::mag\+Squared}} (const \mbox{\hyperlink{structdim3_1_1Vec3}{Vec3}} \&a)
 \item 
-void \doxymbox{\hyperlink{namespacedim3_a3e4a820fd60a903063a0a7dae601f0c5}{dim3::\+vector\+Cout}} (const \doxymbox{\hyperlink{structdim3_1_1Vec3}{Vec3}} \&a)
+void \mbox{\hyperlink{namespacedim3_a3e4a820fd60a903063a0a7dae601f0c5}{dim3\+::vector\+Cout}} (const \mbox{\hyperlink{structdim3_1_1Vec3}{Vec3}} \&a)
 \item 
-\doxymbox{\hyperlink{structdim3_1_1Vec3}{Vec3}} \doxymbox{\hyperlink{namespacedim3_ae9aca9f91f3ee1c7c8e98d0aa81a3818}{dim3::\+normalize}} (const \doxymbox{\hyperlink{structdim3_1_1Vec3}{Vec3}} \&a)
+\mbox{\hyperlink{structdim3_1_1Vec3}{Vec3}} \mbox{\hyperlink{namespacedim3_ae9aca9f91f3ee1c7c8e98d0aa81a3818}{dim3\+::normalize}} (const \mbox{\hyperlink{structdim3_1_1Vec3}{Vec3}} \&a)
 \item 
-float \doxymbox{\hyperlink{namespacedim3_ac6bceb18dedb200874a5b32d9ca03c4c}{dim3::\+distance\+Squared}} (const \doxymbox{\hyperlink{structdim3_1_1Vec3}{Vec3}} \&a, const \doxymbox{\hyperlink{structdim3_1_1Vec3}{Vec3}} \&b)
+float \mbox{\hyperlink{namespacedim3_ac6bceb18dedb200874a5b32d9ca03c4c}{dim3\+::distance\+Squared}} (const \mbox{\hyperlink{structdim3_1_1Vec3}{Vec3}} \&a, const \mbox{\hyperlink{structdim3_1_1Vec3}{Vec3}} \&b)
 \item 
-float \doxymbox{\hyperlink{namespacedim3_ace6a071c06128a8ef11bdb3b2c17c42e}{dim3::\+angle\+RAD}} (const \doxymbox{\hyperlink{structdim3_1_1Vec3}{Vec3}} \&a, const \doxymbox{\hyperlink{structdim3_1_1Vec3}{Vec3}} \&b, bool return\+Cos\+Value=false)
+float \mbox{\hyperlink{namespacedim3_ace6a071c06128a8ef11bdb3b2c17c42e}{dim3\+::angle\+RAD}} (const \mbox{\hyperlink{structdim3_1_1Vec3}{Vec3}} \&a, const \mbox{\hyperlink{structdim3_1_1Vec3}{Vec3}} \&b, bool return\+Cos\+Value=false)
 \item 
-float \doxymbox{\hyperlink{namespacedim3_af455c33e16cbd27c3c891ed13639dce6}{dim3::\+angle\+DEG}} (const \doxymbox{\hyperlink{structdim3_1_1Vec3}{Vec3}} \&a, const \doxymbox{\hyperlink{structdim3_1_1Vec3}{Vec3}} \&b)
+float \mbox{\hyperlink{namespacedim3_af455c33e16cbd27c3c891ed13639dce6}{dim3\+::angle\+DEG}} (const \mbox{\hyperlink{structdim3_1_1Vec3}{Vec3}} \&a, const \mbox{\hyperlink{structdim3_1_1Vec3}{Vec3}} \&b)
 \item 
-float \doxymbox{\hyperlink{namespacedim3_a72e7b9b5311815a0bb2f48afb2ce3bf5}{dim3::\+scalar\+Project}} (const \doxymbox{\hyperlink{structdim3_1_1Vec3}{Vec3}} \&vec\+To\+Proj, const \doxymbox{\hyperlink{structdim3_1_1Vec3}{Vec3}} \&vec\+To\+Proj\+Along)
+float \mbox{\hyperlink{namespacedim3_a72e7b9b5311815a0bb2f48afb2ce3bf5}{dim3\+::scalar\+Project}} (const \mbox{\hyperlink{structdim3_1_1Vec3}{Vec3}} \&vec\+To\+Proj, const \mbox{\hyperlink{structdim3_1_1Vec3}{Vec3}} \&vec\+To\+Proj\+Along)
 \item 
-\doxymbox{\hyperlink{structdim3_1_1Vec3}{Vec3}} \doxymbox{\hyperlink{namespacedim3_a723d933db69e4469759a13f6488b6319}{dim3::\+vector\+Project}} (const \doxymbox{\hyperlink{structdim3_1_1Vec3}{Vec3}} \&vec\+To\+Proj, const \doxymbox{\hyperlink{structdim3_1_1Vec3}{Vec3}} \&vec\+To\+Proj\+Along)
+\mbox{\hyperlink{structdim3_1_1Vec3}{Vec3}} \mbox{\hyperlink{namespacedim3_a723d933db69e4469759a13f6488b6319}{dim3\+::vector\+Project}} (const \mbox{\hyperlink{structdim3_1_1Vec3}{Vec3}} \&vec\+To\+Proj, const \mbox{\hyperlink{structdim3_1_1Vec3}{Vec3}} \&vec\+To\+Proj\+Along)
 \item 
-\doxymbox{\hyperlink{structdim3_1_1Vec3}{Vec3}} \doxymbox{\hyperlink{namespacedim3_a0a36f0b4027df5697bf8a9666656f4c4}{dim3::\+cross\+Product}} (const \doxymbox{\hyperlink{structdim3_1_1Vec3}{Vec3}} \&a, const \doxymbox{\hyperlink{structdim3_1_1Vec3}{Vec3}} \&b)
+\mbox{\hyperlink{structdim3_1_1Vec3}{Vec3}} \mbox{\hyperlink{namespacedim3_a0a36f0b4027df5697bf8a9666656f4c4}{dim3\+::cross\+Product}} (const \mbox{\hyperlink{structdim3_1_1Vec3}{Vec3}} \&a, const \mbox{\hyperlink{structdim3_1_1Vec3}{Vec3}} \&b)
 \item 
-bool \doxymbox{\hyperlink{namespacedim3_abf0ed32e11f3fa172424ae5cee80fc1b}{dim3::\+ep\+Vector\+Equal}} (const \doxymbox{\hyperlink{structdim3_1_1Vec3}{Vec3}} \&a, const \doxymbox{\hyperlink{structdim3_1_1Vec3}{Vec3}} \&b)
+bool \mbox{\hyperlink{namespacedim3_abf0ed32e11f3fa172424ae5cee80fc1b}{dim3\+::ep\+Vector\+Equal}} (const \mbox{\hyperlink{structdim3_1_1Vec3}{Vec3}} \&a, const \mbox{\hyperlink{structdim3_1_1Vec3}{Vec3}} \&b)
 \item 
-\doxymbox{\hyperlink{structdim3_1_1Vec3}{Vec3}} \doxymbox{\hyperlink{namespacedim3_a83b1ed631a375b365ecfb2a1fba1c5c2}{dim3::\+lerp}} (const \doxymbox{\hyperlink{structdim3_1_1Vec3}{Vec3}} \&v1, const \doxymbox{\hyperlink{structdim3_1_1Vec3}{Vec3}} \&v2, float t)
+\mbox{\hyperlink{structdim3_1_1Vec3}{Vec3}} \mbox{\hyperlink{namespacedim3_a83b1ed631a375b365ecfb2a1fba1c5c2}{dim3\+::lerp}} (const \mbox{\hyperlink{structdim3_1_1Vec3}{Vec3}} \&v1, const \mbox{\hyperlink{structdim3_1_1Vec3}{Vec3}} \&v2, float t)
 \item 
-\doxymbox{\hyperlink{structdim3_1_1Mat3}{Mat3}} \doxymbox{\hyperlink{namespacedim3_a9ac9d4b69ad2aad2c51d2d2365125309}{dim3::\+matrix\+Multiply}} (const \doxymbox{\hyperlink{structdim3_1_1Mat3}{Mat3}} \&M1, const \doxymbox{\hyperlink{structdim3_1_1Mat3}{Mat3}} \&M2)
+void \mbox{\hyperlink{namespacedim3_a596f1678e0188854f2a3cda18c8b30b4}{dim3\+::matrix\+Cout}} (const \mbox{\hyperlink{structdim3_1_1Mat3}{Mat3}} \&matrix)
 \item 
-\doxymbox{\hyperlink{structdim3_1_1Vec3}{Vec3}} \doxymbox{\hyperlink{namespacedim3_ae100dc04d852fa843dd75a7d64645dc8}{dim3::\+rotation\+Custom\+Axis}} (const \doxymbox{\hyperlink{structdim3_1_1Vec3}{Vec3}} \&v, const \doxymbox{\hyperlink{structdim3_1_1Vec3}{Vec3}} \&axis\+\_\+normalized, float \doxymbox{\hyperlink{namespacedim3_ace6a071c06128a8ef11bdb3b2c17c42e}{angle\+RAD}})
+\mbox{\hyperlink{structdim3_1_1Mat3}{Mat3}} \mbox{\hyperlink{namespacedim3_a9ac9d4b69ad2aad2c51d2d2365125309}{dim3\+::matrix\+Multiply}} (const \mbox{\hyperlink{structdim3_1_1Mat3}{Mat3}} \&M1, const \mbox{\hyperlink{structdim3_1_1Mat3}{Mat3}} \&M2)
 \item 
-\doxymbox{\hyperlink{structdim3_1_1Vec3}{Vec3}} \doxymbox{\hyperlink{namespacedim3_a79335cfc751c2b59b582cd44a82114c8}{dim3::\+rotation\+XAxis}} (const \doxymbox{\hyperlink{structdim3_1_1Vec3}{Vec3}} \&v, float \doxymbox{\hyperlink{namespacedim3_ace6a071c06128a8ef11bdb3b2c17c42e}{angle\+RAD}})
+\mbox{\hyperlink{structdim3_1_1Vec3}{Vec3}} \mbox{\hyperlink{namespacedim3_ae100dc04d852fa843dd75a7d64645dc8}{dim3\+::rotation\+Custom\+Axis}} (const \mbox{\hyperlink{structdim3_1_1Vec3}{Vec3}} \&v, const \mbox{\hyperlink{structdim3_1_1Vec3}{Vec3}} \&axis\+\_\+normalized, float \mbox{\hyperlink{namespacedim3_ace6a071c06128a8ef11bdb3b2c17c42e}{angle\+RAD}})
 \item 
-\doxymbox{\hyperlink{structdim3_1_1Vec3}{Vec3}} \doxymbox{\hyperlink{namespacedim3_ac48403499c039924efc2df3d1dc52da2}{dim3::\+rotation\+YAxis}} (const \doxymbox{\hyperlink{structdim3_1_1Vec3}{Vec3}} \&v, float \doxymbox{\hyperlink{namespacedim3_ace6a071c06128a8ef11bdb3b2c17c42e}{angle\+RAD}})
+\mbox{\hyperlink{structdim3_1_1Vec3}{Vec3}} \mbox{\hyperlink{namespacedim3_a79335cfc751c2b59b582cd44a82114c8}{dim3\+::rotation\+XAxis}} (const \mbox{\hyperlink{structdim3_1_1Vec3}{Vec3}} \&v, float \mbox{\hyperlink{namespacedim3_ace6a071c06128a8ef11bdb3b2c17c42e}{angle\+RAD}})
 \item 
-\doxymbox{\hyperlink{structdim3_1_1Vec3}{Vec3}} \doxymbox{\hyperlink{namespacedim3_aee1d29193a890ecbbb688c93ab4ee34d}{dim3::\+rotation\+ZAxis}} (const \doxymbox{\hyperlink{structdim3_1_1Vec3}{Vec3}} \&v, float \doxymbox{\hyperlink{namespacedim3_ace6a071c06128a8ef11bdb3b2c17c42e}{angle\+RAD}})
+\mbox{\hyperlink{structdim3_1_1Vec3}{Vec3}} \mbox{\hyperlink{namespacedim3_ac48403499c039924efc2df3d1dc52da2}{dim3\+::rotation\+YAxis}} (const \mbox{\hyperlink{structdim3_1_1Vec3}{Vec3}} \&v, float \mbox{\hyperlink{namespacedim3_ace6a071c06128a8ef11bdb3b2c17c42e}{angle\+RAD}})
+\item 
+\mbox{\hyperlink{structdim3_1_1Vec3}{Vec3}} \mbox{\hyperlink{namespacedim3_aee1d29193a890ecbbb688c93ab4ee34d}{dim3\+::rotation\+ZAxis}} (const \mbox{\hyperlink{structdim3_1_1Vec3}{Vec3}} \&v, float \mbox{\hyperlink{namespacedim3_ace6a071c06128a8ef11bdb3b2c17c42e}{angle\+RAD}})
 \end{DoxyCompactItemize}

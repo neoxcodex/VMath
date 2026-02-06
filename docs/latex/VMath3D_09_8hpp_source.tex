@@ -1,325 +1,344 @@
 \doxysection{VMath3\+D+.hpp}
 \hypertarget{VMath3D_09_8hpp_source}{}\label{VMath3D_09_8hpp_source}\index{include/VMath/Math/VMath3D+.hpp@{include/VMath/Math/VMath3D+.hpp}}
-\doxymbox{\hyperlink{VMath3D_09_8hpp}{Go to the documentation of this file.}}
+\mbox{\hyperlink{VMath3D_09_8hpp}{Go to the documentation of this file.}}
 \begin{DoxyCode}{0}
 \DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ dim4\_2309809238}}
 \DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ dim4\_2309809238}}
-\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{Constants_8h}{Constants.h}}"{}}}
-\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{NDSFunctions_8hpp}{NDSFunctions.hpp}}"{}}}
-\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{VMath3D_8hpp}{VMath3D.hpp}}"{}}}
-\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include<iostream>}}
-\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include<cmath>}}
-\DoxyCodeLine{00008\ \textcolor{keyword}{namespace\ }\doxymbox{\hyperlink{namespacedim4}{dim4}}\{}
-\DoxyCodeLine{00009\ \ \ \ \ \textcolor{keyword}{struct\ }\doxymbox{\hyperlink{structdim4_1_1Vec4}{Vec4}}\{}
-\DoxyCodeLine{00010\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ \doxymbox{\hyperlink{structdim4_1_1Vec4_af52297f714fcbc6df18709d269213037}{x}},\doxymbox{\hyperlink{structdim4_1_1Vec4_ae8b199a6bc231d048f493edceb317d9b}{y}},\doxymbox{\hyperlink{structdim4_1_1Vec4_adeac33b9bb5635fadd74642f085d94fa}{z}},\doxymbox{\hyperlink{structdim4_1_1Vec4_a6f43a778391bbff07ef349cc21363022}{w}};}
-\DoxyCodeLine{00011\ \ \ \ \ \ \ \ \ \textcolor{comment}{//STRICT}}
-\DoxyCodeLine{00012\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{structdim4_1_1Vec4_ada5f15001c75746a21f8d91154febfd9}{operator==}}(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{structdim4_1_1Vec4}{Vec4}}\ other)\textcolor{keyword}{\ const}\{}
-\DoxyCodeLine{00013\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}}
-\DoxyCodeLine{00014\ \ \ \ \ \ \ \ \ \ \ \ \ (}
-\DoxyCodeLine{00015\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ (\doxymbox{\hyperlink{structdim4_1_1Vec4_af52297f714fcbc6df18709d269213037}{x}}\ ==\ other.\doxymbox{\hyperlink{structdim4_1_1Vec4_af52297f714fcbc6df18709d269213037}{x}})}
-\DoxyCodeLine{00016\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \&\&}
-\DoxyCodeLine{00017\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ (\doxymbox{\hyperlink{structdim4_1_1Vec4_ae8b199a6bc231d048f493edceb317d9b}{y}}\ ==\ other.\doxymbox{\hyperlink{structdim4_1_1Vec4_ae8b199a6bc231d048f493edceb317d9b}{y}})}
-\DoxyCodeLine{00018\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \&\&}
-\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ (\doxymbox{\hyperlink{structdim4_1_1Vec4_adeac33b9bb5635fadd74642f085d94fa}{z}}\ ==\ other.\doxymbox{\hyperlink{structdim4_1_1Vec4_adeac33b9bb5635fadd74642f085d94fa}{z}})}
-\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \&\&}
-\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ (\doxymbox{\hyperlink{structdim4_1_1Vec4_a6f43a778391bbff07ef349cc21363022}{w}}\ ==\ other.\doxymbox{\hyperlink{structdim4_1_1Vec4_a6f43a778391bbff07ef349cc21363022}{w}})}
-\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ \ \ \ \ );}
-\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ \}}
-\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{structdim4_1_1Vec4}{Vec4}}\ \doxymbox{\hyperlink{structdim4_1_1Vec4_a97336d187a77c2918a8da7abee8b8213}{operator+}}(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{structdim4_1_1Vec4}{Vec4}}\ other)\textcolor{keyword}{\ const}\{}
-\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \{(\doxymbox{\hyperlink{structdim4_1_1Vec4_af52297f714fcbc6df18709d269213037}{x}}\ +\ other.\doxymbox{\hyperlink{structdim4_1_1Vec4_af52297f714fcbc6df18709d269213037}{x}}),\ (\doxymbox{\hyperlink{structdim4_1_1Vec4_ae8b199a6bc231d048f493edceb317d9b}{y}}+other.\doxymbox{\hyperlink{structdim4_1_1Vec4_ae8b199a6bc231d048f493edceb317d9b}{y}}),\ (\doxymbox{\hyperlink{structdim4_1_1Vec4_adeac33b9bb5635fadd74642f085d94fa}{z}}\ +\ other.\doxymbox{\hyperlink{structdim4_1_1Vec4_adeac33b9bb5635fadd74642f085d94fa}{z}}),\ (\doxymbox{\hyperlink{structdim4_1_1Vec4_a6f43a778391bbff07ef349cc21363022}{w}}\ +\ other.\doxymbox{\hyperlink{structdim4_1_1Vec4_a6f43a778391bbff07ef349cc21363022}{w}})\};}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{Constants_8h}{Constants.h}}"{}}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{NDSFunctions_8hpp}{NDSFunctions.hpp}}"{}}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{VMath3D_8hpp}{VMath3D.hpp}}"{}}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include"{}\mbox{\hyperlink{VMath2D_8hpp}{VMath2D.hpp}}"{}}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include<iostream>}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include<cmath>}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <xmmintrin.h>}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespacedim4}{dim4}}\{}
+\DoxyCodeLine{00012\ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structdim4_1_1Vec4}{Vec4}}\{}
+\DoxyCodeLine{00013\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{structdim4_1_1Vec4_af52297f714fcbc6df18709d269213037}{x}},\mbox{\hyperlink{structdim4_1_1Vec4_ae8b199a6bc231d048f493edceb317d9b}{y}},\mbox{\hyperlink{structdim4_1_1Vec4_adeac33b9bb5635fadd74642f085d94fa}{z}},\mbox{\hyperlink{structdim4_1_1Vec4_a6f43a778391bbff07ef349cc21363022}{w}};}
+\DoxyCodeLine{00014\ \ \ \ \ \ \ \ \ \textcolor{comment}{//STRICT}}
+\DoxyCodeLine{00015\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{structdim4_1_1Vec4_ada5f15001c75746a21f8d91154febfd9}{operator==}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{structdim4_1_1Vec4}{Vec4}}\ other)\textcolor{keyword}{\ const}\{}
+\DoxyCodeLine{00016\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}}
+\DoxyCodeLine{00017\ \ \ \ \ \ \ \ \ \ \ \ \ (}
+\DoxyCodeLine{00018\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ (\mbox{\hyperlink{structdim4_1_1Vec4_af52297f714fcbc6df18709d269213037}{x}}\ ==\ other.\mbox{\hyperlink{structdim4_1_1Vec4_af52297f714fcbc6df18709d269213037}{x}})}
+\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \&\&}
+\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ (\mbox{\hyperlink{structdim4_1_1Vec4_ae8b199a6bc231d048f493edceb317d9b}{y}}\ ==\ other.\mbox{\hyperlink{structdim4_1_1Vec4_ae8b199a6bc231d048f493edceb317d9b}{y}})}
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \&\&}
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ (\mbox{\hyperlink{structdim4_1_1Vec4_adeac33b9bb5635fadd74642f085d94fa}{z}}\ ==\ other.\mbox{\hyperlink{structdim4_1_1Vec4_adeac33b9bb5635fadd74642f085d94fa}{z}})}
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \&\&}
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ (\mbox{\hyperlink{structdim4_1_1Vec4_a6f43a778391bbff07ef349cc21363022}{w}}\ ==\ other.\mbox{\hyperlink{structdim4_1_1Vec4_a6f43a778391bbff07ef349cc21363022}{w}})}
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \ \ \ \ );}
 \DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \}}
-\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{structdim4_1_1Vec4}{Vec4}}\ \doxymbox{\hyperlink{structdim4_1_1Vec4_aee76b33eb44b01b78a95cb514e630b2a}{operator-\/}}(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{structdim4_1_1Vec4}{Vec4}}\ other)\textcolor{keyword}{\ const}\{}
-\DoxyCodeLine{00028\ }
-\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \{(\doxymbox{\hyperlink{structdim4_1_1Vec4_af52297f714fcbc6df18709d269213037}{x}}\ -\/\ other.\doxymbox{\hyperlink{structdim4_1_1Vec4_af52297f714fcbc6df18709d269213037}{x}}),\ (\doxymbox{\hyperlink{structdim4_1_1Vec4_ae8b199a6bc231d048f493edceb317d9b}{y}}-\/other.\doxymbox{\hyperlink{structdim4_1_1Vec4_ae8b199a6bc231d048f493edceb317d9b}{y}}),\ (\doxymbox{\hyperlink{structdim4_1_1Vec4_adeac33b9bb5635fadd74642f085d94fa}{z}}\ -\/\ other.\doxymbox{\hyperlink{structdim4_1_1Vec4_adeac33b9bb5635fadd74642f085d94fa}{z}}),\ (\doxymbox{\hyperlink{structdim4_1_1Vec4_a6f43a778391bbff07ef349cc21363022}{w}}\ -\/\ other.\doxymbox{\hyperlink{structdim4_1_1Vec4_a6f43a778391bbff07ef349cc21363022}{w}})\};}
-\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ \}}
-\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{structdim4_1_1Vec4}{Vec4}}\ \doxymbox{\hyperlink{structdim4_1_1Vec4_aa1ccee6bc155fab58557c0d218c51aa5}{operator*}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{float}\ n)\textcolor{keyword}{\ const}\{}
-\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \{n*\doxymbox{\hyperlink{structdim4_1_1Vec4_af52297f714fcbc6df18709d269213037}{x}},\ n*\doxymbox{\hyperlink{structdim4_1_1Vec4_ae8b199a6bc231d048f493edceb317d9b}{y}}\ ,\ n*\doxymbox{\hyperlink{structdim4_1_1Vec4_adeac33b9bb5635fadd74642f085d94fa}{z}},\ n*\doxymbox{\hyperlink{structdim4_1_1Vec4_a6f43a778391bbff07ef349cc21363022}{w}}\};}
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structdim4_1_1Vec4}{Vec4}}\ \mbox{\hyperlink{structdim4_1_1Vec4_a97336d187a77c2918a8da7abee8b8213}{operator+}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{structdim4_1_1Vec4}{Vec4}}\ other)\textcolor{keyword}{\ const}\{}
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \{(\mbox{\hyperlink{structdim4_1_1Vec4_af52297f714fcbc6df18709d269213037}{x}}\ +\ other.\mbox{\hyperlink{structdim4_1_1Vec4_af52297f714fcbc6df18709d269213037}{x}}),\ (\mbox{\hyperlink{structdim4_1_1Vec4_ae8b199a6bc231d048f493edceb317d9b}{y}}+other.\mbox{\hyperlink{structdim4_1_1Vec4_ae8b199a6bc231d048f493edceb317d9b}{y}}),\ (\mbox{\hyperlink{structdim4_1_1Vec4_adeac33b9bb5635fadd74642f085d94fa}{z}}\ +\ other.\mbox{\hyperlink{structdim4_1_1Vec4_adeac33b9bb5635fadd74642f085d94fa}{z}}),\ (\mbox{\hyperlink{structdim4_1_1Vec4_a6f43a778391bbff07ef349cc21363022}{w}}\ +\ other.\mbox{\hyperlink{structdim4_1_1Vec4_a6f43a778391bbff07ef349cc21363022}{w}})\};}
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structdim4_1_1Vec4}{Vec4}}\ \mbox{\hyperlink{structdim4_1_1Vec4_aee76b33eb44b01b78a95cb514e630b2a}{operator-\/}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{structdim4_1_1Vec4}{Vec4}}\ other)\textcolor{keyword}{\ const}\{}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \{(\mbox{\hyperlink{structdim4_1_1Vec4_af52297f714fcbc6df18709d269213037}{x}}\ -\/\ other.\mbox{\hyperlink{structdim4_1_1Vec4_af52297f714fcbc6df18709d269213037}{x}}),\ (\mbox{\hyperlink{structdim4_1_1Vec4_ae8b199a6bc231d048f493edceb317d9b}{y}}-\/other.\mbox{\hyperlink{structdim4_1_1Vec4_ae8b199a6bc231d048f493edceb317d9b}{y}}),\ (\mbox{\hyperlink{structdim4_1_1Vec4_adeac33b9bb5635fadd74642f085d94fa}{z}}\ -\/\ other.\mbox{\hyperlink{structdim4_1_1Vec4_adeac33b9bb5635fadd74642f085d94fa}{z}}),\ (\mbox{\hyperlink{structdim4_1_1Vec4_a6f43a778391bbff07ef349cc21363022}{w}}\ -\/\ other.\mbox{\hyperlink{structdim4_1_1Vec4_a6f43a778391bbff07ef349cc21363022}{w}})\};}
 \DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ \}}
-\DoxyCodeLine{00034\ }
-\DoxyCodeLine{00035\ }
-\DoxyCodeLine{00036\ \ \ \ \ \};}
-\DoxyCodeLine{00037\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{namespacedim4_a1fc4f16a9f4f445def76f012c9a5cf1c}{vectorCout}}(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{structdim4_1_1Vec4}{Vec4}}\ v)\{}
-\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}3D+\ Vector\ ("{}}\ <<\ v.\doxymbox{\hyperlink{structdim4_1_1Vec4_af52297f714fcbc6df18709d269213037}{x}}\ <<\ \textcolor{stringliteral}{"{},\ "{}}\ <<\ v.\doxymbox{\hyperlink{structdim4_1_1Vec4_ae8b199a6bc231d048f493edceb317d9b}{y}}\ <<\ \textcolor{stringliteral}{"{},\ "{}}\ <<\ v.\doxymbox{\hyperlink{structdim4_1_1Vec4_adeac33b9bb5635fadd74642f085d94fa}{z}}\ <<\ \textcolor{stringliteral}{"{},\ "{}}\ <<\ v.\doxymbox{\hyperlink{structdim4_1_1Vec4_a6f43a778391bbff07ef349cc21363022}{w}}\ <<\ \textcolor{stringliteral}{"{})"{}}\ <<\ std::endl;}
-\DoxyCodeLine{00039\ \ \ \ \ \}}
-\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keyword}{inline}\ \doxymbox{\hyperlink{structdim4_1_1Vec4}{Vec4}}\ \doxymbox{\hyperlink{namespacedim4_aec7c589d565c47a9cf52d133bafe7ca7}{operator*}}(\textcolor{keywordtype}{float}\ scalar,\ \textcolor{keyword}{const}\ \doxymbox{\hyperlink{structdim4_1_1Vec4}{Vec4}}\ v)\{}
-\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ v*scalar;}
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structdim4_1_1Vec4}{Vec4}}\ \mbox{\hyperlink{structdim4_1_1Vec4_aa1ccee6bc155fab58557c0d218c51aa5}{operator*}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{float}\ n)\textcolor{keyword}{\ const}\{}
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \{n*\mbox{\hyperlink{structdim4_1_1Vec4_af52297f714fcbc6df18709d269213037}{x}},\ n*\mbox{\hyperlink{structdim4_1_1Vec4_ae8b199a6bc231d048f493edceb317d9b}{y}}\ ,\ n*\mbox{\hyperlink{structdim4_1_1Vec4_adeac33b9bb5635fadd74642f085d94fa}{z}},\ n*\mbox{\hyperlink{structdim4_1_1Vec4_a6f43a778391bbff07ef349cc21363022}{w}}\};}
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00039\ \ \ \ \ \};}
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{namespacedim4_a1fc4f16a9f4f445def76f012c9a5cf1c}{vectorCout}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{structdim4_1_1Vec4}{Vec4}}\ v)\{}
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}3D+\ Vector\ ("{}}\ <<\ v.\mbox{\hyperlink{structdim4_1_1Vec4_af52297f714fcbc6df18709d269213037}{x}}\ <<\ \textcolor{stringliteral}{"{},\ "{}}\ <<\ v.\mbox{\hyperlink{structdim4_1_1Vec4_ae8b199a6bc231d048f493edceb317d9b}{y}}\ <<\ \textcolor{stringliteral}{"{},\ "{}}\ <<\ v.\mbox{\hyperlink{structdim4_1_1Vec4_adeac33b9bb5635fadd74642f085d94fa}{z}}\ <<\ \textcolor{stringliteral}{"{},\ "{}}\ <<\ v.\mbox{\hyperlink{structdim4_1_1Vec4_a6f43a778391bbff07ef349cc21363022}{w}}\ <<\ \textcolor{stringliteral}{"{})"{}}\ <<\ std::endl;}
 \DoxyCodeLine{00042\ \ \ \ \ \}}
-\DoxyCodeLine{00043\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{float}\ \doxymbox{\hyperlink{namespacedim4_ad91806f78b76249b8734868b78a470ac}{dotProduct}}(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{structdim4_1_1Vec4}{Vec4}}\ v1,\ \textcolor{keyword}{const}\ \doxymbox{\hyperlink{structdim4_1_1Vec4}{Vec4}}\ v2)\{}
-\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}}
-\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ (}
-\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ \ \ \ \ (v1.\doxymbox{\hyperlink{structdim4_1_1Vec4_af52297f714fcbc6df18709d269213037}{x}}\ *\ v2.\doxymbox{\hyperlink{structdim4_1_1Vec4_af52297f714fcbc6df18709d269213037}{x}})\ +\ (v1.\doxymbox{\hyperlink{structdim4_1_1Vec4_ae8b199a6bc231d048f493edceb317d9b}{y}}\ *\ v2.\doxymbox{\hyperlink{structdim4_1_1Vec4_ae8b199a6bc231d048f493edceb317d9b}{y}})\ +\ (v1.\doxymbox{\hyperlink{structdim4_1_1Vec4_adeac33b9bb5635fadd74642f085d94fa}{z}}\ *\ v2.\doxymbox{\hyperlink{structdim4_1_1Vec4_adeac33b9bb5635fadd74642f085d94fa}{z}})\ +\ (v1.\doxymbox{\hyperlink{structdim4_1_1Vec4_a6f43a778391bbff07ef349cc21363022}{w}}\ *\ v2.\doxymbox{\hyperlink{structdim4_1_1Vec4_a6f43a778391bbff07ef349cc21363022}{w}})}
-\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ );}
-\DoxyCodeLine{00048\ \ \ \ \ \}}
-\DoxyCodeLine{00049\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{float}\ \doxymbox{\hyperlink{namespacedim4_afbd8d42ca13041e55a0af066a00bd142}{magSquared}}(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{structdim4_1_1Vec4}{Vec4}}\ v)\{}
-\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}}
-\DoxyCodeLine{00051\ \ \ \ \ \ \ \ \ (}
-\DoxyCodeLine{00052\ \ \ \ \ \ \ \ \ \ \ \ \ (v.\doxymbox{\hyperlink{structdim4_1_1Vec4_af52297f714fcbc6df18709d269213037}{x}})*(v.\doxymbox{\hyperlink{structdim4_1_1Vec4_af52297f714fcbc6df18709d269213037}{x}})+}
-\DoxyCodeLine{00053\ \ \ \ \ \ \ \ \ \ \ \ \ (v.\doxymbox{\hyperlink{structdim4_1_1Vec4_ae8b199a6bc231d048f493edceb317d9b}{y}})*(v.\doxymbox{\hyperlink{structdim4_1_1Vec4_ae8b199a6bc231d048f493edceb317d9b}{y}})+}
-\DoxyCodeLine{00054\ \ \ \ \ \ \ \ \ \ \ \ \ (v.\doxymbox{\hyperlink{structdim4_1_1Vec4_adeac33b9bb5635fadd74642f085d94fa}{z}})*(v.\doxymbox{\hyperlink{structdim4_1_1Vec4_adeac33b9bb5635fadd74642f085d94fa}{z}})+}
-\DoxyCodeLine{00055\ \ \ \ \ \ \ \ \ \ \ \ \ (v.\doxymbox{\hyperlink{structdim4_1_1Vec4_a6f43a778391bbff07ef349cc21363022}{w}})*(v.\doxymbox{\hyperlink{structdim4_1_1Vec4_a6f43a778391bbff07ef349cc21363022}{w}})}
-\DoxyCodeLine{00056\ \ \ \ \ \ \ \ \ );}
-\DoxyCodeLine{00057\ \ \ \ \ \}}
-\DoxyCodeLine{00058\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{float}\ \doxymbox{\hyperlink{namespacedim4_a754f8bd9423a05167ec493932ef7478f}{magnitude}}(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{structdim4_1_1Vec4}{Vec4}}\ v)\{}
-\DoxyCodeLine{00059\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ std::sqrt(\doxymbox{\hyperlink{namespacedim4_afbd8d42ca13041e55a0af066a00bd142}{magSquared}}(v));}
+\DoxyCodeLine{00043\ \ \ \ \ \textcolor{keyword}{inline}\ \mbox{\hyperlink{structdim4_1_1Vec4}{Vec4}}\ \mbox{\hyperlink{namespacedim4_aec7c589d565c47a9cf52d133bafe7ca7}{operator*}}(\textcolor{keywordtype}{float}\ scalar,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{structdim4_1_1Vec4}{Vec4}}\ v)\{}
+\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ v*scalar;}
+\DoxyCodeLine{00045\ \ \ \ \ \}}
+\DoxyCodeLine{00046\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{namespacedim4_ad91806f78b76249b8734868b78a470ac}{dotProduct}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{structdim4_1_1Vec4}{Vec4}}\ v1,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{structdim4_1_1Vec4}{Vec4}}\ v2)\{}
+\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}}
+\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ (}
+\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ \ \ \ \ (v1.\mbox{\hyperlink{structdim4_1_1Vec4_af52297f714fcbc6df18709d269213037}{x}}\ *\ v2.\mbox{\hyperlink{structdim4_1_1Vec4_af52297f714fcbc6df18709d269213037}{x}})\ +\ (v1.\mbox{\hyperlink{structdim4_1_1Vec4_ae8b199a6bc231d048f493edceb317d9b}{y}}\ *\ v2.\mbox{\hyperlink{structdim4_1_1Vec4_ae8b199a6bc231d048f493edceb317d9b}{y}})\ +\ (v1.\mbox{\hyperlink{structdim4_1_1Vec4_adeac33b9bb5635fadd74642f085d94fa}{z}}\ *\ v2.\mbox{\hyperlink{structdim4_1_1Vec4_adeac33b9bb5635fadd74642f085d94fa}{z}})\ +\ (v1.\mbox{\hyperlink{structdim4_1_1Vec4_a6f43a778391bbff07ef349cc21363022}{w}}\ *\ v2.\mbox{\hyperlink{structdim4_1_1Vec4_a6f43a778391bbff07ef349cc21363022}{w}})}
+\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ );}
+\DoxyCodeLine{00051\ \ \ \ \ \}}
+\DoxyCodeLine{00052\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{namespacedim4_afbd8d42ca13041e55a0af066a00bd142}{magSquared}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{structdim4_1_1Vec4}{Vec4}}\ v)\{}
+\DoxyCodeLine{00053\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}}
+\DoxyCodeLine{00054\ \ \ \ \ \ \ \ \ (}
+\DoxyCodeLine{00055\ \ \ \ \ \ \ \ \ \ \ \ \ (v.\mbox{\hyperlink{structdim4_1_1Vec4_af52297f714fcbc6df18709d269213037}{x}})*(v.\mbox{\hyperlink{structdim4_1_1Vec4_af52297f714fcbc6df18709d269213037}{x}})+}
+\DoxyCodeLine{00056\ \ \ \ \ \ \ \ \ \ \ \ \ (v.\mbox{\hyperlink{structdim4_1_1Vec4_ae8b199a6bc231d048f493edceb317d9b}{y}})*(v.\mbox{\hyperlink{structdim4_1_1Vec4_ae8b199a6bc231d048f493edceb317d9b}{y}})+}
+\DoxyCodeLine{00057\ \ \ \ \ \ \ \ \ \ \ \ \ (v.\mbox{\hyperlink{structdim4_1_1Vec4_adeac33b9bb5635fadd74642f085d94fa}{z}})*(v.\mbox{\hyperlink{structdim4_1_1Vec4_adeac33b9bb5635fadd74642f085d94fa}{z}})+}
+\DoxyCodeLine{00058\ \ \ \ \ \ \ \ \ \ \ \ \ (v.\mbox{\hyperlink{structdim4_1_1Vec4_a6f43a778391bbff07ef349cc21363022}{w}})*(v.\mbox{\hyperlink{structdim4_1_1Vec4_a6f43a778391bbff07ef349cc21363022}{w}})}
+\DoxyCodeLine{00059\ \ \ \ \ \ \ \ \ );}
 \DoxyCodeLine{00060\ \ \ \ \ \}}
-\DoxyCodeLine{00061\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{namespacedim4_af35c14a8bac8fbf3c279fb8b7d247860}{epVectorEqual}}(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{structdim4_1_1Vec4}{Vec4}}\ v1,\ \textcolor{keyword}{const}\ \doxymbox{\hyperlink{structdim4_1_1Vec4}{Vec4}}\ v2,\ \textcolor{keywordtype}{float}\ epsilon\ =\ \doxymbox{\hyperlink{namespaceconstants_a7f3b4cf1f4ef2af969262048a358a313}{constants::EPSILON}})\{}
-\DoxyCodeLine{00062\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ (}
-\DoxyCodeLine{00063\ \ \ \ \ \ \ \ \ \ \ \ \ (std::abs(v1.\doxymbox{\hyperlink{structdim4_1_1Vec4_af52297f714fcbc6df18709d269213037}{x}}\ -\/\ v2.\doxymbox{\hyperlink{structdim4_1_1Vec4_af52297f714fcbc6df18709d269213037}{x}})\ <=\ epsilon)}
-\DoxyCodeLine{00064\ \ \ \ \ \ \ \ \ \ \ \ \ \&\&}
-\DoxyCodeLine{00065\ \ \ \ \ \ \ \ \ \ \ \ \ (std::abs(v1.\doxymbox{\hyperlink{structdim4_1_1Vec4_ae8b199a6bc231d048f493edceb317d9b}{y}}\ -\/\ v2.\doxymbox{\hyperlink{structdim4_1_1Vec4_ae8b199a6bc231d048f493edceb317d9b}{y}})\ <=\ epsilon)}
-\DoxyCodeLine{00066\ \ \ \ \ \ \ \ \ \ \ \ \ \&\&}
-\DoxyCodeLine{00067\ \ \ \ \ \ \ \ \ \ \ \ \ (std::abs(v1.\doxymbox{\hyperlink{structdim4_1_1Vec4_adeac33b9bb5635fadd74642f085d94fa}{z}}\ -\/\ v2.\doxymbox{\hyperlink{structdim4_1_1Vec4_adeac33b9bb5635fadd74642f085d94fa}{z}})\ <=\ epsilon)}
-\DoxyCodeLine{00068\ \ \ \ \ \ \ \ \ \ \ \ \ \&\&}
-\DoxyCodeLine{00069\ \ \ \ \ \ \ \ \ \ \ \ \ (std::abs(v1.\doxymbox{\hyperlink{structdim4_1_1Vec4_a6f43a778391bbff07ef349cc21363022}{w}}\ -\/\ v2.\doxymbox{\hyperlink{structdim4_1_1Vec4_a6f43a778391bbff07ef349cc21363022}{w}})\ <=\ epsilon)}
-\DoxyCodeLine{00070\ \ \ \ \ \ \ \ \ );}
-\DoxyCodeLine{00071\ \ \ \ \ \}}
-\DoxyCodeLine{00072\ \ \ \ \ \textcolor{keyword}{inline}\ \doxymbox{\hyperlink{structdim4_1_1Vec4}{Vec4}}\ \doxymbox{\hyperlink{namespacedim4_a2ea043232d03199f449813b8eb03ce7a}{normalize}}(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{structdim4_1_1Vec4}{Vec4}}\ v)\{}
-\DoxyCodeLine{00073\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ invMagV\ =\ 1.0f\ /\ std::sqrt((\doxymbox{\hyperlink{namespacedim4_afbd8d42ca13041e55a0af066a00bd142}{magSquared}}(v)));}
-\DoxyCodeLine{00074\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \{(v.\doxymbox{\hyperlink{structdim4_1_1Vec4_af52297f714fcbc6df18709d269213037}{x}})*invMagV,\ (v.\doxymbox{\hyperlink{structdim4_1_1Vec4_ae8b199a6bc231d048f493edceb317d9b}{y}})*invMagV,\ (v.\doxymbox{\hyperlink{structdim4_1_1Vec4_adeac33b9bb5635fadd74642f085d94fa}{z}})*invMagV,\ (v.\doxymbox{\hyperlink{structdim4_1_1Vec4_a6f43a778391bbff07ef349cc21363022}{w}})*invMagV\};}
-\DoxyCodeLine{00075\ \ \ \ \ \}}
-\DoxyCodeLine{00076\ \ \ \ \ \textcolor{keyword}{inline}\ \doxymbox{\hyperlink{structdim4_1_1Vec4}{Vec4}}\ \doxymbox{\hyperlink{namespacedim4_abd5984731c88731bbbd6406a4fa475ef}{lerp}}(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{structdim4_1_1Vec4}{Vec4}}\&\ v1,\ \textcolor{keyword}{const}\ \doxymbox{\hyperlink{structdim4_1_1Vec4}{Vec4}}\&\ v2,\ \textcolor{keywordtype}{float}\ t)\{}
-\DoxyCodeLine{00077\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ a\ =\ \doxymbox{\hyperlink{namespaceNDSF_a4e3b42963ddafb487f9a1a4d081e647e}{NDSF::clamp}}(t,\ 0.0f,\ 1.0f);}
-\DoxyCodeLine{00078\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}}
-\DoxyCodeLine{00079\ \ \ \ \ \ \ \ \ \{}
-\DoxyCodeLine{00080\ }
-\DoxyCodeLine{00081\ \ \ \ \ \ \ \ \ \ \ \ \ v1.\doxymbox{\hyperlink{structdim4_1_1Vec4_af52297f714fcbc6df18709d269213037}{x}}\ +\ a*(v2.\doxymbox{\hyperlink{structdim4_1_1Vec4_af52297f714fcbc6df18709d269213037}{x}}\ -\/\ v1.\doxymbox{\hyperlink{structdim4_1_1Vec4_af52297f714fcbc6df18709d269213037}{x}}),}
-\DoxyCodeLine{00082\ \ \ \ \ \ \ \ \ \ \ \ \ v1.\doxymbox{\hyperlink{structdim4_1_1Vec4_ae8b199a6bc231d048f493edceb317d9b}{y}}\ +\ a*(v2.\doxymbox{\hyperlink{structdim4_1_1Vec4_ae8b199a6bc231d048f493edceb317d9b}{y}}\ -\/\ v1.\doxymbox{\hyperlink{structdim4_1_1Vec4_ae8b199a6bc231d048f493edceb317d9b}{y}}),}
-\DoxyCodeLine{00083\ \ \ \ \ \ \ \ \ \ \ \ \ v1.\doxymbox{\hyperlink{structdim4_1_1Vec4_adeac33b9bb5635fadd74642f085d94fa}{z}}\ +\ a*(v2.\doxymbox{\hyperlink{structdim4_1_1Vec4_adeac33b9bb5635fadd74642f085d94fa}{z}}\ -\/\ v1.\doxymbox{\hyperlink{structdim4_1_1Vec4_adeac33b9bb5635fadd74642f085d94fa}{z}}),}
-\DoxyCodeLine{00084\ \ \ \ \ \ \ \ \ \ \ \ \ v1.\doxymbox{\hyperlink{structdim4_1_1Vec4_a6f43a778391bbff07ef349cc21363022}{w}}\ +\ a*(v2.\doxymbox{\hyperlink{structdim4_1_1Vec4_a6f43a778391bbff07ef349cc21363022}{w}}\ -\/\ v1.\doxymbox{\hyperlink{structdim4_1_1Vec4_a6f43a778391bbff07ef349cc21363022}{w}})}
-\DoxyCodeLine{00085\ \ \ \ \ \ \ \ \ \};}
-\DoxyCodeLine{00086\ \ \ \ \ \}}
-\DoxyCodeLine{00087\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{float}\ \doxymbox{\hyperlink{namespacedim4_a992c34664d852d9d0b1015207ff7cd83}{angleRAD}}(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{structdim4_1_1Vec4}{Vec4}}\&\ v1,\ \textcolor{keyword}{const}\ \doxymbox{\hyperlink{structdim4_1_1Vec4}{Vec4}}\&\ v2,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{bool}\ returnCosAngle\ =\ \textcolor{keyword}{false})\{}
-\DoxyCodeLine{00088\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ v1Mag\ =\ \doxymbox{\hyperlink{namespacedim4_a754f8bd9423a05167ec493932ef7478f}{magnitude}}(v1);}
-\DoxyCodeLine{00089\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ v2Mag\ =\ \doxymbox{\hyperlink{namespacedim4_a754f8bd9423a05167ec493932ef7478f}{magnitude}}(v2);}
-\DoxyCodeLine{00090\ }
-\DoxyCodeLine{00091\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ cosAngle\ =\ \doxymbox{\hyperlink{namespaceNDSF_a4e3b42963ddafb487f9a1a4d081e647e}{NDSF::clamp}}(\doxymbox{\hyperlink{namespacedim4_ad91806f78b76249b8734868b78a470ac}{dotProduct}}(v1,\ v2)\ /\ (v1Mag*v2Mag),\ -\/1.0f,\ 1.0f);}
-\DoxyCodeLine{00092\ }
-\DoxyCodeLine{00093\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (returnCosAngle)\{\textcolor{keywordflow}{return}\ cosAngle;\}}
-\DoxyCodeLine{00094\ }
-\DoxyCodeLine{00095\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ std::acos(cosAngle);}
-\DoxyCodeLine{00096\ \ \ \ \ \}}
-\DoxyCodeLine{00097\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{float}\ \doxymbox{\hyperlink{namespacedim4_a02950f3da0e8dcc5cebb87f993d0cf68}{angleDEG}}(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{structdim4_1_1Vec4}{Vec4}}\&\ v1,\ \textcolor{keyword}{const}\ \doxymbox{\hyperlink{structdim4_1_1Vec4}{Vec4}}\&\ v2,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{bool}\ returnCosAngle\ =\ \textcolor{keyword}{false})\{}
-\DoxyCodeLine{00098\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \doxymbox{\hyperlink{namespacedim4_a992c34664d852d9d0b1015207ff7cd83}{angleRAD}}(v1,\ v2,\ returnCosAngle)\ *\ \doxymbox{\hyperlink{namespaceconstants_ace815f2423ab7254ae405c3abab1b83c}{constants::INV\_PI\_180}};}
+\DoxyCodeLine{00061\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{namespacedim4_a754f8bd9423a05167ec493932ef7478f}{magnitude}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{structdim4_1_1Vec4}{Vec4}}\ v)\{}
+\DoxyCodeLine{00062\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ std::sqrt(\mbox{\hyperlink{namespacedim4_afbd8d42ca13041e55a0af066a00bd142}{magSquared}}(v));}
+\DoxyCodeLine{00063\ \ \ \ \ \}}
+\DoxyCodeLine{00064\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{namespacedim4_af35c14a8bac8fbf3c279fb8b7d247860}{epVectorEqual}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{structdim4_1_1Vec4}{Vec4}}\ v1,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{structdim4_1_1Vec4}{Vec4}}\ v2,\ \textcolor{keywordtype}{float}\ epsilon\ =\ \mbox{\hyperlink{namespaceconstants_a7f3b4cf1f4ef2af969262048a358a313}{constants::EPSILON}})\{}
+\DoxyCodeLine{00065\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ (}
+\DoxyCodeLine{00066\ \ \ \ \ \ \ \ \ \ \ \ \ (std::abs(v1.\mbox{\hyperlink{structdim4_1_1Vec4_af52297f714fcbc6df18709d269213037}{x}}\ -\/\ v2.\mbox{\hyperlink{structdim4_1_1Vec4_af52297f714fcbc6df18709d269213037}{x}})\ <=\ epsilon)}
+\DoxyCodeLine{00067\ \ \ \ \ \ \ \ \ \ \ \ \ \&\&}
+\DoxyCodeLine{00068\ \ \ \ \ \ \ \ \ \ \ \ \ (std::abs(v1.\mbox{\hyperlink{structdim4_1_1Vec4_ae8b199a6bc231d048f493edceb317d9b}{y}}\ -\/\ v2.\mbox{\hyperlink{structdim4_1_1Vec4_ae8b199a6bc231d048f493edceb317d9b}{y}})\ <=\ epsilon)}
+\DoxyCodeLine{00069\ \ \ \ \ \ \ \ \ \ \ \ \ \&\&}
+\DoxyCodeLine{00070\ \ \ \ \ \ \ \ \ \ \ \ \ (std::abs(v1.\mbox{\hyperlink{structdim4_1_1Vec4_adeac33b9bb5635fadd74642f085d94fa}{z}}\ -\/\ v2.\mbox{\hyperlink{structdim4_1_1Vec4_adeac33b9bb5635fadd74642f085d94fa}{z}})\ <=\ epsilon)}
+\DoxyCodeLine{00071\ \ \ \ \ \ \ \ \ \ \ \ \ \&\&}
+\DoxyCodeLine{00072\ \ \ \ \ \ \ \ \ \ \ \ \ (std::abs(v1.\mbox{\hyperlink{structdim4_1_1Vec4_a6f43a778391bbff07ef349cc21363022}{w}}\ -\/\ v2.\mbox{\hyperlink{structdim4_1_1Vec4_a6f43a778391bbff07ef349cc21363022}{w}})\ <=\ epsilon)}
+\DoxyCodeLine{00073\ \ \ \ \ \ \ \ \ );}
+\DoxyCodeLine{00074\ \ \ \ \ \}}
+\DoxyCodeLine{00075\ \ \ \ \ \textcolor{keyword}{inline}\ \mbox{\hyperlink{structdim4_1_1Vec4}{Vec4}}\ \mbox{\hyperlink{namespacedim4_a2ea043232d03199f449813b8eb03ce7a}{normalize}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{structdim4_1_1Vec4}{Vec4}}\ v)\{}
+\DoxyCodeLine{00076\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ invMagV\ =\ 1.0f\ /\ std::sqrt((\mbox{\hyperlink{namespacedim4_afbd8d42ca13041e55a0af066a00bd142}{magSquared}}(v)));}
+\DoxyCodeLine{00077\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \{(v.\mbox{\hyperlink{structdim4_1_1Vec4_af52297f714fcbc6df18709d269213037}{x}})*invMagV,\ (v.\mbox{\hyperlink{structdim4_1_1Vec4_ae8b199a6bc231d048f493edceb317d9b}{y}})*invMagV,\ (v.\mbox{\hyperlink{structdim4_1_1Vec4_adeac33b9bb5635fadd74642f085d94fa}{z}})*invMagV,\ (v.\mbox{\hyperlink{structdim4_1_1Vec4_a6f43a778391bbff07ef349cc21363022}{w}})*invMagV\};}
+\DoxyCodeLine{00078\ \ \ \ \ \}}
+\DoxyCodeLine{00079\ \ \ \ \ \textcolor{keyword}{inline}\ \mbox{\hyperlink{structdim4_1_1Vec4}{Vec4}}\ \mbox{\hyperlink{namespacedim4_abd5984731c88731bbbd6406a4fa475ef}{lerp}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{structdim4_1_1Vec4}{Vec4}}\&\ v1,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{structdim4_1_1Vec4}{Vec4}}\&\ v2,\ \textcolor{keywordtype}{float}\ t)\{}
+\DoxyCodeLine{00080\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ a\ =\ \mbox{\hyperlink{namespaceNDSF_a4e3b42963ddafb487f9a1a4d081e647e}{NDSF::clamp}}(t,\ 0.0f,\ 1.0f);}
+\DoxyCodeLine{00081\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}}
+\DoxyCodeLine{00082\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00083\ }
+\DoxyCodeLine{00084\ \ \ \ \ \ \ \ \ \ \ \ \ v1.\mbox{\hyperlink{structdim4_1_1Vec4_af52297f714fcbc6df18709d269213037}{x}}\ +\ a*(v2.\mbox{\hyperlink{structdim4_1_1Vec4_af52297f714fcbc6df18709d269213037}{x}}\ -\/\ v1.\mbox{\hyperlink{structdim4_1_1Vec4_af52297f714fcbc6df18709d269213037}{x}}),}
+\DoxyCodeLine{00085\ \ \ \ \ \ \ \ \ \ \ \ \ v1.\mbox{\hyperlink{structdim4_1_1Vec4_ae8b199a6bc231d048f493edceb317d9b}{y}}\ +\ a*(v2.\mbox{\hyperlink{structdim4_1_1Vec4_ae8b199a6bc231d048f493edceb317d9b}{y}}\ -\/\ v1.\mbox{\hyperlink{structdim4_1_1Vec4_ae8b199a6bc231d048f493edceb317d9b}{y}}),}
+\DoxyCodeLine{00086\ \ \ \ \ \ \ \ \ \ \ \ \ v1.\mbox{\hyperlink{structdim4_1_1Vec4_adeac33b9bb5635fadd74642f085d94fa}{z}}\ +\ a*(v2.\mbox{\hyperlink{structdim4_1_1Vec4_adeac33b9bb5635fadd74642f085d94fa}{z}}\ -\/\ v1.\mbox{\hyperlink{structdim4_1_1Vec4_adeac33b9bb5635fadd74642f085d94fa}{z}}),}
+\DoxyCodeLine{00087\ \ \ \ \ \ \ \ \ \ \ \ \ v1.\mbox{\hyperlink{structdim4_1_1Vec4_a6f43a778391bbff07ef349cc21363022}{w}}\ +\ a*(v2.\mbox{\hyperlink{structdim4_1_1Vec4_a6f43a778391bbff07ef349cc21363022}{w}}\ -\/\ v1.\mbox{\hyperlink{structdim4_1_1Vec4_a6f43a778391bbff07ef349cc21363022}{w}})}
+\DoxyCodeLine{00088\ \ \ \ \ \ \ \ \ \};}
+\DoxyCodeLine{00089\ \ \ \ \ \}}
+\DoxyCodeLine{00090\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{namespacedim4_a992c34664d852d9d0b1015207ff7cd83}{angleRAD}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{structdim4_1_1Vec4}{Vec4}}\&\ v1,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{structdim4_1_1Vec4}{Vec4}}\&\ v2,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{bool}\ returnCosAngle\ =\ \textcolor{keyword}{false})\{}
+\DoxyCodeLine{00091\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ v1Mag\ =\ \mbox{\hyperlink{namespacedim4_a754f8bd9423a05167ec493932ef7478f}{magnitude}}(v1);}
+\DoxyCodeLine{00092\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ v2Mag\ =\ \mbox{\hyperlink{namespacedim4_a754f8bd9423a05167ec493932ef7478f}{magnitude}}(v2);}
+\DoxyCodeLine{00093\ }
+\DoxyCodeLine{00094\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ cosAngle\ =\ \mbox{\hyperlink{namespaceNDSF_a4e3b42963ddafb487f9a1a4d081e647e}{NDSF::clamp}}(\mbox{\hyperlink{namespacedim4_ad91806f78b76249b8734868b78a470ac}{dotProduct}}(v1,\ v2)\ /\ (v1Mag*v2Mag),\ -\/1.0f,\ 1.0f);}
+\DoxyCodeLine{00095\ }
+\DoxyCodeLine{00096\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (returnCosAngle)\{\textcolor{keywordflow}{return}\ cosAngle;\}}
+\DoxyCodeLine{00097\ }
+\DoxyCodeLine{00098\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ std::acos(cosAngle);}
 \DoxyCodeLine{00099\ \ \ \ \ \}}
-\DoxyCodeLine{00100\ \ \ \ \ \textcolor{keyword}{inline}\ \doxymbox{\hyperlink{structdim4_1_1Vec4}{Vec4}}\ \doxymbox{\hyperlink{namespacedim4_aeec750beffc8803e704c3ea7ee348271}{toVec4}}(\doxymbox{\hyperlink{structdim3_1_1Vec3}{dim3::Vec3}}\&\ v,\ \textcolor{keywordtype}{bool}\ isPoint=\ \textcolor{keyword}{true})\{}
-\DoxyCodeLine{00101\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \{v.\doxymbox{\hyperlink{structdim3_1_1Vec3_af6082affd4a98d0c40cd7d846366ccf1}{x}},\ v.\doxymbox{\hyperlink{structdim3_1_1Vec3_a45944275a3f755f84dd36cd8c8b198a8}{y}},\ v.\doxymbox{\hyperlink{structdim3_1_1Vec3_a862ed99367dbbe1fc55a5e6cdc7ae60e}{z}},\ isPoint\ ?\ 1.0f\ :\ 0.0f\};}
+\DoxyCodeLine{00100\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{namespacedim4_a02950f3da0e8dcc5cebb87f993d0cf68}{angleDEG}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{structdim4_1_1Vec4}{Vec4}}\&\ v1,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{structdim4_1_1Vec4}{Vec4}}\&\ v2,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{bool}\ returnCosAngle\ =\ \textcolor{keyword}{false})\{}
+\DoxyCodeLine{00101\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{namespacedim4_a992c34664d852d9d0b1015207ff7cd83}{angleRAD}}(v1,\ v2,\ returnCosAngle)\ *\ \mbox{\hyperlink{namespaceconstants_ace815f2423ab7254ae405c3abab1b83c}{constants::INV\_PI\_180}};}
 \DoxyCodeLine{00102\ \ \ \ \ \}}
-\DoxyCodeLine{00103\ }
-\DoxyCodeLine{00104\ \ \ \ \ \textcolor{comment}{//MATRICES}}
-\DoxyCodeLine{00105\ \ \ \ \ \textcolor{keyword}{struct\ }\doxymbox{\hyperlink{structdim4_1_1Mat4}{Mat4}}\{}
-\DoxyCodeLine{00106\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ \doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[4][4]\ =\ \{\{0\}\};}
-\DoxyCodeLine{00107\ \ \ \ \ \ \ \ \ \textcolor{keyword}{static}\ \doxymbox{\hyperlink{structdim4_1_1Mat4}{Mat4}}\ \doxymbox{\hyperlink{structdim4_1_1Mat4_ae615ba2f1c7065005bfdaaa9031a63f2}{identity}}()\{}
-\DoxyCodeLine{00108\ \ \ \ \ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{structdim4_1_1Mat4}{Mat4}}\ res;}
-\DoxyCodeLine{00109\ \ \ \ \ \ \ \ \ \ \ \ \ res.\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[0][0]\ =\ 1;\ res.\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[1][1]\ =\ 1;\ res.\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[2][2]\ =\ 1;\ res.\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[3][3]\ =\ 1;}
-\DoxyCodeLine{00110\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ res;}
-\DoxyCodeLine{00111\ \ \ \ \ \ \ \ \ \}}
-\DoxyCodeLine{00112\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{structdim4_1_1Vec4}{Vec4}}\ \doxymbox{\hyperlink{structdim4_1_1Mat4_a4cae5021f858ed635bc262d4c548cb54}{operator*}}(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{structdim4_1_1Vec4}{Vec4}}\&\ v)\textcolor{keyword}{\ const}\{}
-\DoxyCodeLine{00113\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\{}
-\DoxyCodeLine{00114\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ (v.\doxymbox{\hyperlink{structdim4_1_1Vec4_af52297f714fcbc6df18709d269213037}{x}})*(\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[0][0])\ +\ (v.\doxymbox{\hyperlink{structdim4_1_1Vec4_ae8b199a6bc231d048f493edceb317d9b}{y}})*(\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[0][1])\ +\ (v.\doxymbox{\hyperlink{structdim4_1_1Vec4_adeac33b9bb5635fadd74642f085d94fa}{z}})*(\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[0][2])\ +\ (v.\doxymbox{\hyperlink{structdim4_1_1Vec4_a6f43a778391bbff07ef349cc21363022}{w}})*(\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[0][3]),}
-\DoxyCodeLine{00115\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ (v.\doxymbox{\hyperlink{structdim4_1_1Vec4_af52297f714fcbc6df18709d269213037}{x}})*(\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[1][0])\ +\ (v.\doxymbox{\hyperlink{structdim4_1_1Vec4_ae8b199a6bc231d048f493edceb317d9b}{y}})*(\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[1][1])\ +\ (v.\doxymbox{\hyperlink{structdim4_1_1Vec4_adeac33b9bb5635fadd74642f085d94fa}{z}})*(\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[1][2])\ +\ (v.\doxymbox{\hyperlink{structdim4_1_1Vec4_a6f43a778391bbff07ef349cc21363022}{w}})*(\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[1][3]),}
-\DoxyCodeLine{00116\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ (v.\doxymbox{\hyperlink{structdim4_1_1Vec4_af52297f714fcbc6df18709d269213037}{x}})*(\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[2][0])\ +\ (v.\doxymbox{\hyperlink{structdim4_1_1Vec4_ae8b199a6bc231d048f493edceb317d9b}{y}})*(\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[2][1])\ +\ (v.\doxymbox{\hyperlink{structdim4_1_1Vec4_adeac33b9bb5635fadd74642f085d94fa}{z}})*(\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[2][2])\ +\ (v.\doxymbox{\hyperlink{structdim4_1_1Vec4_a6f43a778391bbff07ef349cc21363022}{w}})*(\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[2][3]),}
-\DoxyCodeLine{00117\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ (v.\doxymbox{\hyperlink{structdim4_1_1Vec4_af52297f714fcbc6df18709d269213037}{x}})*(\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[3][0])\ +\ (v.\doxymbox{\hyperlink{structdim4_1_1Vec4_ae8b199a6bc231d048f493edceb317d9b}{y}})*(\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[3][1])\ +\ (v.\doxymbox{\hyperlink{structdim4_1_1Vec4_adeac33b9bb5635fadd74642f085d94fa}{z}})*(\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[3][2])\ +\ (v.\doxymbox{\hyperlink{structdim4_1_1Vec4_a6f43a778391bbff07ef349cc21363022}{w}})*(\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[3][3])}
-\DoxyCodeLine{00118\ \ \ \ \ \ \ \ \ \ \ \ \ \};}
-\DoxyCodeLine{00119\ \ \ \ \ \ \ \ \ \}}
-\DoxyCodeLine{00120\ \ \ \ \ \ \ \ \ \textcolor{keyword}{static}\ \doxymbox{\hyperlink{structdim4_1_1Mat4}{Mat4}}\ \doxymbox{\hyperlink{structdim4_1_1Mat4_ad217b84ca1a86d810bd553f854edf1bb}{genRotator}}(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{structdim3_1_1Vec3}{dim3::Vec3}}\&\ axis\_normalized,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{float}\ \doxymbox{\hyperlink{namespacedim4_a992c34664d852d9d0b1015207ff7cd83}{angleRAD}})\{}
-\DoxyCodeLine{00121\ \ \ \ \ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{structdim4_1_1Mat4}{Mat4}}\ rotator\ =\ \doxymbox{\hyperlink{structdim4_1_1Mat4_ae615ba2f1c7065005bfdaaa9031a63f2}{Mat4::identity}}();}
-\DoxyCodeLine{00122\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ cosA\ =\ std::cos(\doxymbox{\hyperlink{namespacedim4_a992c34664d852d9d0b1015207ff7cd83}{angleRAD}});}
-\DoxyCodeLine{00123\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ sinA\ =\ std::sin(\doxymbox{\hyperlink{namespacedim4_a992c34664d852d9d0b1015207ff7cd83}{angleRAD}});}
-\DoxyCodeLine{00124\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ t\ =\ 1.0f-\/cosA;}
-\DoxyCodeLine{00125\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ x\ =\ axis\_normalized.\doxymbox{\hyperlink{structdim3_1_1Vec3_af6082affd4a98d0c40cd7d846366ccf1}{x}};}
-\DoxyCodeLine{00126\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ y\ =\ axis\_normalized.\doxymbox{\hyperlink{structdim3_1_1Vec3_a45944275a3f755f84dd36cd8c8b198a8}{y}};}
-\DoxyCodeLine{00127\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ z\ =\ axis\_normalized.\doxymbox{\hyperlink{structdim3_1_1Vec3_a862ed99367dbbe1fc55a5e6cdc7ae60e}{z}};}
-\DoxyCodeLine{00128\ }
-\DoxyCodeLine{00129\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ ROW\ 0}}
-\DoxyCodeLine{00130\ \ \ \ \ \ \ \ \ \ \ \ \ rotator.\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[0][0]\ =\ x\ *\ x\ *\ t\ +\ cosA;}
-\DoxyCodeLine{00131\ \ \ \ \ \ \ \ \ \ \ \ \ rotator.\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[0][1]\ =\ x\ *\ y\ *\ t\ -\/\ z\ *\ sinA;}
-\DoxyCodeLine{00132\ \ \ \ \ \ \ \ \ \ \ \ \ rotator.\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[0][2]\ =\ x\ *\ z\ *\ t\ +\ y\ *\ sinA;}
-\DoxyCodeLine{00133\ }
-\DoxyCodeLine{00134\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ ROW\ 1}}
-\DoxyCodeLine{00135\ \ \ \ \ \ \ \ \ \ \ \ \ rotator.\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[1][0]\ =\ y\ *\ x\ *\ t\ +\ z\ *\ sinA;}
-\DoxyCodeLine{00136\ \ \ \ \ \ \ \ \ \ \ \ \ rotator.\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[1][1]\ =\ y\ *\ y\ *\ t\ +\ cosA;}
-\DoxyCodeLine{00137\ \ \ \ \ \ \ \ \ \ \ \ \ rotator.\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[1][2]\ =\ y\ *\ z\ *\ t\ -\/\ x\ *\ sinA;}
-\DoxyCodeLine{00138\ }
-\DoxyCodeLine{00139\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ ROW\ 2}}
-\DoxyCodeLine{00140\ \ \ \ \ \ \ \ \ \ \ \ \ rotator.\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[2][0]\ =\ z\ *\ x\ *\ t\ -\/\ y\ *\ sinA;}
-\DoxyCodeLine{00141\ \ \ \ \ \ \ \ \ \ \ \ \ rotator.\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[2][1]\ =\ z\ *\ y\ *\ t\ +\ x\ *\ sinA;}
-\DoxyCodeLine{00142\ \ \ \ \ \ \ \ \ \ \ \ \ rotator.\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[2][2]\ =\ z\ *\ z\ *\ t\ +\ cosA;}
-\DoxyCodeLine{00143\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ rotator;}
-\DoxyCodeLine{00144\ }
-\DoxyCodeLine{00145\ \ \ \ \ \ \ \ \ \}}
-\DoxyCodeLine{00146\ \ \ \ \ \ \ \ \ \textcolor{keyword}{static}\ \doxymbox{\hyperlink{structdim4_1_1Mat4}{Mat4}}\ \doxymbox{\hyperlink{structdim4_1_1Mat4_aec6999a57f049a41a80c139eb9a828fe}{genRotationX}}(\textcolor{keywordtype}{float}\ \doxymbox{\hyperlink{namespacedim4_a992c34664d852d9d0b1015207ff7cd83}{angleRAD}})\{}
-\DoxyCodeLine{00147\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ s\ =\ std::sin(\doxymbox{\hyperlink{namespacedim4_a992c34664d852d9d0b1015207ff7cd83}{angleRAD}});}
-\DoxyCodeLine{00148\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ c\ =\ std::cos(\doxymbox{\hyperlink{namespacedim4_a992c34664d852d9d0b1015207ff7cd83}{angleRAD}});}
-\DoxyCodeLine{00149\ \ \ \ \ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{structdim4_1_1Mat4}{Mat4}}\ res\ =\ \doxymbox{\hyperlink{structdim4_1_1Mat4_ae615ba2f1c7065005bfdaaa9031a63f2}{Mat4::identity}}();}
-\DoxyCodeLine{00150\ \ \ \ \ \ \ \ \ \ \ \ \ res.\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[1][1]\ =\ c;}
-\DoxyCodeLine{00151\ \ \ \ \ \ \ \ \ \ \ \ \ res.\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[1][2]\ =\ -\/s;}
-\DoxyCodeLine{00152\ \ \ \ \ \ \ \ \ \ \ \ \ res.\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[2][1]\ =\ s;}
-\DoxyCodeLine{00153\ \ \ \ \ \ \ \ \ \ \ \ \ res.\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[2][2]\ =\ c;}
-\DoxyCodeLine{00154\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ res;}
-\DoxyCodeLine{00155\ \ \ \ \ \ \ \ \ \}}
-\DoxyCodeLine{00156\ \ \ \ \ \ \ \ \ \textcolor{keyword}{static}\ \doxymbox{\hyperlink{structdim4_1_1Mat4}{Mat4}}\ \doxymbox{\hyperlink{structdim4_1_1Mat4_aae04b93147454616f9028f9f7fef436c}{genRotationY}}(\textcolor{keywordtype}{float}\ \doxymbox{\hyperlink{namespacedim4_a992c34664d852d9d0b1015207ff7cd83}{angleRAD}})\{}
-\DoxyCodeLine{00157\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ s\ =\ std::sin(\doxymbox{\hyperlink{namespacedim4_a992c34664d852d9d0b1015207ff7cd83}{angleRAD}});}
-\DoxyCodeLine{00158\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ c\ =\ std::cos(\doxymbox{\hyperlink{namespacedim4_a992c34664d852d9d0b1015207ff7cd83}{angleRAD}});}
-\DoxyCodeLine{00159\ \ \ \ \ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{structdim4_1_1Mat4}{Mat4}}\ res\ =\ \doxymbox{\hyperlink{structdim4_1_1Mat4_ae615ba2f1c7065005bfdaaa9031a63f2}{Mat4::identity}}();}
-\DoxyCodeLine{00160\ \ \ \ \ \ \ \ \ \ \ \ \ res.\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[0][0]\ =\ c;}
-\DoxyCodeLine{00161\ \ \ \ \ \ \ \ \ \ \ \ \ res.\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[0][2]\ =\ s;}
-\DoxyCodeLine{00162\ \ \ \ \ \ \ \ \ \ \ \ \ res.\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[2][0]\ =\ -\/s;}
-\DoxyCodeLine{00163\ \ \ \ \ \ \ \ \ \ \ \ \ res.\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[2][2]\ =\ c;}
-\DoxyCodeLine{00164\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ res;}
-\DoxyCodeLine{00165\ \ \ \ \ \ \ \ \ \}}
-\DoxyCodeLine{00166\ \ \ \ \ \ \ \ \ \textcolor{keyword}{static}\ \doxymbox{\hyperlink{structdim4_1_1Mat4}{Mat4}}\ \doxymbox{\hyperlink{structdim4_1_1Mat4_afc03a37aa56ef003bc580e86eeb239f7}{genRotationZ}}(\textcolor{keywordtype}{float}\ \doxymbox{\hyperlink{namespacedim4_a992c34664d852d9d0b1015207ff7cd83}{angleRAD}})\{}
-\DoxyCodeLine{00167\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ s\ =\ std::sin(\doxymbox{\hyperlink{namespacedim4_a992c34664d852d9d0b1015207ff7cd83}{angleRAD}});}
-\DoxyCodeLine{00168\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ c\ =\ std::cos(\doxymbox{\hyperlink{namespacedim4_a992c34664d852d9d0b1015207ff7cd83}{angleRAD}});}
-\DoxyCodeLine{00169\ \ \ \ \ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{structdim4_1_1Mat4}{Mat4}}\ res\ =\ \doxymbox{\hyperlink{structdim4_1_1Mat4_ae615ba2f1c7065005bfdaaa9031a63f2}{Mat4::identity}}();}
-\DoxyCodeLine{00170\ \ \ \ \ \ \ \ \ \ \ \ \ res.\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[0][0]\ =\ c;}
-\DoxyCodeLine{00171\ \ \ \ \ \ \ \ \ \ \ \ \ res.\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[0][1]\ =\ -\/s;}
-\DoxyCodeLine{00172\ \ \ \ \ \ \ \ \ \ \ \ \ res.\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[1][0]\ =\ s;}
-\DoxyCodeLine{00173\ \ \ \ \ \ \ \ \ \ \ \ \ res.\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[1][1]\ =\ c;}
-\DoxyCodeLine{00174\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ res;}
-\DoxyCodeLine{00175\ \ \ \ \ \ \ \ \ \}}
-\DoxyCodeLine{00176\ \ \ \ \ \ \ \ \ \textcolor{comment}{/*}}
-\DoxyCodeLine{00177\ \textcolor{comment}{\ \ \ \ \ \ \ \ THEORY:}}
-\DoxyCodeLine{00178\ \textcolor{comment}{\ \ \ \ \ \ \ \ A\ Homogenous\ Coordinate\ System\ is\ Needed:}}
-\DoxyCodeLine{00179\ \textcolor{comment}{\ \ \ \ \ \ \ \ Why\ :\ A\ 3x3\ Matrix\ (Mat3)\ can\ only\ warp,\ shear,\ rotator\ the\ basis\ vectors\ of\ a\ vector\ in\ 3D\ space,\ it\ cannot\ physically\ move\ the\ vector\ from\ the\ origin}}
-\DoxyCodeLine{00180\ \textcolor{comment}{\ \ \ \ \ \ \ \ Thus\ it\ can't\ perform\ translation}}
-\DoxyCodeLine{00181\ \textcolor{comment}{\ \ \ \ \ \ \ \ The\ BIG\ Idea:}}
-\DoxyCodeLine{00182\ \textcolor{comment}{\ \ \ \ \ \ \ \ Using\ an\ Affine\ Transformation:}}
-\DoxyCodeLine{00183\ \textcolor{comment}{\ \ \ \ \ \ \ \ (1)\ Do\ a\ Linear\ Transformation\ (as\ we\ did\ with\ Mat3\ and\ Vec3)}}
-\DoxyCodeLine{00184\ \textcolor{comment}{\ \ \ \ \ \ \ \ (2)\ Translate\ the\ Vector}}
-\DoxyCodeLine{00185\ \textcolor{comment}{\ \ \ \ \ \ \ \ //So\ for\ a\ matrix\ which\ has\ to\ do\ both\ we\ need\ a\ Mat4\ Matrix}}
-\DoxyCodeLine{00186\ \textcolor{comment}{\ \ \ \ \ \ \ \ R00\ R01\ R02\ Tx}}
-\DoxyCodeLine{00187\ \textcolor{comment}{\ \ \ \ \ \ \ \ R10\ R11\ R12\ Ty}}
-\DoxyCodeLine{00188\ \textcolor{comment}{\ \ \ \ \ \ \ \ R20\ R21\ R22\ Tz}}
-\DoxyCodeLine{00189\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ 0\ \ \ 0\ \ \ 0\ \ \ 1}}
-\DoxyCodeLine{00190\ \textcolor{comment}{\ \ \ \ \ \ \ \ The\ T\ bucket\ is\ for\ translating\ vectors}}
-\DoxyCodeLine{00191\ \textcolor{comment}{\ \ \ \ \ \ \ \ R(ij)\ submatrix\ is\ for\ Mat3\ level\ operations}}
-\DoxyCodeLine{00192\ \textcolor{comment}{\ \ \ \ \ \ \ \ (0,0,0,1)\ is\ something\ related\ to\ perspective\ which\ I\ do\ not\ understand\ rt\ now}}
-\DoxyCodeLine{00193\ \textcolor{comment}{\ \ \ \ \ \ \ \ */}}
-\DoxyCodeLine{00194\ \ \ \ \ \ \ \ \ \textcolor{comment}{//To\ Move\ ONLY}}
-\DoxyCodeLine{00195\ \ \ \ \ \ \ \ \ \textcolor{keyword}{static}\ \doxymbox{\hyperlink{structdim4_1_1Mat4}{Mat4}}\ \doxymbox{\hyperlink{structdim4_1_1Mat4_ae70740ae4e5827d7315f02c4c9aaa1da}{genTranslation}}(\textcolor{keywordtype}{float}\ Tx,\ \textcolor{keywordtype}{float}\ Ty,\ \textcolor{keywordtype}{float}\ Tz)\{}
-\DoxyCodeLine{00196\ \ \ \ \ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{structdim4_1_1Mat4}{Mat4}}\ res\ =\ \doxymbox{\hyperlink{structdim4_1_1Mat4_ae615ba2f1c7065005bfdaaa9031a63f2}{Mat4::identity}}();}
-\DoxyCodeLine{00197\ \ \ \ \ \ \ \ \ \ \ \ \ res.\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[0][3]\ =\ Tx;}
-\DoxyCodeLine{00198\ \ \ \ \ \ \ \ \ \ \ \ \ res.\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[1][3]\ =\ Ty;}
-\DoxyCodeLine{00199\ \ \ \ \ \ \ \ \ \ \ \ \ res.\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[2][3]\ =\ Tz;}
-\DoxyCodeLine{00200\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ res;}
-\DoxyCodeLine{00201\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00103\ \ \ \ \ \textcolor{keyword}{inline}\ \mbox{\hyperlink{structdim4_1_1Vec4}{Vec4}}\ \mbox{\hyperlink{namespacedim4_aeec750beffc8803e704c3ea7ee348271}{toVec4}}(\mbox{\hyperlink{structdim3_1_1Vec3}{dim3::Vec3}}\&\ v,\ \textcolor{keywordtype}{bool}\ isPoint=\ \textcolor{keyword}{true})\{}
+\DoxyCodeLine{00104\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \{v.\mbox{\hyperlink{structdim3_1_1Vec3_af6082affd4a98d0c40cd7d846366ccf1}{x}},\ v.\mbox{\hyperlink{structdim3_1_1Vec3_a45944275a3f755f84dd36cd8c8b198a8}{y}},\ v.\mbox{\hyperlink{structdim3_1_1Vec3_a862ed99367dbbe1fc55a5e6cdc7ae60e}{z}},\ isPoint\ ?\ 1.0f\ :\ 0.0f\};}
+\DoxyCodeLine{00105\ \ \ \ \ \}}
+\DoxyCodeLine{00106\ }
+\DoxyCodeLine{00107\ \ \ \ \ \textcolor{comment}{//MATRICES}}
+\DoxyCodeLine{00108\ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structdim4_1_1Mat4}{Mat4}}\{}
+\DoxyCodeLine{00109\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[4][4]\ =\ \{\{0\}\};}
+\DoxyCodeLine{00110\ \ \ \ \ }
+\DoxyCodeLine{00111\ \ \ \ \ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{structdim4_1_1Mat4}{Mat4}}\ \mbox{\hyperlink{structdim4_1_1Mat4_ae615ba2f1c7065005bfdaaa9031a63f2}{identity}}()\{}
+\DoxyCodeLine{00112\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structdim4_1_1Mat4}{Mat4}}\ res;}
+\DoxyCodeLine{00113\ \ \ \ \ \ \ \ \ \ \ \ \ res.\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[0][0]\ =\ 1;\ res.\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[1][1]\ =\ 1;\ res.\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[2][2]\ =\ 1;\ res.\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[3][3]\ =\ 1;}
+\DoxyCodeLine{00114\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ res;}
+\DoxyCodeLine{00115\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00116\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structdim4_1_1Vec4}{Vec4}}\ \mbox{\hyperlink{structdim4_1_1Mat4_a4cae5021f858ed635bc262d4c548cb54}{operator*}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{structdim4_1_1Vec4}{Vec4}}\&\ v)\textcolor{keyword}{\ const}\{}
+\DoxyCodeLine{00117\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\{}
+\DoxyCodeLine{00118\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ (v.\mbox{\hyperlink{structdim4_1_1Vec4_af52297f714fcbc6df18709d269213037}{x}})*(\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[0][0])\ +\ (v.\mbox{\hyperlink{structdim4_1_1Vec4_ae8b199a6bc231d048f493edceb317d9b}{y}})*(\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[0][1])\ +\ (v.\mbox{\hyperlink{structdim4_1_1Vec4_adeac33b9bb5635fadd74642f085d94fa}{z}})*(\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[0][2])\ +\ (v.\mbox{\hyperlink{structdim4_1_1Vec4_a6f43a778391bbff07ef349cc21363022}{w}})*(\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[0][3]),}
+\DoxyCodeLine{00119\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ (v.\mbox{\hyperlink{structdim4_1_1Vec4_af52297f714fcbc6df18709d269213037}{x}})*(\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[1][0])\ +\ (v.\mbox{\hyperlink{structdim4_1_1Vec4_ae8b199a6bc231d048f493edceb317d9b}{y}})*(\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[1][1])\ +\ (v.\mbox{\hyperlink{structdim4_1_1Vec4_adeac33b9bb5635fadd74642f085d94fa}{z}})*(\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[1][2])\ +\ (v.\mbox{\hyperlink{structdim4_1_1Vec4_a6f43a778391bbff07ef349cc21363022}{w}})*(\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[1][3]),}
+\DoxyCodeLine{00120\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ (v.\mbox{\hyperlink{structdim4_1_1Vec4_af52297f714fcbc6df18709d269213037}{x}})*(\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[2][0])\ +\ (v.\mbox{\hyperlink{structdim4_1_1Vec4_ae8b199a6bc231d048f493edceb317d9b}{y}})*(\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[2][1])\ +\ (v.\mbox{\hyperlink{structdim4_1_1Vec4_adeac33b9bb5635fadd74642f085d94fa}{z}})*(\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[2][2])\ +\ (v.\mbox{\hyperlink{structdim4_1_1Vec4_a6f43a778391bbff07ef349cc21363022}{w}})*(\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[2][3]),}
+\DoxyCodeLine{00121\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ (v.\mbox{\hyperlink{structdim4_1_1Vec4_af52297f714fcbc6df18709d269213037}{x}})*(\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[3][0])\ +\ (v.\mbox{\hyperlink{structdim4_1_1Vec4_ae8b199a6bc231d048f493edceb317d9b}{y}})*(\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[3][1])\ +\ (v.\mbox{\hyperlink{structdim4_1_1Vec4_adeac33b9bb5635fadd74642f085d94fa}{z}})*(\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[3][2])\ +\ (v.\mbox{\hyperlink{structdim4_1_1Vec4_a6f43a778391bbff07ef349cc21363022}{w}})*(\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[3][3])}
+\DoxyCodeLine{00122\ \ \ \ \ \ \ \ \ \ \ \ \ \};}
+\DoxyCodeLine{00123\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00124\ \ \ \ \ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{structdim4_1_1Mat4}{Mat4}}\ \mbox{\hyperlink{structdim4_1_1Mat4_ad217b84ca1a86d810bd553f854edf1bb}{genRotator}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{structdim3_1_1Vec3}{dim3::Vec3}}\&\ axis\_normalized,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{namespacedim4_a992c34664d852d9d0b1015207ff7cd83}{angleRAD}})\{}
+\DoxyCodeLine{00125\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structdim4_1_1Mat4}{Mat4}}\ rotator\ =\ \mbox{\hyperlink{structdim4_1_1Mat4_ae615ba2f1c7065005bfdaaa9031a63f2}{Mat4::identity}}();}
+\DoxyCodeLine{00126\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ cosA\ =\ std::cos(\mbox{\hyperlink{namespacedim4_a992c34664d852d9d0b1015207ff7cd83}{angleRAD}});}
+\DoxyCodeLine{00127\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ sinA\ =\ std::sin(\mbox{\hyperlink{namespacedim4_a992c34664d852d9d0b1015207ff7cd83}{angleRAD}});}
+\DoxyCodeLine{00128\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ t\ =\ 1.0f-\/cosA;}
+\DoxyCodeLine{00129\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ x\ =\ axis\_normalized.\mbox{\hyperlink{structdim3_1_1Vec3_af6082affd4a98d0c40cd7d846366ccf1}{x}};}
+\DoxyCodeLine{00130\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ y\ =\ axis\_normalized.\mbox{\hyperlink{structdim3_1_1Vec3_a45944275a3f755f84dd36cd8c8b198a8}{y}};}
+\DoxyCodeLine{00131\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ z\ =\ axis\_normalized.\mbox{\hyperlink{structdim3_1_1Vec3_a862ed99367dbbe1fc55a5e6cdc7ae60e}{z}};}
+\DoxyCodeLine{00132\ }
+\DoxyCodeLine{00133\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ ROW\ 0}}
+\DoxyCodeLine{00134\ \ \ \ \ \ \ \ \ \ \ \ \ rotator.\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[0][0]\ =\ x\ *\ x\ *\ t\ +\ cosA;}
+\DoxyCodeLine{00135\ \ \ \ \ \ \ \ \ \ \ \ \ rotator.\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[0][1]\ =\ x\ *\ y\ *\ t\ -\/\ z\ *\ sinA;}
+\DoxyCodeLine{00136\ \ \ \ \ \ \ \ \ \ \ \ \ rotator.\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[0][2]\ =\ x\ *\ z\ *\ t\ +\ y\ *\ sinA;}
+\DoxyCodeLine{00137\ }
+\DoxyCodeLine{00138\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ ROW\ 1}}
+\DoxyCodeLine{00139\ \ \ \ \ \ \ \ \ \ \ \ \ rotator.\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[1][0]\ =\ y\ *\ x\ *\ t\ +\ z\ *\ sinA;}
+\DoxyCodeLine{00140\ \ \ \ \ \ \ \ \ \ \ \ \ rotator.\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[1][1]\ =\ y\ *\ y\ *\ t\ +\ cosA;}
+\DoxyCodeLine{00141\ \ \ \ \ \ \ \ \ \ \ \ \ rotator.\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[1][2]\ =\ y\ *\ z\ *\ t\ -\/\ x\ *\ sinA;}
+\DoxyCodeLine{00142\ }
+\DoxyCodeLine{00143\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ ROW\ 2}}
+\DoxyCodeLine{00144\ \ \ \ \ \ \ \ \ \ \ \ \ rotator.\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[2][0]\ =\ z\ *\ x\ *\ t\ -\/\ y\ *\ sinA;}
+\DoxyCodeLine{00145\ \ \ \ \ \ \ \ \ \ \ \ \ rotator.\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[2][1]\ =\ z\ *\ y\ *\ t\ +\ x\ *\ sinA;}
+\DoxyCodeLine{00146\ \ \ \ \ \ \ \ \ \ \ \ \ rotator.\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[2][2]\ =\ z\ *\ z\ *\ t\ +\ cosA;}
+\DoxyCodeLine{00147\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ rotator;}
+\DoxyCodeLine{00148\ }
+\DoxyCodeLine{00149\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00150\ \ \ \ \ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{structdim4_1_1Mat4}{Mat4}}\ \mbox{\hyperlink{structdim4_1_1Mat4_aec6999a57f049a41a80c139eb9a828fe}{genRotationX}}(\textcolor{keywordtype}{float}\ \mbox{\hyperlink{namespacedim4_a992c34664d852d9d0b1015207ff7cd83}{angleRAD}})\{}
+\DoxyCodeLine{00151\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ s\ =\ std::sin(\mbox{\hyperlink{namespacedim4_a992c34664d852d9d0b1015207ff7cd83}{angleRAD}});}
+\DoxyCodeLine{00152\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ c\ =\ std::cos(\mbox{\hyperlink{namespacedim4_a992c34664d852d9d0b1015207ff7cd83}{angleRAD}});}
+\DoxyCodeLine{00153\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structdim4_1_1Mat4}{Mat4}}\ res\ =\ \mbox{\hyperlink{structdim4_1_1Mat4_ae615ba2f1c7065005bfdaaa9031a63f2}{Mat4::identity}}();}
+\DoxyCodeLine{00154\ \ \ \ \ \ \ \ \ \ \ \ \ res.\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[1][1]\ =\ c;}
+\DoxyCodeLine{00155\ \ \ \ \ \ \ \ \ \ \ \ \ res.\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[1][2]\ =\ -\/s;}
+\DoxyCodeLine{00156\ \ \ \ \ \ \ \ \ \ \ \ \ res.\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[2][1]\ =\ s;}
+\DoxyCodeLine{00157\ \ \ \ \ \ \ \ \ \ \ \ \ res.\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[2][2]\ =\ c;}
+\DoxyCodeLine{00158\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ res;}
+\DoxyCodeLine{00159\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00160\ \ \ \ \ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{structdim4_1_1Mat4}{Mat4}}\ \mbox{\hyperlink{structdim4_1_1Mat4_aae04b93147454616f9028f9f7fef436c}{genRotationY}}(\textcolor{keywordtype}{float}\ \mbox{\hyperlink{namespacedim4_a992c34664d852d9d0b1015207ff7cd83}{angleRAD}})\{}
+\DoxyCodeLine{00161\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ s\ =\ std::sin(\mbox{\hyperlink{namespacedim4_a992c34664d852d9d0b1015207ff7cd83}{angleRAD}});}
+\DoxyCodeLine{00162\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ c\ =\ std::cos(\mbox{\hyperlink{namespacedim4_a992c34664d852d9d0b1015207ff7cd83}{angleRAD}});}
+\DoxyCodeLine{00163\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structdim4_1_1Mat4}{Mat4}}\ res\ =\ \mbox{\hyperlink{structdim4_1_1Mat4_ae615ba2f1c7065005bfdaaa9031a63f2}{Mat4::identity}}();}
+\DoxyCodeLine{00164\ \ \ \ \ \ \ \ \ \ \ \ \ res.\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[0][0]\ =\ c;}
+\DoxyCodeLine{00165\ \ \ \ \ \ \ \ \ \ \ \ \ res.\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[0][2]\ =\ s;}
+\DoxyCodeLine{00166\ \ \ \ \ \ \ \ \ \ \ \ \ res.\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[2][0]\ =\ -\/s;}
+\DoxyCodeLine{00167\ \ \ \ \ \ \ \ \ \ \ \ \ res.\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[2][2]\ =\ c;}
+\DoxyCodeLine{00168\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ res;}
+\DoxyCodeLine{00169\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00170\ \ \ \ \ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{structdim4_1_1Mat4}{Mat4}}\ \mbox{\hyperlink{structdim4_1_1Mat4_afc03a37aa56ef003bc580e86eeb239f7}{genRotationZ}}(\textcolor{keywordtype}{float}\ \mbox{\hyperlink{namespacedim4_a992c34664d852d9d0b1015207ff7cd83}{angleRAD}})\{}
+\DoxyCodeLine{00171\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ s\ =\ std::sin(\mbox{\hyperlink{namespacedim4_a992c34664d852d9d0b1015207ff7cd83}{angleRAD}});}
+\DoxyCodeLine{00172\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ c\ =\ std::cos(\mbox{\hyperlink{namespacedim4_a992c34664d852d9d0b1015207ff7cd83}{angleRAD}});}
+\DoxyCodeLine{00173\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structdim4_1_1Mat4}{Mat4}}\ res\ =\ \mbox{\hyperlink{structdim4_1_1Mat4_ae615ba2f1c7065005bfdaaa9031a63f2}{Mat4::identity}}();}
+\DoxyCodeLine{00174\ \ \ \ \ \ \ \ \ \ \ \ \ res.\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[0][0]\ =\ c;}
+\DoxyCodeLine{00175\ \ \ \ \ \ \ \ \ \ \ \ \ res.\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[0][1]\ =\ -\/s;}
+\DoxyCodeLine{00176\ \ \ \ \ \ \ \ \ \ \ \ \ res.\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[1][0]\ =\ s;}
+\DoxyCodeLine{00177\ \ \ \ \ \ \ \ \ \ \ \ \ res.\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[1][1]\ =\ c;}
+\DoxyCodeLine{00178\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ res;}
+\DoxyCodeLine{00179\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00180\ \ \ \ \ \ }
+\DoxyCodeLine{00181\ \ \ \ \ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{structdim4_1_1Mat4}{Mat4}}\ \mbox{\hyperlink{structdim4_1_1Mat4_ae70740ae4e5827d7315f02c4c9aaa1da}{genTranslation}}(\textcolor{keywordtype}{float}\ Tx,\ \textcolor{keywordtype}{float}\ Ty,\ \textcolor{keywordtype}{float}\ Tz)\{}
+\DoxyCodeLine{00182\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structdim4_1_1Mat4}{Mat4}}\ res\ =\ \mbox{\hyperlink{structdim4_1_1Mat4_ae615ba2f1c7065005bfdaaa9031a63f2}{Mat4::identity}}();}
+\DoxyCodeLine{00183\ \ \ \ \ \ \ \ \ \ \ \ \ res.\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[0][3]\ =\ Tx;}
+\DoxyCodeLine{00184\ \ \ \ \ \ \ \ \ \ \ \ \ res.\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[1][3]\ =\ Ty;}
+\DoxyCodeLine{00185\ \ \ \ \ \ \ \ \ \ \ \ \ res.\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[2][3]\ =\ Tz;}
+\DoxyCodeLine{00186\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ res;}
+\DoxyCodeLine{00187\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00188\ }
+\DoxyCodeLine{00189\ \ \ \ \ \ \ \ \ \textcolor{comment}{//To\ Scale}}
+\DoxyCodeLine{00190\ \ \ \ \ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{structdim4_1_1Mat4}{Mat4}}\ \mbox{\hyperlink{structdim4_1_1Mat4_aed691d14fc6090785ef2d5dbdd89e417}{genScaling}}(\textcolor{keywordtype}{float}\ Sx,\ \textcolor{keywordtype}{float}\ Sy,\ \textcolor{keywordtype}{float}\ Sz)\{}
+\DoxyCodeLine{00191\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structdim4_1_1Mat4}{Mat4}}\ res\ =\ \mbox{\hyperlink{structdim4_1_1Mat4_ae615ba2f1c7065005bfdaaa9031a63f2}{Mat4::identity}}();}
+\DoxyCodeLine{00192\ \ \ \ \ \ \ \ \ \ \ \ \ res.\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[0][0]\ =\ Sx;}
+\DoxyCodeLine{00193\ \ \ \ \ \ \ \ \ \ \ \ \ res.\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[1][1]\ =\ Sy;}
+\DoxyCodeLine{00194\ \ \ \ \ \ \ \ \ \ \ \ \ res.\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[2][2]\ =\ Sz;}
+\DoxyCodeLine{00195\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ res;}
+\DoxyCodeLine{00196\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00197\ \ \ \ \ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{structdim3_1_1Vec3}{dim3::Vec3}}\ \mbox{\hyperlink{structdim4_1_1Mat4_a5484dfd2ecf84dafc2b27f7b23c6d534}{homoToVec3}}(\mbox{\hyperlink{structdim4_1_1Vec4}{Vec4}}\ v)\{}
+\DoxyCodeLine{00198\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ factor\ =\ 1/(v.\mbox{\hyperlink{structdim4_1_1Vec4_a6f43a778391bbff07ef349cc21363022}{w}});}
+\DoxyCodeLine{00199\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \{}
+\DoxyCodeLine{00200\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ v.\mbox{\hyperlink{structdim4_1_1Vec4_af52297f714fcbc6df18709d269213037}{x}}*factor,\ v.\mbox{\hyperlink{structdim4_1_1Vec4_ae8b199a6bc231d048f493edceb317d9b}{y}}*factor,\ v.\mbox{\hyperlink{structdim4_1_1Vec4_adeac33b9bb5635fadd74642f085d94fa}{z}}*factor}
+\DoxyCodeLine{00201\ \ \ \ \ \ \ \ \ \ \ \ \ \};}
 \DoxyCodeLine{00202\ }
-\DoxyCodeLine{00203\ \ \ \ \ \ \ \ \ \textcolor{comment}{//To\ Scale}}
-\DoxyCodeLine{00204\ \ \ \ \ \ \ \ \ \textcolor{keyword}{static}\ \doxymbox{\hyperlink{structdim4_1_1Mat4}{Mat4}}\ \doxymbox{\hyperlink{structdim4_1_1Mat4_aed691d14fc6090785ef2d5dbdd89e417}{genScaling}}(\textcolor{keywordtype}{float}\ Sx,\ \textcolor{keywordtype}{float}\ Sy,\ \textcolor{keywordtype}{float}\ Sz)\{}
-\DoxyCodeLine{00205\ \ \ \ \ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{structdim4_1_1Mat4}{Mat4}}\ res\ =\ \doxymbox{\hyperlink{structdim4_1_1Mat4_ae615ba2f1c7065005bfdaaa9031a63f2}{Mat4::identity}}();}
-\DoxyCodeLine{00206\ \ \ \ \ \ \ \ \ \ \ \ \ res.\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[0][0]\ =\ Sx;}
-\DoxyCodeLine{00207\ \ \ \ \ \ \ \ \ \ \ \ \ res.\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[1][1]\ =\ Sy;}
-\DoxyCodeLine{00208\ \ \ \ \ \ \ \ \ \ \ \ \ res.\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[2][2]\ =\ Sz;}
-\DoxyCodeLine{00209\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ res;}
-\DoxyCodeLine{00210\ \ \ \ \ \ \ \ \ \}}
-\DoxyCodeLine{00211\ }
-\DoxyCodeLine{00212\ }
-\DoxyCodeLine{00213\ \ \ \ \ \ \ \ \ \textcolor{comment}{//CAMERA\ MATRIX\ UTILS}}
-\DoxyCodeLine{00214\ }
-\DoxyCodeLine{00215\ \ \ \ \ \ \ \ \ \textcolor{comment}{//CHANGE\ OF\ BASIS\ (VIEW\ MATRIX)}}
-\DoxyCodeLine{00216\ }
-\DoxyCodeLine{00217\ \ \ \ \ \ \ \ \ \textcolor{comment}{/*}}
-\DoxyCodeLine{00218\ \textcolor{comment}{\ \ \ \ \ \ \ \ THEORY:}}
-\DoxyCodeLine{00219\ \textcolor{comment}{\ \ \ \ \ \ \ \ CAMERA\ is\ Supposed\ to\ be\ STUCK\ to\ the\ origin\ <0,0,0>}}
-\DoxyCodeLine{00220\ \textcolor{comment}{\ \ \ \ \ \ \ \ We\ then\ apply\ transformations\ and\ shit\ to\ the\ world\ and\ NOT\ the\ camera}}
-\DoxyCodeLine{00221\ \textcolor{comment}{}}
-\DoxyCodeLine{00222\ \textcolor{comment}{}}
-\DoxyCodeLine{00223\ \textcolor{comment}{\ \ \ \ \ \ \ \ "{}So\ my\ idea\ of\ what\ the\ view\ matrix\ does\ is\ that\ it\ takes\ the\ camera\ vector\ (yes\ this\ is\ a\ Vec3\ 3D\ world\ space\ vector,\ this\ vector\ is\ normal\ to\ the\ lens\ of\ the\ camera)\ but\ then\ we\ can\ just\ use\ our\ normal\ rotator,\ function\ to\ move\ this\ vector\ right?"{}}}
-\DoxyCodeLine{00224\ \textcolor{comment}{}}
-\DoxyCodeLine{00225\ \textcolor{comment}{\ \ \ \ \ \ \ \ THIS\ IS\ WRONG!}}
-\DoxyCodeLine{00226\ \textcolor{comment}{}}
-\DoxyCodeLine{00227\ \textcolor{comment}{}}
-\DoxyCodeLine{00228\ \textcolor{comment}{\ \ \ \ \ \ \ \ "{}THE\ CAMERA\ STAYS\ AT\ <0,0,0>"{}}}
-\DoxyCodeLine{00229\ \textcolor{comment}{\ \ \ \ \ \ \ \ //SO\ THE\ WORLD\ IS\ MOVED\ TO\ PROVIDE\ AN\ ILLUSION\ THAT\ THE\ CAMERA\ IS\ MOVING}}
-\DoxyCodeLine{00230\ \textcolor{comment}{}}
-\DoxyCodeLine{00231\ \textcolor{comment}{\ \ \ \ \ \ \ \ So\ we\ have:\ View\ Matrices}}
-\DoxyCodeLine{00232\ \textcolor{comment}{\ \ \ \ \ \ \ \ Basic\ Direction\ Sense\ for\ the\ Camera\ ::\ (Right,\ Up,\ Forward)\ Basis\ Vectors}}
-\DoxyCodeLine{00233\ \textcolor{comment}{\ \ \ \ \ \ \ \ Let\ Camera\ Position\ is\ P}}
-\DoxyCodeLine{00234\ \textcolor{comment}{\ \ \ \ \ \ \ \ Basis\ Vectors\ for\ the\ Camera\ Space\ are\ Written\ in\ World\ Space\ Coordinate\ System,\ hence\ the\ Rx,\ Ry,\ Rz\ components}}
-\DoxyCodeLine{00235\ \textcolor{comment}{\ \ \ \ \ \ \ \ //This\ Matrix\ Essentially\ Takes\ The\ World\ and\ Moves\ it\ According\ to\ the\ Camera}}
-\DoxyCodeLine{00236\ \textcolor{comment}{\ \ \ \ \ \ \ \ View\ Matrix\ ::}}
-\DoxyCodeLine{00237\ \textcolor{comment}{\ \ \ \ \ \ \ \ Rx\ Ry\ Rz\ \ \ \ -\/RdotP}}
-\DoxyCodeLine{00238\ \textcolor{comment}{\ \ \ \ \ \ \ \ Ux\ Uy\ Uz\ \ \ \ -\/UdotP}}
-\DoxyCodeLine{00239\ \textcolor{comment}{\ \ \ \ \ \ \ \ Fx\ Fy\ Fz\ \ \ \ -\/FdotP}}
-\DoxyCodeLine{00240\ \textcolor{comment}{\ \ \ \ \ \ \ \ 0\ \ 0\ \ 0\ \ \ \ \ \ \ \ 1}}
-\DoxyCodeLine{00241\ \textcolor{comment}{\ \ \ \ \ \ \ \ */}}
-\DoxyCodeLine{00242\ \ \ \ \ \ \ \ \ \textcolor{keyword}{static}\ \doxymbox{\hyperlink{structdim4_1_1Mat4}{Mat4}}\ \doxymbox{\hyperlink{structdim4_1_1Mat4_ad5acd71a8dc964dda5d977c2a00bd2d6}{genView}}(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{structdim3_1_1Vec3}{dim3::Vec3}}\&\ R,\ \textcolor{keyword}{const}\ \doxymbox{\hyperlink{structdim3_1_1Vec3}{dim3::Vec3}}\&\ U,\ \textcolor{keyword}{const}\ \doxymbox{\hyperlink{structdim3_1_1Vec3}{dim3::Vec3}}\&\ F,\ \textcolor{keyword}{const}\ \doxymbox{\hyperlink{structdim3_1_1Vec3}{dim3::Vec3}}\&\ P)\{}
-\DoxyCodeLine{00243\ \ \ \ \ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{structdim4_1_1Mat4}{Mat4}}\ res\ =\ \doxymbox{\hyperlink{structdim4_1_1Mat4_ae615ba2f1c7065005bfdaaa9031a63f2}{Mat4::identity}}();}
-\DoxyCodeLine{00244\ \ \ \ \ \ \ \ \ \ \ \ \ res.\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[0][0]\ =\ R.\doxymbox{\hyperlink{structdim3_1_1Vec3_af6082affd4a98d0c40cd7d846366ccf1}{x}};\ res.\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[0][1]\ =\ R.\doxymbox{\hyperlink{structdim3_1_1Vec3_a45944275a3f755f84dd36cd8c8b198a8}{y}};\ res.\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[0][2]\ =\ R.\doxymbox{\hyperlink{structdim3_1_1Vec3_a862ed99367dbbe1fc55a5e6cdc7ae60e}{z}};}
-\DoxyCodeLine{00245\ \ \ \ \ \ \ \ \ \ \ \ \ res.\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[1][0]\ =\ U.\doxymbox{\hyperlink{structdim3_1_1Vec3_af6082affd4a98d0c40cd7d846366ccf1}{x}};\ res.\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[1][1]\ =\ U.\doxymbox{\hyperlink{structdim3_1_1Vec3_a45944275a3f755f84dd36cd8c8b198a8}{y}};\ res.\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[1][2]\ =\ U.\doxymbox{\hyperlink{structdim3_1_1Vec3_a862ed99367dbbe1fc55a5e6cdc7ae60e}{z}};}
-\DoxyCodeLine{00246\ \ \ \ \ \ \ \ \ \ \ \ \ res.\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[2][0]\ =\ F.\doxymbox{\hyperlink{structdim3_1_1Vec3_af6082affd4a98d0c40cd7d846366ccf1}{x}};\ res.\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[2][1]\ =\ F.\doxymbox{\hyperlink{structdim3_1_1Vec3_a45944275a3f755f84dd36cd8c8b198a8}{y}};\ res.\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[2][2]\ =\ F.\doxymbox{\hyperlink{structdim3_1_1Vec3_a862ed99367dbbe1fc55a5e6cdc7ae60e}{z}};}
-\DoxyCodeLine{00247\ }
-\DoxyCodeLine{00248\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//Translator}}
-\DoxyCodeLine{00249\ }
-\DoxyCodeLine{00250\ \ \ \ \ \ \ \ \ \ \ \ \ res.\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[0][3]\ =\ -\/\doxymbox{\hyperlink{namespacedim3_a1b2d2378207f3ea275ca4d8e95759332}{dim3::dotProduct}}(R,\ P);}
-\DoxyCodeLine{00251\ \ \ \ \ \ \ \ \ \ \ \ \ res.\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[1][3]\ =\ -\/\doxymbox{\hyperlink{namespacedim3_a1b2d2378207f3ea275ca4d8e95759332}{dim3::dotProduct}}(U,\ P);}
-\DoxyCodeLine{00252\ \ \ \ \ \ \ \ \ \ \ \ \ res.\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[2][3]\ =\ -\/\doxymbox{\hyperlink{namespacedim3_a1b2d2378207f3ea275ca4d8e95759332}{dim3::dotProduct}}(F,\ P);}
-\DoxyCodeLine{00253\ }
-\DoxyCodeLine{00254\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ res;}
-\DoxyCodeLine{00255\ \ \ \ \ \ \ \ \ \}}
-\DoxyCodeLine{00256\ }
-\DoxyCodeLine{00257\ \ \ \ \ \ \ \ \ \textcolor{comment}{//Prespective\ Matrix\ ::\ Morphs\ 3D\ into\ 2D\ space}}
-\DoxyCodeLine{00258\ }
-\DoxyCodeLine{00259\ \ \ \ \ \ \ \ \ \textcolor{keyword}{static}\ \doxymbox{\hyperlink{structdim4_1_1Mat4}{Mat4}}\ \doxymbox{\hyperlink{structdim4_1_1Mat4_afd5107eaa33ae5f054f78192d4af5b89}{genPerspective}}(\textcolor{keywordtype}{float}\ FOVRad,\ \textcolor{keywordtype}{float}\ aspectRatio,\ \textcolor{keywordtype}{float}\ nearP,\ \textcolor{keywordtype}{float}\ farP)\{}
-\DoxyCodeLine{00260\ \ \ \ \ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{structdim4_1_1Mat4}{Mat4}}\ res;}
-\DoxyCodeLine{00261\ }
-\DoxyCodeLine{00262\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ f\ =\ 1.0f\ /\ std::tan(FOVRad\ /\ 2.0f);}
-\DoxyCodeLine{00263\ }
-\DoxyCodeLine{00264\ \ \ \ \ \ \ \ \ \ \ \ \ res.\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[0][0]\ =\ f/aspectRatio;}
-\DoxyCodeLine{00265\ }
-\DoxyCodeLine{00266\ \ \ \ \ \ \ \ \ \ \ \ \ res.\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[1][1]\ =\ f;}
-\DoxyCodeLine{00267\ }
-\DoxyCodeLine{00268\ \ \ \ \ \ \ \ \ \ \ \ \ res.\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[2][2]\ =\ (farP\ +\ nearP)\ /\ (nearP\ -\/\ farP);}
-\DoxyCodeLine{00269\ }
-\DoxyCodeLine{00270\ \ \ \ \ \ \ \ \ \ \ \ \ res.\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[2][3]\ =\ (2.0f\ *\ farP\ *\ nearP)\ /\ (nearP\ -\/\ farP);}
-\DoxyCodeLine{00271\ }
-\DoxyCodeLine{00272\ \ \ \ \ \ \ \ \ \ \ \ \ res.\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[3][2]\ =\ -\/1.0f;}
-\DoxyCodeLine{00273\ }
-\DoxyCodeLine{00274\ \ \ \ \ \ \ \ \ \ \ \ \ res.\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[3][3]\ =\ 0.0f;}
-\DoxyCodeLine{00275\ }
-\DoxyCodeLine{00276\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ res;}
-\DoxyCodeLine{00277\ }
-\DoxyCodeLine{00278\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//NDC\ OUT}}
-\DoxyCodeLine{00279\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//Far\ Plane\ +1.0f,\ and\ Near\ Plane\ -\/1.0f}}
-\DoxyCodeLine{00280\ \ \ \ \ \ \ \ \ \}}
-\DoxyCodeLine{00281\ }
-\DoxyCodeLine{00282\ }
-\DoxyCodeLine{00283\ }
-\DoxyCodeLine{00284\ \ \ \ \ \};}
-\DoxyCodeLine{00285\ \ \ \ \ \textcolor{keyword}{inline}\ \doxymbox{\hyperlink{structdim4_1_1Mat4}{Mat4}}\ \doxymbox{\hyperlink{namespacedim4_a050c2be340cba61c80628b22a0779622}{matrixMultiply}}(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{structdim4_1_1Mat4}{Mat4}}\&\ M1,\ \textcolor{keyword}{const}\ \doxymbox{\hyperlink{structdim4_1_1Mat4}{Mat4}}\&\ M2)\ \{}
-\DoxyCodeLine{00286\ \ \ \ \ \doxymbox{\hyperlink{structdim4_1_1Mat4}{Mat4}}\ res;}
-\DoxyCodeLine{00287\ }
-\DoxyCodeLine{00288\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Row\ 0}}
-\DoxyCodeLine{00289\ \ \ \ \ \ \ \ \ res.\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[0][0]\ =\ M1.\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[0][0]*M2.\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[0][0]\ +\ M1.\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[0][1]*M2.\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[1][0]\ +\ M1.\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[0][2]*M2.\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[2][0]\ +\ M1.\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[0][3]*M2.\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[3][0];}
-\DoxyCodeLine{00290\ \ \ \ \ \ \ \ \ res.\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[0][1]\ =\ M1.\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[0][0]*M2.\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[0][1]\ +\ M1.\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[0][1]*M2.\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[1][1]\ +\ M1.\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[0][2]*M2.\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[2][1]\ +\ M1.\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[0][3]*M2.\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[3][1];}
-\DoxyCodeLine{00291\ \ \ \ \ \ \ \ \ res.\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[0][2]\ =\ M1.\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[0][0]*M2.\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[0][2]\ +\ M1.\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[0][1]*M2.\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[1][2]\ +\ M1.\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[0][2]*M2.\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[2][2]\ +\ M1.\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[0][3]*M2.\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[3][2];}
-\DoxyCodeLine{00292\ \ \ \ \ \ \ \ \ res.\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[0][3]\ =\ M1.\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[0][0]*M2.\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[0][3]\ +\ M1.\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[0][1]*M2.\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[1][3]\ +\ M1.\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[0][2]*M2.\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[2][3]\ +\ M1.\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[0][3]*M2.\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[3][3];}
-\DoxyCodeLine{00293\ }
-\DoxyCodeLine{00294\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Row\ 1}}
-\DoxyCodeLine{00295\ \ \ \ \ \ \ \ \ res.\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[1][0]\ =\ M1.\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[1][0]*M2.\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[0][0]\ +\ M1.\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[1][1]*M2.\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[1][0]\ +\ M1.\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[1][2]*M2.\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[2][0]\ +\ M1.\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[1][3]*M2.\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[3][0];}
-\DoxyCodeLine{00296\ \ \ \ \ \ \ \ \ res.\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[1][1]\ =\ M1.\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[1][0]*M2.\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[0][1]\ +\ M1.\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[1][1]*M2.\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[1][1]\ +\ M1.\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[1][2]*M2.\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[2][1]\ +\ M1.\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[1][3]*M2.\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[3][1];}
-\DoxyCodeLine{00297\ \ \ \ \ \ \ \ \ res.\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[1][2]\ =\ M1.\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[1][0]*M2.\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[0][2]\ +\ M1.\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[1][1]*M2.\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[1][2]\ +\ M1.\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[1][2]*M2.\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[2][2]\ +\ M1.\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[1][3]*M2.\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[3][2];}
-\DoxyCodeLine{00298\ \ \ \ \ \ \ \ \ res.\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[1][3]\ =\ M1.\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[1][0]*M2.\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[0][3]\ +\ M1.\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[1][1]*M2.\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[1][3]\ +\ M1.\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[1][2]*M2.\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[2][3]\ +\ M1.\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[1][3]*M2.\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[3][3];}
-\DoxyCodeLine{00299\ }
-\DoxyCodeLine{00300\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Row\ 2}}
-\DoxyCodeLine{00301\ \ \ \ \ \ \ \ \ res.\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[2][0]\ =\ M1.\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[2][0]*M2.\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[0][0]\ +\ M1.\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[2][1]*M2.\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[1][0]\ +\ M1.\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[2][2]*M2.\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[2][0]\ +\ M1.\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[2][3]*M2.\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[3][0];}
-\DoxyCodeLine{00302\ \ \ \ \ \ \ \ \ res.\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[2][1]\ =\ M1.\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[2][0]*M2.\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[0][1]\ +\ M1.\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[2][1]*M2.\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[1][1]\ +\ M1.\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[2][2]*M2.\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[2][1]\ +\ M1.\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[2][3]*M2.\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[3][1];}
-\DoxyCodeLine{00303\ \ \ \ \ \ \ \ \ res.\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[2][2]\ =\ M1.\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[2][0]*M2.\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[0][2]\ +\ M1.\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[2][1]*M2.\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[1][2]\ +\ M1.\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[2][2]*M2.\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[2][2]\ +\ M1.\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[2][3]*M2.\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[3][2];}
-\DoxyCodeLine{00304\ \ \ \ \ \ \ \ \ res.\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[2][3]\ =\ M1.\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[2][0]*M2.\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[0][3]\ +\ M1.\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[2][1]*M2.\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[1][3]\ +\ M1.\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[2][2]*M2.\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[2][3]\ +\ M1.\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[2][3]*M2.\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[3][3];}
-\DoxyCodeLine{00305\ }
-\DoxyCodeLine{00306\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Row\ 3}}
-\DoxyCodeLine{00307\ \ \ \ \ \ \ \ \ res.\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[3][0]\ =\ M1.\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[3][0]*M2.\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[0][0]\ +\ M1.\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[3][1]*M2.\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[1][0]\ +\ M1.\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[3][2]*M2.\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[2][0]\ +\ M1.\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[3][3]*M2.\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[3][0];}
-\DoxyCodeLine{00308\ \ \ \ \ \ \ \ \ res.\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[3][1]\ =\ M1.\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[3][0]*M2.\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[0][1]\ +\ M1.\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[3][1]*M2.\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[1][1]\ +\ M1.\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[3][2]*M2.\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[2][1]\ +\ M1.\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[3][3]*M2.\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[3][1];}
-\DoxyCodeLine{00309\ \ \ \ \ \ \ \ \ res.\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[3][2]\ =\ M1.\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[3][0]*M2.\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[0][2]\ +\ M1.\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[3][1]*M2.\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[1][2]\ +\ M1.\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[3][2]*M2.\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[2][2]\ +\ M1.\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[3][3]*M2.\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[3][2];}
-\DoxyCodeLine{00310\ \ \ \ \ \ \ \ \ res.\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[3][3]\ =\ M1.\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[3][0]*M2.\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[0][3]\ +\ M1.\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[3][1]*M2.\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[1][3]\ +\ M1.\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[3][2]*M2.\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[2][3]\ +\ M1.\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[3][3]*M2.\doxymbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[3][3];}
-\DoxyCodeLine{00311\ }
-\DoxyCodeLine{00312\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ res;}
-\DoxyCodeLine{00313\ \ \ \ \ \}}
-\DoxyCodeLine{00314\ }
-\DoxyCodeLine{00315\ \}}
-\DoxyCodeLine{00316\ }
-\DoxyCodeLine{00317\ }
-\DoxyCodeLine{00318\ }
-\DoxyCodeLine{00319\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00203\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00204\ \ \ \ \ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{structdim4_1_1Vec4}{Vec4}}\ \mbox{\hyperlink{structdim4_1_1Mat4_a30c16ae46be93f28cbc11e200aa10ca7}{Vec3toHomo}}(\mbox{\hyperlink{structdim3_1_1Vec3}{dim3::Vec3}}\ v)\{}
+\DoxyCodeLine{00205\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\{}
+\DoxyCodeLine{00206\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ v.\mbox{\hyperlink{structdim3_1_1Vec3_af6082affd4a98d0c40cd7d846366ccf1}{x}},\ v.\mbox{\hyperlink{structdim3_1_1Vec3_a45944275a3f755f84dd36cd8c8b198a8}{y}},\ v.\mbox{\hyperlink{structdim3_1_1Vec3_a862ed99367dbbe1fc55a5e6cdc7ae60e}{z}},\ 1}
+\DoxyCodeLine{00207\ \ \ \ \ \ \ \ \ \ \ \ \ \};}
+\DoxyCodeLine{00208\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00209\ \ \ \ \ \ \ \ \ \textcolor{comment}{//CAMERA-\/MATRIX\ UTILS\ (Math\ IO\ in\ Homogenous\ Coords\ ONLY)}}
+\DoxyCodeLine{00210\ \ \ \ \ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{structdim4_1_1Mat4}{Mat4}}\ \mbox{\hyperlink{structdim4_1_1Mat4_aec9467066d8252c3e4ba0f77bc52ea89}{genIntrinsic}}(\mbox{\hyperlink{structdim2_1_1Vec2}{dim2::Vec2}}\ focalLength,\ \textcolor{keywordtype}{float}\ imgPlaneXoffset,\ \textcolor{keywordtype}{float}\ imgPlaneYoffset)\{}
+\DoxyCodeLine{00211\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structdim4_1_1Mat4}{Mat4}}\ res\ =\ \mbox{\hyperlink{structdim4_1_1Mat4_ae615ba2f1c7065005bfdaaa9031a63f2}{Mat4::identity}}();}
+\DoxyCodeLine{00212\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//Homogenous\ Space\ \&\&\ Coords}}
+\DoxyCodeLine{00213\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//<x,y,z>\ =>\ <xS,\ yS,\ zS,\ S>\ (for\ any\ arbitraty\ S)}}
+\DoxyCodeLine{00214\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//So\ all\ homogenous\ coords\ are\ NOT\ unique}}
+\DoxyCodeLine{00215\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//<3,2,1>\ =\ <6,4,2>\ =\ <9,6,3>\ (Homogenous\ Coords\ in\ 2D\ space)}}
+\DoxyCodeLine{00216\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//Homogenous\ coords\ back\ to\ 3D\ Cartesian\ Coords\ :\ (1/w)*homoVector}}
+\DoxyCodeLine{00217\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//As\ S\ tends\ to\ 0,\ the\ dist\ bw\ point\ and\ origin\ tends\ to\ infinity}}
+\DoxyCodeLine{00218\ \ \ \ \ \ \ \ \ \ \ \ \ res.\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[0][0]\ =\ focalLength.\mbox{\hyperlink{structdim2_1_1Vec2_a341e7200ac35f219d4c20f3c2e49ac80}{x}};}
+\DoxyCodeLine{00219\ \ \ \ \ \ \ \ \ \ \ \ \ res.\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[0][2]\ =\ imgPlaneXoffset;}
+\DoxyCodeLine{00220\ \ \ \ \ \ \ \ \ \ \ \ \ res.\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[1][2]\ =\ imgPlaneYoffset;}
+\DoxyCodeLine{00221\ \ \ \ \ \ \ \ \ \ \ \ \ res.\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[1][1]\ =\ focalLength.\mbox{\hyperlink{structdim2_1_1Vec2_a855a99ccc7041d3da8271f6d840cb077}{y}};}
+\DoxyCodeLine{00222\ \ \ \ \ \ \ \ \ \ \ \ \ res.\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[2][2]\ =\ 1;}
+\DoxyCodeLine{00223\ \ \ \ \ \ \ \ \ \ \ \ \ res.\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[3][3]\ =1;}
+\DoxyCodeLine{00224\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ res;}
+\DoxyCodeLine{00225\ \ \ \ \ \ \ \ \ \}\textcolor{comment}{//Camera\ sys\ (3D\ homo)-\/-\/>\ ImgCoordSys\ (2D\ uv\ homo)}}
+\DoxyCodeLine{00226\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00227\ \ \ \ \ \ \ \ \ \textcolor{comment}{//World\ Coord\ Sys\ (3D\ homo)\ -\/-\/-\/>\ CameraCoordSYs\ (3D\ homo)}}
+\DoxyCodeLine{00228\ \ \ \ \ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{structdim4_1_1Mat4}{Mat4}}\ \mbox{\hyperlink{structdim4_1_1Mat4_a6f47b7e1b9ec25b8d4576a578dc28958}{genExtrinsic}}(\mbox{\hyperlink{structdim3_1_1Vec3}{dim3::Vec3}}\ cameraPos,\ \mbox{\hyperlink{structdim3_1_1Vec3}{dim3::Vec3}}\ targetPos)\{}
+\DoxyCodeLine{00229\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structdim3_1_1Vec3}{dim3::Vec3}}\ forward\ =\ \mbox{\hyperlink{namespacedim3_ae9aca9f91f3ee1c7c8e98d0aa81a3818}{dim3::normalize}}(targetPos\ -\/\ cameraPos);}
+\DoxyCodeLine{00230\ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00231\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structdim3_1_1Vec3}{dim3::Vec3}}\ right\ =\ \mbox{\hyperlink{namespacedim3_ae9aca9f91f3ee1c7c8e98d0aa81a3818}{dim3::normalize}}(\mbox{\hyperlink{namespacedim3_a0a36f0b4027df5697bf8a9666656f4c4}{dim3::crossProduct}}(\{0.0f,\ 1.0f,\ 0.0f\},\ forward));}
+\DoxyCodeLine{00232\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structdim3_1_1Vec3}{dim3::Vec3}}\ up\ =\ \mbox{\hyperlink{namespacedim3_a0a36f0b4027df5697bf8a9666656f4c4}{dim3::crossProduct}}(forward,\ right);}
+\DoxyCodeLine{00233\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structdim4_1_1Mat4}{Mat4}}\ res\ =\ \mbox{\hyperlink{structdim4_1_1Mat4_ae615ba2f1c7065005bfdaaa9031a63f2}{Mat4::identity}}();}
+\DoxyCodeLine{00234\ }
+\DoxyCodeLine{00235\ \ \ \ \ \ \ \ \ \ \ \ \ res.\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[0][0]\ =\ right.\mbox{\hyperlink{structdim3_1_1Vec3_af6082affd4a98d0c40cd7d846366ccf1}{x}};}
+\DoxyCodeLine{00236\ \ \ \ \ \ \ \ \ \ \ \ \ res.\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[0][1]\ =\ right.\mbox{\hyperlink{structdim3_1_1Vec3_a45944275a3f755f84dd36cd8c8b198a8}{y}};}
+\DoxyCodeLine{00237\ \ \ \ \ \ \ \ \ \ \ \ \ res.\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[0][2]\ =\ right.\mbox{\hyperlink{structdim3_1_1Vec3_a862ed99367dbbe1fc55a5e6cdc7ae60e}{z}};}
+\DoxyCodeLine{00238\ \ \ \ \ \ \ \ \ \ \ \ \ res.\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[1][0]\ =\ up.x;}
+\DoxyCodeLine{00239\ \ \ \ \ \ \ \ \ \ \ \ \ res.\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[1][1]\ =\ up.y;}
+\DoxyCodeLine{00240\ \ \ \ \ \ \ \ \ \ \ \ \ res.\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[1][2]\ =\ up.z;}
+\DoxyCodeLine{00241\ }
+\DoxyCodeLine{00242\ \ \ \ \ \ \ \ \ \ \ \ \ res.\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[2][0]\ =\ forward.\mbox{\hyperlink{structdim3_1_1Vec3_af6082affd4a98d0c40cd7d846366ccf1}{x}};}
+\DoxyCodeLine{00243\ \ \ \ \ \ \ \ \ \ \ \ \ res.\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[2][1]\ =\ forward.\mbox{\hyperlink{structdim3_1_1Vec3_a45944275a3f755f84dd36cd8c8b198a8}{y}};}
+\DoxyCodeLine{00244\ \ \ \ \ \ \ \ \ \ \ \ \ res.\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[2][2]\ =\ forward.\mbox{\hyperlink{structdim3_1_1Vec3_a862ed99367dbbe1fc55a5e6cdc7ae60e}{z}};}
+\DoxyCodeLine{00245\ }
+\DoxyCodeLine{00246\ \ \ \ \ \ \ \ \ \ \ \ \ res.\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[0][3]\ =\ -\/(\mbox{\hyperlink{namespacedim3_a1b2d2378207f3ea275ca4d8e95759332}{dim3::dotProduct}}(right,\ cameraPos));}
+\DoxyCodeLine{00247\ \ \ \ \ \ \ \ \ \ \ \ \ res.\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[1][3]\ =\ -\/(\mbox{\hyperlink{namespacedim3_a1b2d2378207f3ea275ca4d8e95759332}{dim3::dotProduct}}(up,\ cameraPos));}
+\DoxyCodeLine{00248\ \ \ \ \ \ \ \ \ \ \ \ \ res.\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[2][3]\ =\ -\/(\mbox{\hyperlink{namespacedim3_a1b2d2378207f3ea275ca4d8e95759332}{dim3::dotProduct}}(forward,\ cameraPos));}
+\DoxyCodeLine{00249\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ res;}
+\DoxyCodeLine{00250\ \ \ \ \ \ \ \ \ \}\ }
+\DoxyCodeLine{00251\ \ \ \ \ \ \ \ \ \textcolor{comment}{//Camera\ Matrix\ (Convention\ for\ this\ API)}}
+\DoxyCodeLine{00252\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ }}
+\DoxyCodeLine{00253\ \ \ \ \ \};}
+\DoxyCodeLine{00254\ \ \ \ \ \textcolor{keyword}{inline}\ \mbox{\hyperlink{structdim2_1_1Vec2}{dim2::Vec2}}\ \mbox{\hyperlink{namespacedim4_a7ff72d838b7fd3427ec7564401ef6b57}{calcFocalLength}}(\mbox{\hyperlink{structdim2_1_1Vec2}{dim2::Vec2}}\ FOVRadxy,\ \textcolor{keywordtype}{int}\ Wpx,\ \textcolor{keywordtype}{int}\ Hpx)\{}
+\DoxyCodeLine{00255\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structdim2_1_1Vec2}{dim2::Vec2}}\ focalVector;}
+\DoxyCodeLine{00256\ \ \ \ \ \ \ \ \ focalVector.\mbox{\hyperlink{structdim2_1_1Vec2_a341e7200ac35f219d4c20f3c2e49ac80}{x}}\ =\ Wpx/(2*std::tan(FOVRadxy.\mbox{\hyperlink{structdim2_1_1Vec2_a341e7200ac35f219d4c20f3c2e49ac80}{x}}/2));}
+\DoxyCodeLine{00257\ \ \ \ \ \ \ \ \ focalVector.\mbox{\hyperlink{structdim2_1_1Vec2_a855a99ccc7041d3da8271f6d840cb077}{y}}\ =\ Hpx/(2*std::tan(FOVRadxy.\mbox{\hyperlink{structdim2_1_1Vec2_a855a99ccc7041d3da8271f6d840cb077}{y}}/2));}
+\DoxyCodeLine{00258\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ focalVector;}
+\DoxyCodeLine{00259\ \ \ \ \ \}}
+\DoxyCodeLine{00260\ \ \ \ \ \textcolor{keyword}{inline}\ \mbox{\hyperlink{structdim2_1_1Vec2}{dim2::Vec2}}\ \mbox{\hyperlink{namespacedim4_ab4269a56176aa8c896b1ba9ae3440152}{calcOffsets}}(\textcolor{keywordtype}{float}\ Wpx,\ \textcolor{keywordtype}{float}\ Hpx)\{}
+\DoxyCodeLine{00261\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structdim2_1_1Vec2}{dim2::Vec2}}\ offsetVector;}
+\DoxyCodeLine{00262\ \ \ \ \ \ \ \ \ offsetVector.\mbox{\hyperlink{structdim2_1_1Vec2_a341e7200ac35f219d4c20f3c2e49ac80}{x}}\ =\ Wpx/2.0f;}
+\DoxyCodeLine{00263\ \ \ \ \ \ \ \ \ offsetVector.\mbox{\hyperlink{structdim2_1_1Vec2_a855a99ccc7041d3da8271f6d840cb077}{y}}\ =\ Hpx/2.0f;}
+\DoxyCodeLine{00264\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ offsetVector;}
+\DoxyCodeLine{00265\ \ \ \ \ \}}
+\DoxyCodeLine{00266\ \ \ \ \ \textcolor{comment}{//\ inline\ dim2::Vec2\ calcOffsets}}
+\DoxyCodeLine{00267\ \ \ \ \ \textcolor{keyword}{inline}\ \mbox{\hyperlink{structdim3_1_1Vec3}{dim3::Vec3}}\ \mbox{\hyperlink{namespacedim4_a5d1454f639bb21e6e6a981e2219efbf7}{cameraSpaceVecToImgSpace}}(\mbox{\hyperlink{structdim4_1_1Vec4}{Vec4}}\ cameraSVector,\ \mbox{\hyperlink{structdim2_1_1Vec2}{dim2::Vec2}}\ fVector,\ \textcolor{keywordtype}{float}\ imgPlaneXoffset=0.0f,\ \textcolor{keywordtype}{float}\ imgPlaneYoffset=0.0f)\{}
+\DoxyCodeLine{00268\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structdim4_1_1Mat4}{Mat4}}\ matrix\ =\ \mbox{\hyperlink{structdim4_1_1Mat4_aec9467066d8252c3e4ba0f77bc52ea89}{Mat4::genIntrinsic}}(fVector,\ imgPlaneXoffset,\ imgPlaneYoffset);}
+\DoxyCodeLine{00269\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structdim4_1_1Vec4}{Vec4}}\ intermediaryVector\ =\ matrix*cameraSVector;}
+\DoxyCodeLine{00270\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structdim3_1_1Vec3}{dim3::Vec3}}\ homoImgSpaceVector\ =\ \{intermediaryVector.\mbox{\hyperlink{structdim4_1_1Vec4_af52297f714fcbc6df18709d269213037}{x}}\ /\ intermediaryVector.\mbox{\hyperlink{structdim4_1_1Vec4_adeac33b9bb5635fadd74642f085d94fa}{z}},\ intermediaryVector.\mbox{\hyperlink{structdim4_1_1Vec4_ae8b199a6bc231d048f493edceb317d9b}{y}}\ /\ intermediaryVector.\mbox{\hyperlink{structdim4_1_1Vec4_adeac33b9bb5635fadd74642f085d94fa}{z}},\ 1\};\ }
+\DoxyCodeLine{00271\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ homoImgSpaceVector;}
+\DoxyCodeLine{00272\ \ \ \ \ \}}
+\DoxyCodeLine{00273\ \ \ \ \ \textcolor{keyword}{inline}\ \mbox{\hyperlink{structdim4_1_1Vec4}{Vec4}}\ \mbox{\hyperlink{namespacedim4_acb45c93262c9cef124cb5b5399ceeec8}{worldSpaceToCameraSpace}}(\mbox{\hyperlink{structdim3_1_1Vec3}{dim3::Vec3}}\ worldPos,\ \mbox{\hyperlink{structdim3_1_1Vec3}{dim3::Vec3}}\ cameraPos,\ \mbox{\hyperlink{structdim3_1_1Vec3}{dim3::Vec3}}\ targetPos)\ \{}
+\DoxyCodeLine{00274\ }
+\DoxyCodeLine{00275\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structdim4_1_1Mat4}{Mat4}}\ viewMatrix\ =\ \mbox{\hyperlink{structdim4_1_1Mat4_a6f47b7e1b9ec25b8d4576a578dc28958}{Mat4::genExtrinsic}}(cameraPos,\ targetPos);}
+\DoxyCodeLine{00276\ }
+\DoxyCodeLine{00277\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structdim4_1_1Vec4}{Vec4}}\ worldHomo\ =\ \mbox{\hyperlink{structdim4_1_1Mat4_a30c16ae46be93f28cbc11e200aa10ca7}{Mat4::Vec3toHomo}}(worldPos);}
+\DoxyCodeLine{00278\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ viewMatrix\ *\ worldHomo;}
+\DoxyCodeLine{00279\ \ \ \ \ \}}
+\DoxyCodeLine{00280\ }
+\DoxyCodeLine{00281\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{namespacedim4_affb1c034697854a2cfa2c0ddcc458948}{matrixCout}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{structdim4_1_1Mat4}{Mat4}}\&\ matrix)\{}
+\DoxyCodeLine{00282\ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Formatting\ :\ M\ <i,j>"{}}\ <<\ std::endl;}
+\DoxyCodeLine{00283\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int}\ i\ =0;\ i\ <=3;\ i++)\{}
+\DoxyCodeLine{00284\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int}\ j\ =\ 0;\ j\ <=\ 3;\ j++)\{}
+\DoxyCodeLine{00285\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ std::cout\ <<\textcolor{stringliteral}{"{}<"{}}\ <<\ i\ <<\ \textcolor{stringliteral}{"{},\ "{}}\ <<\ j\ <<\ \textcolor{stringliteral}{"{}>\ :\ "{}}\ <<\ matrix.\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[i][j]\ <<\ \textcolor{stringliteral}{"{}\ \ "{}};}
+\DoxyCodeLine{00286\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00287\ \ \ \ \ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}\(\backslash\)n"{}};}
+\DoxyCodeLine{00288\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00289\ \ \ \ \ \ \ \ \ std::cout\ <<\ std::endl;}
+\DoxyCodeLine{00290\ \ \ \ \ \}}
+\DoxyCodeLine{00291\ \ \ \ \ \textcolor{keyword}{inline}\ \mbox{\hyperlink{structdim2_1_1Vec2}{dim2::Vec2}}\ \mbox{\hyperlink{namespacedim4_a481685e1efe4a035f4c38e34b5d820b7}{worldToScreen}}(\mbox{\hyperlink{structdim3_1_1Vec3}{dim3::Vec3}}\ worldPos,\ \mbox{\hyperlink{structdim3_1_1Vec3}{dim3::Vec3}}\ cameraPos,\ \mbox{\hyperlink{structdim3_1_1Vec3}{dim3::Vec3}}\ targetPos,\ \mbox{\hyperlink{structdim2_1_1Vec2}{dim2::Vec2}}\ focalLength,\ \textcolor{keywordtype}{float}\ ox\ =\ 0.0f,\ \textcolor{keywordtype}{float}\ oy\ =\ 0.0f)\ \{}
+\DoxyCodeLine{00292\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ 1.\ World\ Space\ -\/>\ Camera\ Space}}
+\DoxyCodeLine{00293\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structdim4_1_1Vec4}{Vec4}}\ cameraSpacePos\ =\ \mbox{\hyperlink{namespacedim4_acb45c93262c9cef124cb5b5399ceeec8}{worldSpaceToCameraSpace}}(worldPos,\ cameraPos,\ targetPos);}
+\DoxyCodeLine{00294\ }
+\DoxyCodeLine{00295\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ 2.\ Camera\ Space\ -\/>\ Image\ Space\ (Projection)}}
+\DoxyCodeLine{00296\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structdim3_1_1Vec3}{dim3::Vec3}}\ projected\ =\ \mbox{\hyperlink{namespacedim4_a5d1454f639bb21e6e6a981e2219efbf7}{cameraSpaceVecToImgSpace}}(cameraSpacePos,\ focalLength,\ ox,\ oy);}
+\DoxyCodeLine{00297\ }
+\DoxyCodeLine{00298\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ 3.\ Return\ as\ 2D\ coordinates\ (u,\ v)}}
+\DoxyCodeLine{00299\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \{\ projected.\mbox{\hyperlink{structdim3_1_1Vec3_af6082affd4a98d0c40cd7d846366ccf1}{x}},\ projected.\mbox{\hyperlink{structdim3_1_1Vec3_a45944275a3f755f84dd36cd8c8b198a8}{y}}\ \};}
+\DoxyCodeLine{00300\ \ \ \ \ \}}
+\DoxyCodeLine{00301\ \ \ \ \ \textcolor{keyword}{inline}\ \mbox{\hyperlink{structdim4_1_1Mat4}{Mat4}}\ \mbox{\hyperlink{namespacedim4_a050c2be340cba61c80628b22a0779622}{matrixMultiply}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{structdim4_1_1Mat4}{Mat4}}\&\ M1,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{structdim4_1_1Mat4}{Mat4}}\&\ M2)\ \{}
+\DoxyCodeLine{00302\ \ \ \ \ \mbox{\hyperlink{structdim4_1_1Mat4}{Mat4}}\ res;}
+\DoxyCodeLine{00303\ }
+\DoxyCodeLine{00304\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Row\ 0}}
+\DoxyCodeLine{00305\ \ \ \ \ \ \ \ \ res.\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[0][0]\ =\ M1.\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[0][0]*M2.\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[0][0]\ +\ M1.\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[0][1]*M2.\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[1][0]\ +\ M1.\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[0][2]*M2.\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[2][0]\ +\ M1.\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[0][3]*M2.\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[3][0];}
+\DoxyCodeLine{00306\ \ \ \ \ \ \ \ \ res.\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[0][1]\ =\ M1.\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[0][0]*M2.\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[0][1]\ +\ M1.\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[0][1]*M2.\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[1][1]\ +\ M1.\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[0][2]*M2.\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[2][1]\ +\ M1.\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[0][3]*M2.\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[3][1];}
+\DoxyCodeLine{00307\ \ \ \ \ \ \ \ \ res.\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[0][2]\ =\ M1.\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[0][0]*M2.\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[0][2]\ +\ M1.\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[0][1]*M2.\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[1][2]\ +\ M1.\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[0][2]*M2.\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[2][2]\ +\ M1.\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[0][3]*M2.\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[3][2];}
+\DoxyCodeLine{00308\ \ \ \ \ \ \ \ \ res.\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[0][3]\ =\ M1.\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[0][0]*M2.\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[0][3]\ +\ M1.\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[0][1]*M2.\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[1][3]\ +\ M1.\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[0][2]*M2.\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[2][3]\ +\ M1.\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[0][3]*M2.\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[3][3];}
+\DoxyCodeLine{00309\ }
+\DoxyCodeLine{00310\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Row\ 1}}
+\DoxyCodeLine{00311\ \ \ \ \ \ \ \ \ res.\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[1][0]\ =\ M1.\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[1][0]*M2.\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[0][0]\ +\ M1.\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[1][1]*M2.\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[1][0]\ +\ M1.\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[1][2]*M2.\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[2][0]\ +\ M1.\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[1][3]*M2.\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[3][0];}
+\DoxyCodeLine{00312\ \ \ \ \ \ \ \ \ res.\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[1][1]\ =\ M1.\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[1][0]*M2.\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[0][1]\ +\ M1.\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[1][1]*M2.\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[1][1]\ +\ M1.\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[1][2]*M2.\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[2][1]\ +\ M1.\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[1][3]*M2.\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[3][1];}
+\DoxyCodeLine{00313\ \ \ \ \ \ \ \ \ res.\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[1][2]\ =\ M1.\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[1][0]*M2.\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[0][2]\ +\ M1.\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[1][1]*M2.\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[1][2]\ +\ M1.\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[1][2]*M2.\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[2][2]\ +\ M1.\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[1][3]*M2.\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[3][2];}
+\DoxyCodeLine{00314\ \ \ \ \ \ \ \ \ res.\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[1][3]\ =\ M1.\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[1][0]*M2.\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[0][3]\ +\ M1.\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[1][1]*M2.\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[1][3]\ +\ M1.\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[1][2]*M2.\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[2][3]\ +\ M1.\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[1][3]*M2.\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[3][3];}
+\DoxyCodeLine{00315\ }
+\DoxyCodeLine{00316\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Row\ 2}}
+\DoxyCodeLine{00317\ \ \ \ \ \ \ \ \ res.\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[2][0]\ =\ M1.\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[2][0]*M2.\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[0][0]\ +\ M1.\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[2][1]*M2.\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[1][0]\ +\ M1.\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[2][2]*M2.\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[2][0]\ +\ M1.\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[2][3]*M2.\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[3][0];}
+\DoxyCodeLine{00318\ \ \ \ \ \ \ \ \ res.\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[2][1]\ =\ M1.\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[2][0]*M2.\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[0][1]\ +\ M1.\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[2][1]*M2.\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[1][1]\ +\ M1.\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[2][2]*M2.\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[2][1]\ +\ M1.\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[2][3]*M2.\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[3][1];}
+\DoxyCodeLine{00319\ \ \ \ \ \ \ \ \ res.\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[2][2]\ =\ M1.\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[2][0]*M2.\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[0][2]\ +\ M1.\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[2][1]*M2.\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[1][2]\ +\ M1.\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[2][2]*M2.\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[2][2]\ +\ M1.\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[2][3]*M2.\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[3][2];}
+\DoxyCodeLine{00320\ \ \ \ \ \ \ \ \ res.\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[2][3]\ =\ M1.\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[2][0]*M2.\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[0][3]\ +\ M1.\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[2][1]*M2.\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[1][3]\ +\ M1.\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[2][2]*M2.\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[2][3]\ +\ M1.\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[2][3]*M2.\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[3][3];}
+\DoxyCodeLine{00321\ }
+\DoxyCodeLine{00322\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Row\ 3}}
+\DoxyCodeLine{00323\ \ \ \ \ \ \ \ \ res.\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[3][0]\ =\ M1.\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[3][0]*M2.\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[0][0]\ +\ M1.\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[3][1]*M2.\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[1][0]\ +\ M1.\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[3][2]*M2.\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[2][0]\ +\ M1.\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[3][3]*M2.\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[3][0];}
+\DoxyCodeLine{00324\ \ \ \ \ \ \ \ \ res.\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[3][1]\ =\ M1.\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[3][0]*M2.\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[0][1]\ +\ M1.\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[3][1]*M2.\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[1][1]\ +\ M1.\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[3][2]*M2.\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[2][1]\ +\ M1.\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[3][3]*M2.\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[3][1];}
+\DoxyCodeLine{00325\ \ \ \ \ \ \ \ \ res.\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[3][2]\ =\ M1.\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[3][0]*M2.\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[0][2]\ +\ M1.\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[3][1]*M2.\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[1][2]\ +\ M1.\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[3][2]*M2.\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[2][2]\ +\ M1.\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[3][3]*M2.\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[3][2];}
+\DoxyCodeLine{00326\ \ \ \ \ \ \ \ \ res.\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[3][3]\ =\ M1.\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[3][0]*M2.\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[0][3]\ +\ M1.\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[3][1]*M2.\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[1][3]\ +\ M1.\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[3][2]*M2.\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[2][3]\ +\ M1.\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[3][3]*M2.\mbox{\hyperlink{structdim4_1_1Mat4_a5852c804c202aca3f6628bfacf472af3}{M}}[3][3];}
+\DoxyCodeLine{00327\ }
+\DoxyCodeLine{00328\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ res;}
+\DoxyCodeLine{00329\ \ \ \ \ \}}
+\DoxyCodeLine{00330\ }
+\DoxyCodeLine{00331\ }
+\DoxyCodeLine{00332\ }
+\DoxyCodeLine{00333\ }
+\DoxyCodeLine{00334\ \}}
+\DoxyCodeLine{00335\ }
+\DoxyCodeLine{00336\ }
+\DoxyCodeLine{00337\ }
+\DoxyCodeLine{00338\ \textcolor{preprocessor}{\#endif}}
 
 \end{DoxyCode}
