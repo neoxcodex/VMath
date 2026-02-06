@@ -16,7 +16,18 @@ This is a mathematics library for graphics programming built from the ground up 
 6. The Profiler submodule is just a abstraction of the nanobench interface
 
 ## How to Install & Build
-- Linux : 
+- Linux : Run following commands
+- ### Clone Repo
+- `git clone https://github.com/neoxcodex/VMath.git`
+- ### Ubuntu/Debian
+  `sudo apt install libglfw3-dev libopenmp-dev cmake`
+  ### Arch 
+  `sudo pacman -S glfw-x11 openmp cmake`
+  ### Arch : Wayland
+  `sudo pacman -S glfw-wayland openmp cmake`
+  ### Fedora
+  `sudo dnf install glfw-devel libomp-devel cmake`
+  ### Build & Run Unit Test
   `./runner.sh`
   - Tested on Ubuntu LTS 22.04 and Omarchy
   - Compiled with -O3 and -ffast-math flags for release version
