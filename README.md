@@ -23,6 +23,8 @@ This is a mathematics library for graphics programming built from the ground up 
 
 ## Performace Vs GLM
 
+### GLM Performance
+
 |               ns/op |                op/s |    err% |          ins/op |          cyc/op |    IPC |         bra/op |   miss% |     total | benchmark
 |--------------------:|--------------------:|--------:|----------------:|----------------:|-------:|---------------:|--------:|----------:|:----------
 |                1.02 |      985,095,052.15 |    0.7% |            9.00 |            1.81 |  4.968 |           0.00 |   16.2% |      0.36 | `G4: glm::vec2::op+`
@@ -43,7 +45,12 @@ This is a mathematics library for graphics programming built from the ground up 
 |                2.13 |      468,910,377.28 |    0.4% |           16.00 |            3.81 |  4.199 |           0.00 |    8.1% |      0.77 | `G55: glm::mat4::op*`
 |               20.64 |       48,461,169.38 |    0.5% |          127.00 |           36.85 |  3.447 |           0.00 |    2.1% |      7.39 | `G70: glm::mat4*mat4`
 |               11.11 |       90,016,610.48 |    0.7% |           69.00 |           19.83 |  3.480 |           0.00 |    1.8% |      3.98 | `G69: glm::project`
-GLM TESTING COMPLETE, VMATH TESTING INITIATED:
+
+### VMath Performance
+
+
+|               ns/op |                op/s |    err% |          ins/op |          cyc/op |    IPC |         bra/op |   miss% |     total | benchmark
+|--------------------:|--------------------:|--------:|----------------:|----------------:|-------:|---------------:|--------:|----------:|:----------
 |                0.99 |    1,014,913,170.93 |    0.3% |            8.00 |            1.76 |  4.543 |           0.00 |   55.9% |      0.36 | `F1: NDSF::clamp`
 |                1.58 |      632,345,220.94 |    0.7% |           11.00 |            2.82 |  3.894 |           0.00 |   67.6% |      0.57 | `F2: NDSF::epEqual`
 |                1.86 |      538,498,087.07 |    1.0% |           14.00 |            3.32 |  4.218 |           0.00 |   55.9% |      0.67 | `F3: NDSF::lerp`
