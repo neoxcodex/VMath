@@ -3,8 +3,8 @@
 /*
 Non-Dimension Specific Functions (NDSF)
 */
-#include<iostream>
-#include"Constants.h"
+#include<cmath>
+#include"Constants.hpp"
 namespace NDSF{
     inline float clamp(float a, float lowerL, float upperL){
         return std::max(lowerL, std::min(a, upperL));

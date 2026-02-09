@@ -1,16 +1,9 @@
-/*
-TODO:
-1) Get Accurate PI
-2) Get Better Precision With preferrably a custom Data type
-3) Allow for a dim3, dim2 namespace under which hardcoded 3D, 2D vector functions rest
-4) Remove the pass by value goddamnit
-5) Do something about those for loops (repetitive tbh)
-6) Add More Vector Operations
-7) Optimize the shit outta dim3, dim2
-8) Error Handling
-9) Clamping
-
+/* TODO:
+1. Benchmarking
+2. Implementing Screen to OpenGL NDC type function
+3. Implementing QUaternions & Other functions
 */
+
 
 #ifndef dim3_872349208
 #define dim3_872349208
@@ -18,7 +11,7 @@ TODO:
 
 #include<iostream>
 
-#include"Constants.h"
+#include"Constants.hpp"
 #include "NDSFunctions.hpp"
 
 //AI STUFF
@@ -66,7 +59,7 @@ namespace dim3 {
     }
     inline Vec3 normalize(const Vec3& a){
         float mag  = std::sqrt(magSquared(a));
-        if (mag == 0){ return Vec3{0,0,0};}
+        
         float invMag = 1.0f/mag;
         return Vec3{(a.x)*invMag, (a.y)*invMag, (a.z)*invMag};
 
@@ -129,11 +122,13 @@ namespace dim3 {
         };
     }
     struct Mat3{
-        float M[3][3] ={{0}};
+        float M[3][3] = {
+            {1,0,0},
+            {0,1,0},
+            {0,0,1}
+        };
         static Mat3 identity(){
-            Mat3 res;
-            res.M[0][0] = 1; res.M[1][1] = 1;; res.M[2][2] = 1;
-            return res;
+            return Mat3();
         }
         Vec3 operator*(const Vec3& v) const{
             return{
@@ -242,7 +237,7 @@ namespace dim3 {
 
         return res;
     }
-    inline Vec3 rotationCustomAxis(const Vec3& v, const Vec3& axis_normalized, float angleRAD){
+    inline Vec3 rotationCustomAxis(const Vec3& v, const Vec3& axis_normalized, const float angleRAD){
         float cosA = std::cos(angleRAD);
         float sinA = std::sin(angleRAD);
         float t = 1.0f - cosA;
@@ -269,7 +264,7 @@ namespace dim3 {
         return rotatorMatrix*v;
     }
 
-    inline Vec3 rotationXAxis(const Vec3& v, float angleRAD){
+    inline Vec3 rotationXAxis(const Vec3& v, const float angleRAD){
         float cosA = std::cos(angleRAD);
         float sinA = std::sin(angleRAD);
         // x remains unchanged, y and z rotate
@@ -280,7 +275,7 @@ namespace dim3 {
         };
 
     }
-    inline Vec3 rotationYAxis(const Vec3& v, float angleRAD) {
+    inline Vec3 rotationYAxis(const Vec3& v, const float angleRAD) {
         float s = std::sin(angleRAD);
         float c = std::cos(angleRAD);
         return {
@@ -291,7 +286,7 @@ namespace dim3 {
     }
 
     // Rotates around Z: X and Y change (Standard 2D rotation logic)
-    inline Vec3 rotationZAxis(const Vec3& v, float angleRAD) {
+    inline Vec3 rotationZAxis(const Vec3& v, const float angleRAD) {
         float s = std::sin(angleRAD);
         float c = std::cos(angleRAD);
         return {

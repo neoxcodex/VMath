@@ -3,7 +3,7 @@
 
 //GRAPHICS 2D
 #include<iostream>
-#include"Constants.h"
+#include"Constants.hpp"
 #include<cmath>
 #include"NDSFunctions.hpp"
 namespace dim2{
@@ -63,6 +63,6 @@ namespace dim2{
         };
     }
 
-    /*TODO AGAIN*/
+
 }
 #endif

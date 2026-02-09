@@ -16,3 +16,5 @@ commit.sh
 .gitignore
 .clang-format
 compile_commands.json
+
+src/codex.txt

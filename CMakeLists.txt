@@ -1,59 +1,68 @@
 cmake_minimum_required(VERSION 3.20)
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
-project(VMathVisualizer VERSION 0.1 LANGUAGES CXX C)
+project(VMathLib VERSION 0.1 LANGUAGES CXX C)
 
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-# 1. Force Release mode if not specified (No more 10k ns overhead!)
+# 1. Build Type Logic
 if(NOT CMAKE_BUILD_TYPE)
   set(CMAKE_BUILD_TYPE Release)
 endif()
 
-# 2. Find GLFW
+# 2. Find Dependencies
 find_package(glfw3 REQUIRED)
 find_package(OpenMP REQUIRED)
+find_package(benchmark REQUIRED)
+
+# 3. Sources
 file(GLOB SOURCES "src/*.cpp")
 set(GLAD_SOURCE "${CMAKE_CURRENT_SOURCE_DIR}/deps/glad/src/glad.c")
 
-add_executable(VMathVisualizer ${SOURCES} ${GLAD_SOURCE})
+add_executable(VMathLib ${SOURCES} ${GLAD_SOURCE})
 
-# 3. Refined Include Paths
-target_include_directories(VMathVisualizer
+# 4. Include Paths
+target_include_directories(VMathLib
   PRIVATE
     ${PROJECT_SOURCE_DIR}/include
-
     ${PROJECT_SOURCE_DIR}/deps/glad/include
 )
 
-# 4. Link Libraries
-target_link_libraries(VMathVisualizer
+# 5. Link Libraries
+target_link_libraries(VMathLib
   PRIVATE
+    pthread
+    benchmark::benchmark
     glfw
     GL
     ${CMAKE_DL_LIBS}
-    pthread
-    OpenMP::OpenMP_CXX  # <--- LINK OPENMP HERE
+    OpenMP::OpenMP_CXX
 )
-# 5. Strict & Fast Flags
-target_compile_options(VMathVisualizer
+
+# 6. Flags
+target_compile_options(VMathLib
   PRIVATE
-    # Base flags for everyone
     -Wall -Wextra -Wpedantic
     -Werror=return-type
     -Wfatal-errors
 
-    # Release-specific "Nitro" flags
-    $<$<CONFIG:Release>:
+   $<$<CONFIG:Release>:
         -O3
         -march=native
         -ffast-math
-        -fopenmp        # <--- Use the universal flag for GCC/Clang compatibility
+        -fopenmp
+        -mavx2
+        -mfma
+        -fvectorize
+        -fslp-vectorize
+    >
+    $<$<CONFIG:Debug>:
+        -g -O0
     >
 )
 
-# Crucial: GLAD is C, not C++. Don't let C++ flags leak into it.
+# 7. GLAD specific (C, not C++)
 set_source_files_properties(${GLAD_SOURCE} PROPERTIES COMPILE_FLAGS -w)
 if(OpenMP_C_FOUND)
-    target_link_libraries(VMathVisualizer PRIVATE OpenMP::OpenMP_C)
+    target_link_libraries(VMathLib PRIVATE OpenMP::OpenMP_C)
 endif()
